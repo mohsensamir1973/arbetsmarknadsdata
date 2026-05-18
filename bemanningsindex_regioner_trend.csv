@@ -1,0 +1,532 @@
+﻿Datum;Bolag;Region;Antal annonser;Nya 14 dagar
+2026-05-17;Manpower;Blekinge län;2;1
+2026-05-17;Manpower;Dalarnas län;2;2
+2026-05-17;Manpower;Gävleborgs län;2;1
+2026-05-17;Manpower;Hallands län;2;0
+2026-05-17;Manpower;Jämtlands län;1;1
+2026-05-17;Manpower;Jönköpings län;2;0
+2026-05-17;Manpower;Kronobergs län;3;1
+2026-05-17;Manpower;Norrbottens län;1;0
+2026-05-17;Manpower;Skåne län;10;2
+2026-05-17;Manpower;Stockholms län;10;6
+2026-05-17;Manpower;Södermanlands län;2;1
+2026-05-17;Manpower;Uppsala län;1;0
+2026-05-17;Manpower;Värmlands län;4;2
+2026-05-17;Manpower;Västerbottens län;1;0
+2026-05-17;Manpower;Västernorrlands län;4;2
+2026-05-17;Manpower;Västmanlands län;2;0
+2026-05-17;Manpower;Västra Götalands län;29;10
+2026-05-17;Manpower;Östergötlands län;2;0
+2026-05-17;Lernia;Blekinge län;5;2
+2026-05-17;Lernia;Dalarnas län;2;1
+2026-05-17;Lernia;Gävleborgs län;10;5
+2026-05-17;Lernia;Hallands län;36;13
+2026-05-17;Lernia;Jämtlands län;2;0
+2026-05-17;Lernia;Jönköpings län;14;7
+2026-05-17;Lernia;Kalmar län;11;6
+2026-05-17;Lernia;Kronobergs län;4;3
+2026-05-17;Lernia;Norrbottens län;4;0
+2026-05-17;Lernia;Skåne län;17;9
+2026-05-17;Lernia;Stockholms län;5;2
+2026-05-17;Lernia;Södermanlands län;4;1
+2026-05-17;Lernia;Uppsala län;7;2
+2026-05-17;Lernia;Västerbottens län;8;1
+2026-05-17;Lernia;Västmanlands län;3;2
+2026-05-17;Lernia;Västra Götalands län;34;14
+2026-05-17;Lernia;Örebro län;2;2
+2026-05-17;Lernia;Östergötlands län;8;5
+2026-05-17;Adecco;Blekinge län;3;0
+2026-05-17;Adecco;Dalarnas län;5;3
+2026-05-17;Adecco;Hallands län;8;5
+2026-05-17;Adecco;Jönköpings län;12;7
+2026-05-17;Adecco;Kalmar län;2;1
+2026-05-17;Adecco;Kronobergs län;9;9
+2026-05-17;Adecco;Norrbottens län;12;10
+2026-05-17;Adecco;Skåne län;24;12
+2026-05-17;Adecco;Stockholms län;21;19
+2026-05-17;Adecco;Södermanlands län;1;0
+2026-05-17;Adecco;Uppsala län;7;4
+2026-05-17;Adecco;Värmlands län;10;6
+2026-05-17;Adecco;Västerbottens län;4;0
+2026-05-17;Adecco;Västernorrlands län;2;2
+2026-05-17;Adecco;Västmanlands län;5;4
+2026-05-17;Adecco;Västra Götalands län;23;9
+2026-05-17;Adecco;Örebro län;2;2
+2026-05-17;Adecco;Östergötlands län;11;8
+2026-05-17;Perido;Dalarnas län;1;1
+2026-05-17;Perido;Jönköpings län;1;1
+2026-05-17;Perido;Kalmar län;1;1
+2026-05-17;Perido;Stockholms län;12;9
+2026-05-17;Perido;Södermanlands län;3;2
+2026-05-17;Perido;Västra Götalands län;9;6
+2026-05-17;Perido;Östergötlands län;5;0
+2026-05-17;Randstad;Dalarnas län;1;0
+2026-05-17;Randstad;Gävleborgs län;4;2
+2026-05-17;Randstad;Hallands län;1;0
+2026-05-17;Randstad;Jämtlands län;2;0
+2026-05-17;Randstad;Jönköpings län;14;3
+2026-05-17;Randstad;Kalmar län;2;1
+2026-05-17;Randstad;Norrbottens län;5;2
+2026-05-17;Randstad;Skåne län;12;7
+2026-05-17;Randstad;Stockholms län;28;14
+2026-05-17;Randstad;Södermanlands län;2;2
+2026-05-17;Randstad;Uppsala län;12;7
+2026-05-17;Randstad;Värmlands län;1;1
+2026-05-17;Randstad;Västerbottens län;2;2
+2026-05-17;Randstad;Västernorrlands län;3;3
+2026-05-17;Randstad;Västmanlands län;3;0
+2026-05-17;Randstad;Västra Götalands län;42;16
+2026-05-17;Randstad;Örebro län;2;0
+2026-05-17;Randstad;Östergötlands län;22;8
+2026-05-17;Academic Work;Dalarnas län;6;1
+2026-05-17;Academic Work;Gävleborgs län;11;4
+2026-05-17;Academic Work;Hallands län;2;1
+2026-05-17;Academic Work;Jämtlands län;6;1
+2026-05-17;Academic Work;Jönköpings län;8;2
+2026-05-17;Academic Work;Kalmar län;1;0
+2026-05-17;Academic Work;Kronobergs län;3;1
+2026-05-17;Academic Work;Norrbottens län;9;4
+2026-05-17;Academic Work;Skåne län;51;14
+2026-05-17;Academic Work;Stockholms län;136;49
+2026-05-17;Academic Work;Södermanlands län;1;0
+2026-05-17;Academic Work;Uppsala län;13;4
+2026-05-17;Academic Work;Värmlands län;13;4
+2026-05-17;Academic Work;Västerbottens län;13;6
+2026-05-17;Academic Work;Västernorrlands län;8;3
+2026-05-17;Academic Work;Västmanlands län;10;2
+2026-05-17;Academic Work;Västra Götalands län;41;19
+2026-05-17;Academic Work;Örebro län;24;8
+2026-05-17;Academic Work;Östergötlands län;29;8
+2026-05-17;Studentconsulting;Blekinge län;4;3
+2026-05-17;Studentconsulting;Dalarnas län;6;5
+2026-05-17;Studentconsulting;Hallands län;8;3
+2026-05-17;Studentconsulting;Jämtlands län;1;1
+2026-05-17;Studentconsulting;Jönköpings län;11;4
+2026-05-17;Studentconsulting;Kalmar län;1;0
+2026-05-17;Studentconsulting;Kronobergs län;14;5
+2026-05-17;Studentconsulting;Norrbottens län;33;24
+2026-05-17;Studentconsulting;Skåne län;43;23
+2026-05-17;Studentconsulting;Stockholms län;19;12
+2026-05-17;Studentconsulting;Södermanlands län;5;4
+2026-05-17;Studentconsulting;Uppsala län;4;1
+2026-05-17;Studentconsulting;Värmlands län;1;1
+2026-05-17;Studentconsulting;Västerbottens län;7;4
+2026-05-17;Studentconsulting;Västernorrlands län;8;3
+2026-05-17;Studentconsulting;Västmanlands län;12;2
+2026-05-17;Studentconsulting;Västra Götalands län;45;33
+2026-05-17;Studentconsulting;Örebro län;4;2
+2026-05-17;Studentconsulting;Östergötlands län;34;10
+2026-05-17;Poolia;Jämtlands län;2;1
+2026-05-17;Poolia;Jönköpings län;2;0
+2026-05-17;Poolia;Kalmar län;1;1
+2026-05-17;Poolia;Norrbottens län;4;3
+2026-05-17;Poolia;Skåne län;11;7
+2026-05-17;Poolia;Stockholms län;15;12
+2026-05-17;Poolia;Södermanlands län;2;2
+2026-05-17;Poolia;Uppsala län;3;3
+2026-05-17;Poolia;Västerbottens län;2;2
+2026-05-17;Poolia;Västernorrlands län;2;1
+2026-05-17;Poolia;Västmanlands län;4;1
+2026-05-17;Poolia;Västra Götalands län;2;2
+2026-05-17;Poolia;Örebro län;3;2
+2026-05-17;Poolia;Östergötlands län;9;7
+2026-05-17;Uniflex;Blekinge län;2;0
+2026-05-17;Uniflex;Gävleborgs län;1;1
+2026-05-17;Uniflex;Hallands län;5;3
+2026-05-17;Uniflex;Jämtlands län;2;0
+2026-05-17;Uniflex;Jönköpings län;24;13
+2026-05-17;Uniflex;Kalmar län;5;2
+2026-05-17;Uniflex;Kronobergs län;6;4
+2026-05-17;Uniflex;Skåne län;18;14
+2026-05-17;Uniflex;Stockholms län;23;23
+2026-05-17;Uniflex;Södermanlands län;2;1
+2026-05-17;Uniflex;Uppsala län;2;1
+2026-05-17;Uniflex;Värmlands län;7;1
+2026-05-17;Uniflex;Västerbottens län;3;2
+2026-05-17;Uniflex;Västernorrlands län;4;3
+2026-05-17;Uniflex;Västmanlands län;5;2
+2026-05-17;Uniflex;Västra Götalands län;35;17
+2026-05-17;Uniflex;Örebro län;11;5
+2026-05-17;Uniflex;Östergötlands län;16;2
+2026-05-17;OnePartnerGroup;Blekinge län;1;0
+2026-05-17;OnePartnerGroup;Gävleborgs län;15;8
+2026-05-17;OnePartnerGroup;Hallands län;3;2
+2026-05-17;OnePartnerGroup;Jämtlands län;15;6
+2026-05-17;OnePartnerGroup;Jönköpings län;33;12
+2026-05-17;OnePartnerGroup;Kalmar län;3;1
+2026-05-17;OnePartnerGroup;Kronobergs län;14;8
+2026-05-17;OnePartnerGroup;Norrbottens län;8;5
+2026-05-17;OnePartnerGroup;Skåne län;10;8
+2026-05-17;OnePartnerGroup;Stockholms län;12;8
+2026-05-17;OnePartnerGroup;Södermanlands län;1;1
+2026-05-17;OnePartnerGroup;Uppsala län;2;0
+2026-05-17;OnePartnerGroup;Västerbottens län;7;2
+2026-05-17;OnePartnerGroup;Västernorrlands län;13;8
+2026-05-17;OnePartnerGroup;Västra Götalands län;35;22
+2026-05-17;OnePartnerGroup;Örebro län;2;1
+2026-05-17;OnePartnerGroup;Östergötlands län;6;3
+2026-05-17;Skill;Blekinge län;1;1
+2026-05-17;Skill;Hallands län;1;0
+2026-05-17;Skill;Jönköpings län;4;0
+2026-05-17;Skill;Kalmar län;1;0
+2026-05-17;Skill;Norrbottens län;3;0
+2026-05-17;Skill;Stockholms län;6;1
+2026-05-17;Skill;Södermanlands län;1;0
+2026-05-17;Skill;Uppsala län;1;1
+2026-05-17;Skill;Västerbottens län;6;2
+2026-05-17;Skill;Västernorrlands län;5;1
+2026-05-17;Skill;Västmanlands län;7;0
+2026-05-17;Skill;Västra Götalands län;20;5
+2026-05-17;Skill;Örebro län;3;2
+2026-05-17;Skill;Östergötlands län;55;37
+2026-05-17;Arena Personal;Blekinge län;1;1
+2026-05-17;Arena Personal;Dalarnas län;2;2
+2026-05-17;Arena Personal;Gävleborgs län;1;1
+2026-05-17;Arena Personal;Hallands län;1;0
+2026-05-17;Arena Personal;Jämtlands län;1;1
+2026-05-17;Arena Personal;Jönköpings län;3;3
+2026-05-17;Arena Personal;Kronobergs län;1;1
+2026-05-17;Arena Personal;Norrbottens län;2;2
+2026-05-17;Arena Personal;Skåne län;8;6
+2026-05-17;Arena Personal;Stockholms län;26;8
+2026-05-17;Arena Personal;Södermanlands län;30;18
+2026-05-17;Arena Personal;Uppsala län;3;1
+2026-05-17;Arena Personal;Västerbottens län;3;3
+2026-05-17;Arena Personal;Västernorrlands län;1;1
+2026-05-17;Arena Personal;Västmanlands län;4;3
+2026-05-17;Arena Personal;Västra Götalands län;11;3
+2026-05-17;Arena Personal;Örebro län;3;2
+2026-05-17;Arena Personal;Östergötlands län;4;2
+2026-05-17;Tranpenad;Jönköpings län;1;1
+2026-05-17;Tranpenad;Stockholms län;6;2
+2026-05-17;Tranpenad;Södermanlands län;3;0
+2026-05-17;Tranpenad;Uppsala län;4;2
+2026-05-17;Tranpenad;Västra Götalands län;20;5
+2026-05-17;Tranpenad;Östergötlands län;2;2
+2026-05-17;Jobandtalent;Blekinge län;3;3
+2026-05-17;Jobandtalent;Hallands län;13;5
+2026-05-17;Jobandtalent;Jönköpings län;8;7
+2026-05-17;Jobandtalent;Kronobergs län;2;1
+2026-05-17;Jobandtalent;Norrbottens län;3;0
+2026-05-17;Jobandtalent;Skåne län;12;6
+2026-05-17;Jobandtalent;Stockholms län;13;3
+2026-05-17;Jobandtalent;Södermanlands län;4;1
+2026-05-17;Jobandtalent;Uppsala län;1;0
+2026-05-17;Jobandtalent;Västerbottens län;3;3
+2026-05-17;Jobandtalent;Västernorrlands län;6;6
+2026-05-17;Jobandtalent;Västmanlands län;2;0
+2026-05-17;Jobandtalent;Västra Götalands län;17;11
+2026-05-17;Jobandtalent;Örebro län;7;2
+2026-05-17;Jobandtalent;Östergötlands län;39;5
+2026-05-17;NearYou;Hallands län;3;3
+2026-05-17;NearYou;Jönköpings län;6;6
+2026-05-17;NearYou;Kalmar län;12;4
+2026-05-17;NearYou;Kronobergs län;1;0
+2026-05-17;NearYou;Skåne län;2;1
+2026-05-17;NearYou;Västra Götalands län;47;12
+2026-05-17;SJR;Kronobergs län;1;0
+2026-05-17;SJR;Skåne län;2;1
+2026-05-17;SJR;Stockholms län;15;13
+2026-05-17;SJR;Uppsala län;4;3
+2026-05-17;SJR;Västmanlands län;1;1
+2026-05-17;SJR;Västra Götalands län;4;3
+2026-05-17;Clockwork;Dalarnas län;20;12
+2026-05-17;Clockwork;Gävleborgs län;6;4
+2026-05-17;Clockwork;Jämtlands län;1;1
+2026-05-17;Clockwork;Jönköpings län;2;2
+2026-05-17;Clockwork;Skåne län;1;0
+2026-05-17;Clockwork;Stockholms län;9;4
+2026-05-17;Clockwork;Södermanlands län;1;0
+2026-05-17;Clockwork;Västerbottens län;6;3
+2026-05-17;Clockwork;Västmanlands län;4;2
+2026-05-17;Clockwork;Västra Götalands län;2;2
+2026-05-17;Logent;Hallands län;5;1
+2026-05-17;Logent;Skåne län;16;7
+2026-05-17;Logent;Stockholms län;2;1
+2026-05-17;Logent;Västra Götalands län;8;1
+2026-05-17;Logent;Östergötlands län;1;0
+2026-05-17;Bemannia;Gävleborgs län;1;1
+2026-05-17;Bemannia;Stockholms län;18;14
+2026-05-17;Bemannia;Södermanlands län;1;1
+2026-05-17;Bemannia;Västernorrlands län;1;1
+2026-05-17;Bemannia;Västra Götalands län;6;2
+2026-05-17;Framtiden i Sverige;Blekinge län;2;0
+2026-05-17;Framtiden i Sverige;Dalarnas län;8;2
+2026-05-17;Framtiden i Sverige;Gotlands län;1;1
+2026-05-17;Framtiden i Sverige;Hallands län;3;2
+2026-05-17;Framtiden i Sverige;Jönköpings län;20;4
+2026-05-17;Framtiden i Sverige;Kalmar län;4;0
+2026-05-17;Framtiden i Sverige;Norrbottens län;3;1
+2026-05-17;Framtiden i Sverige;Skåne län;11;4
+2026-05-17;Framtiden i Sverige;Stockholms län;30;22
+2026-05-17;Framtiden i Sverige;Södermanlands län;2;0
+2026-05-17;Framtiden i Sverige;Uppsala län;3;2
+2026-05-17;Framtiden i Sverige;Värmlands län;7;0
+2026-05-17;Framtiden i Sverige;Västmanlands län;8;2
+2026-05-17;Framtiden i Sverige;Västra Götalands län;19;11
+2026-05-17;Framtiden i Sverige;Örebro län;5;0
+2026-05-17;Framtiden i Sverige;Östergötlands län;37;22
+2026-05-18;Manpower;Blekinge län;2;1
+2026-05-18;Manpower;Dalarnas län;3;3
+2026-05-18;Manpower;Gävleborgs län;2;1
+2026-05-18;Manpower;Hallands län;2;0
+2026-05-18;Manpower;Jämtlands län;1;1
+2026-05-18;Manpower;Jönköpings län;2;0
+2026-05-18;Manpower;Kronobergs län;3;1
+2026-05-18;Manpower;Norrbottens län;1;0
+2026-05-18;Manpower;Skåne län;10;2
+2026-05-18;Manpower;Stockholms län;10;6
+2026-05-18;Manpower;Södermanlands län;2;1
+2026-05-18;Manpower;Uppsala län;1;0
+2026-05-18;Manpower;Värmlands län;4;2
+2026-05-18;Manpower;Västerbottens län;1;0
+2026-05-18;Manpower;Västernorrlands län;4;2
+2026-05-18;Manpower;Västmanlands län;2;0
+2026-05-18;Manpower;Västra Götalands län;29;10
+2026-05-18;Manpower;Östergötlands län;2;0
+2026-05-18;Lernia;Blekinge län;5;2
+2026-05-18;Lernia;Dalarnas län;1;1
+2026-05-18;Lernia;Gävleborgs län;5;3
+2026-05-18;Lernia;Hallands län;35;13
+2026-05-18;Lernia;Jämtlands län;1;0
+2026-05-18;Lernia;Jönköpings län;14;7
+2026-05-18;Lernia;Kalmar län;11;6
+2026-05-18;Lernia;Kronobergs län;4;3
+2026-05-18;Lernia;Norrbottens län;5;1
+2026-05-18;Lernia;Skåne län;16;9
+2026-05-18;Lernia;Stockholms län;5;2
+2026-05-18;Lernia;Södermanlands län;4;1
+2026-05-18;Lernia;Uppsala län;7;2
+2026-05-18;Lernia;Västerbottens län;6;1
+2026-05-18;Lernia;Västmanlands län;2;2
+2026-05-18;Lernia;Västra Götalands län;34;15
+2026-05-18;Lernia;Örebro län;2;2
+2026-05-18;Lernia;Östergötlands län;8;5
+2026-05-18;Adecco;Blekinge län;1;0
+2026-05-18;Adecco;Dalarnas län;5;3
+2026-05-18;Adecco;Hallands län;7;5
+2026-05-18;Adecco;Jönköpings län;12;7
+2026-05-18;Adecco;Kalmar län;2;1
+2026-05-18;Adecco;Kronobergs län;9;9
+2026-05-18;Adecco;Norrbottens län;12;10
+2026-05-18;Adecco;Skåne län;24;12
+2026-05-18;Adecco;Stockholms län;20;18
+2026-05-18;Adecco;Södermanlands län;1;0
+2026-05-18;Adecco;Uppsala län;4;4
+2026-05-18;Adecco;Värmlands län;9;5
+2026-05-18;Adecco;Västerbottens län;4;0
+2026-05-18;Adecco;Västernorrlands län;2;2
+2026-05-18;Adecco;Västmanlands län;4;3
+2026-05-18;Adecco;Västra Götalands län;21;8
+2026-05-18;Adecco;Örebro län;2;2
+2026-05-18;Adecco;Östergötlands län;11;8
+2026-05-18;Perido;Dalarnas län;1;1
+2026-05-18;Perido;Jönköpings län;1;1
+2026-05-18;Perido;Kalmar län;1;1
+2026-05-18;Perido;Stockholms län;12;9
+2026-05-18;Perido;Södermanlands län;3;2
+2026-05-18;Perido;Västra Götalands län;9;6
+2026-05-18;Perido;Östergötlands län;5;0
+2026-05-18;Randstad;Dalarnas län;1;0
+2026-05-18;Randstad;Gävleborgs län;3;2
+2026-05-18;Randstad;Hallands län;1;0
+2026-05-18;Randstad;Jämtlands län;2;0
+2026-05-18;Randstad;Jönköpings län;14;3
+2026-05-18;Randstad;Kalmar län;1;1
+2026-05-18;Randstad;Norrbottens län;5;2
+2026-05-18;Randstad;Skåne län;11;6
+2026-05-18;Randstad;Stockholms län;27;14
+2026-05-18;Randstad;Södermanlands län;2;2
+2026-05-18;Randstad;Uppsala län;10;7
+2026-05-18;Randstad;Värmlands län;1;1
+2026-05-18;Randstad;Västerbottens län;2;2
+2026-05-18;Randstad;Västernorrlands län;3;3
+2026-05-18;Randstad;Västmanlands län;3;0
+2026-05-18;Randstad;Västra Götalands län;40;16
+2026-05-18;Randstad;Örebro län;1;0
+2026-05-18;Randstad;Östergötlands län;22;8
+2026-05-18;Academic Work;Dalarnas län;6;1
+2026-05-18;Academic Work;Gävleborgs län;10;4
+2026-05-18;Academic Work;Hallands län;2;1
+2026-05-18;Academic Work;Jämtlands län;6;1
+2026-05-18;Academic Work;Jönköpings län;7;2
+2026-05-18;Academic Work;Kalmar län;1;0
+2026-05-18;Academic Work;Kronobergs län;3;1
+2026-05-18;Academic Work;Norrbottens län;9;4
+2026-05-18;Academic Work;Skåne län;50;14
+2026-05-18;Academic Work;Stockholms län;133;50
+2026-05-18;Academic Work;Södermanlands län;1;0
+2026-05-18;Academic Work;Uppsala län;13;4
+2026-05-18;Academic Work;Värmlands län;13;4
+2026-05-18;Academic Work;Västerbottens län;13;6
+2026-05-18;Academic Work;Västernorrlands län;8;3
+2026-05-18;Academic Work;Västmanlands län;9;2
+2026-05-18;Academic Work;Västra Götalands län;41;19
+2026-05-18;Academic Work;Örebro län;24;8
+2026-05-18;Academic Work;Östergötlands län;29;8
+2026-05-18;Studentconsulting;Blekinge län;4;3
+2026-05-18;Studentconsulting;Dalarnas län;6;5
+2026-05-18;Studentconsulting;Gävleborgs län;1;1
+2026-05-18;Studentconsulting;Hallands län;8;3
+2026-05-18;Studentconsulting;Jämtlands län;2;2
+2026-05-18;Studentconsulting;Jönköpings län;10;4
+2026-05-18;Studentconsulting;Kronobergs län;12;4
+2026-05-18;Studentconsulting;Norrbottens län;29;23
+2026-05-18;Studentconsulting;Skåne län;41;22
+2026-05-18;Studentconsulting;Stockholms län;18;12
+2026-05-18;Studentconsulting;Södermanlands län;4;3
+2026-05-18;Studentconsulting;Uppsala län;3;1
+2026-05-18;Studentconsulting;Värmlands län;1;1
+2026-05-18;Studentconsulting;Västerbottens län;5;4
+2026-05-18;Studentconsulting;Västernorrlands län;6;1
+2026-05-18;Studentconsulting;Västmanlands län;12;2
+2026-05-18;Studentconsulting;Västra Götalands län;45;33
+2026-05-18;Studentconsulting;Örebro län;4;2
+2026-05-18;Studentconsulting;Östergötlands län;32;10
+2026-05-18;Poolia;Jämtlands län;2;1
+2026-05-18;Poolia;Jönköpings län;2;0
+2026-05-18;Poolia;Kalmar län;1;1
+2026-05-18;Poolia;Norrbottens län;4;3
+2026-05-18;Poolia;Skåne län;11;7
+2026-05-18;Poolia;Stockholms län;15;12
+2026-05-18;Poolia;Södermanlands län;2;2
+2026-05-18;Poolia;Uppsala län;3;3
+2026-05-18;Poolia;Västerbottens län;2;2
+2026-05-18;Poolia;Västernorrlands län;2;1
+2026-05-18;Poolia;Västmanlands län;3;1
+2026-05-18;Poolia;Västra Götalands län;2;2
+2026-05-18;Poolia;Örebro län;3;2
+2026-05-18;Poolia;Östergötlands län;11;9
+2026-05-18;Uniflex;Blekinge län;1;0
+2026-05-18;Uniflex;Gävleborgs län;1;1
+2026-05-18;Uniflex;Hallands län;5;3
+2026-05-18;Uniflex;Jämtlands län;2;0
+2026-05-18;Uniflex;Jönköpings län;24;13
+2026-05-18;Uniflex;Kalmar län;5;2
+2026-05-18;Uniflex;Kronobergs län;6;4
+2026-05-18;Uniflex;Skåne län;18;14
+2026-05-18;Uniflex;Stockholms län;23;23
+2026-05-18;Uniflex;Södermanlands län;2;1
+2026-05-18;Uniflex;Uppsala län;2;1
+2026-05-18;Uniflex;Värmlands län;7;1
+2026-05-18;Uniflex;Västerbottens län;2;2
+2026-05-18;Uniflex;Västernorrlands län;4;3
+2026-05-18;Uniflex;Västmanlands län;5;2
+2026-05-18;Uniflex;Västra Götalands län;35;17
+2026-05-18;Uniflex;Örebro län;11;5
+2026-05-18;Uniflex;Östergötlands län;16;2
+2026-05-18;OnePartnerGroup;Blekinge län;1;0
+2026-05-18;OnePartnerGroup;Gävleborgs län;15;8
+2026-05-18;OnePartnerGroup;Hallands län;3;2
+2026-05-18;OnePartnerGroup;Jämtlands län;13;6
+2026-05-18;OnePartnerGroup;Jönköpings län;28;12
+2026-05-18;OnePartnerGroup;Kalmar län;2;1
+2026-05-18;OnePartnerGroup;Kronobergs län;13;8
+2026-05-18;OnePartnerGroup;Norrbottens län;7;4
+2026-05-18;OnePartnerGroup;Skåne län;9;8
+2026-05-18;OnePartnerGroup;Stockholms län;11;7
+2026-05-18;OnePartnerGroup;Södermanlands län;1;1
+2026-05-18;OnePartnerGroup;Uppsala län;2;0
+2026-05-18;OnePartnerGroup;Västerbottens län;6;2
+2026-05-18;OnePartnerGroup;Västernorrlands län;10;8
+2026-05-18;OnePartnerGroup;Västra Götalands län;32;22
+2026-05-18;OnePartnerGroup;Örebro län;1;1
+2026-05-18;OnePartnerGroup;Östergötlands län;6;3
+2026-05-18;Skill;Blekinge län;1;1
+2026-05-18;Skill;Hallands län;1;0
+2026-05-18;Skill;Jönköpings län;3;0
+2026-05-18;Skill;Kalmar län;1;0
+2026-05-18;Skill;Norrbottens län;3;0
+2026-05-18;Skill;Stockholms län;5;1
+2026-05-18;Skill;Södermanlands län;1;0
+2026-05-18;Skill;Uppsala län;1;1
+2026-05-18;Skill;Västerbottens län;5;2
+2026-05-18;Skill;Västernorrlands län;5;1
+2026-05-18;Skill;Västmanlands län;7;0
+2026-05-18;Skill;Västra Götalands län;19;5
+2026-05-18;Skill;Örebro län;3;2
+2026-05-18;Skill;Östergötlands län;51;37
+2026-05-18;Arena Personal;Blekinge län;1;1
+2026-05-18;Arena Personal;Hallands län;1;0
+2026-05-18;Arena Personal;Jämtlands län;1;1
+2026-05-18;Arena Personal;Jönköpings län;3;3
+2026-05-18;Arena Personal;Kronobergs län;1;1
+2026-05-18;Arena Personal;Norrbottens län;2;2
+2026-05-18;Arena Personal;Skåne län;8;6
+2026-05-18;Arena Personal;Stockholms län;26;8
+2026-05-18;Arena Personal;Södermanlands län;30;18
+2026-05-18;Arena Personal;Uppsala län;3;1
+2026-05-18;Arena Personal;Västerbottens län;3;3
+2026-05-18;Arena Personal;Västernorrlands län;1;1
+2026-05-18;Arena Personal;Västmanlands län;3;2
+2026-05-18;Arena Personal;Västra Götalands län;11;3
+2026-05-18;Arena Personal;Örebro län;3;2
+2026-05-18;Arena Personal;Östergötlands län;4;2
+2026-05-18;Tranpenad;Jönköpings län;1;1
+2026-05-18;Tranpenad;Stockholms län;6;2
+2026-05-18;Tranpenad;Södermanlands län;3;0
+2026-05-18;Tranpenad;Uppsala län;4;2
+2026-05-18;Tranpenad;Västra Götalands län;20;5
+2026-05-18;Tranpenad;Östergötlands län;2;2
+2026-05-18;Jobandtalent;Blekinge län;1;1
+2026-05-18;Jobandtalent;Hallands län;11;4
+2026-05-18;Jobandtalent;Jönköpings län;8;7
+2026-05-18;Jobandtalent;Kronobergs län;2;1
+2026-05-18;Jobandtalent;Norrbottens län;3;0
+2026-05-18;Jobandtalent;Skåne län;12;6
+2026-05-18;Jobandtalent;Stockholms län;13;3
+2026-05-18;Jobandtalent;Södermanlands län;4;1
+2026-05-18;Jobandtalent;Uppsala län;1;0
+2026-05-18;Jobandtalent;Västerbottens län;3;3
+2026-05-18;Jobandtalent;Västernorrlands län;6;6
+2026-05-18;Jobandtalent;Västmanlands län;2;0
+2026-05-18;Jobandtalent;Västra Götalands län;17;11
+2026-05-18;Jobandtalent;Örebro län;7;2
+2026-05-18;Jobandtalent;Östergötlands län;39;5
+2026-05-18;NearYou;Hallands län;3;3
+2026-05-18;NearYou;Jönköpings län;6;6
+2026-05-18;NearYou;Kalmar län;12;4
+2026-05-18;NearYou;Kronobergs län;1;0
+2026-05-18;NearYou;Skåne län;2;1
+2026-05-18;NearYou;Västra Götalands län;47;12
+2026-05-18;SJR;Kronobergs län;1;0
+2026-05-18;SJR;Skåne län;2;1
+2026-05-18;SJR;Stockholms län;15;13
+2026-05-18;SJR;Uppsala län;4;3
+2026-05-18;SJR;Västmanlands län;1;1
+2026-05-18;SJR;Västra Götalands län;4;3
+2026-05-18;Clockwork;Dalarnas län;20;12
+2026-05-18;Clockwork;Gävleborgs län;6;4
+2026-05-18;Clockwork;Jämtlands län;1;1
+2026-05-18;Clockwork;Jönköpings län;2;2
+2026-05-18;Clockwork;Skåne län;1;0
+2026-05-18;Clockwork;Stockholms län;9;4
+2026-05-18;Clockwork;Västerbottens län;5;3
+2026-05-18;Clockwork;Västmanlands län;4;2
+2026-05-18;Clockwork;Västra Götalands län;2;2
+2026-05-18;Logent;Hallands län;5;1
+2026-05-18;Logent;Skåne län;16;7
+2026-05-18;Logent;Stockholms län;2;1
+2026-05-18;Logent;Västra Götalands län;8;1
+2026-05-18;Logent;Östergötlands län;1;0
+2026-05-18;Bemannia;Gävleborgs län;1;1
+2026-05-18;Bemannia;Stockholms län;18;14
+2026-05-18;Bemannia;Södermanlands län;1;1
+2026-05-18;Bemannia;Västernorrlands län;1;1
+2026-05-18;Bemannia;Västra Götalands län;6;2
+2026-05-18;Framtiden i Sverige;Blekinge län;2;0
+2026-05-18;Framtiden i Sverige;Dalarnas län;8;2
+2026-05-18;Framtiden i Sverige;Gotlands län;1;1
+2026-05-18;Framtiden i Sverige;Hallands län;3;2
+2026-05-18;Framtiden i Sverige;Jönköpings län;20;4
+2026-05-18;Framtiden i Sverige;Kalmar län;4;0
+2026-05-18;Framtiden i Sverige;Norrbottens län;3;1
+2026-05-18;Framtiden i Sverige;Skåne län;11;3
+2026-05-18;Framtiden i Sverige;Stockholms län;30;22
+2026-05-18;Framtiden i Sverige;Södermanlands län;2;0
+2026-05-18;Framtiden i Sverige;Uppsala län;3;2
+2026-05-18;Framtiden i Sverige;Värmlands län;7;0
+2026-05-18;Framtiden i Sverige;Västmanlands län;8;2
+2026-05-18;Framtiden i Sverige;Västra Götalands län;19;11
+2026-05-18;Framtiden i Sverige;Örebro län;4;0
+2026-05-18;Framtiden i Sverige;Östergötlands län;39;24
