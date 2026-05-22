@@ -1,25 +1,21 @@
 """
-Bemanningsindex v4 - spar annoneringsaktivitet for ledande bemanning-
+Bemanningsindex v7 - spar annoneringsaktivitet for ledande bemanning-
 och rekryteringsbolag via AF:s oppna API
 =======================================================================
-Ersatter: bemanningsindex.py (v3)
+Ersatter: bemanningsindex.py (v6)
 Placeras i: Documents\Arbetsmarknadsindex\
 
-Nyheter i v4 vs v3:
-  - Aktivitetstakt baseras nu pa 14 dagar (inte 7) for att matcha
-    arbetsmarknadsindex.py och publiceringscykeln varannan vecka
-  - Bade nya_7d och nya_14d sparas i CSV
-  - Task Scheduler-saker: scriptet hanterar arbetsmapp automatiskt
-  - Loggfil skapas vid fel sa du ser vad som gatt snett
+Nyheter i v7 vs v6:
+  - Filtrering pa organisationsnummer i API-svaret (inte som sokparameter)
+  - 100% precision - matcher exakt ratt bolag
+  - Stodjer flera org-nummer per bolag (koncerner/regionbolag)
+  - Bred API-sokning pa bolagsnamn, sedan filtrering pa org-nummer
 
-Bolagslista: Topp 20 baserat pa Kompetensforetagens Topp 50 Q4 2025
-Calviks (plats 6) exkluderas - holdingbolag, annonserar ej under eget namn
-Spras per varumarke som annonserar pa AF, inte per koncern
-
+Bolagslista: 30 utvalda bolag som speglar branschens bredd
 Sparar:
-  bemanningsindex_trend.csv          - en rad per bolag per korning
-  bemanningsindex_regioner_trend.csv - komplett regiondata per bolag
-  bemanningsindex_kommuner_trend.csv - top 5 kommuner per bolag
+  bemanningsindex_trend.csv
+  bemanningsindex_regioner_trend.csv
+  bemanningsindex_kommuner_trend.csv
 """
 
 import urllib.request
@@ -34,9 +30,6 @@ import traceback
 from datetime import datetime, timedelta, timezone
 from collections import Counter
 
-# ── Task Scheduler: byt arbetsmapp till scriptets mapp ──────────────
-# Nar Task Scheduler kor ett script ar arbetsmappen ofta fel (t.ex. System32)
-# Det har gor att CSV-filerna alltid hamnar bredvid scriptet
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 SSL_CONTEXT = ssl.create_default_context()
@@ -44,27 +37,51 @@ SSL_CONTEXT.check_hostname = False
 SSL_CONTEXT.verify_mode = ssl.CERT_NONE
 
 # ── Bolag att folja ──────────────────────────────────────────────────
+# Format: "Visningsnamn": {"sokord": "...", "org_nr": ["nr1", "nr2"]}
+# sokord: bred sokning for att hitta annonserna
+# org_nr: filtrering pa exakt organisationsnummer i API-svaret
 BOLAG = {
-    "Manpower":            "Manpower",
-    "Lernia":              "Lernia",
-    "Adecco":              "Adecco",
-    "Perido":              "Perido",
-    "Randstad":            "Randstad",
-    "Academic Work":       "Academic Work Sweden",
-    "Studentconsulting":   "Studentconsulting",
-    "Poolia":              "Poolia",
-    "Uniflex":             "Uniflex",
-    "OnePartnerGroup":     "OnePartnerGroup",
-    "Skill":               "Skill Scandinavia",
-    "Arena Personal":      "Arena Personal",
-    "Tranpenad":           "Tranpenad",
-    "Jobandtalent":        "Jobandtalent",
-    "NearYou":             "NearYou",
-    "SJR":                 "SJR",
-    "Clockwork":           "Clockwork",
-    "Logent":              "Logent",
-    "Bemannia":            "Bemannia",
-    "Framtiden i Sverige": "Framtiden i Sverige",
+    "Manpower":            {"sokord": "Manpower",            "org_nr": ["5563481588"]},
+    "Lernia":              {"sokord": "Lernia",              "org_nr": ["5564727013"]},
+    "Adecco":              {"sokord": "Adecco",              "org_nr": ["5564472677"]},
+    "Perido":              {"sokord": "Perido",              "org_nr": ["5566396387"]},
+    "Randstad":            {"sokord": "Randstad",            "org_nr": ["5562421718", "5560896572"]},
+    "Academic Work":       {"sokord": "Academic Work",       "org_nr": ["5565595450"]},
+    "Studentconsulting":   {"sokord": "Studentconsulting",   "org_nr": ["5566747449"]},
+    "Poolia":              {"sokord": "Poolia",              "org_nr": ["5564267655"]},
+    "Uniflex":             {"sokord": "Uniflex",             "org_nr": ["5566370341"]},
+    "OnePartnerGroup":     {"sokord": "OnePartnerGroup",     "org_nr": [
+                                "5591178107", "5563190478", "5590758180", "5569974388",
+                                "5590413083", "5569466658", "5590939186", "5593283509",
+                                "5568773476", "5590928619", "5568432230", "5568615545",
+                                "5566766589", "5591571459", "5590937537", "5569584476",
+                                "5569278475",
+                            ]},
+    "Skill":               {"sokord": "Skill",               "org_nr": ["5566858618"]},
+    "Arena Personal":      {"sokord": "Arena Personal",      "org_nr": ["5566061916"]},
+    "Tranpenad":           {"sokord": "Tranpenad",           "org_nr": ["5565970364"]},
+    "Jobandtalent":        {"sokord": "Jobandtalent",        "org_nr": ["5591046148"]},
+    "NearYou":             {"sokord": "NearYou",             "org_nr": ["5566007273"]},
+    "SJR":                 {"sokord": "SJR",                 "org_nr": ["5566523980"]},
+    "Clockwork":           {"sokord": "Clockwork",           "org_nr": ["5569137325"]},
+    "Logent":              {"sokord": "Logent",              "org_nr": ["5590416714"]},
+    "Bemannia":            {"sokord": "Bemannia",            "org_nr": ["5566268347"]},
+    "Framtiden i Sverige": {"sokord": "Framtiden i Sverige", "org_nr": ["5566865142"]},
+    "Professionals Nord":  {"sokord": "Professionals Nord",  "org_nr": [
+                                "5594361650", "5593344665", "5595008029", "5592870405",
+                                "5593001885", "5593456899", "5592870454", "5593489031",
+                            ]},
+    "Bravura":             {"sokord": "Bravura Sverige",     "org_nr": ["5567520803"]},
+    "Jurek":               {"sokord": "Jurek Recruitment",   "org_nr": ["5566945324"]},
+    "TNG Group":           {"sokord": "TNG Group",           "org_nr": ["5566482781"]},
+    "Eterni Sweden":       {"sokord": "Eterni Sweden",       "org_nr": ["5568637283"]},
+    "Friday":              {"sokord": "Friday",              "org_nr": [
+                                "5591411326", "5592225253", "5594520750", "5594675117",
+                            ]},
+    "Gazella":             {"sokord": "Gazella",             "org_nr": ["5569733982"]},
+    "Insitepart":          {"sokord": "Insitepart",          "org_nr": ["5590245048"]},
+    "Wikan Personal":      {"sokord": "Wikan Personal",      "org_nr": ["5568427818"]},
+    "Konsultia":           {"sokord": "Konsultia",           "org_nr": ["5569380883"]},
 }
 
 API_NYCKEL  = ""
@@ -80,7 +97,6 @@ LOGGFIL   = "bemanningsindex_logg.txt"
 
 
 def logg(meddelande: str):
-    """Skriver till loggfil och terminal - syns aven fran Task Scheduler."""
     rad = f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}  {meddelande}"
     print(rad)
     with open(LOGGFIL, "a", encoding="utf-8") as f:
@@ -107,11 +123,13 @@ def api_request(url: str) -> dict:
         return json.loads(r.read())
 
 
-def hamta_alla(sokord: str, extra_params: dict = None) -> dict:
+def hamta_alla(sokord: str, org_nummers: list, extra_params: dict = None) -> dict:
     """
-    Paginerar genom alla annonser for ett bolag.
-    Filtrerar sa bara annonser dar arbetsgivaren faktiskt matchar raknas.
+    Soker brett pa sokord, filtrerar sedan pa org-nummer i svaret.
+    100% precision - matcher exakt ratt bolag/koncern.
     """
+    org_set = set(org_nummers)
+
     region_counter     = Counter()
     kommun_counter     = Counter()
     yrkesfalt_counter  = Counter()
@@ -146,8 +164,11 @@ def hamta_alla(sokord: str, extra_params: dict = None) -> dict:
             break
 
         for h in hits:
-            employer = h.get("employer", {}).get("name", "").lower()
-            if sokord.lower().split()[0] not in employer:
+            emp = h.get("employer", {})
+            org_nr = emp.get("organization_number", "")
+
+            # Filtrera pa org-nummer - 100% precision
+            if org_nr not in org_set:
                 continue
 
             antal_hits += 1
@@ -201,20 +222,18 @@ def hamta_alla(sokord: str, extra_params: dict = None) -> dict:
     }
 
 
-def hamta_detaljer(sokord: str) -> dict:
-    alla = hamta_alla(sokord)
+def hamta_detaljer(sokord: str, org_nummers: list) -> dict:
+    alla = hamta_alla(sokord, org_nummers)
 
-    # Nya senaste 14 dagar (aktivitetstakt - matchar publiceringscykeln)
     fjorton = (datetime.now(timezone.utc) - timedelta(days=14)).strftime(
         "%Y-%m-%dT%H:%M:%S"
     )
-    nya_14d = hamta_alla(sokord, extra_params={"published-after": fjorton})
+    nya_14d = hamta_alla(sokord, org_nummers, extra_params={"published-after": fjorton})
 
-    # Nya senaste 7 dagar (behalls for extra granularitet)
     sju = (datetime.now(timezone.utc) - timedelta(days=7)).strftime(
         "%Y-%m-%dT%H:%M:%S"
     )
-    nya_7d = hamta_alla(sokord, extra_params={"published-after": sju})
+    nya_7d = hamta_alla(sokord, org_nummers, extra_params={"published-after": sju})
 
     return {
         "total":               alla["total"],
@@ -223,7 +242,6 @@ def hamta_detaljer(sokord: str) -> dict:
         "nya_14d_tjanster":    nya_14d["tot_tjanster"],
         "nya_7d":              nya_7d["total"],
         "nya_7d_tjanster":     nya_7d["tot_tjanster"],
-        # Aktivitetstakt baseras pa 14 dagar
         "aktivitetstakt":      round(nya_14d["total"] / max(alla["total"], 1) * 100, 1),
         "reg_alla":            alla["region_counter"],
         "reg_nya":             nya_14d["region_counter"],
@@ -240,15 +258,15 @@ def hamta_detaljer(sokord: str) -> dict:
 
 def kor_analys():
     logg("=" * 65)
-    logg("BEMANNINGSINDEX v4")
+    logg("BEMANNINGSINDEX v7")
     logg(f"Arbetsmapp: {os.getcwd()}")
     logg("=" * 65)
 
     resultat = {}
-    for bolag, sokord in BOLAG.items():
+    for bolag, info in BOLAG.items():
         logg(f"  Hamtar: {bolag}...")
         try:
-            d = hamta_detaljer(sokord)
+            d = hamta_detaljer(info["sokord"], info["org_nr"])
             resultat[bolag] = d
 
             top3r  = d["reg_alla"].most_common(3)
@@ -259,12 +277,12 @@ def kor_analys():
             takt = d["aktivitetstakt"]
             pil  = "upp" if takt >= 30 else ("ok" if takt >= 15 else "ned")
 
-            logg(f"  {bolag:<22} {d['total']:>4} annonser / {d['tot_tjanster']:>5} tjanster")
-            logg(f"  {'':22} Nya 14d: {d['nya_14d']} ({takt}% aktivitetstakt {pil})")
-            logg(f"  {'':22} Nya 7d: {d['nya_7d']}")
-            logg(f"  {'':22} Heltid: {d['pct_heltid']}%  Tills vidare: {d['pct_tills_vidare']}%")
-            if reg_str: logg(f"  {'':22} Regioner: {reg_str}")
-            if yf_str:  logg(f"  {'':22} Yrkesomraden: {yf_str}")
+            logg(f"  {bolag:<25} {d['total']:>4} annonser / {d['tot_tjanster']:>5} tjanster")
+            logg(f"  {'':25} Nya 14d: {d['nya_14d']} ({takt}% aktivitetstakt {pil})")
+            logg(f"  {'':25} Nya 7d: {d['nya_7d']}")
+            logg(f"  {'':25} Heltid: {d['pct_heltid']}%  Tills vidare: {d['pct_tills_vidare']}%")
+            if reg_str: logg(f"  {'':25} Regioner: {reg_str}")
+            if yf_str:  logg(f"  {'':25} Yrkesomraden: {yf_str}")
             logg("")
 
         except Exception as e:
@@ -276,7 +294,6 @@ def kor_analys():
 
     def fmt(lst): return " | ".join(f"{k} ({v})" for k, v in lst)
 
-    # ── Huvudfil ─────────────────────────────────────────────────────
     huvud_ny = not os.path.exists(HUVUDFIL)
     with open(HUVUDFIL, "a", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f, delimiter=";")
@@ -310,7 +327,6 @@ def kor_analys():
                 fmt(d["yrkesgrupp"].most_common(5)),
             ])
 
-    # ── Regionfil ────────────────────────────────────────────────────
     reg_ny = not os.path.exists(REGIOFIL)
     with open(REGIOFIL, "a", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f, delimiter=";")
@@ -325,7 +341,6 @@ def kor_analys():
                     d["reg_nya"].get(region, 0),
                 ])
 
-    # ── Kommunfil ────────────────────────────────────────────────────
     kom_ny = not os.path.exists(KOMMUNFIL)
     with open(KOMMUNFIL, "a", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f, delimiter=";")
@@ -339,7 +354,7 @@ def kor_analys():
     logg(f"Sparat: {HUVUDFIL}")
     logg(f"Sparat: {REGIOFIL}")
     logg(f"Sparat: {KOMMUNFIL}")
-    logg("Kor varannan tisdag kl 07:00 for att bygga konkurrensanalys over tid.")
+    logg("Kor dagligen kl 08:00 for att bygga konkurrensanalys over tid.")
 
 
 if __name__ == "__main__":
