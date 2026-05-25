@@ -1,0 +1,12 @@
+OKÄNDA ARBETSGIVARE – 2026-05-25
+============================================================
+Antal okända: 7
+Kontrollera en gång i veckan och lägg till i ARBETSGIVARE_TYP
+
+  REGION DALARNA                                          totalt=24  [Sjuksköterska (24)]
+  Capgemini Engineering Sverige AB                        totalt=19  [Systemutvecklare (11), Mekanikkonstruktör (8)]
+  Athletic Work Nordic AB                                 totalt=8  [Lagerarbetare (8)]
+  Mölndals kommun                                         totalt=8  [Undersköterska (8)]
+  Equalis AB                                              totalt=1  [Ekonomiassistent (1)]
+  Klippan Safety AB                                       totalt=1  [Ekonomiassistent (1)]
+  Akhtar, Naeem                                           totalt=1  [Ekonomiassistent (1)]

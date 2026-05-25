@@ -3772,3 +3772,783 @@
 2026-05-22 08:47:48  Sparat: bemanningsindex_regioner_trend.csv
 2026-05-22 08:47:48  Sparat: bemanningsindex_kommuner_trend.csv
 2026-05-22 08:47:48  Kor dagligen kl 08:00 for att bygga konkurrensanalys over tid.
+2026-05-23 08:00:02  =================================================================
+2026-05-23 08:00:02  BEMANNINGSINDEX v7
+2026-05-23 08:00:02  Arbetsmapp: C:\Users\Fahmi\Documents\Arbetsmarknadsindex
+2026-05-23 08:00:02  =================================================================
+2026-05-23 08:00:02    Hamtar: Manpower...
+2026-05-23 08:00:02    Manpower                    53 annonser /   186 tjanster
+2026-05-23 08:00:02                              Nya 14d: 29 (54.7% aktivitetstakt upp)
+2026-05-23 08:00:02                              Nya 7d: 23
+2026-05-23 08:00:02                              Heltid: 62.3%  Tills vidare: 7.5%
+2026-05-23 08:00:02                              Regioner: Västra Götalands län (15)  |  Stockholms län (8)  |  Skåne län (7)
+2026-05-23 08:00:02                              Yrkesomraden: Industriell tillverkning (22)  |  Administration, ekonomi, juridik (14)  |  Transport, distribution, lager (11)
+2026-05-23 08:00:02  
+2026-05-23 08:00:02    Hamtar: Lernia...
+2026-05-23 08:00:04    Lernia                     180 annonser /   238 tjanster
+2026-05-23 08:00:04                              Nya 14d: 73 (40.6% aktivitetstakt upp)
+2026-05-23 08:00:04                              Nya 7d: 48
+2026-05-23 08:00:04                              Heltid: 81.7%  Tills vidare: 17.8%
+2026-05-23 08:00:04                              Regioner: Västra Götalands län (47)  |  Hallands län (35)  |  Jönköpings län (14)
+2026-05-23 08:00:04                              Yrkesomraden: Industriell tillverkning (80)  |  Transport, distribution, lager (41)  |  Installation, drift, underhåll (18)
+2026-05-23 08:00:04  
+2026-05-23 08:00:04    Hamtar: Adecco...
+2026-05-23 08:00:05    Adecco                     161 annonser /   327 tjanster
+2026-05-23 08:00:05                              Nya 14d: 92 (57.1% aktivitetstakt upp)
+2026-05-23 08:00:05                              Nya 7d: 58
+2026-05-23 08:00:05                              Heltid: 83.2%  Tills vidare: 23.0%
+2026-05-23 08:00:05                              Regioner: Stockholms län (25)  |  Västra Götalands län (21)  |  Skåne län (19)
+2026-05-23 08:00:05                              Yrkesomraden: Administration, ekonomi, juridik (34)  |  Industriell tillverkning (33)  |  Transport, distribution, lager (26)
+2026-05-23 08:00:05  
+2026-05-23 08:00:05    Hamtar: Perido...
+2026-05-23 08:00:05    Perido                      28 annonser /    29 tjanster
+2026-05-23 08:00:05                              Nya 14d: 18 (64.3% aktivitetstakt upp)
+2026-05-23 08:00:05                              Nya 7d: 11
+2026-05-23 08:00:05                              Heltid: 82.1%  Tills vidare: 21.4%
+2026-05-23 08:00:05                              Regioner: Stockholms län (14)  |  Västra Götalands län (8)  |  Östergötlands län (4)
+2026-05-23 08:00:05                              Yrkesomraden: Administration, ekonomi, juridik (11)  |  Försäljning, inköp, marknadsföring (8)  |  Data/IT (7)
+2026-05-23 08:00:05  
+2026-05-23 08:00:05    Hamtar: Randstad...
+2026-05-23 08:00:07    Randstad                   154 annonser /   337 tjanster
+2026-05-23 08:00:07                              Nya 14d: 67 (43.5% aktivitetstakt upp)
+2026-05-23 08:00:07                              Nya 7d: 41
+2026-05-23 08:00:07                              Heltid: 98.1%  Tills vidare: 31.8%
+2026-05-23 08:00:07                              Regioner: Västra Götalands län (47)  |  Stockholms län (34)  |  Östergötlands län (21)
+2026-05-23 08:00:07                              Yrkesomraden: Administration, ekonomi, juridik (29)  |  Yrken med teknisk inriktning (22)  |  Installation, drift, underhåll (20)
+2026-05-23 08:00:07  
+2026-05-23 08:00:07    Hamtar: Academic Work...
+2026-05-23 08:00:20    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-23 08:00:33    Academic Work              392 annonser /   392 tjanster
+2026-05-23 08:00:33                              Nya 14d: 157 (40.1% aktivitetstakt upp)
+2026-05-23 08:00:33                              Nya 7d: 102
+2026-05-23 08:00:33                              Heltid: 84.7%  Tills vidare: 13.8%
+2026-05-23 08:00:33                              Regioner: Stockholms län (133)  |  Skåne län (53)  |  Västra Götalands län (42)
+2026-05-23 08:00:33                              Yrkesomraden: Administration, ekonomi, juridik (97)  |  Yrken med teknisk inriktning (78)  |  Data/IT (73)
+2026-05-23 08:00:33  
+2026-05-23 08:00:33    Hamtar: Studentconsulting...
+2026-05-23 08:00:36    Studentconsulting          256 annonser /   766 tjanster
+2026-05-23 08:00:36                              Nya 14d: 132 (51.6% aktivitetstakt upp)
+2026-05-23 08:00:36                              Nya 7d: 74
+2026-05-23 08:00:36                              Heltid: 71.1%  Tills vidare: 0.0%
+2026-05-23 08:00:36                              Regioner: Skåne län (46)  |  Västra Götalands län (41)  |  Norrbottens län (34)
+2026-05-23 08:00:36                              Yrkesomraden: Transport, distribution, lager (111)  |  Administration, ekonomi, juridik (47)  |  Försäljning, inköp, marknadsföring (25)
+2026-05-23 08:00:36  
+2026-05-23 08:00:36    Hamtar: Poolia...
+2026-05-23 08:00:37    Poolia                      76 annonser /    78 tjanster
+2026-05-23 08:00:37                              Nya 14d: 60 (78.9% aktivitetstakt upp)
+2026-05-23 08:00:37                              Nya 7d: 36
+2026-05-23 08:00:37                              Heltid: 59.2%  Tills vidare: 22.4%
+2026-05-23 08:00:37                              Regioner: Stockholms län (19)  |  Östergötlands län (17)  |  Skåne län (12)
+2026-05-23 08:00:37                              Yrkesomraden: Administration, ekonomi, juridik (32)  |  Försäljning, inköp, marknadsföring (18)  |  Data/IT (8)
+2026-05-23 08:00:37  
+2026-05-23 08:00:37    Hamtar: Uniflex...
+2026-05-23 08:00:38    Uniflex                    174 annonser /   378 tjanster
+2026-05-23 08:00:38                              Nya 14d: 94 (54.0% aktivitetstakt upp)
+2026-05-23 08:00:38                              Nya 7d: 47
+2026-05-23 08:00:38                              Heltid: 87.9%  Tills vidare: 22.4%
+2026-05-23 08:00:38                              Regioner: Västra Götalands län (31)  |  Jönköpings län (28)  |  Stockholms län (25)
+2026-05-23 08:00:38                              Yrkesomraden: Industriell tillverkning (63)  |  Transport, distribution, lager (47)  |  Bygg och anläggning (22)
+2026-05-23 08:00:38  
+2026-05-23 08:00:38    Hamtar: OnePartnerGroup...
+2026-05-23 08:00:39    OnePartnerGroup            173 annonser /   256 tjanster
+2026-05-23 08:00:39                              Nya 14d: 88 (50.9% aktivitetstakt upp)
+2026-05-23 08:00:39                              Nya 7d: 40
+2026-05-23 08:00:39                              Heltid: 93.6%  Tills vidare: 83.2%
+2026-05-23 08:00:39                              Regioner: Västra Götalands län (35)  |  Jönköpings län (32)  |  Gävleborgs län (14)
+2026-05-23 08:00:39                              Yrkesomraden: Industriell tillverkning (47)  |  Transport, distribution, lager (30)  |  Installation, drift, underhåll (21)
+2026-05-23 08:00:39  
+2026-05-23 08:00:39    Hamtar: Skill...
+2026-05-23 08:00:41    Skill                       82 annonser /    84 tjanster
+2026-05-23 08:00:41                              Nya 14d: 37 (45.1% aktivitetstakt upp)
+2026-05-23 08:00:41                              Nya 7d: 21
+2026-05-23 08:00:41                              Heltid: 87.8%  Tills vidare: 36.6%
+2026-05-23 08:00:41                              Regioner: Östergötlands län (58)  |  Västra Götalands län (16)  |  Jönköpings län (2)
+2026-05-23 08:00:41                              Yrkesomraden: Yrken med teknisk inriktning (23)  |  Industriell tillverkning (20)  |  Administration, ekonomi, juridik (13)
+2026-05-23 08:00:41  
+2026-05-23 08:00:41    Hamtar: Arena Personal...
+2026-05-23 08:00:53    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-23 08:01:06    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-23 08:01:19    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-23 08:01:19    Arena Personal             107 annonser /   107 tjanster
+2026-05-23 08:01:19                              Nya 14d: 64 (59.8% aktivitetstakt upp)
+2026-05-23 08:01:19                              Nya 7d: 56
+2026-05-23 08:01:19                              Heltid: 74.8%  Tills vidare: 47.7%
+2026-05-23 08:01:19                              Regioner: Södermanlands län (33)  |  Stockholms län (29)  |  Skåne län (9)
+2026-05-23 08:01:19                              Yrkesomraden: Transport, distribution, lager (76)  |  Installation, drift, underhåll (7)  |  Sanering och renhållning (7)
+2026-05-23 08:01:19  
+2026-05-23 08:01:19    Hamtar: Tranpenad...
+2026-05-23 08:01:19    Tranpenad                   38 annonser /    56 tjanster
+2026-05-23 08:01:19                              Nya 14d: 8 (21.1% aktivitetstakt ok)
+2026-05-23 08:01:19                              Nya 7d: 4
+2026-05-23 08:01:19                              Heltid: 73.7%  Tills vidare: 23.7%
+2026-05-23 08:01:19                              Regioner: Västra Götalands län (21)  |  Stockholms län (6)  |  Uppsala län (5)
+2026-05-23 08:01:19                              Yrkesomraden: Transport, distribution, lager (32)  |  Yrken med teknisk inriktning (3)  |  Industriell tillverkning (1)
+2026-05-23 08:01:19  
+2026-05-23 08:01:19    Hamtar: Jobandtalent...
+2026-05-23 08:01:21    Jobandtalent               128 annonser /   143 tjanster
+2026-05-23 08:01:21                              Nya 14d: 62 (48.4% aktivitetstakt upp)
+2026-05-23 08:01:21                              Nya 7d: 37
+2026-05-23 08:01:21                              Heltid: 58.6%  Tills vidare: 14.8%
+2026-05-23 08:01:21                              Regioner: Östergötlands län (39)  |  Västra Götalands län (20)  |  Skåne län (15)
+2026-05-23 08:01:21                              Yrkesomraden: Transport, distribution, lager (50)  |  Försäljning, inköp, marknadsföring (28)  |  Industriell tillverkning (15)
+2026-05-23 08:01:21  
+2026-05-23 08:01:21    Hamtar: NearYou...
+2026-05-23 08:01:21    NearYou                     84 annonser /   126 tjanster
+2026-05-23 08:01:21                              Nya 14d: 48 (57.1% aktivitetstakt upp)
+2026-05-23 08:01:21                              Nya 7d: 34
+2026-05-23 08:01:21                              Heltid: 91.7%  Tills vidare: 45.2%
+2026-05-23 08:01:21                              Regioner: Västra Götalands län (61)  |  Jönköpings län (10)  |  Kalmar län (6)
+2026-05-23 08:01:21                              Yrkesomraden: Industriell tillverkning (36)  |  Transport, distribution, lager (19)  |  Yrken med teknisk inriktning (9)
+2026-05-23 08:01:21  
+2026-05-23 08:01:21    Hamtar: SJR...
+2026-05-23 08:01:22    SJR                         27 annonser /    27 tjanster
+2026-05-23 08:01:22                              Nya 14d: 18 (66.7% aktivitetstakt upp)
+2026-05-23 08:01:22                              Nya 7d: 11
+2026-05-23 08:01:22                              Heltid: 40.7%  Tills vidare: 40.7%
+2026-05-23 08:01:22                              Regioner: Stockholms län (15)  |  Västra Götalands län (5)  |  Uppsala län (4)
+2026-05-23 08:01:22                              Yrkesomraden: Administration, ekonomi, juridik (22)  |  Chefer och verksamhetsledare (3)  |  Data/IT (1)
+2026-05-23 08:01:22  
+2026-05-23 08:01:22    Hamtar: Clockwork...
+2026-05-23 08:01:22    Clockwork                   54 annonser /    88 tjanster
+2026-05-23 08:01:22                              Nya 14d: 35 (64.8% aktivitetstakt upp)
+2026-05-23 08:01:22                              Nya 7d: 21
+2026-05-23 08:01:22                              Heltid: 75.9%  Tills vidare: 38.9%
+2026-05-23 08:01:22                              Regioner: Dalarnas län (19)  |  Stockholms län (12)  |  Gävleborgs län (8)
+2026-05-23 08:01:22                              Yrkesomraden: Administration, ekonomi, juridik (13)  |  Industriell tillverkning (8)  |  Pedagogik (8)
+2026-05-23 08:01:22  
+2026-05-23 08:01:22    Hamtar: Logent...
+2026-05-23 08:01:23    Logent                      33 annonser /    46 tjanster
+2026-05-23 08:01:23                              Nya 14d: 12 (36.4% aktivitetstakt upp)
+2026-05-23 08:01:23                              Nya 7d: 8
+2026-05-23 08:01:23                              Heltid: 75.8%  Tills vidare: 24.2%
+2026-05-23 08:01:23                              Regioner: Skåne län (13)  |  Västra Götalands län (8)  |  Stockholms län (7)
+2026-05-23 08:01:23                              Yrkesomraden: Transport, distribution, lager (18)  |  Industriell tillverkning (5)  |  Installation, drift, underhåll (3)
+2026-05-23 08:01:23  
+2026-05-23 08:01:23    Hamtar: Bemannia...
+2026-05-23 08:01:23    Bemannia                    29 annonser /    30 tjanster
+2026-05-23 08:01:23                              Nya 14d: 20 (69.0% aktivitetstakt upp)
+2026-05-23 08:01:23                              Nya 7d: 12
+2026-05-23 08:01:23                              Heltid: 44.8%  Tills vidare: 13.8%
+2026-05-23 08:01:23                              Regioner: Stockholms län (16)  |  Västra Götalands län (4)  |  Södermanlands län (2)
+2026-05-23 08:01:23                              Yrkesomraden: Administration, ekonomi, juridik (10)  |  Sanering och renhållning (6)  |  Pedagogik (5)
+2026-05-23 08:01:23  
+2026-05-23 08:01:23    Hamtar: Framtiden i Sverige...
+2026-05-23 08:01:36    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-23 08:01:50    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-23 08:02:02    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-23 08:02:02    Framtiden i Sverige        168 annonser /   169 tjanster
+2026-05-23 08:02:02                              Nya 14d: 61 (36.3% aktivitetstakt upp)
+2026-05-23 08:02:02                              Nya 7d: 30
+2026-05-23 08:02:02                              Heltid: 98.8%  Tills vidare: 98.2%
+2026-05-23 08:02:02                              Regioner: Östergötlands län (39)  |  Stockholms län (27)  |  Västra Götalands län (24)
+2026-05-23 08:02:02                              Yrkesomraden: Yrken med teknisk inriktning (71)  |  Data/IT (34)  |  Bygg och anläggning (17)
+2026-05-23 08:02:02  
+2026-05-23 08:02:02    Hamtar: Professionals Nord...
+2026-05-23 08:02:09    Professionals Nord         162 annonser /   187 tjanster
+2026-05-23 08:02:09                              Nya 14d: 67 (41.4% aktivitetstakt upp)
+2026-05-23 08:02:09                              Nya 7d: 35
+2026-05-23 08:02:09                              Heltid: 92.6%  Tills vidare: 80.2%
+2026-05-23 08:02:09                              Regioner: Norrbottens län (68)  |  Stockholms län (16)  |  Västra Götalands län (16)
+2026-05-23 08:02:09                              Yrkesomraden: Bygg och anläggning (39)  |  Installation, drift, underhåll (24)  |  Data/IT (17)
+2026-05-23 08:02:09  
+2026-05-23 08:02:09    Hamtar: Bravura...
+2026-05-23 08:02:10    Bravura                    149 annonser /   149 tjanster
+2026-05-23 08:02:10                              Nya 14d: 62 (41.6% aktivitetstakt upp)
+2026-05-23 08:02:10                              Nya 7d: 45
+2026-05-23 08:02:10                              Heltid: 87.2%  Tills vidare: 67.8%
+2026-05-23 08:02:10                              Regioner: Stockholms län (61)  |  Skåne län (22)  |  Västra Götalands län (21)
+2026-05-23 08:02:10                              Yrkesomraden: Försäljning, inköp, marknadsföring (37)  |  Data/IT (27)  |  Administration, ekonomi, juridik (20)
+2026-05-23 08:02:10  
+2026-05-23 08:02:10    Hamtar: Jurek...
+2026-05-23 08:02:22    Jurek                       35 annonser /    35 tjanster
+2026-05-23 08:02:22                              Nya 14d: 15 (42.9% aktivitetstakt upp)
+2026-05-23 08:02:22                              Nya 7d: 10
+2026-05-23 08:02:22                              Heltid: 60.0%  Tills vidare: 25.7%
+2026-05-23 08:02:22                              Regioner: Stockholms län (20)  |  Västra Götalands län (9)  |  Uppsala län (2)
+2026-05-23 08:02:22                              Yrkesomraden: Administration, ekonomi, juridik (26)  |  Chefer och verksamhetsledare (3)  |  Försäljning, inköp, marknadsföring (2)
+2026-05-23 08:02:22  
+2026-05-23 08:02:22    Hamtar: TNG Group...
+2026-05-23 08:02:36    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-23 08:02:45    TNG Group                   52 annonser /    52 tjanster
+2026-05-23 08:02:45                              Nya 14d: 23 (44.2% aktivitetstakt upp)
+2026-05-23 08:02:45                              Nya 7d: 15
+2026-05-23 08:02:45                              Heltid: 90.4%  Tills vidare: 73.1%
+2026-05-23 08:02:45                              Regioner: Stockholms län (28)  |  Västra Götalands län (9)  |  Skåne län (6)
+2026-05-23 08:02:45                              Yrkesomraden: Data/IT (20)  |  Försäljning, inköp, marknadsföring (10)  |  Yrken med teknisk inriktning (6)
+2026-05-23 08:02:45  
+2026-05-23 08:02:45    Hamtar: Eterni Sweden...
+2026-05-23 08:02:58    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-23 08:03:13    Eterni Sweden               90 annonser /   202 tjanster
+2026-05-23 08:03:13                              Nya 14d: 65 (72.2% aktivitetstakt upp)
+2026-05-23 08:03:13                              Nya 7d: 35
+2026-05-23 08:03:13                              Heltid: 93.3%  Tills vidare: 100.0%
+2026-05-23 08:03:13                              Regioner: Kronobergs län (22)  |  Jönköpings län (18)  |  Västra Götalands län (11)
+2026-05-23 08:03:13                              Yrkesomraden: Industriell tillverkning (34)  |  Transport, distribution, lager (21)  |  Installation, drift, underhåll (11)
+2026-05-23 08:03:13  
+2026-05-23 08:03:13    Hamtar: Friday...
+2026-05-23 08:03:14    Friday                     135 annonser /   146 tjanster
+2026-05-23 08:03:14                              Nya 14d: 42 (31.1% aktivitetstakt upp)
+2026-05-23 08:03:14                              Nya 7d: 23
+2026-05-23 08:03:14                              Heltid: 98.5%  Tills vidare: 97.0%
+2026-05-23 08:03:14                              Regioner: Västra Götalands län (43)  |  Stockholms län (32)  |  Östergötlands län (23)
+2026-05-23 08:03:14                              Yrkesomraden: Yrken med teknisk inriktning (61)  |  Data/IT (44)  |  Försäljning, inköp, marknadsföring (14)
+2026-05-23 08:03:14  
+2026-05-23 08:03:14    Hamtar: Gazella...
+2026-05-23 08:03:15    Gazella                      3 annonser /     3 tjanster
+2026-05-23 08:03:15                              Nya 14d: 3 (100.0% aktivitetstakt upp)
+2026-05-23 08:03:15                              Nya 7d: 2
+2026-05-23 08:03:15                              Heltid: 100.0%  Tills vidare: 66.7%
+2026-05-23 08:03:15                              Regioner: Stockholms län (3)
+2026-05-23 08:03:15                              Yrkesomraden: Administration, ekonomi, juridik (3)
+2026-05-23 08:03:15  
+2026-05-23 08:03:15    Hamtar: Insitepart...
+2026-05-23 08:03:15    Insitepart                  25 annonser /    29 tjanster
+2026-05-23 08:03:15                              Nya 14d: 13 (52.0% aktivitetstakt upp)
+2026-05-23 08:03:15                              Nya 7d: 6
+2026-05-23 08:03:15                              Heltid: 60.0%  Tills vidare: 20.0%
+2026-05-23 08:03:15                              Regioner: Stockholms län (9)  |  Jönköpings län (7)  |  Örebro län (3)
+2026-05-23 08:03:15                              Yrkesomraden: Transport, distribution, lager (20)  |  Försäljning, inköp, marknadsföring (2)  |  Yrken med teknisk inriktning (2)
+2026-05-23 08:03:15  
+2026-05-23 08:03:15    Hamtar: Wikan Personal...
+2026-05-23 08:03:28    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-23 08:03:41    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-23 08:03:54    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-23 08:03:54    Wikan Personal              75 annonser /    97 tjanster
+2026-05-23 08:03:54                              Nya 14d: 51 (68.0% aktivitetstakt upp)
+2026-05-23 08:03:54                              Nya 7d: 33
+2026-05-23 08:03:54                              Heltid: 98.7%  Tills vidare: 44.0%
+2026-05-23 08:03:54                              Regioner: Skåne län (29)  |  Västerbottens län (12)  |  Gävleborgs län (10)
+2026-05-23 08:03:54                              Yrkesomraden: Industriell tillverkning (27)  |  Installation, drift, underhåll (10)  |  Transport, distribution, lager (10)
+2026-05-23 08:03:54  
+2026-05-23 08:03:54    Hamtar: Konsultia...
+2026-05-23 08:03:54    Konsultia                   55 annonser /   125 tjanster
+2026-05-23 08:03:54                              Nya 14d: 23 (41.8% aktivitetstakt upp)
+2026-05-23 08:03:54                              Nya 7d: 13
+2026-05-23 08:03:54                              Heltid: 98.2%  Tills vidare: 27.3%
+2026-05-23 08:03:54                              Regioner: Västra Götalands län (15)  |  Norrbottens län (13)  |  Västerbottens län (5)
+2026-05-23 08:03:54                              Yrkesomraden: Industriell tillverkning (25)  |  Administration, ekonomi, juridik (9)  |  Transport, distribution, lager (8)
+2026-05-23 08:03:54  
+2026-05-23 08:03:54  Sparat: bemanningsindex_trend.csv
+2026-05-23 08:03:54  Sparat: bemanningsindex_regioner_trend.csv
+2026-05-23 08:03:54  Sparat: bemanningsindex_kommuner_trend.csv
+2026-05-23 08:03:54  Kor dagligen kl 08:00 for att bygga konkurrensanalys over tid.
+2026-05-24 09:11:26  =================================================================
+2026-05-24 09:11:26  BEMANNINGSINDEX v7
+2026-05-24 09:11:26  Arbetsmapp: C:\Users\Fahmi\Documents\Arbetsmarknadsindex
+2026-05-24 09:11:26  =================================================================
+2026-05-24 09:11:26    Hamtar: Manpower...
+2026-05-24 09:11:27    Manpower                    53 annonser /   186 tjanster
+2026-05-24 09:11:27                              Nya 14d: 29 (54.7% aktivitetstakt upp)
+2026-05-24 09:11:27                              Nya 7d: 23
+2026-05-24 09:11:27                              Heltid: 62.3%  Tills vidare: 7.5%
+2026-05-24 09:11:27                              Regioner: Västra Götalands län (15)  |  Stockholms län (8)  |  Skåne län (7)
+2026-05-24 09:11:27                              Yrkesomraden: Industriell tillverkning (22)  |  Administration, ekonomi, juridik (14)  |  Transport, distribution, lager (11)
+2026-05-24 09:11:27  
+2026-05-24 09:11:27    Hamtar: Lernia...
+2026-05-24 09:11:29    Lernia                     180 annonser /   238 tjanster
+2026-05-24 09:11:29                              Nya 14d: 73 (40.6% aktivitetstakt upp)
+2026-05-24 09:11:29                              Nya 7d: 48
+2026-05-24 09:11:29                              Heltid: 81.7%  Tills vidare: 17.8%
+2026-05-24 09:11:29                              Regioner: Västra Götalands län (47)  |  Hallands län (35)  |  Jönköpings län (14)
+2026-05-24 09:11:29                              Yrkesomraden: Industriell tillverkning (80)  |  Transport, distribution, lager (41)  |  Installation, drift, underhåll (18)
+2026-05-24 09:11:29  
+2026-05-24 09:11:29    Hamtar: Adecco...
+2026-05-24 09:11:30    Adecco                     159 annonser /   325 tjanster
+2026-05-24 09:11:30                              Nya 14d: 92 (57.9% aktivitetstakt upp)
+2026-05-24 09:11:30                              Nya 7d: 58
+2026-05-24 09:11:30                              Heltid: 83.0%  Tills vidare: 23.3%
+2026-05-24 09:11:30                              Regioner: Stockholms län (25)  |  Västra Götalands län (21)  |  Norrbottens län (17)
+2026-05-24 09:11:30                              Yrkesomraden: Administration, ekonomi, juridik (33)  |  Industriell tillverkning (33)  |  Transport, distribution, lager (26)
+2026-05-24 09:11:30  
+2026-05-24 09:11:30    Hamtar: Perido...
+2026-05-24 09:11:31    Perido                      28 annonser /    29 tjanster
+2026-05-24 09:11:31                              Nya 14d: 18 (64.3% aktivitetstakt upp)
+2026-05-24 09:11:31                              Nya 7d: 11
+2026-05-24 09:11:31                              Heltid: 82.1%  Tills vidare: 21.4%
+2026-05-24 09:11:31                              Regioner: Stockholms län (14)  |  Västra Götalands län (8)  |  Östergötlands län (4)
+2026-05-24 09:11:31                              Yrkesomraden: Administration, ekonomi, juridik (11)  |  Försäljning, inköp, marknadsföring (8)  |  Data/IT (7)
+2026-05-24 09:11:31  
+2026-05-24 09:11:31    Hamtar: Randstad...
+2026-05-24 09:11:32    Randstad                   154 annonser /   337 tjanster
+2026-05-24 09:11:32                              Nya 14d: 67 (43.5% aktivitetstakt upp)
+2026-05-24 09:11:32                              Nya 7d: 41
+2026-05-24 09:11:32                              Heltid: 98.1%  Tills vidare: 31.8%
+2026-05-24 09:11:32                              Regioner: Västra Götalands län (47)  |  Stockholms län (34)  |  Östergötlands län (21)
+2026-05-24 09:11:32                              Yrkesomraden: Administration, ekonomi, juridik (29)  |  Yrken med teknisk inriktning (22)  |  Installation, drift, underhåll (20)
+2026-05-24 09:11:32  
+2026-05-24 09:11:32    Hamtar: Academic Work...
+2026-05-24 09:11:46    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-24 09:11:59    Academic Work              389 annonser /   389 tjanster
+2026-05-24 09:11:59                              Nya 14d: 157 (40.4% aktivitetstakt upp)
+2026-05-24 09:11:59                              Nya 7d: 102
+2026-05-24 09:11:59                              Heltid: 84.6%  Tills vidare: 13.4%
+2026-05-24 09:11:59                              Regioner: Stockholms län (132)  |  Skåne län (53)  |  Västra Götalands län (42)
+2026-05-24 09:11:59                              Yrkesomraden: Administration, ekonomi, juridik (96)  |  Yrken med teknisk inriktning (77)  |  Data/IT (73)
+2026-05-24 09:11:59  
+2026-05-24 09:11:59    Hamtar: Studentconsulting...
+2026-05-24 09:12:01    Studentconsulting          255 annonser /   746 tjanster
+2026-05-24 09:12:01                              Nya 14d: 131 (51.4% aktivitetstakt upp)
+2026-05-24 09:12:01                              Nya 7d: 73
+2026-05-24 09:12:01                              Heltid: 71.4%  Tills vidare: 0.0%
+2026-05-24 09:12:01                              Regioner: Skåne län (46)  |  Västra Götalands län (41)  |  Norrbottens län (34)
+2026-05-24 09:12:01                              Yrkesomraden: Transport, distribution, lager (110)  |  Administration, ekonomi, juridik (47)  |  Försäljning, inköp, marknadsföring (25)
+2026-05-24 09:12:01  
+2026-05-24 09:12:01    Hamtar: Poolia...
+2026-05-24 09:12:02    Poolia                      73 annonser /    75 tjanster
+2026-05-24 09:12:02                              Nya 14d: 57 (78.1% aktivitetstakt upp)
+2026-05-24 09:12:02                              Nya 7d: 35
+2026-05-24 09:12:02                              Heltid: 60.3%  Tills vidare: 23.3%
+2026-05-24 09:12:02                              Regioner: Stockholms län (18)  |  Östergötlands län (17)  |  Skåne län (12)
+2026-05-24 09:12:02                              Yrkesomraden: Administration, ekonomi, juridik (31)  |  Försäljning, inköp, marknadsföring (18)  |  Data/IT (8)
+2026-05-24 09:12:02  
+2026-05-24 09:12:02    Hamtar: Uniflex...
+2026-05-24 09:12:03    Uniflex                    168 annonser /   362 tjanster
+2026-05-24 09:12:03                              Nya 14d: 93 (55.4% aktivitetstakt upp)
+2026-05-24 09:12:03                              Nya 7d: 45
+2026-05-24 09:12:03                              Heltid: 88.1%  Tills vidare: 23.2%
+2026-05-24 09:12:03                              Regioner: Västra Götalands län (31)  |  Jönköpings län (26)  |  Stockholms län (25)
+2026-05-24 09:12:03                              Yrkesomraden: Industriell tillverkning (61)  |  Transport, distribution, lager (45)  |  Bygg och anläggning (22)
+2026-05-24 09:12:03  
+2026-05-24 09:12:03    Hamtar: OnePartnerGroup...
+2026-05-24 09:12:05    OnePartnerGroup            171 annonser /   254 tjanster
+2026-05-24 09:12:05                              Nya 14d: 88 (51.5% aktivitetstakt upp)
+2026-05-24 09:12:05                              Nya 7d: 40
+2026-05-24 09:12:05                              Heltid: 93.6%  Tills vidare: 83.0%
+2026-05-24 09:12:05                              Regioner: Västra Götalands län (35)  |  Jönköpings län (32)  |  Gävleborgs län (13)
+2026-05-24 09:12:05                              Yrkesomraden: Industriell tillverkning (47)  |  Transport, distribution, lager (30)  |  Installation, drift, underhåll (21)
+2026-05-24 09:12:05  
+2026-05-24 09:12:05    Hamtar: Skill...
+2026-05-24 09:12:06    Skill                       82 annonser /    84 tjanster
+2026-05-24 09:12:06                              Nya 14d: 37 (45.1% aktivitetstakt upp)
+2026-05-24 09:12:06                              Nya 7d: 21
+2026-05-24 09:12:06                              Heltid: 87.8%  Tills vidare: 36.6%
+2026-05-24 09:12:06                              Regioner: Östergötlands län (58)  |  Västra Götalands län (16)  |  Jönköpings län (2)
+2026-05-24 09:12:06                              Yrkesomraden: Yrken med teknisk inriktning (23)  |  Industriell tillverkning (20)  |  Administration, ekonomi, juridik (13)
+2026-05-24 09:12:06  
+2026-05-24 09:12:06    Hamtar: Arena Personal...
+2026-05-24 09:12:18    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-24 09:12:30    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-24 09:12:43    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-24 09:12:43    Arena Personal             107 annonser /   107 tjanster
+2026-05-24 09:12:43                              Nya 14d: 64 (59.8% aktivitetstakt upp)
+2026-05-24 09:12:43                              Nya 7d: 56
+2026-05-24 09:12:43                              Heltid: 74.8%  Tills vidare: 47.7%
+2026-05-24 09:12:43                              Regioner: Södermanlands län (33)  |  Stockholms län (29)  |  Skåne län (9)
+2026-05-24 09:12:43                              Yrkesomraden: Transport, distribution, lager (76)  |  Installation, drift, underhåll (7)  |  Sanering och renhållning (7)
+2026-05-24 09:12:43  
+2026-05-24 09:12:43    Hamtar: Tranpenad...
+2026-05-24 09:12:44    Tranpenad                   38 annonser /    56 tjanster
+2026-05-24 09:12:44                              Nya 14d: 8 (21.1% aktivitetstakt ok)
+2026-05-24 09:12:44                              Nya 7d: 4
+2026-05-24 09:12:44                              Heltid: 73.7%  Tills vidare: 23.7%
+2026-05-24 09:12:44                              Regioner: Västra Götalands län (21)  |  Stockholms län (6)  |  Uppsala län (5)
+2026-05-24 09:12:44                              Yrkesomraden: Transport, distribution, lager (32)  |  Yrken med teknisk inriktning (3)  |  Industriell tillverkning (1)
+2026-05-24 09:12:44  
+2026-05-24 09:12:44    Hamtar: Jobandtalent...
+2026-05-24 09:12:45    Jobandtalent               128 annonser /   143 tjanster
+2026-05-24 09:12:45                              Nya 14d: 62 (48.4% aktivitetstakt upp)
+2026-05-24 09:12:45                              Nya 7d: 37
+2026-05-24 09:12:45                              Heltid: 58.6%  Tills vidare: 14.8%
+2026-05-24 09:12:45                              Regioner: Östergötlands län (39)  |  Västra Götalands län (20)  |  Skåne län (15)
+2026-05-24 09:12:45                              Yrkesomraden: Transport, distribution, lager (50)  |  Försäljning, inköp, marknadsföring (28)  |  Industriell tillverkning (15)
+2026-05-24 09:12:45  
+2026-05-24 09:12:45    Hamtar: NearYou...
+2026-05-24 09:12:45    NearYou                     79 annonser /   120 tjanster
+2026-05-24 09:12:45                              Nya 14d: 48 (60.8% aktivitetstakt upp)
+2026-05-24 09:12:45                              Nya 7d: 34
+2026-05-24 09:12:45                              Heltid: 92.4%  Tills vidare: 44.3%
+2026-05-24 09:12:45                              Regioner: Västra Götalands län (57)  |  Jönköpings län (10)  |  Kalmar län (6)
+2026-05-24 09:12:45                              Yrkesomraden: Industriell tillverkning (34)  |  Transport, distribution, lager (17)  |  Yrken med teknisk inriktning (8)
+2026-05-24 09:12:45  
+2026-05-24 09:12:45    Hamtar: SJR...
+2026-05-24 09:12:46    SJR                         27 annonser /    27 tjanster
+2026-05-24 09:12:46                              Nya 14d: 18 (66.7% aktivitetstakt upp)
+2026-05-24 09:12:46                              Nya 7d: 11
+2026-05-24 09:12:46                              Heltid: 40.7%  Tills vidare: 40.7%
+2026-05-24 09:12:46                              Regioner: Stockholms län (15)  |  Västra Götalands län (5)  |  Uppsala län (4)
+2026-05-24 09:12:46                              Yrkesomraden: Administration, ekonomi, juridik (22)  |  Chefer och verksamhetsledare (3)  |  Data/IT (1)
+2026-05-24 09:12:46  
+2026-05-24 09:12:46    Hamtar: Clockwork...
+2026-05-24 09:12:46    Clockwork                   53 annonser /    87 tjanster
+2026-05-24 09:12:46                              Nya 14d: 35 (66.0% aktivitetstakt upp)
+2026-05-24 09:12:46                              Nya 7d: 21
+2026-05-24 09:12:46                              Heltid: 75.5%  Tills vidare: 39.6%
+2026-05-24 09:12:46                              Regioner: Dalarnas län (19)  |  Stockholms län (11)  |  Gävleborgs län (8)
+2026-05-24 09:12:46                              Yrkesomraden: Administration, ekonomi, juridik (12)  |  Industriell tillverkning (8)  |  Pedagogik (8)
+2026-05-24 09:12:46  
+2026-05-24 09:12:46    Hamtar: Logent...
+2026-05-24 09:12:46    Logent                      33 annonser /    46 tjanster
+2026-05-24 09:12:46                              Nya 14d: 12 (36.4% aktivitetstakt upp)
+2026-05-24 09:12:46                              Nya 7d: 8
+2026-05-24 09:12:46                              Heltid: 75.8%  Tills vidare: 24.2%
+2026-05-24 09:12:46                              Regioner: Skåne län (13)  |  Västra Götalands län (8)  |  Stockholms län (7)
+2026-05-24 09:12:46                              Yrkesomraden: Transport, distribution, lager (18)  |  Industriell tillverkning (5)  |  Installation, drift, underhåll (3)
+2026-05-24 09:12:46  
+2026-05-24 09:12:46    Hamtar: Bemannia...
+2026-05-24 09:12:47    Bemannia                    29 annonser /    30 tjanster
+2026-05-24 09:12:47                              Nya 14d: 20 (69.0% aktivitetstakt upp)
+2026-05-24 09:12:47                              Nya 7d: 12
+2026-05-24 09:12:47                              Heltid: 44.8%  Tills vidare: 13.8%
+2026-05-24 09:12:47                              Regioner: Stockholms län (16)  |  Västra Götalands län (4)  |  Södermanlands län (2)
+2026-05-24 09:12:47                              Yrkesomraden: Administration, ekonomi, juridik (10)  |  Sanering och renhållning (6)  |  Pedagogik (5)
+2026-05-24 09:12:47  
+2026-05-24 09:12:47    Hamtar: Framtiden i Sverige...
+2026-05-24 09:13:00    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-24 09:13:13    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-24 09:13:25    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-24 09:13:25    Framtiden i Sverige        163 annonser /   164 tjanster
+2026-05-24 09:13:25                              Nya 14d: 61 (37.4% aktivitetstakt upp)
+2026-05-24 09:13:25                              Nya 7d: 30
+2026-05-24 09:13:25                              Heltid: 98.8%  Tills vidare: 98.2%
+2026-05-24 09:13:25                              Regioner: Östergötlands län (39)  |  Stockholms län (27)  |  Västra Götalands län (21)
+2026-05-24 09:13:25                              Yrkesomraden: Yrken med teknisk inriktning (69)  |  Data/IT (33)  |  Bygg och anläggning (17)
+2026-05-24 09:13:25  
+2026-05-24 09:13:25    Hamtar: Professionals Nord...
+2026-05-24 09:13:31    Professionals Nord         160 annonser /   185 tjanster
+2026-05-24 09:13:31                              Nya 14d: 67 (41.9% aktivitetstakt upp)
+2026-05-24 09:13:31                              Nya 7d: 35
+2026-05-24 09:13:31                              Heltid: 92.5%  Tills vidare: 80.0%
+2026-05-24 09:13:31                              Regioner: Norrbottens län (66)  |  Stockholms län (16)  |  Västra Götalands län (16)
+2026-05-24 09:13:31                              Yrkesomraden: Bygg och anläggning (39)  |  Installation, drift, underhåll (24)  |  Data/IT (17)
+2026-05-24 09:13:31  
+2026-05-24 09:13:31    Hamtar: Bravura...
+2026-05-24 09:13:32    Bravura                    149 annonser /   149 tjanster
+2026-05-24 09:13:32                              Nya 14d: 62 (41.6% aktivitetstakt upp)
+2026-05-24 09:13:32                              Nya 7d: 45
+2026-05-24 09:13:32                              Heltid: 87.2%  Tills vidare: 67.8%
+2026-05-24 09:13:32                              Regioner: Stockholms län (61)  |  Skåne län (22)  |  Västra Götalands län (21)
+2026-05-24 09:13:32                              Yrkesomraden: Försäljning, inköp, marknadsföring (37)  |  Data/IT (27)  |  Administration, ekonomi, juridik (20)
+2026-05-24 09:13:32  
+2026-05-24 09:13:32    Hamtar: Jurek...
+2026-05-24 09:13:43    Jurek                       35 annonser /    35 tjanster
+2026-05-24 09:13:43                              Nya 14d: 15 (42.9% aktivitetstakt upp)
+2026-05-24 09:13:43                              Nya 7d: 10
+2026-05-24 09:13:43                              Heltid: 60.0%  Tills vidare: 25.7%
+2026-05-24 09:13:43                              Regioner: Stockholms län (20)  |  Västra Götalands län (9)  |  Uppsala län (2)
+2026-05-24 09:13:43                              Yrkesomraden: Administration, ekonomi, juridik (26)  |  Chefer och verksamhetsledare (3)  |  Försäljning, inköp, marknadsföring (2)
+2026-05-24 09:13:43  
+2026-05-24 09:13:43    Hamtar: TNG Group...
+2026-05-24 09:13:56    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-24 09:14:07    TNG Group                   51 annonser /    51 tjanster
+2026-05-24 09:14:07                              Nya 14d: 23 (45.1% aktivitetstakt upp)
+2026-05-24 09:14:07                              Nya 7d: 15
+2026-05-24 09:14:07                              Heltid: 90.2%  Tills vidare: 72.5%
+2026-05-24 09:14:07                              Regioner: Stockholms län (27)  |  Västra Götalands län (9)  |  Skåne län (6)
+2026-05-24 09:14:07                              Yrkesomraden: Data/IT (20)  |  Försäljning, inköp, marknadsföring (9)  |  Yrken med teknisk inriktning (6)
+2026-05-24 09:14:07  
+2026-05-24 09:14:07    Hamtar: Eterni Sweden...
+2026-05-24 09:14:20    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-24 09:14:35    Eterni Sweden               90 annonser /   202 tjanster
+2026-05-24 09:14:35                              Nya 14d: 65 (72.2% aktivitetstakt upp)
+2026-05-24 09:14:35                              Nya 7d: 35
+2026-05-24 09:14:35                              Heltid: 93.3%  Tills vidare: 100.0%
+2026-05-24 09:14:35                              Regioner: Kronobergs län (22)  |  Jönköpings län (18)  |  Västra Götalands län (11)
+2026-05-24 09:14:35                              Yrkesomraden: Industriell tillverkning (34)  |  Transport, distribution, lager (21)  |  Installation, drift, underhåll (11)
+2026-05-24 09:14:35  
+2026-05-24 09:14:35    Hamtar: Friday...
+2026-05-24 09:14:37    Friday                     135 annonser /   146 tjanster
+2026-05-24 09:14:37                              Nya 14d: 42 (31.1% aktivitetstakt upp)
+2026-05-24 09:14:37                              Nya 7d: 23
+2026-05-24 09:14:37                              Heltid: 98.5%  Tills vidare: 97.0%
+2026-05-24 09:14:37                              Regioner: Västra Götalands län (43)  |  Stockholms län (32)  |  Östergötlands län (23)
+2026-05-24 09:14:37                              Yrkesomraden: Yrken med teknisk inriktning (61)  |  Data/IT (44)  |  Försäljning, inköp, marknadsföring (14)
+2026-05-24 09:14:37  
+2026-05-24 09:14:37    Hamtar: Gazella...
+2026-05-24 09:14:37    Gazella                      3 annonser /     3 tjanster
+2026-05-24 09:14:37                              Nya 14d: 3 (100.0% aktivitetstakt upp)
+2026-05-24 09:14:37                              Nya 7d: 2
+2026-05-24 09:14:37                              Heltid: 100.0%  Tills vidare: 66.7%
+2026-05-24 09:14:37                              Regioner: Stockholms län (3)
+2026-05-24 09:14:37                              Yrkesomraden: Administration, ekonomi, juridik (3)
+2026-05-24 09:14:37  
+2026-05-24 09:14:37    Hamtar: Insitepart...
+2026-05-24 09:14:37    Insitepart                  25 annonser /    29 tjanster
+2026-05-24 09:14:37                              Nya 14d: 13 (52.0% aktivitetstakt upp)
+2026-05-24 09:14:37                              Nya 7d: 6
+2026-05-24 09:14:37                              Heltid: 60.0%  Tills vidare: 20.0%
+2026-05-24 09:14:37                              Regioner: Stockholms län (9)  |  Jönköpings län (7)  |  Örebro län (3)
+2026-05-24 09:14:37                              Yrkesomraden: Transport, distribution, lager (20)  |  Försäljning, inköp, marknadsföring (2)  |  Yrken med teknisk inriktning (2)
+2026-05-24 09:14:37  
+2026-05-24 09:14:37    Hamtar: Wikan Personal...
+2026-05-24 09:14:49    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-24 09:15:03    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-24 09:15:16    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-24 09:15:16    Wikan Personal              74 annonser /    96 tjanster
+2026-05-24 09:15:16                              Nya 14d: 51 (68.9% aktivitetstakt upp)
+2026-05-24 09:15:16                              Nya 7d: 33
+2026-05-24 09:15:16                              Heltid: 98.6%  Tills vidare: 44.6%
+2026-05-24 09:15:16                              Regioner: Skåne län (29)  |  Västerbottens län (12)  |  Gävleborgs län (9)
+2026-05-24 09:15:16                              Yrkesomraden: Industriell tillverkning (26)  |  Installation, drift, underhåll (10)  |  Transport, distribution, lager (10)
+2026-05-24 09:15:16  
+2026-05-24 09:15:16    Hamtar: Konsultia...
+2026-05-24 09:15:16    Konsultia                   54 annonser /   117 tjanster
+2026-05-24 09:15:16                              Nya 14d: 23 (42.6% aktivitetstakt upp)
+2026-05-24 09:15:16                              Nya 7d: 13
+2026-05-24 09:15:16                              Heltid: 98.1%  Tills vidare: 27.8%
+2026-05-24 09:15:16                              Regioner: Västra Götalands län (15)  |  Norrbottens län (13)  |  Västerbottens län (5)
+2026-05-24 09:15:16                              Yrkesomraden: Industriell tillverkning (24)  |  Administration, ekonomi, juridik (9)  |  Transport, distribution, lager (8)
+2026-05-24 09:15:16  
+2026-05-24 09:15:16  Sparat: bemanningsindex_trend.csv
+2026-05-24 09:15:16  Sparat: bemanningsindex_regioner_trend.csv
+2026-05-24 09:15:16  Sparat: bemanningsindex_kommuner_trend.csv
+2026-05-24 09:15:16  Kor dagligen kl 08:00 for att bygga konkurrensanalys over tid.
+2026-05-25 08:00:02  =================================================================
+2026-05-25 08:00:02  BEMANNINGSINDEX v7
+2026-05-25 08:00:02  Arbetsmapp: C:\Users\Fahmi\Documents\Arbetsmarknadsindex
+2026-05-25 08:00:02  =================================================================
+2026-05-25 08:00:02    Hamtar: Manpower...
+2026-05-25 08:00:02    Manpower                    53 annonser /   186 tjanster
+2026-05-25 08:00:02                              Nya 14d: 29 (54.7% aktivitetstakt upp)
+2026-05-25 08:00:02                              Nya 7d: 22
+2026-05-25 08:00:02                              Heltid: 62.3%  Tills vidare: 7.5%
+2026-05-25 08:00:02                              Regioner: Västra Götalands län (15)  |  Stockholms län (8)  |  Skåne län (7)
+2026-05-25 08:00:02                              Yrkesomraden: Industriell tillverkning (22)  |  Administration, ekonomi, juridik (14)  |  Transport, distribution, lager (11)
+2026-05-25 08:00:02  
+2026-05-25 08:00:02    Hamtar: Lernia...
+2026-05-25 08:00:04    Lernia                     170 annonser /   228 tjanster
+2026-05-25 08:00:04                              Nya 14d: 72 (42.4% aktivitetstakt upp)
+2026-05-25 08:00:04                              Nya 7d: 47
+2026-05-25 08:00:04                              Heltid: 81.2%  Tills vidare: 17.1%
+2026-05-25 08:00:04                              Regioner: Västra Götalands län (44)  |  Hallands län (34)  |  Jönköpings län (14)
+2026-05-25 08:00:04                              Yrkesomraden: Industriell tillverkning (78)  |  Transport, distribution, lager (39)  |  Installation, drift, underhåll (16)
+2026-05-25 08:00:04  
+2026-05-25 08:00:04    Hamtar: Adecco...
+2026-05-25 08:00:05    Adecco                     151 annonser /   319 tjanster
+2026-05-25 08:00:05                              Nya 14d: 90 (59.6% aktivitetstakt upp)
+2026-05-25 08:00:05                              Nya 7d: 59
+2026-05-25 08:00:05                              Heltid: 82.1%  Tills vidare: 22.5%
+2026-05-25 08:00:05                              Regioner: Stockholms län (25)  |  Västra Götalands län (22)  |  Norrbottens län (17)
+2026-05-25 08:00:05                              Yrkesomraden: Industriell tillverkning (32)  |  Administration, ekonomi, juridik (31)  |  Transport, distribution, lager (26)
+2026-05-25 08:00:05  
+2026-05-25 08:00:05    Hamtar: Perido...
+2026-05-25 08:00:05    Perido                      28 annonser /    29 tjanster
+2026-05-25 08:00:05                              Nya 14d: 18 (64.3% aktivitetstakt upp)
+2026-05-25 08:00:05                              Nya 7d: 11
+2026-05-25 08:00:05                              Heltid: 82.1%  Tills vidare: 21.4%
+2026-05-25 08:00:05                              Regioner: Stockholms län (14)  |  Västra Götalands län (8)  |  Östergötlands län (4)
+2026-05-25 08:00:05                              Yrkesomraden: Administration, ekonomi, juridik (11)  |  Försäljning, inköp, marknadsföring (8)  |  Data/IT (7)
+2026-05-25 08:00:05  
+2026-05-25 08:00:05    Hamtar: Randstad...
+2026-05-25 08:00:07    Randstad                   146 annonser /   324 tjanster
+2026-05-25 08:00:07                              Nya 14d: 64 (43.8% aktivitetstakt upp)
+2026-05-25 08:00:07                              Nya 7d: 41
+2026-05-25 08:00:07                              Heltid: 97.9%  Tills vidare: 31.5%
+2026-05-25 08:00:07                              Regioner: Västra Götalands län (46)  |  Stockholms län (33)  |  Östergötlands län (21)
+2026-05-25 08:00:07                              Yrkesomraden: Administration, ekonomi, juridik (28)  |  Yrken med teknisk inriktning (20)  |  Installation, drift, underhåll (19)
+2026-05-25 08:00:07  
+2026-05-25 08:00:07    Hamtar: Academic Work...
+2026-05-25 08:00:20    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-25 08:00:34    Academic Work              382 annonser /   382 tjanster
+2026-05-25 08:00:34                              Nya 14d: 158 (41.4% aktivitetstakt upp)
+2026-05-25 08:00:34                              Nya 7d: 104
+2026-05-25 08:00:34                              Heltid: 84.8%  Tills vidare: 12.8%
+2026-05-25 08:00:34                              Regioner: Stockholms län (130)  |  Skåne län (50)  |  Västra Götalands län (41)
+2026-05-25 08:00:34                              Yrkesomraden: Administration, ekonomi, juridik (95)  |  Yrken med teknisk inriktning (75)  |  Data/IT (72)
+2026-05-25 08:00:34  
+2026-05-25 08:00:34    Hamtar: Studentconsulting...
+2026-05-25 08:00:37    Studentconsulting          242 annonser /   711 tjanster
+2026-05-25 08:00:37                              Nya 14d: 131 (54.1% aktivitetstakt upp)
+2026-05-25 08:00:37                              Nya 7d: 71
+2026-05-25 08:00:37                              Heltid: 71.5%  Tills vidare: 0.0%
+2026-05-25 08:00:37                              Regioner: Skåne län (45)  |  Västra Götalands län (40)  |  Norrbottens län (30)
+2026-05-25 08:00:37                              Yrkesomraden: Transport, distribution, lager (103)  |  Administration, ekonomi, juridik (47)  |  Försäljning, inköp, marknadsföring (25)
+2026-05-25 08:00:37  
+2026-05-25 08:00:37    Hamtar: Poolia...
+2026-05-25 08:00:37    Poolia                      73 annonser /    75 tjanster
+2026-05-25 08:00:37                              Nya 14d: 57 (78.1% aktivitetstakt upp)
+2026-05-25 08:00:37                              Nya 7d: 35
+2026-05-25 08:00:37                              Heltid: 60.3%  Tills vidare: 23.3%
+2026-05-25 08:00:37                              Regioner: Stockholms län (18)  |  Östergötlands län (17)  |  Skåne län (12)
+2026-05-25 08:00:37                              Yrkesomraden: Administration, ekonomi, juridik (31)  |  Försäljning, inköp, marknadsföring (18)  |  Data/IT (8)
+2026-05-25 08:00:37  
+2026-05-25 08:00:37    Hamtar: Uniflex...
+2026-05-25 08:00:39    Uniflex                    164 annonser /   358 tjanster
+2026-05-25 08:00:39                              Nya 14d: 92 (56.1% aktivitetstakt upp)
+2026-05-25 08:00:39                              Nya 7d: 45
+2026-05-25 08:00:39                              Heltid: 88.4%  Tills vidare: 22.6%
+2026-05-25 08:00:39                              Regioner: Västra Götalands län (30)  |  Jönköpings län (26)  |  Stockholms län (25)
+2026-05-25 08:00:39                              Yrkesomraden: Industriell tillverkning (59)  |  Transport, distribution, lager (44)  |  Bygg och anläggning (22)
+2026-05-25 08:00:39  
+2026-05-25 08:00:39    Hamtar: OnePartnerGroup...
+2026-05-25 08:00:41    OnePartnerGroup            159 annonser /   230 tjanster
+2026-05-25 08:00:41                              Nya 14d: 86 (54.1% aktivitetstakt upp)
+2026-05-25 08:00:41                              Nya 7d: 41
+2026-05-25 08:00:41                              Heltid: 93.1%  Tills vidare: 83.6%
+2026-05-25 08:00:41                              Regioner: Västra Götalands län (29)  |  Jönköpings län (29)  |  Stockholms län (13)
+2026-05-25 08:00:41                              Yrkesomraden: Industriell tillverkning (43)  |  Transport, distribution, lager (26)  |  Installation, drift, underhåll (20)
+2026-05-25 08:00:41  
+2026-05-25 08:00:41    Hamtar: Skill...
+2026-05-25 08:00:42    Skill                       72 annonser /    74 tjanster
+2026-05-25 08:00:42                              Nya 14d: 37 (51.4% aktivitetstakt upp)
+2026-05-25 08:00:42                              Nya 7d: 21
+2026-05-25 08:00:42                              Heltid: 90.3%  Tills vidare: 34.7%
+2026-05-25 08:00:42                              Regioner: Östergötlands län (51)  |  Västra Götalands län (13)  |  Jönköpings län (2)
+2026-05-25 08:00:42                              Yrkesomraden: Yrken med teknisk inriktning (21)  |  Industriell tillverkning (16)  |  Administration, ekonomi, juridik (13)
+2026-05-25 08:00:42  
+2026-05-25 08:00:42    Hamtar: Arena Personal...
+2026-05-25 08:00:54    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-25 08:01:06    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-25 08:01:21    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-25 08:01:21    Arena Personal             105 annonser /   105 tjanster
+2026-05-25 08:01:21                              Nya 14d: 62 (59.0% aktivitetstakt upp)
+2026-05-25 08:01:21                              Nya 7d: 54
+2026-05-25 08:01:21                              Heltid: 74.3%  Tills vidare: 46.7%
+2026-05-25 08:01:21                              Regioner: Södermanlands län (32)  |  Stockholms län (29)  |  Skåne län (9)
+2026-05-25 08:01:21                              Yrkesomraden: Transport, distribution, lager (75)  |  Sanering och renhållning (7)  |  Industriell tillverkning (6)
+2026-05-25 08:01:21  
+2026-05-25 08:01:21    Hamtar: Tranpenad...
+2026-05-25 08:01:21    Tranpenad                   38 annonser /    56 tjanster
+2026-05-25 08:01:21                              Nya 14d: 8 (21.1% aktivitetstakt ok)
+2026-05-25 08:01:21                              Nya 7d: 4
+2026-05-25 08:01:21                              Heltid: 73.7%  Tills vidare: 23.7%
+2026-05-25 08:01:21                              Regioner: Västra Götalands län (21)  |  Stockholms län (6)  |  Uppsala län (5)
+2026-05-25 08:01:21                              Yrkesomraden: Transport, distribution, lager (32)  |  Yrken med teknisk inriktning (3)  |  Industriell tillverkning (1)
+2026-05-25 08:01:21  
+2026-05-25 08:01:21    Hamtar: Jobandtalent...
+2026-05-25 08:01:23    Jobandtalent               126 annonser /   141 tjanster
+2026-05-25 08:01:23                              Nya 14d: 60 (47.6% aktivitetstakt upp)
+2026-05-25 08:01:23                              Nya 7d: 37
+2026-05-25 08:01:23                              Heltid: 57.9%  Tills vidare: 14.3%
+2026-05-25 08:01:23                              Regioner: Östergötlands län (39)  |  Västra Götalands län (19)  |  Skåne län (15)
+2026-05-25 08:01:23                              Yrkesomraden: Transport, distribution, lager (49)  |  Försäljning, inköp, marknadsföring (28)  |  Industriell tillverkning (14)
+2026-05-25 08:01:23  
+2026-05-25 08:01:23    Hamtar: NearYou...
+2026-05-25 08:01:23    NearYou                     79 annonser /   120 tjanster
+2026-05-25 08:01:23                              Nya 14d: 48 (60.8% aktivitetstakt upp)
+2026-05-25 08:01:23                              Nya 7d: 34
+2026-05-25 08:01:23                              Heltid: 92.4%  Tills vidare: 44.3%
+2026-05-25 08:01:23                              Regioner: Västra Götalands län (57)  |  Jönköpings län (10)  |  Kalmar län (6)
+2026-05-25 08:01:23                              Yrkesomraden: Industriell tillverkning (34)  |  Transport, distribution, lager (17)  |  Yrken med teknisk inriktning (8)
+2026-05-25 08:01:23  
+2026-05-25 08:01:23    Hamtar: SJR...
+2026-05-25 08:01:24    SJR                         27 annonser /    27 tjanster
+2026-05-25 08:01:24                              Nya 14d: 17 (63.0% aktivitetstakt upp)
+2026-05-25 08:01:24                              Nya 7d: 11
+2026-05-25 08:01:24                              Heltid: 40.7%  Tills vidare: 40.7%
+2026-05-25 08:01:24                              Regioner: Stockholms län (15)  |  Västra Götalands län (5)  |  Uppsala län (4)
+2026-05-25 08:01:24                              Yrkesomraden: Administration, ekonomi, juridik (22)  |  Chefer och verksamhetsledare (3)  |  Data/IT (1)
+2026-05-25 08:01:24  
+2026-05-25 08:01:24    Hamtar: Clockwork...
+2026-05-25 08:01:24    Clockwork                   53 annonser /    87 tjanster
+2026-05-25 08:01:24                              Nya 14d: 35 (66.0% aktivitetstakt upp)
+2026-05-25 08:01:24                              Nya 7d: 21
+2026-05-25 08:01:24                              Heltid: 75.5%  Tills vidare: 39.6%
+2026-05-25 08:01:24                              Regioner: Dalarnas län (19)  |  Stockholms län (11)  |  Gävleborgs län (8)
+2026-05-25 08:01:24                              Yrkesomraden: Administration, ekonomi, juridik (12)  |  Industriell tillverkning (8)  |  Pedagogik (8)
+2026-05-25 08:01:24  
+2026-05-25 08:01:24    Hamtar: Logent...
+2026-05-25 08:01:25    Logent                      33 annonser /    46 tjanster
+2026-05-25 08:01:25                              Nya 14d: 12 (36.4% aktivitetstakt upp)
+2026-05-25 08:01:25                              Nya 7d: 8
+2026-05-25 08:01:25                              Heltid: 75.8%  Tills vidare: 24.2%
+2026-05-25 08:01:25                              Regioner: Skåne län (13)  |  Västra Götalands län (8)  |  Stockholms län (7)
+2026-05-25 08:01:25                              Yrkesomraden: Transport, distribution, lager (18)  |  Industriell tillverkning (5)  |  Installation, drift, underhåll (3)
+2026-05-25 08:01:25  
+2026-05-25 08:01:25    Hamtar: Bemannia...
+2026-05-25 08:01:25    Bemannia                    29 annonser /    30 tjanster
+2026-05-25 08:01:25                              Nya 14d: 20 (69.0% aktivitetstakt upp)
+2026-05-25 08:01:25                              Nya 7d: 12
+2026-05-25 08:01:25                              Heltid: 44.8%  Tills vidare: 13.8%
+2026-05-25 08:01:25                              Regioner: Stockholms län (16)  |  Västra Götalands län (4)  |  Södermanlands län (2)
+2026-05-25 08:01:25                              Yrkesomraden: Administration, ekonomi, juridik (10)  |  Sanering och renhållning (6)  |  Pedagogik (5)
+2026-05-25 08:01:25  
+2026-05-25 08:01:25    Hamtar: Framtiden i Sverige...
+2026-05-25 08:01:39    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-25 08:01:53    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-25 08:02:08    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-25 08:02:08    Framtiden i Sverige        155 annonser /   156 tjanster
+2026-05-25 08:02:08                              Nya 14d: 60 (38.7% aktivitetstakt upp)
+2026-05-25 08:02:08                              Nya 7d: 30
+2026-05-25 08:02:08                              Heltid: 98.7%  Tills vidare: 98.1%
+2026-05-25 08:02:08                              Regioner: Östergötlands län (37)  |  Stockholms län (27)  |  Västra Götalands län (21)
+2026-05-25 08:02:08                              Yrkesomraden: Yrken med teknisk inriktning (65)  |  Data/IT (30)  |  Bygg och anläggning (16)
+2026-05-25 08:02:08  
+2026-05-25 08:02:08    Hamtar: Professionals Nord...
+2026-05-25 08:02:14    Professionals Nord         149 annonser /   174 tjanster
+2026-05-25 08:02:14                              Nya 14d: 64 (43.0% aktivitetstakt upp)
+2026-05-25 08:02:14                              Nya 7d: 35
+2026-05-25 08:02:14                              Heltid: 93.3%  Tills vidare: 82.6%
+2026-05-25 08:02:14                              Regioner: Norrbottens län (62)  |  Stockholms län (16)  |  Västra Götalands län (16)
+2026-05-25 08:02:14                              Yrkesomraden: Bygg och anläggning (39)  |  Installation, drift, underhåll (24)  |  Data/IT (17)
+2026-05-25 08:02:14  
+2026-05-25 08:02:14    Hamtar: Bravura...
+2026-05-25 08:02:16    Bravura                    148 annonser /   148 tjanster
+2026-05-25 08:02:16                              Nya 14d: 62 (41.9% aktivitetstakt upp)
+2026-05-25 08:02:16                              Nya 7d: 45
+2026-05-25 08:02:16                              Heltid: 87.2%  Tills vidare: 67.6%
+2026-05-25 08:02:16                              Regioner: Stockholms län (61)  |  Skåne län (22)  |  Västra Götalands län (21)
+2026-05-25 08:02:16                              Yrkesomraden: Försäljning, inköp, marknadsföring (37)  |  Data/IT (27)  |  Administration, ekonomi, juridik (20)
+2026-05-25 08:02:16  
+2026-05-25 08:02:16    Hamtar: Jurek...
+2026-05-25 08:02:27    Jurek                       35 annonser /    35 tjanster
+2026-05-25 08:02:27                              Nya 14d: 15 (42.9% aktivitetstakt upp)
+2026-05-25 08:02:27                              Nya 7d: 10
+2026-05-25 08:02:27                              Heltid: 60.0%  Tills vidare: 25.7%
+2026-05-25 08:02:27                              Regioner: Stockholms län (20)  |  Västra Götalands län (9)  |  Uppsala län (2)
+2026-05-25 08:02:27                              Yrkesomraden: Administration, ekonomi, juridik (26)  |  Chefer och verksamhetsledare (3)  |  Försäljning, inköp, marknadsföring (2)
+2026-05-25 08:02:27  
+2026-05-25 08:02:27    Hamtar: TNG Group...
+2026-05-25 08:02:40    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-25 08:02:51    TNG Group                   48 annonser /    48 tjanster
+2026-05-25 08:02:51                              Nya 14d: 23 (47.9% aktivitetstakt upp)
+2026-05-25 08:02:51                              Nya 7d: 15
+2026-05-25 08:02:51                              Heltid: 89.6%  Tills vidare: 77.1%
+2026-05-25 08:02:51                              Regioner: Stockholms län (26)  |  Västra Götalands län (8)  |  Skåne län (6)
+2026-05-25 08:02:51                              Yrkesomraden: Data/IT (19)  |  Försäljning, inköp, marknadsföring (8)  |  Yrken med teknisk inriktning (6)
+2026-05-25 08:02:51  
+2026-05-25 08:02:51    Hamtar: Eterni Sweden...
+2026-05-25 08:03:04    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-25 08:03:19    Eterni Sweden               84 annonser /   168 tjanster
+2026-05-25 08:03:19                              Nya 14d: 61 (72.6% aktivitetstakt upp)
+2026-05-25 08:03:19                              Nya 7d: 32
+2026-05-25 08:03:19                              Heltid: 94.0%  Tills vidare: 100.0%
+2026-05-25 08:03:19                              Regioner: Kronobergs län (20)  |  Jönköpings län (17)  |  Västra Götalands län (11)
+2026-05-25 08:03:19                              Yrkesomraden: Industriell tillverkning (32)  |  Transport, distribution, lager (20)  |  Installation, drift, underhåll (11)
+2026-05-25 08:03:19  
+2026-05-25 08:03:19    Hamtar: Friday...
+2026-05-25 08:03:21    Friday                     132 annonser /   142 tjanster
+2026-05-25 08:03:21                              Nya 14d: 41 (31.1% aktivitetstakt upp)
+2026-05-25 08:03:21                              Nya 7d: 23
+2026-05-25 08:03:21                              Heltid: 98.5%  Tills vidare: 97.0%
+2026-05-25 08:03:21                              Regioner: Västra Götalands län (41)  |  Stockholms län (32)  |  Östergötlands län (22)
+2026-05-25 08:03:21                              Yrkesomraden: Yrken med teknisk inriktning (60)  |  Data/IT (44)  |  Försäljning, inköp, marknadsföring (12)
+2026-05-25 08:03:21  
+2026-05-25 08:03:21    Hamtar: Gazella...
+2026-05-25 08:03:21    Gazella                      3 annonser /     3 tjanster
+2026-05-25 08:03:21                              Nya 14d: 3 (100.0% aktivitetstakt upp)
+2026-05-25 08:03:21                              Nya 7d: 2
+2026-05-25 08:03:21                              Heltid: 100.0%  Tills vidare: 66.7%
+2026-05-25 08:03:21                              Regioner: Stockholms län (3)
+2026-05-25 08:03:21                              Yrkesomraden: Administration, ekonomi, juridik (3)
+2026-05-25 08:03:21  
+2026-05-25 08:03:21    Hamtar: Insitepart...
+2026-05-25 08:03:21    Insitepart                  25 annonser /    29 tjanster
+2026-05-25 08:03:21                              Nya 14d: 13 (52.0% aktivitetstakt upp)
+2026-05-25 08:03:21                              Nya 7d: 6
+2026-05-25 08:03:21                              Heltid: 60.0%  Tills vidare: 20.0%
+2026-05-25 08:03:21                              Regioner: Stockholms län (9)  |  Jönköpings län (7)  |  Örebro län (3)
+2026-05-25 08:03:21                              Yrkesomraden: Transport, distribution, lager (20)  |  Försäljning, inköp, marknadsföring (2)  |  Yrken med teknisk inriktning (2)
+2026-05-25 08:03:21  
+2026-05-25 08:03:21    Hamtar: Wikan Personal...
+2026-05-25 08:03:34    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-25 08:03:47    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-25 08:04:00    API-fel vid offset 2100: HTTP Error 400: Bad Request
+2026-05-25 08:04:00    Wikan Personal              74 annonser /    96 tjanster
+2026-05-25 08:04:00                              Nya 14d: 51 (68.9% aktivitetstakt upp)
+2026-05-25 08:04:00                              Nya 7d: 33
+2026-05-25 08:04:00                              Heltid: 98.6%  Tills vidare: 44.6%
+2026-05-25 08:04:00                              Regioner: Skåne län (29)  |  Västerbottens län (12)  |  Gävleborgs län (9)
+2026-05-25 08:04:00                              Yrkesomraden: Industriell tillverkning (26)  |  Installation, drift, underhåll (10)  |  Transport, distribution, lager (10)
+2026-05-25 08:04:00  
+2026-05-25 08:04:00    Hamtar: Konsultia...
+2026-05-25 08:04:01    Konsultia                   46 annonser /   112 tjanster
+2026-05-25 08:04:01                              Nya 14d: 25 (54.3% aktivitetstakt upp)
+2026-05-25 08:04:01                              Nya 7d: 15
+2026-05-25 08:04:01                              Heltid: 97.8%  Tills vidare: 15.2%
+2026-05-25 08:04:01                              Regioner: Norrbottens län (15)  |  Västra Götalands län (12)  |  Västerbottens län (5)
+2026-05-25 08:04:01                              Yrkesomraden: Industriell tillverkning (24)  |  Transport, distribution, lager (7)  |  Administration, ekonomi, juridik (6)
+2026-05-25 08:04:01  
+2026-05-25 08:04:01  Sparat: bemanningsindex_trend.csv
+2026-05-25 08:04:01  Sparat: bemanningsindex_regioner_trend.csv
+2026-05-25 08:04:01  Sparat: bemanningsindex_kommuner_trend.csv
+2026-05-25 08:04:01  Kor dagligen kl 08:00 for att bygga konkurrensanalys over tid.
