@@ -479,17 +479,43 @@ def kör_analys():
             ])
 
     # ── Rapportera okända arbetsgivare (bara topp 10 per roll) ───────
-    okanda = set()
+    # ── Okända arbetsgivare – rapportera bara de med 10+ annonser ───────
+    # Tröskeln filtrerar bort småbolag som sällan återkommer.
+    # Bolag med 10+ annonser är tillräckligt aktiva för att påverka datan.
+    TRÖSKEL_OKÄND = 10
+    okanda = {}  # namn -> (totalt_annonser, roller)
     for roll, d in resultat.items():
         if d is None: continue
-        for ag, _ in d["ag_counter"].most_common(20):
+        for ag, antal in d["ag_counter"].most_common(20):
             if klassificera_ag(ag) == "Okänd – granska":
-                okanda.add(ag)
-    if okanda:
+                if ag not in okanda:
+                    okanda[ag] = {"totalt": 0, "roller": []}
+                okanda[ag]["totalt"] += antal
+                okanda[ag]["roller"].append(f"{roll} ({antal})")
+
+    okanda_viktiga = {ag: v for ag, v in okanda.items() if v["totalt"] >= TRÖSKEL_OKÄND}
+
+    # Spara alla okända (även små) till fil för veckovis granskning
+    with open("okanda_arbetsgivare_ny.txt", "w", encoding="utf-8") as f:
+        f.write(f"OKÄNDA ARBETSGIVARE – {datum}\n")
+        f.write("=" * 60 + "\n")
+        f.write(f"Antal okända: {len(okanda)}\n")
+        f.write("Kontrollera en gång i veckan och lägg till i ARBETSGIVARE_TYP\n\n")
+        for ag, v in sorted(okanda.items(), key=lambda x: -x[1]["totalt"]):
+            roller_str = ", ".join(v["roller"])
+            f.write(f"  {ag:<50} totalt={v['totalt']}  [{roller_str}]\n")
+
+    # Visa bara viktiga (10+) i konsolen
+    if okanda_viktiga:
         print()
-        print("⚠️  OKÄNDA ARBETSGIVARE i topp 10 – lägg till i ARBETSGIVARE_TYP:")
-        for ag in sorted(okanda):
-            print(f"   {ag}")
+        print(f"⚠️  {len(okanda_viktiga)} OKÄNDA ARBETSGIVARE med 10+ annonser – lägg till i ARBETSGIVARE_TYP:")
+        for ag, v in sorted(okanda_viktiga.items(), key=lambda x: -x[1]["totalt"]):
+            roller_str = ", ".join(v["roller"])
+            print(f"   {ag:<50} {v['totalt']} annonser  [{roller_str}]")
+        print(f"   (+ {len(okanda) - len(okanda_viktiga)} bolag med färre än {TRÖSKEL_OKÄND} annonser – se okanda_arbetsgivare_ny.txt)")
+    else:
+        print()
+        print(f"✓  Inga okända arbetsgivare med {TRÖSKEL_OKÄND}+ annonser idag.")
 
     # ── Regionfil ────────────────────────────────────────────────────
     reg_ny = not os.path.exists(REGIOFIL)
