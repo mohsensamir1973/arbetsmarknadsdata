@@ -41,6 +41,7 @@ ROLLER = {
         "ids": ["kLyY_rwr_aJr"],
         "grupp": "Volym / cykel",
     },
+
     "Business Controller": {
         "ids": ["Uw4n_UB2_RCW"],
         "grupp": "Framåtblickande signal",
@@ -78,189 +79,145 @@ REGIOFIL  = "arbetsmarknadsindex_regioner_trend.csv"
 KOMMUNFIL = "arbetsmarknadsindex_kommuner_trend.csv"
 
 # ── Arbetsgivarklassificering ────────────────────────────────────────
-# Tre kategorier: Bemanning/Rekrytering, Konsultbolag, Direktarbetsgivare
-# Tumregel: kunden arbetsleder = Bemanning/Rekrytering
-#           bolaget tar leveransansvar = Konsultbolag
+# Tre kategorier: Bemannings/rekryteringsbolag, Konsultbolag, Direktarbetsgivare
 # Okända bolag flaggas automatiskt som "Okänd – granska"
 
 ARBETSGIVARE_TYP = {
-    # ── BEMANNING / REKRYTERING ──────────────────────────────────────
-    "A Hub AB":                                        "Bemanning/Rekrytering",
-    "Academic Work Sweden AB":                         "Bemanning/Rekrytering",
-    "Adecco Sweden AB":                                "Bemanning/Rekrytering",
-    "Almia AB":                                        "Bemanning/Rekrytering",
-    "Andara Group AB":                                 "Bemanning/Rekrytering",
-    "Arena Personal AB":                               "Bemanning/Rekrytering",
-    "Arena Personal Sverige AB":                       "Bemanning/Rekrytering",
-    "Aura Personal AB":                                "Bemanning/Rekrytering",
-    "Avanzera AB":                                     "Bemanning/Rekrytering",
-    "Barona Professionals AB":                         "Bemanning/Rekrytering",
-    "Boxflow Staffing Syd AB":                         "Bemanning/Rekrytering",
-    "Bravura Sverige AB":                              "Bemanning/Rekrytering",
-    "Clockwork Bemanning & Rekrytering AB":            "Bemanning/Rekrytering",
-    "DUVI GROUP AB":                                   "Bemanning/Rekrytering",
-    "Eqwiry AB":                                       "Bemanning/Rekrytering",
-    "Eterni Sweden AB":                                "Bemanning/Rekrytering",
-    "Experis AB":                                      "Bemanning/Rekrytering",
-    "Flodin Rekrytering & Bemanning AB":               "Bemanning/Rekrytering",
-    "Framtiden i Sverige AB":                          "Bemanning/Rekrytering",
-    "Friday Väst AB":                                  "Bemanning/Rekrytering",
-    "Hero AB":                                         "Bemanning/Rekrytering",
-    "Hire Solutions AB":                               "Bemanning/Rekrytering",
-    "Hireq AB":                                        "Bemanning/Rekrytering",
-    "Ideal BM AB":                                     "Bemanning/Rekrytering",
-    "Insitepart AB":                                   "Bemanning/Rekrytering",
-    "Jobandtalent Sweden AB":                          "Bemanning/Rekrytering",
-    "Jobbakuten Väst AB":                              "Bemanning/Rekrytering",
-    "Jobbusters AB":                                   "Bemanning/Rekrytering",
-    "Jovi Konsult AB":                                 "Bemanning/Rekrytering",
-    "Jurek Recruitment & Consulting AB":               "Bemanning/Rekrytering",
-    "Kraftsam Rekrytering & Bemanning AB":             "Bemanning/Rekrytering",
-    "Lernia Bemanning AB":                             "Bemanning/Rekrytering",
-    "Libera i Sverige AB":                             "Bemanning/Rekrytering",
-    "Logent Bemanning AB":                             "Bemanning/Rekrytering",
-    "Lyten Ett AB":                                    "Bemanning/Rekrytering",
-    "MACC PEOPLE AB":                                  "Bemanning/Rekrytering",
-    "Medla Sverige AB":                                "Bemanning/Rekrytering",
-    "Mpya Finance AB":                                 "Bemanning/Rekrytering",
-    "Nexify bemanning & rekrytering AB":               "Bemanning/Rekrytering",
-    "OIO Väst AB":                                     "Bemanning/Rekrytering",
-    "Palmelind Konsult AB":                            "Bemanning/Rekrytering",
-    "PartnerFlow Group AB":                            "Bemanning/Rekrytering",
-    "Performiq AB":                                    "Bemanning/Rekrytering",
-    "PersonalExpressen AB":                            "Bemanning/Rekrytering",
-    "Pokayoke AB":                                     "Bemanning/Rekrytering",
-    "Poolia AB":                                       "Bemanning/Rekrytering",
-    "Posti Logistics Staffing AB":                     "Bemanning/Rekrytering",
-    "Procruitment AB":                                 "Bemanning/Rekrytering",
-    "Professionals Nord Linköping AB":                 "Bemanning/Rekrytering",
-    "Professionals Nord Norra Norrland AB":            "Bemanning/Rekrytering",
-    "Randstad AB":                                     "Bemanning/Rekrytering",
-    "Recruitive AB":                                   "Bemanning/Rekrytering",
-    "Responda Group AB":                               "Bemanning/Rekrytering",
-    "Sanandum AB":                                     "Bemanning/Rekrytering",
-    "SJR in Sweden AB":                                "Bemanning/Rekrytering",
-    "Simplex Bemanning AB":                            "Bemanning/Rekrytering",
-    "Skill Kompetenspartner AB":                       "Bemanning/Rekrytering",
-    "Studentconsulting Sweden AB":                     "Bemanning/Rekrytering",
-    "Studentconsulting Sweden AB (Publ)":              "Bemanning/Rekrytering",
-    "Submit AB":                                       "Bemanning/Rekrytering",
-    "Sway Sourcing Sweden AB":                         "Bemanning/Rekrytering",
-    "Systrarnas bemanning AB":                         "Bemanning/Rekrytering",
-    "Te Crea Care AB":                                 "Bemanning/Rekrytering",
-    "Technologist 365 AB":                             "Bemanning/Rekrytering",
-    "Techrytera AB":                                   "Bemanning/Rekrytering",
-    "Tng Group AB":                                    "Bemanning/Rekrytering",
-    "Tranpenad AB":                                    "Bemanning/Rekrytering",
-    "Uniflex AB":                                      "Bemanning/Rekrytering",
-    "Unik Resurs i Sverige AB":                        "Bemanning/Rekrytering",
-    "Vindex AB":                                       "Bemanning/Rekrytering",
-    "Viva Bemanning AB":                               "Bemanning/Rekrytering",
-    "Vårdbemanning Sverige AB":                        "Bemanning/Rekrytering",
-    "WeStaff Sweden AB":                               "Bemanning/Rekrytering",
-    "Workz Sweden AB":                                 "Bemanning/Rekrytering",
-    "Wrknest AB":                                      "Bemanning/Rekrytering",
-    "Xamera AB":                                       "Bemanning/Rekrytering",
+    # BEMANNINGS/REKRYTERINGSBOLAG
+    "Academic Work Sweden AB":                  "Bemanning/Rekrytering",
+    "Studentconsulting Sweden AB":              "Bemanning/Rekrytering",
+    "Studentconsulting Sweden AB (Publ)":       "Bemanning/Rekrytering",
+    "Lernia Bemanning AB":                      "Bemanning/Rekrytering",
+    "Uniflex AB":                               "Bemanning/Rekrytering",
+    "Tranpenad AB":                             "Bemanning/Rekrytering",
+    "Poolia AB":                                "Bemanning/Rekrytering",
+    "SJR in Sweden AB":                         "Bemanning/Rekrytering",
+    "Clockwork Bemanning & Rekrytering AB":     "Bemanning/Rekrytering",
+    "Framtiden i Sverige AB":                   "Bemanning/Rekrytering",
+    "Bravura Sverige AB":                       "Bemanning/Rekrytering",
+    "PersonalExpressen AB":                     "Bemanning/Rekrytering",
+    "Aura Personal AB":                         "Bemanning/Rekrytering",
+    "Boxflow Staffing Syd AB":                  "Bemanning/Rekrytering",
+    "Jobandtalent Sweden AB":                   "Bemanning/Rekrytering",
+    "Simplex Bemanning AB":                     "Bemanning/Rekrytering",
+    "Pokayoke AB":                              "Bemanning/Rekrytering",
+    "Professionals Nord Linköping AB":          "Bemanning/Rekrytering",
+    "Professionals Nord Norra Norrland AB":     "Bemanning/Rekrytering",
+    "Performiq AB":                             "Bemanning/Rekrytering",
+    "Viva Bemanning AB":                        "Bemanning/Rekrytering",
+    "Kraftsam Rekrytering & Bemanning AB":      "Bemanning/Rekrytering",
+    "Wrknest AB":                               "Bemanning/Rekrytering",
+    "Submit AB":                                "Bemanning/Rekrytering",
+    "Andara Group AB":                          "Bemanning/Rekrytering",
+    "Mpya Finance AB":                          "Bemanning/Rekrytering",
+    "Medla Sverige AB":                         "Bemanning/Rekrytering",
+    "Procruitment AB":                          "Bemanning/Rekrytering",
+    "Eqwiry AB":                                "Bemanning/Rekrytering",
+    "Almia AB":                                 "Bemanning/Rekrytering",
+    "Palmelind Konsult AB":                     "Bemanning/Rekrytering",
+    "Te Crea Care AB":                          "Bemanning/Rekrytering",
+    "Techrytera AB":                            "Bemanning/Rekrytering",
+    "Jobbakuten Väst AB":                       "Bemanning/Rekrytering",
+    "Lyten Ett AB":                             "Bemanning/Rekrytering",
+    "PartnerFlow Group AB":                     "Bemanning/Rekrytering",
+    "Workz Sweden AB":                          "Bemanning/Rekrytering",
+    "Xamera AB":                                "Bemanning/Rekrytering",
+    "Friday Väst AB":                           "Bemanning/Rekrytering",
+    "OIO Väst AB":                              "Bemanning/Rekrytering",
+    "Adecco Sweden AB":                         "Bemanning/Rekrytering",
+    "Randstad AB":                              "Bemanning/Rekrytering",
+    "Flodin Rekrytering & Bemanning AB":        "Bemanning/Rekrytering",
+    "Jurek Recruitment & Consulting AB":        "Bemanning/Rekrytering",
+    "Recruitive AB":                            "Bemanning/Rekrytering",
+    "A Hub AB":                                 "Bemanning/Rekrytering",
+    "Skill Kompetenspartner AB":                "Bemanning/Rekrytering",
+    "Vindex AB":                                "Bemanning/Rekrytering",
+    # KONSULTBOLAG
+    "AFRY AB":                                  "Konsultbolag",
+    "AKKA Talent Management AB":                "Konsultbolag",
+    "Akkodis Sweden Electrical Solutions AB":   "Konsultbolag",
+    "Alten Sverige AB":                         "Konsultbolag",
+    "Avalon Innovation Technology AB":          "Konsultbolag",
+    "Avaron AB":                                "Konsultbolag",
+    "Cloudgruppen Sverige AB":                  "Konsultbolag",
+    "Experis AB":                               "Konsultbolag",
+    "Fellowmind Sweden AB":                     "Konsultbolag",
+    "Iver Sverige AB":                          "Konsultbolag",
+    "Knightec Group Hardware and Design AB":    "Konsultbolag",
+    "Knowit AB":                                "Konsultbolag",
+    "Knowit AB (Publ)":                         "Konsultbolag",
+    "SKPA Consulting AB":                       "Konsultbolag",
+    "Semicon Service Nordic AB":                "Konsultbolag",
+    "Veritaz AB":                               "Konsultbolag",
+    "Combitech AB":                             "Konsultbolag",
+    "Syntronic AB":                             "Konsultbolag",
+    "Collen AB":                                "Konsultbolag",
+    # DIREKTARBETSGIVARE
+    "REGION ÖSTERGÖTLAND":                      "Direktarbetsgivare",
+    "REGION SKÅNE":                             "Direktarbetsgivare",
+    "REGION STOCKHOLM":                         "Direktarbetsgivare",
+    "REGION JÖNKÖPINGS LÄN":                    "Direktarbetsgivare",
+    "REGION UPPSALA":                           "Direktarbetsgivare",
+    "VÄSTRA GÖTALANDSREGIONEN":                 "Direktarbetsgivare",
+    "Skatteverket":                             "Direktarbetsgivare",
+    "Stockholms kommun":                        "Direktarbetsgivare",
+    "Uppsala Universitet":                      "Direktarbetsgivare",
+    "Vattenfall AB":                            "Direktarbetsgivare",
+    "Hitachi Energy Sweden AB":                 "Direktarbetsgivare",
+    "SAAB AB":                                  "Direktarbetsgivare",
+    "ABB AB":                                   "Direktarbetsgivare",
+    "Rituals Cosmetics Sweden AB":              "Direktarbetsgivare",
+    "Kronans Apotek AB":                        "Direktarbetsgivare",
+    "Arken Zoo AB":                             "Direktarbetsgivare",
+    "Synsam Group Sweden AB":                   "Direktarbetsgivare",
+    "H & M Hennes & Mauritz Gbc AB":            "Direktarbetsgivare",
+    "First Camp Sverige AB":                    "Direktarbetsgivare",
+    "Hemfrid i Sverige AB":                     "Direktarbetsgivare",
+    "Lifestyle Media Partner Sverige AB":        "Direktarbetsgivare",
+    "Attendo Sverige AB":                       "Direktarbetsgivare",
+    "Vardaga AB":                               "Direktarbetsgivare",
+    "Forenede Care AB":                         "Direktarbetsgivare",
+    "Norlandia Care AB":                        "Direktarbetsgivare",
+    "Humana AB":                                "Direktarbetsgivare",
+    "Ur & Penn AB":                             "Direktarbetsgivare",
+    "Verisure Sverige AB":                      "Direktarbetsgivare",
+    "Svenska Trygghetslösningar AB":            "Direktarbetsgivare",
+    "Axis Communications AB":                   "Direktarbetsgivare",
+    "Concentrix Sweden AB":                     "Direktarbetsgivare",
+    "Försäkringskassan":                        "Direktarbetsgivare",
+    "GÖTEBORGS KOMMUN":                         "Direktarbetsgivare",
+    "Göteborgs Universitet":                    "Direktarbetsgivare",
+    "Kungsbacka kommun":                        "Direktarbetsgivare",
+    "Svenska Kraftnät":                         "Direktarbetsgivare",
+    "Maskinförsäljning Europa AB":              "Direktarbetsgivare",
+    "Teleperformance Nordic AB":                "Direktarbetsgivare",
+    "Mervida AB":                               "Direktarbetsgivare",
+    "Takteam i Sverige AB":                     "Direktarbetsgivare",
+    "Täta Tak Energi Sverige AB":               "Direktarbetsgivare",
+    "YRKESKLÄDER FÖR PROFFS SVERIGE AB":        "Direktarbetsgivare",
+    "Gävle kommun":                             "Direktarbetsgivare",
+    "Nexer AB":                                 "Konsultbolag",
+    "Responda Group AB":                        "Bemanning/Rekrytering",
+    "Technologist 365 AB":                      "Bemanning/Rekrytering",
+    "Hero AB":                    "Bemanning/Rekrytering",
+    "Avanzera AB":                "Bemanning/Rekrytering",
+    "Omsorg & Behandling 1 AB":   "Direktarbetsgivare",
+    "Allegio Omsorg AB":          "Direktarbetsgivare",
+    # Tillagda 2026-05-25
+    "REGION DALARNA":             "Direktarbetsgivare",
+    "Capgemini Engineering Sverige AB": "Konsultbolag",
+    "Athletic Work Nordic AB":    "Bemanning/Rekrytering",
+    "Mölndals kommun":            "Direktarbetsgivare",
+    "Klippan Safety AB":          "Direktarbetsgivare",
+}
 
-    # ── KONSULTBOLAG (leveransansvar, ej personaluthyrning) ──────────
-    "AFRY AB":                                         "Konsultbolag",
-    "AKKA Talent Management AB":                       "Konsultbolag",
-    "Akkodis Sweden Electrical Solutions AB":          "Konsultbolag",
-    "Alten Sverige AB":                                "Konsultbolag",
-    "Ants Akademiskt Nätverk av Tekniska Studenter AB": "Konsultbolag",
-    "Avalon Innovation Technology AB":                 "Konsultbolag",
-    "Avaron AB":                                       "Konsultbolag",
-    "Cloudgruppen Sverige AB":                         "Konsultbolag",
-    "Collen AB":                                       "Konsultbolag",
-    "Combitech AB":                                    "Konsultbolag",
-    "Cubane Solutions AB":                             "Konsultbolag",
-    "Fellowmind Sweden AB":                            "Konsultbolag",
-    "Iver Sverige AB":                                 "Konsultbolag",
-    "Knightec Group Hardware and Design AB":           "Konsultbolag",
-    "Knowit AB":                                       "Konsultbolag",
-    "Knowit AB (Publ)":                                "Konsultbolag",
-    "Lynqa AB":                                        "Konsultbolag",
-    "NDP IT AB":                                       "Konsultbolag",
-    "Nexer AB":                                        "Konsultbolag",
-    "SKPA Consulting AB":                              "Konsultbolag",
-    "Semicon Service Nordic AB":                       "Konsultbolag",
-    "Sopra Steria Sweden AB":                          "Konsultbolag",
-    "Syntronic AB":                                    "Konsultbolag",
-    "Veritaz AB":                                      "Konsultbolag",
-
-    # ── DIREKTARBETSGIVARE ───────────────────────────────────────────
-    "ABB AB":                                          "Direktarbetsgivare",
-    "Allegio Omsorg AB":                               "Direktarbetsgivare",
-    "Arken Zoo AB":                                    "Direktarbetsgivare",
-    "Astani Wear AB":                                  "Direktarbetsgivare",
-    "Attendo Sverige AB":                              "Direktarbetsgivare",
-    "Axis Communications AB":                          "Direktarbetsgivare",
-    "Concentrix Sweden AB":                            "Direktarbetsgivare",
-    "E-Hälsomyndigheten":                              "Direktarbetsgivare",
-    "Falkenbergs kommun":                              "Direktarbetsgivare",
-    "Fibio Nordic AB":                                 "Direktarbetsgivare",
-    "First Camp Sverige AB":                           "Direktarbetsgivare",
-    "Forenede Care AB":                                "Direktarbetsgivare",
-    "Foundever Sweden AB":                             "Direktarbetsgivare",
-    "Försvarets Materielverk":                         "Direktarbetsgivare",
-    "Försäkringskassan":                               "Direktarbetsgivare",
-    "GÖTEBORGS KOMMUN":                                "Direktarbetsgivare",
-    "Gävle kommun":                                    "Direktarbetsgivare",
-    "Göteborgs Universitet":                           "Direktarbetsgivare",
-    "H & M Hennes & Mauritz Gbc AB":                   "Direktarbetsgivare",
-    "Hemfrid i Sverige AB":                            "Direktarbetsgivare",
-    "Hitachi Energy Sweden AB":                        "Direktarbetsgivare",
-    "Humana AB":                                       "Direktarbetsgivare",
-    "Jollyroom AB":                                    "Direktarbetsgivare",
-    "Kronans Apotek AB":                               "Direktarbetsgivare",
-    "Krokoms kommun":                                  "Direktarbetsgivare",
-    "Kungliga Tekniska Högskolan":                     "Direktarbetsgivare",
-    "Kungsbacka kommun":                               "Direktarbetsgivare",
-    "Lifestyle Media Partner Sverige AB":              "Direktarbetsgivare",
-    "Lovable Labs Sweden AB":                          "Direktarbetsgivare",
-    "Lycksele kommun":                                 "Direktarbetsgivare",
-    "Maskinförsäljning Europa AB":                     "Direktarbetsgivare",
-    "Mervida AB":                                      "Direktarbetsgivare",
-    "Noga Omsorg Haninge AB":                          "Direktarbetsgivare",
-    "Norlandia Care AB":                               "Direktarbetsgivare",
-    "Norrköpings kommun":                              "Direktarbetsgivare",
-    "Omsorg & Behandling 1 AB":                        "Direktarbetsgivare",
-    "REGION JÖNKÖPINGS LÄN":                           "Direktarbetsgivare",
-    "REGION NORRBOTTEN":                               "Direktarbetsgivare",
-    "REGION SKÅNE":                                    "Direktarbetsgivare",
-    "REGION STOCKHOLM":                                "Direktarbetsgivare",
-    "REGION SÖRMLAND":                                 "Direktarbetsgivare",
-    "REGION UPPSALA":                                  "Direktarbetsgivare",
-    "REGION VÄSTERBOTTEN":                             "Direktarbetsgivare",
-    "REGION ÖSTERGÖTLAND":                             "Direktarbetsgivare",
-    "REGION ÖREBRO LÄN":                               "Direktarbetsgivare",
-    "Releasy Customer Management AB":                  "Direktarbetsgivare",
-    "Retail Support Båstad Sweden AB":                 "Direktarbetsgivare",
-    "Rituals Cosmetics Sweden AB":                     "Direktarbetsgivare",
-    "SAAB AB":                                         "Direktarbetsgivare",
-    "STIFTELSEN FRYSHUSET":                            "Direktarbetsgivare",
-    "Silex Microsystems AB":                           "Direktarbetsgivare",
-    "Skatteverket":                                    "Direktarbetsgivare",
-    "Stockholms kommun":                               "Direktarbetsgivare",
-    "Stift Bräcke Diakoni":                            "Direktarbetsgivare",
-    "Svenska Kraftnät":                                "Direktarbetsgivare",
-    "Svenska Trygghetslösningar AB":                   "Direktarbetsgivare",
-    "Synsam Group Sweden AB":                          "Direktarbetsgivare",
-    "Takteam i Sverige AB":                            "Direktarbetsgivare",
-    "Teleperformance Nordic AB":                       "Direktarbetsgivare",
-    "Tiohundra AB":                                    "Direktarbetsgivare",
-    "Transcom AB":                                     "Direktarbetsgivare",
-    "Täta Tak Energi Sverige AB":                      "Direktarbetsgivare",
-    "Umeå kommun":                                     "Direktarbetsgivare",
-    "Ur & Penn AB":                                    "Direktarbetsgivare",
-    "Uppsala Universitet":                             "Direktarbetsgivare",
-    "Vardaga AB":                                      "Direktarbetsgivare",
-    "Vattenfall AB":                                   "Direktarbetsgivare",
-    "Verisure Sverige AB":                             "Direktarbetsgivare",
-    "Vetlanda kommun":                                 "Direktarbetsgivare",
-    "VÄSTRA GÖTALANDSREGIONEN":                        "Direktarbetsgivare",
-    "YRKESKLÄDER FÖR PROFFS SVERIGE AB":               "Direktarbetsgivare",
-    "ÖRNSKÖLDSVIKS KOMMUN":                            "Direktarbetsgivare",
+# ── Aggregatorer och felaktiga poster – exkluderas helt från datan ───
+# Dessa bolag stör totalen och ska inte räknas alls.
+# Lägg till nya aggregatorer här när de hittas.
+EXKLUDERA_ARBETSGIVARE = {
+    "DUVI GROUP AB",
+    "Duvi Group AB",
+    "Akhtar, Naeem",
 }
 
 def klassificera_ag(namn: str) -> str:
@@ -329,6 +286,12 @@ def hamta_alla(ids: list, extra_params: dict = None) -> dict:
             break
 
         for h in hits:
+            ag = h.get("employer", {}).get("name", "")
+
+            # Hoppa över aggregatorer och felaktiga poster
+            if ag in EXKLUDERA_ARBETSGIVARE:
+                continue
+
             antal_hits += 1
 
             adr = h.get("workplace_address", {})
@@ -337,7 +300,6 @@ def hamta_alla(ids: list, extra_params: dict = None) -> dict:
             if reg: region_counter[reg] += 1
             if kom: kommun_counter[kom] += 1
 
-            ag = h.get("employer", {}).get("name", "")
             if ag: ag_counter[ag] += 1
 
             tot_tjanster += h.get("number_of_vacancies", 1) or 1
@@ -417,7 +379,7 @@ def hamta_detaljer(ids: list) -> dict:
     }
 
 def kör_analys():
-    datum     = datetime.now().strftime("%Y-%m-%d")
+    datum    = datetime.now().strftime("%Y-%m-%d")
     klockslag = datetime.now().strftime("%H:%M")
     is_baseline = not os.path.exists(HUVUDFIL)
 
@@ -471,8 +433,8 @@ def kör_analys():
         if base == 0:
             return "–"
         index = round(antal / base * 100, 1)
-        diff  = round(index - 100, 1)
-        sign  = "+" if diff >= 0 else ""
+        diff = round(index - 100, 1)
+        sign = "+" if diff >= 0 else ""
         return f"{index} ({sign}{diff})"
 
     # ── Huvudfil ─────────────────────────────────────────────────────
@@ -496,6 +458,7 @@ def kör_analys():
             if d is None:
                 w.writerow([datum, roll, grupp, is_baseline] + ["Fel"] * 16)
                 continue
+            # Bygg klassificerad arbetsgivarlista
             ag_klassad = " | ".join(
                 f"{ag} ({n}) [{klassificera_ag(ag)}]"
                 for ag, n in d["ag_counter"].most_common(20)
@@ -515,46 +478,18 @@ def kör_analys():
                 ag_klassad,
             ])
 
-    # ── Rapportera okända arbetsgivare ───────────────────────────────
-    # Samla okända med antal annonser per roll för bättre prioritering
-    okanda = {}  # namn -> {roll: antal}
+    # ── Rapportera okända arbetsgivare (bara topp 10 per roll) ───────
+    okanda = set()
     for roll, d in resultat.items():
         if d is None: continue
-        for ag, antal in d["ag_counter"].most_common(20):
+        for ag, _ in d["ag_counter"].most_common(20):
             if klassificera_ag(ag) == "Okänd – granska":
-                if ag not in okanda:
-                    okanda[ag] = {}
-                okanda[ag][roll] = antal
-
-    # Skriv till okanda_ny.txt (nollställs varje körning)
-    OKANDAFIL = "okanda_arbetsgivare_ny.txt"
-    with open(OKANDAFIL, "w", encoding="utf-8") as f:
-        f.write(f"OKÄNDA ARBETSGIVARE – {datum}\n")
-        f.write("=" * 60 + "\n")
-        if okanda:
-            f.write(f"Antal okända: {len(okanda)}\n")
-            f.write("Kontrollera en gång i veckan och lägg till i ARBETSGIVARE_TYP\n\n")
-            # Sortera på totalt antal annonser (viktigaste först)
-            sorterade = sorted(okanda.items(), key=lambda x: sum(x[1].values()), reverse=True)
-            for ag, roller in sorterade:
-                totalt = sum(roller.values())
-                roller_str = ", ".join(f"{r} ({n})" for r, n in roller.items())
-                f.write(f"  {ag:<55} totalt={totalt}  [{roller_str}]\n")
-        else:
-            f.write("Inga okända arbetsgivare – listan är komplett!\n")
-
-    # Skriv även till konsolen
+                okanda.add(ag)
     if okanda:
         print()
-        print(f"⚠️  {len(okanda)} OKÄNDA ARBETSGIVARE – se {OKANDAFIL}")
-        sorterade = sorted(okanda.items(), key=lambda x: sum(x[1].values()), reverse=True)
-        for ag, roller in sorterade[:5]:
-            print(f"   {ag} (totalt {sum(roller.values())} annonser)")
-        if len(okanda) > 5:
-            print(f"   ... och {len(okanda)-5} till. Se filen för fullständig lista.")
-    else:
-        print()
-        print("✅ Inga okända arbetsgivare – listan är komplett!")
+        print("⚠️  OKÄNDA ARBETSGIVARE i topp 10 – lägg till i ARBETSGIVARE_TYP:")
+        for ag in sorted(okanda):
+            print(f"   {ag}")
 
     # ── Regionfil ────────────────────────────────────────────────────
     reg_ny = not os.path.exists(REGIOFIL)
