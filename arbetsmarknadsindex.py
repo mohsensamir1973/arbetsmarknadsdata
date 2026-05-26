@@ -346,6 +346,12 @@ def hamta_alla(ids: list, extra_params: dict = None) -> dict:
 def hamta_detaljer(ids: list) -> dict:
     alla = hamta_alla(ids)
 
+    # Nya senaste 30 dagar
+    trettio = (datetime.now(timezone.utc) - timedelta(days=30)).strftime(
+        "%Y-%m-%dT%H:%M:%S"
+    )
+    nya_30d = hamta_alla(ids, extra_params={"published-after": trettio})
+
     # Nya senaste 14 dagar (rolling window)
     fjorton = (datetime.now(timezone.utc) - timedelta(days=14)).strftime(
         "%Y-%m-%dT%H:%M:%S"
@@ -361,6 +367,8 @@ def hamta_detaljer(ids: list) -> dict:
     return {
         "total":            alla["total"],
         "tot_tjanster":     alla["tot_tjanster"],
+        "nya_30d":          nya_30d["total"],
+        "nya_30d_tjanster": nya_30d["tot_tjanster"],
         "nya_14d":          nya_14d["total"],
         "nya_14d_tjanster": nya_14d["tot_tjanster"],
         "nya_7d":           nya_7d["total"],
@@ -448,6 +456,7 @@ def kör_analys():
                 "Antal tjänster",
                 "Nya 7 dagar", "Nya 7 dagar tjänster",
                 "Nya 14 dagar", "Nya 14 dagar tjänster",
+                "Nya 30 dagar", "Nya 30 dagar tjänster",
                 "% heltid", "% tills vidare", "% lång", "% kort",
                 "% erfarenhet", "% nystartsjobb",
                 "Top 3 regioner (totalt)", "Top 3 regioner (7 dagar)",
@@ -456,7 +465,7 @@ def kör_analys():
         for roll, d in resultat.items():
             grupp = ROLLER[roll]["grupp"]
             if d is None:
-                w.writerow([datum, roll, grupp, is_baseline] + ["Fel"] * 16)
+                w.writerow([datum, roll, grupp, is_baseline] + ["Fel"] * 18)
                 continue
             # Bygg klassificerad arbetsgivarlista
             ag_klassad = " | ".join(
@@ -470,6 +479,7 @@ def kör_analys():
                 d["tot_tjanster"],
                 d["nya_7d"], d["nya_7d_tjanster"],
                 d["nya_14d"], d["nya_14d_tjanster"],
+                d["nya_30d"], d["nya_30d_tjanster"],
                 d["pct_heltid"], d["pct_tills_vidare"],
                 d["pct_lang"], d["pct_kort"],
                 d["pct_erfarenhet"], d["pct_nystartsjobb"],

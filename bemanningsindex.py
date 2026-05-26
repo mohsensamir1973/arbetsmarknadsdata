@@ -225,6 +225,11 @@ def hamta_alla(sokord: str, org_nummers: list, extra_params: dict = None) -> dic
 def hamta_detaljer(sokord: str, org_nummers: list) -> dict:
     alla = hamta_alla(sokord, org_nummers)
 
+    trettio = (datetime.now(timezone.utc) - timedelta(days=30)).strftime(
+        "%Y-%m-%dT%H:%M:%S"
+    )
+    nya_30d = hamta_alla(sokord, org_nummers, extra_params={"published-after": trettio})
+
     fjorton = (datetime.now(timezone.utc) - timedelta(days=14)).strftime(
         "%Y-%m-%dT%H:%M:%S"
     )
@@ -238,6 +243,8 @@ def hamta_detaljer(sokord: str, org_nummers: list) -> dict:
     return {
         "total":               alla["total"],
         "tot_tjanster":        alla["tot_tjanster"],
+        "nya_30d":             nya_30d["total"],
+        "nya_30d_tjanster":    nya_30d["tot_tjanster"],
         "nya_14d":             nya_14d["total"],
         "nya_14d_tjanster":    nya_14d["tot_tjanster"],
         "nya_7d":              nya_7d["total"],
@@ -301,6 +308,7 @@ def kor_analys():
             w.writerow([
                 "Datum", "Bolag",
                 "Antal annonser", "Antal tjanster",
+                "Nya annonser 30d", "Nya tjanster 30d",
                 "Nya annonser 14d", "Nya tjanster 14d",
                 "Nya annonser 7d", "Nya tjanster 7d",
                 "Aktivitetstakt % (14d)",
@@ -316,6 +324,7 @@ def kor_analys():
             w.writerow([
                 datum, bolag,
                 d["total"], d["tot_tjanster"],
+                d["nya_30d"], d["nya_30d_tjanster"],
                 d["nya_14d"], d["nya_14d_tjanster"],
                 d["nya_7d"], d["nya_7d_tjanster"],
                 d["aktivitetstakt"],
