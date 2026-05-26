@@ -1,6 +1,6 @@
 import csv
 
-fil = "arbetsmarknadsindex_trend.csv"
+fil = "bemanningsindex_trend.csv"
 
 with open(fil, "r", encoding="utf-8-sig") as f:
     rader = list(csv.reader(f, delimiter=";"))
