@@ -1,41 +1,51 @@
-Rapport;Period;Yrkesomrade;Omsattning_msek;Forandring_yoy_pct;Andel_av_total_pct
-Q4_2025;2025-Q1;Industri & Tillverkning;1778;;
-Q4_2025;2025-Q2;Industri & Tillverkning;2153;;
-Q4_2025;2025-Q3;Industri & Tillverkning;2020;;
-Q4_2025;2025-Q4;Industri & Tillverkning;2235;23.2;29
-Q4_2025;2025-Q1;Lager & Logistik;1507;;
-Q4_2025;2025-Q2;Lager & Logistik;1860;;
-Q4_2025;2025-Q3;Lager & Logistik;1898;;
-Q4_2025;2025-Q4;Lager & Logistik;1848;3.1;24
-Q4_2025;2025-Q1;IT;985;;
-Q4_2025;2025-Q2;IT;1009;;
-Q4_2025;2025-Q3;IT;836;;
-Q4_2025;2025-Q4;IT;1074;14.1;14
-Q4_2025;2025-Q1;Teknik;655;;
-Q4_2025;2025-Q2;Teknik;597;;
-Q4_2025;2025-Q3;Teknik;523;;
-Q4_2025;2025-Q4;Teknik;633;0.3;8
-Q4_2025;2025-Q1;Ekonomi & Finans;597;;
-Q4_2025;2025-Q2;Ekonomi & Finans;546;;
-Q4_2025;2025-Q3;Ekonomi & Finans;474;;
-Q4_2025;2025-Q4;Ekonomi & Finans;530;18.0;7
-Q4_2025;2025-Q1;Administration & Service;533;;
-Q4_2025;2025-Q2;Administration & Service;555;;
-Q4_2025;2025-Q3;Administration & Service;513;;
-Q4_2025;2025-Q4;Administration & Service;528;-4.5;7
-Q4_2025;2025-Q1;Hälso- & Sjukvård;317;;
-Q4_2025;2025-Q2;Hälso- & Sjukvård;316;;
-Q4_2025;2025-Q3;Hälso- & Sjukvård;306;;
-Q4_2025;2025-Q4;Hälso- & Sjukvård;300;-11.6;4
-Q4_2025;2025-Q1;Övrigt;279;;
-Q4_2025;2025-Q2;Övrigt;282;;
-Q4_2025;2025-Q3;Övrigt;265;;
-Q4_2025;2025-Q4;Övrigt;308;14.9;4
-Q4_2025;2025-Q1;Försäljning & Kundtjänst;207;;
-Q4_2025;2025-Q2;Försäljning & Kundtjänst;196;;
-Q4_2025;2025-Q3;Försäljning & Kundtjänst;184;;
-Q4_2025;2025-Q4;Försäljning & Kundtjänst;179;-19.3;2
-Q4_2025;2025-Q1;Life Science;42;;
-Q4_2025;2025-Q2;Life Science;44;;
-Q4_2025;2025-Q3;Life Science;41;;
-Q4_2025;2025-Q4;Life Science;49;;1
+Rapport;Period;Yrkesomrade;Omsattning_msek;Forandring_yoy_pct;Andel_av_total_pct;Signal
+Q4_2025;2025-Q1;Industri & Tillverkning;1778;;;
+Q4_2025;2025-Q2;Industri & Tillverkning;2153;;;
+Q4_2025;2025-Q3;Industri & Tillverkning;2020;;;
+Q4_2025;2025-Q4;Industri & Tillverkning;2235;23.2;29;
+Q4_2025;2025-Q1;Lager & Logistik;1507;;;
+Q4_2025;2025-Q2;Lager & Logistik;1860;;;
+Q4_2025;2025-Q3;Lager & Logistik;1898;;;
+Q4_2025;2025-Q4;Lager & Logistik;1848;3.1;24;
+Q4_2025;2025-Q1;IT;985;;;
+Q4_2025;2025-Q2;IT;1009;;;
+Q4_2025;2025-Q3;IT;836;;;
+Q4_2025;2025-Q4;IT;1074;14.1;14;
+Q4_2025;2025-Q1;Teknik;655;;;
+Q4_2025;2025-Q2;Teknik;597;;;
+Q4_2025;2025-Q3;Teknik;523;;;
+Q4_2025;2025-Q4;Teknik;633;0.3;8;
+Q4_2025;2025-Q1;Ekonomi & Finans;597;;;
+Q4_2025;2025-Q2;Ekonomi & Finans;546;;;
+Q4_2025;2025-Q3;Ekonomi & Finans;474;;;
+Q4_2025;2025-Q4;Ekonomi & Finans;530;18.0;7;
+Q4_2025;2025-Q1;Administration & Service;533;;;
+Q4_2025;2025-Q2;Administration & Service;555;;;
+Q4_2025;2025-Q3;Administration & Service;513;;;
+Q4_2025;2025-Q4;Administration & Service;528;-4.5;7;
+Q4_2025;2025-Q1;Hälso- & Sjukvård;317;;;
+Q4_2025;2025-Q2;Hälso- & Sjukvård;316;;;
+Q4_2025;2025-Q3;Hälso- & Sjukvård;306;;;
+Q4_2025;2025-Q4;Hälso- & Sjukvård;300;-11.6;4;
+Q4_2025;2025-Q1;Övrigt;279;;;
+Q4_2025;2025-Q2;Övrigt;282;;;
+Q4_2025;2025-Q3;Övrigt;265;;;
+Q4_2025;2025-Q4;Övrigt;308;14.9;4;
+Q4_2025;2025-Q1;Försäljning & Kundtjänst;207;;;
+Q4_2025;2025-Q2;Försäljning & Kundtjänst;196;;;
+Q4_2025;2025-Q3;Försäljning & Kundtjänst;184;;;
+Q4_2025;2025-Q4;Försäljning & Kundtjänst;179;-19.3;2;
+Q4_2025;2025-Q1;Life Science;42;;;
+Q4_2025;2025-Q2;Life Science;44;;;
+Q4_2025;2025-Q3;Life Science;41;;;
+Q4_2025;2025-Q4;Life Science;49;;1;
+Q1_2026;2026-Q1;Industri & Tillverkning;2217;25.2;33;Stark volymmotor
+Q1_2026;2026-Q1;Lager & Logistik;1709;13.4;25;Stark volymmotor
+Q1_2026;2026-Q1;IT;726;-26.3;11;Stor kategori svag trend
+Q1_2026;2026-Q1;Teknik;493;-36.1;7;Stor kategori svag trend
+Q1_2026;2026-Q1;Ekonomi & Finans;462;-22.8;7;Tidig signal att följa
+Q1_2026;2026-Q1;Administration & Service;508;-8.2;7;Regionalt koncentrerad
+Q1_2026;2026-Q1;Hälso- & Sjukvård;180;-43.2;3;Stor kategori svag trend
+Q1_2026;2026-Q1;Övrigt;281;0.9;4;Regionalt koncentrerad
+Q1_2026;2026-Q1;Försäljning & Kundtjänst;176;-15.2;3;Växer från låg nivå
+Q1_2026;2026-Q1;Life Science;35;-14.6;1;Tidig signal att följa
