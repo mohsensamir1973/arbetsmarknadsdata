@@ -1,20 +1,19 @@
 """
-Arbetsmarknadsindex v7 – automatisk arbetsgivarklassificering via SNI
+Arbetsmarknadsindex v6 – söker via occupation_group-ID för exakt data
 ======================================================================
-Ersätter: arbetsmarknadsindex.py (v6)
+Ersätter: arbetsmarknadsindex.py (v5)
 Placeras i: Documents\Arbetsmarknadsindex\
 
-Nyheter i v7 vs v6:
-  - Automatisk klassificering via Bolagsverkets API + SNI-koder
-  - Cache-fil (arbetsgivare_cache.json) sparar uppslag lokalt
-  - Manuell lista är fortfarande override – ändras aldrig automatiskt
-  - Exkluderingslista för aggregatorer och irrelevanta aktörer
-  - CSV-data är identisk med v6 – ingen påverkan på trendhistorik
+Nyheter i v6 vs v5:
+  - Sökning via occupation_group-ID istället för fritext
+  - 100% precision per roll – inget brus
+  - Daglig körning (ersätter varannan vecka)
+  - Rolling 14-dagars data sparas
+  - Baseline-flagga för mätning 1
 """
 
 import urllib.request
 import urllib.parse
-import urllib.error
 import json
 import csv
 import ssl
@@ -27,10 +26,8 @@ SSL_CONTEXT = ssl.create_default_context()
 SSL_CONTEXT.check_hostname = False
 SSL_CONTEXT.verify_mode = ssl.CERT_NONE
 
-# ── Sökväg till cache-fil ────────────────────────────────────────────
-CACHE_FIL = os.path.join(os.path.dirname(os.path.abspath(__file__)), "arbetsgivare_cache.json")
-
 # ── Signalroller med occupation_group-ID ────────────────────────────
+# Källa: AF:s jobsearch API, concept_id från occupation_group-fältet
 ROLLER = {
     "Kundtjänstmedarbetare": {
         "ids": ["pwRH_MT1_8nR"],
@@ -44,6 +41,7 @@ ROLLER = {
         "ids": ["kLyY_rwr_aJr"],
         "grupp": "Volym / cykel",
     },
+
     "Business Controller": {
         "ids": ["Uw4n_UB2_RCW"],
         "grupp": "Framåtblickande signal",
@@ -80,34 +78,10 @@ HUVUDFIL  = "arbetsmarknadsindex_trend.csv"
 REGIOFIL  = "arbetsmarknadsindex_regioner_trend.csv"
 KOMMUNFIL = "arbetsmarknadsindex_kommuner_trend.csv"
 
-# ── SNI-mappning ─────────────────────────────────────────────────────
-# SNI 2007 – de 4 första siffrorna avgör kategori
-SNI_MAPPNING = {
-    "7810": "Bemanning/Rekrytering",
-    "7820": "Bemanning/Rekrytering",
-    "7830": "Bemanning/Rekrytering",
-    "6201": "Konsultbolag",
-    "6202": "Konsultbolag",
-    "6203": "Konsultbolag",
-    "6209": "Konsultbolag",
-    "7111": "Konsultbolag",
-    "7112": "Konsultbolag",
-    "7120": "Konsultbolag",
-    "7021": "Konsultbolag",
-    "7022": "Konsultbolag",
-    "6920": "Konsultbolag",
-}
+# ── Arbetsgivarklassificering ────────────────────────────────────────
+# Tre kategorier: Bemannings/rekryteringsbolag, Konsultbolag, Direktarbetsgivare
+# Okända bolag flaggas automatiskt som "Okänd – granska"
 
-# ── Exkluderade bolag ────────────────────────────────────────────────
-# Aggregatorer och irrelevanta aktörer – visas aldrig i rapporten
-EXKLUDERA = {
-    "DUVI GROUP AB",
-    "Jobs By Nordics AB",
-    "Degerfors IF",
-}
-
-# ── Manuell lista – override, alltid rätt ───────────────────────────
-# Lägg till nya bolag här. Denna lista har alltid högst prioritet.
 ARBETSGIVARE_TYP = {
     # BEMANNINGS/REKRYTERINGSBOLAG
     "Academic Work Sweden AB":                  "Bemanning/Rekrytering",
@@ -225,164 +199,100 @@ ARBETSGIVARE_TYP = {
     "Nexer AB":                                 "Konsultbolag",
     "Responda Group AB":                        "Bemanning/Rekrytering",
     "Technologist 365 AB":                      "Bemanning/Rekrytering",
-    "Hero AB":                                  "Bemanning/Rekrytering",
-    "Avanzera AB":                              "Bemanning/Rekrytering",
-    "Omsorg & Behandling 1 AB":                 "Direktarbetsgivare",
-    "Allegio Omsorg AB":                        "Direktarbetsgivare",
-    # TILLAGDA 2026-06-01
-    "Releasy Customer Management AB":           "Direktarbetsgivare",
-    "Foundever Sweden AB":                      "Direktarbetsgivare",
-    "Transcom AB":                              "Direktarbetsgivare",
-    "Ideal BM AB":                              "Bemanning/Rekrytering",
-    "Sanandum AB":                              "Bemanning/Rekrytering",
-    "REGION NORRBOTTEN":                        "Direktarbetsgivare",
-    "REGION SÖRMLAND":                          "Direktarbetsgivare",
-    "Logent Bemanning AB":                      "Bemanning/Rekrytering",
-    "Sopra Steria Sweden AB":                   "Konsultbolag",
-    "Lovable Labs Sweden AB":                   "Direktarbetsgivare",
+    "Hero AB":                    "Bemanning/Rekrytering",
+    "Avanzera AB":                "Bemanning/Rekrytering",
+    "Omsorg & Behandling 1 AB":   "Direktarbetsgivare",
+    "Allegio Omsorg AB":          "Direktarbetsgivare",
+
+
+# TILLAGDA 2026-06-01
+    "Releasy Customer Management AB":          "Direktarbetsgivare",
+    "Foundever Sweden AB":                     "Direktarbetsgivare",
+    "Transcom AB":                             "Direktarbetsgivare",
+    "Ideal BM AB":                             "Bemanning/Rekrytering",
+    "Sanandum AB":                             "Bemanning/Rekrytering",
+    "REGION NORRBOTTEN":                       "Direktarbetsgivare",
+    "REGION SÖRMLAND":                         "Direktarbetsgivare",
+    "Logent Bemanning AB":                     "Bemanning/Rekrytering",
+    "Sopra Steria Sweden AB":                  "Konsultbolag",
+    "Lovable Labs Sweden AB":                  "Direktarbetsgivare",
     "Ants Akademiskt Nätverk av Tekniska Studenter AB": "Bemanning/Rekrytering",
-    "Lynqa AB":                                 "Konsultbolag",
-    "Capgemini Engineering Sverige AB":         "Konsultbolag",
-    "Agile Resources AB":                       "Bemanning/Rekrytering",
-    "Försvarets Materielverk":                  "Direktarbetsgivare",
-    "People of Interim & Finance Sweden AB":    "Bemanning/Rekrytering",
-    "AxÖ Consulting AB":                        "Konsultbolag",
-    "SJ AB":                                    "Direktarbetsgivare",
-    "Ingka Services AB":                        "Direktarbetsgivare",
-    "Posti Logistics Staffing AB":              "Bemanning/Rekrytering",
-    "Libera i Sverige AB":                      "Bemanning/Rekrytering",
-    "Astani Wear AB":                           "Direktarbetsgivare",
-    "Jovi Konsult AB":                          "Bemanning/Rekrytering",
-    "Arena Personal Sverige AB":                "Bemanning/Rekrytering",
-    "Nexify bemanning & rekrytering AB":        "Bemanning/Rekrytering",
-    "Systrarnas bemanning AB":                  "Bemanning/Rekrytering",
-    "Vårdbemanning Sverige AB":                 "Bemanning/Rekrytering",
-    "MACC PEOPLE AB":                           "Bemanning/Rekrytering",
-    "Fibio Nordic AB":                          "Direktarbetsgivare",
-    "Barona Professionals AB":                  "Bemanning/Rekrytering",
-    # TILLAGDA 2026-05-31
-    "Insitepart AB":                            "Bemanning/Rekrytering",
-    "Jollyroom AB":                             "Direktarbetsgivare",
-    "Gekomm AB":                                "Direktarbetsgivare",
-    "DEROME AKTIEBOLAG":                        "Direktarbetsgivare",
-    "KUNGSBACKA KOMMUN":                        "Direktarbetsgivare",
-    "BODENS KOMMUN":                            "Direktarbetsgivare",
-    "Silex Microsystems AB":                    "Direktarbetsgivare",
-    "Unik Resurs i Sverige AB":                 "Bemanning/Rekrytering",
-    "VårdIX AB":                                "Bemanning/Rekrytering",
-    "Viraliv AB":                               "Bemanning/Rekrytering",
-    # TILLAGDA 2026-05-30
-    "Consensus Sverige AB":                     "Bemanning/Rekrytering",
-    "Jobway AB":                                "Bemanning/Rekrytering",
-    "Co-Worker Technology Sweden AB":           "Bemanning/Rekrytering",
-    "Sway Sourcing Sweden AB":                  "Bemanning/Rekrytering",
-    "Sway Sourcing Sweden Aktiebolag":          "Bemanning/Rekrytering",
-    "Delta Consulting AB":                      "Bemanning/Rekrytering",
-    "STANDBY WORKTEAM AB":                      "Bemanning/Rekrytering",
-    "ACADEMIC WORK SWEDEN AB":                  "Bemanning/Rekrytering",
-    "StudentConsulting Sweden AB (publ)":       "Bemanning/Rekrytering",
-    "Balkefors & Ponsiluoma Aktiebolag":        "Bemanning/Rekrytering",
-    "Bae Systems Hägglunds AB":                 "Direktarbetsgivare",
-    "Jobbusters AB":                            "Bemanning/Rekrytering",
-    "Hireq AB":                                 "Bemanning/Rekrytering",
-    "Resultat i Sverige AB":                    "Bemanning/Rekrytering",
-    "Ps Partner AB":                            "Bemanning/Rekrytering",
+    "Lynqa AB":                                "Konsultbolag",
+    "Capgemini Engineering Sverige AB":        "Konsultbolag",
+    "Agile Resources AB":                      "Bemanning/Rekrytering",
+    "Försvarets Materielverk":                 "Direktarbetsgivare",
+    "People of Interim & Finance Sweden AB":   "Bemanning/Rekrytering",
+    "AxÖ Consulting AB":                       "Konsultbolag",
+    "SJ AB":                                   "Direktarbetsgivare",
+    "Ingka Services AB":                       "Direktarbetsgivare",
+    "Posti Logistics Staffing AB":             "Bemanning/Rekrytering",
+    "Libera i Sverige AB":                     "Bemanning/Rekrytering",
+    "Astani Wear AB":                          "Direktarbetsgivare",
+    "Jovi Konsult AB":                         "Bemanning/Rekrytering",
+    "Arena Personal Sverige AB":               "Bemanning/Rekrytering",
+    "Nexify bemanning & rekrytering AB":       "Bemanning/Rekrytering",
+    "Systrarnas bemanning AB":                 "Bemanning/Rekrytering",
+    "Vårdbemanning Sverige AB":                "Bemanning/Rekrytering",
+    "MACC PEOPLE AB":                          "Bemanning/Rekrytering",
+    "Fibio Nordic AB":                         "Direktarbetsgivare",
+    "Barona Professionals AB":                 "Bemanning/Rekrytering",
+
+# TILLAGDA 2026-05-31
+    "Insitepart AB":              "Bemanning/Rekrytering",
+    "Jollyroom AB":               "Direktarbetsgivare",
+    "Gekomm AB":                  "Direktarbetsgivare",
+    "DEROME AKTIEBOLAG":          "Direktarbetsgivare",
+    "KUNGSBACKA KOMMUN":          "Direktarbetsgivare",
+    "BODENS KOMMUN":              "Direktarbetsgivare",
+    "Silex Microsystems AB":      "Direktarbetsgivare",
+    "Unik Resurs i Sverige AB":   "Bemanning/Rekrytering",
+    "VårdIX AB":                  "Bemanning/Rekrytering",
+    "Viraliv AB":                 "Bemanning/Rekrytering",
+
+# TILLAGDA 2026-05-30
+    "Consensus Sverige AB":                  "Bemanning/Rekrytering",
+    "Jobway AB":                             "Bemanning/Rekrytering",
+    "Co-Worker Technology Sweden AB":        "Bemanning/Rekrytering",
+    "Sway Sourcing Sweden AB":               "Bemanning/Rekrytering",
+    "Sway Sourcing Sweden Aktiebolag":       "Bemanning/Rekrytering",
+    "Delta Consulting AB":                   "Bemanning/Rekrytering",
+    "STANDBY WORKTEAM AB":                   "Bemanning/Rekrytering",
+    "ACADEMIC WORK SWEDEN AB":               "Bemanning/Rekrytering",
+    "StudentConsulting Sweden AB (publ)":    "Bemanning/Rekrytering",
+    "Balkefors & Ponsiluoma Aktiebolag":     "Bemanning/Rekrytering",
+    "Bae Systems Hägglunds AB":              "Direktarbetsgivare",
+    "Jobbusters AB":                         "Bemanning/Rekrytering",
+    "Hireq AB":                              "Bemanning/Rekrytering",
+    "Resultat i Sverige AB":                 "Bemanning/Rekrytering",
+    "Ps Partner AB":                         "Bemanning/Rekrytering",
     # TILLAGDA 2026-05-27
-    "Tng Group AB":                             "Bemanning/Rekrytering",
-    "Cubane Solutions AB":                      "Konsultbolag",
-    "Lycksele kommun":                          "Direktarbetsgivare",
-    "Nexer Recruit AB":                         "Bemanning/Rekrytering",
-    "Sellhelp AB":                              "Direktarbetsgivare",
-    "Charlie AB":                               "Bemanning/Rekrytering",
-    "MultiMind Holding AB":                     "Bemanning/Rekrytering",
-    "OnePartnerGroup Halland AB":               "Bemanning/Rekrytering",
+    "Tng Group AB":               "Bemanning/Rekrytering",
+    "Cubane Solutions AB":        "Konsultbolag",
+    "Lycksele kommun":            "Direktarbetsgivare",
+    "Nexer Recruit AB":           "Bemanning/Rekrytering",
+    "Sellhelp AB":                "Direktarbetsgivare",
+    "Charlie AB":                 "Bemanning/Rekrytering",
+    "MultiMind Holding AB":       "Bemanning/Rekrytering",
+    "OnePartnerGroup Halland AB": "Bemanning/Rekrytering",
+
+    # EXKLUDERADE – aggregatorer och irrelevanta aktörer
+    "DUVI GROUP AB":                      "Exkludera",
+    "Jobs By Nordics AB":                 "Exkludera",
+    "Degerfors IF":                       "Exkludera",
+
     # TILLAGDA 2026-06-02
-    "Vinnergi AB":                              "Direktarbetsgivare",
-    "ADECCO SWEDEN AKTIEBOLAG":                 "Bemanning/Rekrytering",
-    "Athletic Work Nordic AB":                  "Bemanning/Rekrytering",
-    "GVU AB":                                   "Konsultbolag",
-    "HÖGSKOLAN I SKÖVDE":                       "Direktarbetsgivare",
-    "Epiroc Rock Drills Aktiebolag":            "Direktarbetsgivare",
-    "44:AN FÖRVALTNINGS AKTIEBOLAG":            "Direktarbetsgivare",
-    "FÖREN BLOMSTERFONDEN":                     "Direktarbetsgivare",
-}
+    "Vinnergi AB":                        "Direktarbetsgivare",
+    "ADECCO SWEDEN AKTIEBOLAG":           "Bemanning/Rekrytering",
+    "Athletic Work Nordic AB":            "Bemanning/Rekrytering",
+    "GVU AB":                             "Konsultbolag",
+    "HÖGSKOLAN I SKÖVDE":                 "Direktarbetsgivare",
+    "Epiroc Rock Drills Aktiebolag":      "Direktarbetsgivare",
+    "44:AN FÖRVALTNINGS AKTIEBOLAG":      "Direktarbetsgivare",
+    "FÖREN BLOMSTERFONDEN":               "Direktarbetsgivare",}
 
-# ── Cache – laddas en gång vid start ────────────────────────────────
-def _ladda_cache() -> dict:
-    if os.path.exists(CACHE_FIL):
-        try:
-            with open(CACHE_FIL, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except Exception:
-            return {}
-    return {}
-
-def _spara_cache(cache: dict):
-    try:
-        with open(CACHE_FIL, "w", encoding="utf-8") as f:
-            json.dump(cache, f, ensure_ascii=False, indent=2)
-    except Exception as e:
-        print(f"  Varning: kunde inte spara cache: {e}")
-
-def _slå_upp_sni(org_nr: str) -> str:
-    """Slår upp SNI-kod via Bolagsverkets API. Returnerar kategori."""
-    org_nr_rensat = org_nr.replace("-", "").strip()
-    if not org_nr_rensat or len(org_nr_rensat) < 10:
-        return "Okänd – granska"
-    url = f"https://api.bolagsverket.se/foretagsinformation/v1/foretag/{org_nr_rensat}"
-    try:
-        req = urllib.request.Request(url)
-        req.add_header("Accept", "application/json")
-        with urllib.request.urlopen(req, timeout=5, context=SSL_CONTEXT) as resp:
-            data = json.loads(resp.read())
-        sni = (
-            data.get("sni_kod") or
-            data.get("branschkod") or
-            data.get("sni") or ""
-        )
-        if sni:
-            sni_short = str(sni).replace(".", "").replace(" ", "")[:4]
-            return SNI_MAPPNING.get(sni_short, "Direktarbetsgivare")
-        return "Direktarbetsgivare"
-    except urllib.error.HTTPError as e:
-        if e.code == 404:
-            return "Okänd – granska"
-        return "Okänd – granska"
-    except Exception:
-        return "Okänd – granska"
-
-_ag_cache = _ladda_cache()
-_cache_ändrad = False
-
-def klassificera_ag(namn: str, org_nr: str = "") -> str:
-    """
-    Klassificerar arbetsgivare. Prioritetsordning:
-      1. Exkluderingslista
-      2. Manuell lista (ARBETSGIVARE_TYP)
-      3. Cache (tidigare API-uppslag)
-      4. Bolagsverkets API (nytt uppslag om org_nr finns)
-      5. Okänd – granska
-    """
-    global _ag_cache, _cache_ändrad
-
-    if namn in EXKLUDERA:
-        return "Exkludera"
-
-    if namn in ARBETSGIVARE_TYP:
-        return ARBETSGIVARE_TYP[namn]
-
-    cache_nyckel = org_nr if org_nr else namn
-    if cache_nyckel in _ag_cache:
-        return _ag_cache[cache_nyckel]
-
-    if org_nr:
-        time.sleep(0.2)
-        kategori = _slå_upp_sni(org_nr)
-        _ag_cache[cache_nyckel] = kategori
-        _cache_ändrad = True
-        return kategori
-
-    return "Okänd – granska"
+def klassificera_ag(namn: str) -> str:
+    """Klassificerar arbetsgivare. Okända flaggas för granskning."""
+    return ARBETSGIVARE_TYP.get(namn, "Okänd – granska")
 
 def klassificera_duration(label: str) -> str:
     if not label:
@@ -403,6 +313,7 @@ def api_request(url: str) -> dict:
         return json.loads(r.read())
 
 def bygg_url(ids: list, extra_params: dict = None) -> str:
+    """Bygger URL med ett eller flera occupation-group-ID:n."""
     params = []
     for oid in ids:
         params.append(("occupation-group", oid))
@@ -414,10 +325,10 @@ def bygg_url(ids: list, extra_params: dict = None) -> str:
     return f"https://jobsearch.api.jobtechdev.se/search?{query}"
 
 def hamta_alla(ids: list, extra_params: dict = None) -> dict:
+    """Paginerar alla annonser för givna occupation_group-ID:n."""
     region_counter    = Counter()
     kommun_counter    = Counter()
     ag_counter        = Counter()
-    ag_orgnr          = {}
     duration_counter  = Counter()
     arbetstid_counter = Counter()
 
@@ -453,13 +364,8 @@ def hamta_alla(ids: list, extra_params: dict = None) -> dict:
             if reg: region_counter[reg] += 1
             if kom: kommun_counter[kom] += 1
 
-            emp = h.get("employer", {})
-            ag = emp.get("name", "")
-            org_nr = emp.get("organization_number", "")
-            if ag:
-                ag_counter[ag] += 1
-                if org_nr and ag not in ag_orgnr:
-                    ag_orgnr[ag] = org_nr
+            ag = h.get("employer", {}).get("name", "")
+            if ag: ag_counter[ag] += 1
 
             tot_tjanster += h.get("number_of_vacancies", 1) or 1
 
@@ -492,7 +398,6 @@ def hamta_alla(ids: list, extra_params: dict = None) -> dict:
         "region_counter":    region_counter,
         "kommun_counter":    kommun_counter,
         "ag_counter":        ag_counter,
-        "ag_orgnr":          ag_orgnr,
         "duration_counter":  duration_counter,
         "arbetstid_counter": arbetstid_counter,
         "pct_heltid":        round(min(arbetstid_counter.get("Heltid", 0) / n * 100, 100), 1),
@@ -506,11 +411,13 @@ def hamta_alla(ids: list, extra_params: dict = None) -> dict:
 def hamta_detaljer(ids: list) -> dict:
     alla = hamta_alla(ids)
 
+    # Nya senaste 14 dagar (rolling window)
     fjorton = (datetime.now(timezone.utc) - timedelta(days=14)).strftime(
         "%Y-%m-%dT%H:%M:%S"
     )
     nya_14d = hamta_alla(ids, extra_params={"published-after": fjorton})
 
+    # Nya senaste 7 dagar
     sju = (datetime.now(timezone.utc) - timedelta(days=7)).strftime(
         "%Y-%m-%dT%H:%M:%S"
     )
@@ -528,7 +435,6 @@ def hamta_detaljer(ids: list) -> dict:
         "reg_14d":          nya_14d["region_counter"],
         "kom_alla":         alla["kommun_counter"],
         "ag_counter":       alla["ag_counter"],
-        "ag_orgnr":         alla["ag_orgnr"],
         "pct_erfarenhet":   alla["pct_erfarenhet"],
         "pct_nystartsjobb": alla["pct_nystartsjobb"],
         "pct_heltid":       alla["pct_heltid"],
@@ -538,12 +444,12 @@ def hamta_detaljer(ids: list) -> dict:
     }
 
 def kör_analys():
-    datum     = datetime.now().strftime("%Y-%m-%d")
+    datum    = datetime.now().strftime("%Y-%m-%d")
     klockslag = datetime.now().strftime("%H:%M")
     is_baseline = not os.path.exists(HUVUDFIL)
 
     print("=" * 65)
-    print("ARBETSMARKNADSINDEX v7")
+    print("ARBETSMARKNADSINDEX v6")
     print(f"Datum: {datum} {klockslag}")
     if is_baseline:
         print("*** BASELINE-MÄTNING (mätning 1) ***")
@@ -617,10 +523,10 @@ def kör_analys():
             if d is None:
                 w.writerow([datum, roll, grupp, is_baseline] + ["Fel"] * 16)
                 continue
+            # Bygg klassificerad arbetsgivarlista
             ag_klassad = " | ".join(
-                f"{ag} ({n}) [{klassificera_ag(ag, d['ag_orgnr'].get(ag, ''))}]"
+                f"{ag} ({n}) [{klassificera_ag(ag)}]"
                 for ag, n in d["ag_counter"].most_common(20)
-                if klassificera_ag(ag, d['ag_orgnr'].get(ag, '')) != "Exkludera"
             )
             index_str = beräkna_index(roll, d["total"])
             w.writerow([
@@ -637,17 +543,16 @@ def kör_analys():
                 ag_klassad,
             ])
 
-    # ── Rapportera okända arbetsgivare ───────────────────────────────
+    # ── Rapportera okända arbetsgivare (bara topp 10 per roll) ───────
     okanda = set()
     for roll, d in resultat.items():
         if d is None: continue
         for ag, _ in d["ag_counter"].most_common(20):
-            org_nr = d["ag_orgnr"].get(ag, "")
-            if klassificera_ag(ag, org_nr) == "Okänd – granska":
+            if klassificera_ag(ag) == "Okänd – granska":
                 okanda.add(ag)
     if okanda:
         print()
-        print("⚠️  OKÄNDA ARBETSGIVARE i topp 20 – lägg till i ARBETSGIVARE_TYP:")
+        print("⚠️  OKÄNDA ARBETSGIVARE i topp 10 – lägg till i ARBETSGIVARE_TYP:")
         for ag in sorted(okanda):
             print(f"   {ag}")
 
@@ -678,11 +583,6 @@ def kör_analys():
             if d is None: continue
             for kommun, antal in d["kom_alla"].most_common(5):
                 w.writerow([datum, roll, ROLLER[roll]["grupp"], kommun, antal])
-
-    # ── Spara cache om den ändrats ───────────────────────────────────
-    if _cache_ändrad:
-        _spara_cache(_ag_cache)
-        print(f"  Cache uppdaterad: {len(_ag_cache)} bolag sparade i arbetsgivare_cache.json")
 
     print(f"Sparat: {HUVUDFIL}")
     print(f"Sparat: {REGIOFIL}")
