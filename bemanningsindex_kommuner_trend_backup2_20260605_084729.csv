@@ -1,0 +1,2615 @@
+﻿Datum;Bolag;Kommun;Antal annonser
+2026-05-20;Manpower;Göteborg;9
+2026-05-20;Manpower;Stockholm;6
+2026-05-20;Manpower;Borås;4
+2026-05-20;Manpower;Örnsköldsvik;3
+2026-05-20;Manpower;Västerås;2
+2026-05-20;Lernia;Göteborg;15
+2026-05-20;Lernia;Falkenberg;14
+2026-05-20;Lernia;Halmstad;13
+2026-05-20;Lernia;Varberg;9
+2026-05-20;Lernia;Borås;6
+2026-05-20;Adecco;Stockholm;17
+2026-05-20;Adecco;Malmö;16
+2026-05-20;Adecco;Göteborg;11
+2026-05-20;Adecco;Växjö;9
+2026-05-20;Adecco;Uppsala;7
+2026-05-20;Perido;Stockholm;9
+2026-05-20;Perido;Göteborg;6
+2026-05-20;Perido;Norrköping;4
+2026-05-20;Perido;Borlänge;1
+2026-05-20;Perido;Skövde;1
+2026-05-20;Randstad;Göteborg;20
+2026-05-20;Randstad;Stockholm;18
+2026-05-20;Randstad;Uppsala;12
+2026-05-20;Randstad;Norrköping;9
+2026-05-20;Randstad;Jönköping;8
+2026-05-20;Academic Work;Stockholm;113
+2026-05-20;Academic Work;Göteborg;29
+2026-05-20;Academic Work;Linköping;27
+2026-05-20;Academic Work;Malmö;25
+2026-05-20;Academic Work;Örebro;16
+2026-05-20;Studentconsulting;Malmö;16
+2026-05-20;Studentconsulting;Stockholm;13
+2026-05-20;Studentconsulting;Västerås;12
+2026-05-20;Studentconsulting;Luleå;12
+2026-05-20;Studentconsulting;Norrköping;11
+2026-05-20;Poolia;Stockholm;15
+2026-05-20;Poolia;Finspång;7
+2026-05-20;Poolia;Linköping;6
+2026-05-20;Poolia;Helsingborg;5
+2026-05-20;Poolia;Malmö;4
+2026-05-20;Uniflex;Stockholm;24
+2026-05-20;Uniflex;Helsingborg;13
+2026-05-20;Uniflex;Norrköping;10
+2026-05-20;Uniflex;Göteborg;10
+2026-05-20;Uniflex;Vetlanda;8
+2026-05-20;OnePartnerGroup;Jönköping;16
+2026-05-20;OnePartnerGroup;Östersund;11
+2026-05-20;OnePartnerGroup;Örnsköldsvik;8
+2026-05-20;OnePartnerGroup;Göteborg;7
+2026-05-20;OnePartnerGroup;Stockholm;7
+2026-05-20;Skill;Finspång;28
+2026-05-20;Skill;Linköping;27
+2026-05-20;Skill;Trollhättan;12
+2026-05-20;Skill;Göteborg;4
+2026-05-20;Skill;Norrköping;3
+2026-05-20;Arena Personal;Stockholm;15
+2026-05-20;Arena Personal;Strängnäs;14
+2026-05-20;Arena Personal;Eskilstuna;13
+2026-05-20;Arena Personal;Göteborg;5
+2026-05-20;Arena Personal;Järfälla;4
+2026-05-20;Tranpenad;Göteborg;6
+2026-05-20;Tranpenad;Borås;4
+2026-05-20;Tranpenad;Sigtuna;4
+2026-05-20;Tranpenad;Håbo;3
+2026-05-20;Tranpenad;Eskilstuna;3
+2026-05-20;Jobandtalent;Norrköping;26
+2026-05-20;Jobandtalent;Jönköping;8
+2026-05-20;Jobandtalent;Stockholm;7
+2026-05-20;Jobandtalent;Göteborg;7
+2026-05-20;Jobandtalent;Malmö;6
+2026-05-20;NearYou;Alingsås;9
+2026-05-20;NearYou;Trollhättan;8
+2026-05-20;NearYou;Jönköping;7
+2026-05-20;NearYou;Vårgårda;6
+2026-05-20;NearYou;Göteborg;6
+2026-05-20;SJR;Stockholm;16
+2026-05-20;SJR;Göteborg;5
+2026-05-20;SJR;Uppsala;4
+2026-05-20;SJR;Helsingborg;1
+2026-05-20;SJR;Järfälla;1
+2026-05-20;Clockwork;Stockholm;8
+2026-05-20;Clockwork;Umeå;4
+2026-05-20;Clockwork;Avesta;3
+2026-05-20;Clockwork;Gävle;3
+2026-05-20;Clockwork;Falun;3
+2026-05-20;Logent;Stockholm;6
+2026-05-20;Logent;Helsingborg;6
+2026-05-20;Logent;Malmö;5
+2026-05-20;Logent;Göteborg;5
+2026-05-20;Logent;Halmstad;4
+2026-05-20;Bemannia;Stockholm;8
+2026-05-20;Bemannia;Göteborg;6
+2026-05-20;Bemannia;Norrtälje;4
+2026-05-20;Bemannia;Sundbyberg;2
+2026-05-20;Bemannia;Krokom;1
+2026-05-20;Framtiden i Sverige;Linköping;33
+2026-05-20;Framtiden i Sverige;Stockholm;20
+2026-05-20;Framtiden i Sverige;Jönköping;13
+2026-05-20;Framtiden i Sverige;Göteborg;12
+2026-05-20;Framtiden i Sverige;Västerås;8
+2026-05-20;Professionals Nord;Luleå;33
+2026-05-20;Professionals Nord;Piteå;14
+2026-05-20;Professionals Nord;Stockholm;13
+2026-05-20;Professionals Nord;Kiruna;12
+2026-05-20;Professionals Nord;Umeå;10
+2026-05-20;Bravura;Stockholm;61
+2026-05-20;Bravura;Göteborg;16
+2026-05-20;Bravura;Linköping;8
+2026-05-20;Bravura;Malmö;6
+2026-05-20;Bravura;Jönköping;6
+2026-05-20;Jurek;Stockholm;11
+2026-05-20;Jurek;Göteborg;7
+2026-05-20;Jurek;Uppsala;2
+2026-05-20;Jurek;Solna;2
+2026-05-20;Jurek;Värnamo;1
+2026-05-20;TNG Group;Stockholm;25
+2026-05-20;TNG Group;Malmö;4
+2026-05-20;TNG Group;Göteborg;3
+2026-05-20;TNG Group;Helsingborg;3
+2026-05-20;TNG Group;Linköping;2
+2026-05-20;Eterni Sweden;Växjö;13
+2026-05-20;Eterni Sweden;Vetlanda;9
+2026-05-20;Eterni Sweden;Jönköping;4
+2026-05-20;Eterni Sweden;Helsingborg;3
+2026-05-20;Eterni Sweden;Ljungby;3
+2026-05-20;Friday;Göteborg;35
+2026-05-20;Friday;Stockholm;27
+2026-05-20;Friday;Linköping;22
+2026-05-20;Friday;Malmö;11
+2026-05-20;Friday;Skövde;6
+2026-05-20;Gazella;Stockholm;2
+2026-05-20;Insitepart;Stockholm;11
+2026-05-20;Insitepart;Jönköping;7
+2026-05-20;Insitepart;Örebro;4
+2026-05-20;Insitepart;Göteborg;1
+2026-05-20;Insitepart;Växjö;1
+2026-05-20;Wikan Personal;Ängelholm;7
+2026-05-20;Wikan Personal;Skellefteå;6
+2026-05-20;Wikan Personal;Kristianstad;5
+2026-05-20;Wikan Personal;Växjö;4
+2026-05-20;Wikan Personal;Ovanåker;4
+2026-05-20;Konsultia;Piteå;6
+2026-05-20;Konsultia;Skellefteå;5
+2026-05-20;Konsultia;Luleå;3
+2026-05-20;Konsultia;Skövde;3
+2026-05-20;Konsultia;Örnsköldsvik;3
+2026-05-21;Manpower;Göteborg;9
+2026-05-21;Manpower;Stockholm;6
+2026-05-21;Manpower;Örnsköldsvik;3
+2026-05-21;Manpower;Borås;3
+2026-05-21;Manpower;Uppsala;2
+2026-05-21;Lernia;Göteborg;15
+2026-05-21;Lernia;Falkenberg;14
+2026-05-21;Lernia;Halmstad;11
+2026-05-21;Lernia;Varberg;9
+2026-05-21;Lernia;Uppsala;7
+2026-05-21;Adecco;Stockholm;16
+2026-05-21;Adecco;Malmö;14
+2026-05-21;Adecco;Göteborg;13
+2026-05-21;Adecco;Växjö;9
+2026-05-21;Adecco;Uppsala;7
+2026-05-21;Perido;Stockholm;10
+2026-05-21;Perido;Göteborg;6
+2026-05-21;Perido;Norrköping;3
+2026-05-21;Perido;Borlänge;1
+2026-05-21;Perido;Skövde;1
+2026-05-21;Randstad;Göteborg;20
+2026-05-21;Randstad;Stockholm;18
+2026-05-21;Randstad;Uppsala;11
+2026-05-21;Randstad;Norrköping;9
+2026-05-21;Randstad;Jönköping;8
+2026-05-21;Academic Work;Stockholm;114
+2026-05-21;Academic Work;Göteborg;29
+2026-05-21;Academic Work;Linköping;28
+2026-05-21;Academic Work;Malmö;27
+2026-05-21;Academic Work;Örebro;16
+2026-05-21;Studentconsulting;Malmö;16
+2026-05-21;Studentconsulting;Luleå;13
+2026-05-21;Studentconsulting;Stockholm;13
+2026-05-21;Studentconsulting;Göteborg;12
+2026-05-21;Studentconsulting;Norrköping;11
+2026-05-21;Poolia;Stockholm;16
+2026-05-21;Poolia;Linköping;7
+2026-05-21;Poolia;Finspång;7
+2026-05-21;Poolia;Malmö;5
+2026-05-21;Poolia;Helsingborg;5
+2026-05-21;Uniflex;Stockholm;21
+2026-05-21;Uniflex;Helsingborg;13
+2026-05-21;Uniflex;Norrköping;10
+2026-05-21;Uniflex;Göteborg;10
+2026-05-21;Uniflex;Vetlanda;8
+2026-05-21;OnePartnerGroup;Jönköping;17
+2026-05-21;OnePartnerGroup;Östersund;11
+2026-05-21;OnePartnerGroup;Göteborg;8
+2026-05-21;OnePartnerGroup;Stockholm;8
+2026-05-21;OnePartnerGroup;Gävle;7
+2026-05-21;Skill;Finspång;29
+2026-05-21;Skill;Linköping;26
+2026-05-21;Skill;Trollhättan;12
+2026-05-21;Skill;Norrköping;3
+2026-05-21;Skill;Stockholm;3
+2026-05-21;Arena Personal;Stockholm;14
+2026-05-21;Arena Personal;Strängnäs;14
+2026-05-21;Arena Personal;Eskilstuna;13
+2026-05-21;Arena Personal;Göteborg;5
+2026-05-21;Arena Personal;Järfälla;4
+2026-05-21;Tranpenad;Göteborg;6
+2026-05-21;Tranpenad;Borås;4
+2026-05-21;Tranpenad;Sigtuna;4
+2026-05-21;Tranpenad;Håbo;3
+2026-05-21;Tranpenad;Skara;3
+2026-05-21;Jobandtalent;Norrköping;24
+2026-05-21;Jobandtalent;Jönköping;8
+2026-05-21;Jobandtalent;Göteborg;7
+2026-05-21;Jobandtalent;Malmö;6
+2026-05-21;Jobandtalent;Stockholm;6
+2026-05-21;NearYou;Alingsås;9
+2026-05-21;NearYou;Trollhättan;8
+2026-05-21;NearYou;Jönköping;7
+2026-05-21;NearYou;Vårgårda;6
+2026-05-21;NearYou;Göteborg;6
+2026-05-21;SJR;Stockholm;16
+2026-05-21;SJR;Göteborg;4
+2026-05-21;SJR;Uppsala;4
+2026-05-21;SJR;Helsingborg;1
+2026-05-21;SJR;Järfälla;1
+2026-05-21;Clockwork;Stockholm;7
+2026-05-21;Clockwork;Umeå;4
+2026-05-21;Clockwork;Avesta;3
+2026-05-21;Clockwork;Gävle;3
+2026-05-21;Clockwork;Falun;3
+2026-05-21;Logent;Stockholm;6
+2026-05-21;Logent;Helsingborg;5
+2026-05-21;Logent;Malmö;5
+2026-05-21;Logent;Göteborg;5
+2026-05-21;Logent;Halmstad;4
+2026-05-21;Bemannia;Stockholm;8
+2026-05-21;Bemannia;Göteborg;5
+2026-05-21;Bemannia;Norrtälje;4
+2026-05-21;Bemannia;Sundbyberg;2
+2026-05-21;Bemannia;Uppsala;1
+2026-05-21;Framtiden i Sverige;Linköping;32
+2026-05-21;Framtiden i Sverige;Stockholm;19
+2026-05-21;Framtiden i Sverige;Jönköping;13
+2026-05-21;Framtiden i Sverige;Göteborg;12
+2026-05-21;Framtiden i Sverige;Västerås;7
+2026-05-21;Professionals Nord;Luleå;34
+2026-05-21;Professionals Nord;Stockholm;14
+2026-05-21;Professionals Nord;Piteå;14
+2026-05-21;Professionals Nord;Kiruna;11
+2026-05-21;Professionals Nord;Umeå;10
+2026-05-21;Bravura;Stockholm;60
+2026-05-21;Bravura;Göteborg;17
+2026-05-21;Bravura;Linköping;8
+2026-05-21;Bravura;Jönköping;7
+2026-05-21;Bravura;Malmö;6
+2026-05-21;Jurek;Stockholm;13
+2026-05-21;Jurek;Göteborg;7
+2026-05-21;Jurek;Uppsala;2
+2026-05-21;Jurek;Solna;2
+2026-05-21;Jurek;Rättvik;1
+2026-05-21;TNG Group;Stockholm;27
+2026-05-21;TNG Group;Malmö;4
+2026-05-21;TNG Group;Göteborg;3
+2026-05-21;TNG Group;Helsingborg;3
+2026-05-21;TNG Group;Borås;2
+2026-05-21;Eterni Sweden;Växjö;12
+2026-05-21;Eterni Sweden;Vetlanda;10
+2026-05-21;Eterni Sweden;Jönköping;4
+2026-05-21;Eterni Sweden;Helsingborg;3
+2026-05-21;Eterni Sweden;Ljungby;3
+2026-05-21;Friday;Göteborg;35
+2026-05-21;Friday;Stockholm;26
+2026-05-21;Friday;Linköping;23
+2026-05-21;Friday;Malmö;10
+2026-05-21;Friday;Skövde;6
+2026-05-21;Gazella;Stockholm;2
+2026-05-21;Insitepart;Stockholm;11
+2026-05-21;Insitepart;Jönköping;7
+2026-05-21;Insitepart;Örebro;4
+2026-05-21;Insitepart;Göteborg;2
+2026-05-21;Insitepart;Växjö;1
+2026-05-21;Wikan Personal;Ängelholm;7
+2026-05-21;Wikan Personal;Skellefteå;6
+2026-05-21;Wikan Personal;Kristianstad;4
+2026-05-21;Wikan Personal;Växjö;4
+2026-05-21;Wikan Personal;Ovanåker;4
+2026-05-21;Konsultia;Piteå;6
+2026-05-21;Konsultia;Skellefteå;5
+2026-05-21;Konsultia;Luleå;3
+2026-05-21;Konsultia;Skövde;3
+2026-05-21;Konsultia;Örnsköldsvik;3
+2026-05-22;Manpower;Göteborg;9
+2026-05-22;Manpower;Stockholm;6
+2026-05-22;Manpower;Örnsköldsvik;3
+2026-05-22;Manpower;Borås;3
+2026-05-22;Manpower;Uppsala;2
+2026-05-22;Lernia;Göteborg;16
+2026-05-22;Lernia;Falkenberg;13
+2026-05-22;Lernia;Halmstad;11
+2026-05-22;Lernia;Varberg;9
+2026-05-22;Lernia;Vimmerby;6
+2026-05-22;Adecco;Stockholm;16
+2026-05-22;Adecco;Malmö;12
+2026-05-22;Adecco;Göteborg;10
+2026-05-22;Adecco;Växjö;9
+2026-05-22;Adecco;Västerås;7
+2026-05-22;Perido;Stockholm;11
+2026-05-22;Perido;Göteborg;6
+2026-05-22;Perido;Norrköping;3
+2026-05-22;Perido;Södertälje;1
+2026-05-22;Perido;Skövde;1
+2026-05-22;Randstad;Göteborg;21
+2026-05-22;Randstad;Stockholm;16
+2026-05-22;Randstad;Norrköping;10
+2026-05-22;Randstad;Uppsala;10
+2026-05-22;Randstad;Jönköping;8
+2026-05-22;Academic Work;Stockholm;119
+2026-05-22;Academic Work;Malmö;28
+2026-05-22;Academic Work;Göteborg;28
+2026-05-22;Academic Work;Linköping;28
+2026-05-22;Academic Work;Örebro;16
+2026-05-22;Studentconsulting;Malmö;21
+2026-05-22;Studentconsulting;Luleå;14
+2026-05-22;Studentconsulting;Stockholm;13
+2026-05-22;Studentconsulting;Göteborg;12
+2026-05-22;Studentconsulting;Västerås;12
+2026-05-22;Poolia;Stockholm;17
+2026-05-22;Poolia;Linköping;7
+2026-05-22;Poolia;Finspång;7
+2026-05-22;Poolia;Göteborg;5
+2026-05-22;Poolia;Malmö;5
+2026-05-22;Uniflex;Stockholm;21
+2026-05-22;Uniflex;Helsingborg;12
+2026-05-22;Uniflex;Göteborg;11
+2026-05-22;Uniflex;Norrköping;10
+2026-05-22;Uniflex;Vetlanda;8
+2026-05-22;OnePartnerGroup;Jönköping;17
+2026-05-22;OnePartnerGroup;Östersund;11
+2026-05-22;OnePartnerGroup;Göteborg;9
+2026-05-22;OnePartnerGroup;Stockholm;8
+2026-05-22;OnePartnerGroup;Gislaved;7
+2026-05-22;Skill;Finspång;27
+2026-05-22;Skill;Linköping;26
+2026-05-22;Skill;Trollhättan;10
+2026-05-22;Skill;Norrköping;3
+2026-05-22;Skill;Stockholm;3
+2026-05-22;Arena Personal;Stockholm;14
+2026-05-22;Arena Personal;Strängnäs;14
+2026-05-22;Arena Personal;Eskilstuna;13
+2026-05-22;Arena Personal;Göteborg;5
+2026-05-22;Arena Personal;Järfälla;4
+2026-05-22;Tranpenad;Göteborg;6
+2026-05-22;Tranpenad;Borås;4
+2026-05-22;Tranpenad;Sigtuna;4
+2026-05-22;Tranpenad;Håbo;3
+2026-05-22;Tranpenad;Skara;3
+2026-05-22;Jobandtalent;Norrköping;24
+2026-05-22;Jobandtalent;Jönköping;8
+2026-05-22;Jobandtalent;Stockholm;7
+2026-05-22;Jobandtalent;Göteborg;7
+2026-05-22;Jobandtalent;Malmö;6
+2026-05-22;NearYou;Alingsås;9
+2026-05-22;NearYou;Trollhättan;8
+2026-05-22;NearYou;Jönköping;7
+2026-05-22;NearYou;Göteborg;7
+2026-05-22;NearYou;Vårgårda;6
+2026-05-22;SJR;Stockholm;13
+2026-05-22;SJR;Göteborg;5
+2026-05-22;SJR;Uppsala;4
+2026-05-22;SJR;Helsingborg;1
+2026-05-22;SJR;Järfälla;1
+2026-05-22;Clockwork;Stockholm;7
+2026-05-22;Clockwork;Gävle;5
+2026-05-22;Clockwork;Avesta;4
+2026-05-22;Clockwork;Umeå;3
+2026-05-22;Clockwork;Falun;3
+2026-05-22;Logent;Stockholm;6
+2026-05-22;Logent;Malmö;6
+2026-05-22;Logent;Helsingborg;6
+2026-05-22;Logent;Göteborg;5
+2026-05-22;Logent;Halmstad;4
+2026-05-22;Bemannia;Stockholm;6
+2026-05-22;Bemannia;Norrtälje;4
+2026-05-22;Bemannia;Göteborg;4
+2026-05-22;Bemannia;Sundbyberg;3
+2026-05-22;Bemannia;Laholm;1
+2026-05-22;Framtiden i Sverige;Linköping;33
+2026-05-22;Framtiden i Sverige;Stockholm;21
+2026-05-22;Framtiden i Sverige;Göteborg;12
+2026-05-22;Framtiden i Sverige;Jönköping;11
+2026-05-22;Framtiden i Sverige;Västerås;7
+2026-05-22;Professionals Nord;Luleå;34
+2026-05-22;Professionals Nord;Stockholm;14
+2026-05-22;Professionals Nord;Piteå;14
+2026-05-22;Professionals Nord;Kiruna;11
+2026-05-22;Professionals Nord;Umeå;10
+2026-05-22;Bravura;Stockholm;58
+2026-05-22;Bravura;Göteborg;17
+2026-05-22;Bravura;Jönköping;8
+2026-05-22;Bravura;Malmö;7
+2026-05-22;Bravura;Linköping;7
+2026-05-22;Jurek;Stockholm;15
+2026-05-22;Jurek;Göteborg;8
+2026-05-22;Jurek;Uppsala;2
+2026-05-22;Jurek;Solna;2
+2026-05-22;Jurek;Gävle;1
+2026-05-22;TNG Group;Stockholm;29
+2026-05-22;TNG Group;Malmö;4
+2026-05-22;TNG Group;Göteborg;3
+2026-05-22;TNG Group;Borås;3
+2026-05-22;TNG Group;Helsingborg;3
+2026-05-22;Eterni Sweden;Växjö;11
+2026-05-22;Eterni Sweden;Vetlanda;11
+2026-05-22;Eterni Sweden;Jönköping;5
+2026-05-22;Eterni Sweden;Ljungby;5
+2026-05-22;Eterni Sweden;Helsingborg;3
+2026-05-22;Friday;Göteborg;36
+2026-05-22;Friday;Linköping;24
+2026-05-22;Friday;Stockholm;23
+2026-05-22;Friday;Malmö;10
+2026-05-22;Friday;Skövde;6
+2026-05-22;Gazella;Stockholm;2
+2026-05-22;Gazella;Solna;1
+2026-05-22;Insitepart;Stockholm;9
+2026-05-22;Insitepart;Jönköping;7
+2026-05-22;Insitepart;Örebro;4
+2026-05-22;Insitepart;Göteborg;2
+2026-05-22;Insitepart;Ängelholm;1
+2026-05-22;Wikan Personal;Ängelholm;7
+2026-05-22;Wikan Personal;Skellefteå;6
+2026-05-22;Wikan Personal;Kristianstad;4
+2026-05-22;Wikan Personal;Växjö;4
+2026-05-22;Wikan Personal;Ovanåker;4
+2026-05-22;Konsultia;Piteå;6
+2026-05-22;Konsultia;Skellefteå;5
+2026-05-22;Konsultia;Luleå;4
+2026-05-22;Konsultia;Gävle;3
+2026-05-22;Konsultia;Skövde;3
+2026-05-23;Manpower;Göteborg;8
+2026-05-23;Manpower;Stockholm;6
+2026-05-23;Manpower;Örnsköldsvik;3
+2026-05-23;Manpower;Jönköping;2
+2026-05-23;Manpower;Uppsala;2
+2026-05-23;Lernia;Göteborg;18
+2026-05-23;Lernia;Falkenberg;13
+2026-05-23;Lernia;Halmstad;11
+2026-05-23;Lernia;Varberg;9
+2026-05-23;Lernia;Vimmerby;6
+2026-05-23;Adecco;Stockholm;19
+2026-05-23;Adecco;Malmö;12
+2026-05-23;Adecco;Växjö;10
+2026-05-23;Adecco;Göteborg;9
+2026-05-23;Adecco;Jönköping;7
+2026-05-23;Perido;Stockholm;13
+2026-05-23;Perido;Göteborg;7
+2026-05-23;Perido;Norrköping;3
+2026-05-23;Perido;Södertälje;1
+2026-05-23;Perido;Skövde;1
+2026-05-23;Randstad;Göteborg;25
+2026-05-23;Randstad;Stockholm;18
+2026-05-23;Randstad;Uppsala;10
+2026-05-23;Randstad;Norrköping;10
+2026-05-23;Randstad;Jönköping;8
+2026-05-23;Academic Work;Stockholm;118
+2026-05-23;Academic Work;Göteborg;33
+2026-05-23;Academic Work;Malmö;28
+2026-05-23;Academic Work;Linköping;27
+2026-05-23;Academic Work;Örebro;16
+2026-05-23;Studentconsulting;Malmö;21
+2026-05-23;Studentconsulting;Luleå;14
+2026-05-23;Studentconsulting;Stockholm;13
+2026-05-23;Studentconsulting;Västerås;12
+2026-05-23;Studentconsulting;Norrköping;11
+2026-05-23;Poolia;Stockholm;17
+2026-05-23;Poolia;Linköping;7
+2026-05-23;Poolia;Finspång;7
+2026-05-23;Poolia;Göteborg;5
+2026-05-23;Poolia;Helsingborg;5
+2026-05-23;Uniflex;Stockholm;22
+2026-05-23;Uniflex;Helsingborg;13
+2026-05-23;Uniflex;Göteborg;11
+2026-05-23;Uniflex;Norrköping;10
+2026-05-23;Uniflex;Vetlanda;8
+2026-05-23;OnePartnerGroup;Jönköping;14
+2026-05-23;OnePartnerGroup;Östersund;11
+2026-05-23;OnePartnerGroup;Örnsköldsvik;9
+2026-05-23;OnePartnerGroup;Göteborg;9
+2026-05-23;OnePartnerGroup;Stockholm;8
+2026-05-23;Skill;Finspång;26
+2026-05-23;Skill;Linköping;25
+2026-05-23;Skill;Trollhättan;7
+2026-05-23;Skill;Norrköping;3
+2026-05-23;Skill;Töreboda;3
+2026-05-23;Arena Personal;Stockholm;18
+2026-05-23;Arena Personal;Eskilstuna;16
+2026-05-23;Arena Personal;Strängnäs;14
+2026-05-23;Arena Personal;Helsingborg;5
+2026-05-23;Arena Personal;Göteborg;5
+2026-05-23;Tranpenad;Göteborg;6
+2026-05-23;Tranpenad;Borås;4
+2026-05-23;Tranpenad;Sigtuna;4
+2026-05-23;Tranpenad;Håbo;3
+2026-05-23;Tranpenad;Skara;3
+2026-05-23;Jobandtalent;Norrköping;23
+2026-05-23;Jobandtalent;Jönköping;9
+2026-05-23;Jobandtalent;Halmstad;8
+2026-05-23;Jobandtalent;Malmö;7
+2026-05-23;Jobandtalent;Göteborg;7
+2026-05-23;NearYou;Alingsås;10
+2026-05-23;NearYou;Trollhättan;8
+2026-05-23;NearYou;Jönköping;7
+2026-05-23;NearYou;Vårgårda;6
+2026-05-23;NearYou;Göteborg;6
+2026-05-23;SJR;Stockholm;14
+2026-05-23;SJR;Göteborg;5
+2026-05-23;SJR;Uppsala;4
+2026-05-23;SJR;Helsingborg;1
+2026-05-23;SJR;Järfälla;1
+2026-05-23;Clockwork;Stockholm;7
+2026-05-23;Clockwork;Gävle;5
+2026-05-23;Clockwork;Avesta;4
+2026-05-23;Clockwork;Ludvika;4
+2026-05-23;Clockwork;Umeå;3
+2026-05-23;Logent;Stockholm;6
+2026-05-23;Logent;Malmö;6
+2026-05-23;Logent;Halmstad;4
+2026-05-23;Logent;Göteborg;4
+2026-05-23;Logent;Helsingborg;3
+2026-05-23;Bemannia;Stockholm;5
+2026-05-23;Bemannia;Norrtälje;4
+2026-05-23;Bemannia;Sundbyberg;3
+2026-05-23;Bemannia;Göteborg;3
+2026-05-23;Bemannia;Örebro;1
+2026-05-23;Framtiden i Sverige;Linköping;32
+2026-05-23;Framtiden i Sverige;Stockholm;21
+2026-05-23;Framtiden i Sverige;Göteborg;15
+2026-05-23;Framtiden i Sverige;Jönköping;11
+2026-05-23;Framtiden i Sverige;Västerås;8
+2026-05-23;Professionals Nord;Luleå;33
+2026-05-23;Professionals Nord;Stockholm;14
+2026-05-23;Professionals Nord;Piteå;13
+2026-05-23;Professionals Nord;Umeå;10
+2026-05-23;Professionals Nord;Kiruna;9
+2026-05-23;Bravura;Stockholm;57
+2026-05-23;Bravura;Göteborg;17
+2026-05-23;Bravura;Malmö;8
+2026-05-23;Bravura;Jönköping;8
+2026-05-23;Bravura;Linköping;7
+2026-05-23;Jurek;Stockholm;16
+2026-05-23;Jurek;Göteborg;8
+2026-05-23;Jurek;Uppsala;2
+2026-05-23;Jurek;Solna;2
+2026-05-23;Jurek;Gävle;1
+2026-05-23;TNG Group;Stockholm;26
+2026-05-23;TNG Group;Göteborg;5
+2026-05-23;TNG Group;Borås;3
+2026-05-23;TNG Group;Malmö;3
+2026-05-23;TNG Group;Helsingborg;2
+2026-05-23;Eterni Sweden;Växjö;11
+2026-05-23;Eterni Sweden;Vetlanda;10
+2026-05-23;Eterni Sweden;Jönköping;6
+2026-05-23;Eterni Sweden;Ljungby;5
+2026-05-23;Eterni Sweden;Malmö;3
+2026-05-23;Friday;Göteborg;34
+2026-05-23;Friday;Stockholm;24
+2026-05-23;Friday;Linköping;23
+2026-05-23;Friday;Malmö;10
+2026-05-23;Friday;Skövde;6
+2026-05-23;Gazella;Stockholm;2
+2026-05-23;Gazella;Solna;1
+2026-05-23;Insitepart;Stockholm;9
+2026-05-23;Insitepart;Jönköping;7
+2026-05-23;Insitepart;Örebro;3
+2026-05-23;Insitepart;Göteborg;2
+2026-05-23;Insitepart;Ängelholm;1
+2026-05-23;Wikan Personal;Skellefteå;8
+2026-05-23;Wikan Personal;Ängelholm;7
+2026-05-23;Wikan Personal;Kristianstad;4
+2026-05-23;Wikan Personal;Växjö;4
+2026-05-23;Wikan Personal;Vetlanda;4
+2026-05-23;Konsultia;Piteå;6
+2026-05-23;Konsultia;Skellefteå;5
+2026-05-23;Konsultia;Luleå;4
+2026-05-23;Konsultia;Skövde;3
+2026-05-23;Konsultia;Örnsköldsvik;3
+2026-05-24;Manpower;Göteborg;8
+2026-05-24;Manpower;Stockholm;6
+2026-05-24;Manpower;Örnsköldsvik;3
+2026-05-24;Manpower;Jönköping;2
+2026-05-24;Manpower;Uppsala;2
+2026-05-24;Lernia;Göteborg;18
+2026-05-24;Lernia;Falkenberg;13
+2026-05-24;Lernia;Halmstad;11
+2026-05-24;Lernia;Varberg;9
+2026-05-24;Lernia;Vimmerby;6
+2026-05-24;Adecco;Stockholm;19
+2026-05-24;Adecco;Växjö;10
+2026-05-24;Adecco;Malmö;10
+2026-05-24;Adecco;Göteborg;9
+2026-05-24;Adecco;Jönköping;7
+2026-05-24;Perido;Stockholm;13
+2026-05-24;Perido;Göteborg;7
+2026-05-24;Perido;Norrköping;3
+2026-05-24;Perido;Södertälje;1
+2026-05-24;Perido;Skövde;1
+2026-05-24;Randstad;Göteborg;25
+2026-05-24;Randstad;Stockholm;18
+2026-05-24;Randstad;Uppsala;10
+2026-05-24;Randstad;Norrköping;10
+2026-05-24;Randstad;Jönköping;8
+2026-05-24;Academic Work;Stockholm;117
+2026-05-24;Academic Work;Göteborg;33
+2026-05-24;Academic Work;Malmö;28
+2026-05-24;Academic Work;Linköping;27
+2026-05-24;Academic Work;Örebro;16
+2026-05-24;Studentconsulting;Malmö;21
+2026-05-24;Studentconsulting;Luleå;14
+2026-05-24;Studentconsulting;Stockholm;13
+2026-05-24;Studentconsulting;Västerås;12
+2026-05-24;Studentconsulting;Norrköping;11
+2026-05-24;Poolia;Stockholm;16
+2026-05-24;Poolia;Linköping;7
+2026-05-24;Poolia;Finspång;7
+2026-05-24;Poolia;Göteborg;5
+2026-05-24;Poolia;Helsingborg;5
+2026-05-24;Uniflex;Stockholm;22
+2026-05-24;Uniflex;Helsingborg;13
+2026-05-24;Uniflex;Göteborg;11
+2026-05-24;Uniflex;Norrköping;10
+2026-05-24;Uniflex;Vetlanda;8
+2026-05-24;OnePartnerGroup;Jönköping;14
+2026-05-24;OnePartnerGroup;Östersund;11
+2026-05-24;OnePartnerGroup;Örnsköldsvik;9
+2026-05-24;OnePartnerGroup;Göteborg;9
+2026-05-24;OnePartnerGroup;Stockholm;7
+2026-05-24;Skill;Finspång;26
+2026-05-24;Skill;Linköping;25
+2026-05-24;Skill;Trollhättan;7
+2026-05-24;Skill;Norrköping;3
+2026-05-24;Skill;Töreboda;3
+2026-05-24;Arena Personal;Stockholm;18
+2026-05-24;Arena Personal;Eskilstuna;16
+2026-05-24;Arena Personal;Strängnäs;14
+2026-05-24;Arena Personal;Helsingborg;5
+2026-05-24;Arena Personal;Göteborg;5
+2026-05-24;Tranpenad;Göteborg;6
+2026-05-24;Tranpenad;Borås;4
+2026-05-24;Tranpenad;Sigtuna;4
+2026-05-24;Tranpenad;Håbo;3
+2026-05-24;Tranpenad;Skara;3
+2026-05-24;Jobandtalent;Norrköping;23
+2026-05-24;Jobandtalent;Jönköping;9
+2026-05-24;Jobandtalent;Halmstad;8
+2026-05-24;Jobandtalent;Malmö;7
+2026-05-24;Jobandtalent;Göteborg;7
+2026-05-24;NearYou;Alingsås;10
+2026-05-24;NearYou;Jönköping;7
+2026-05-24;NearYou;Trollhättan;6
+2026-05-24;NearYou;Vårgårda;5
+2026-05-24;NearYou;Kalmar;5
+2026-05-24;SJR;Stockholm;14
+2026-05-24;SJR;Göteborg;5
+2026-05-24;SJR;Uppsala;4
+2026-05-24;SJR;Helsingborg;1
+2026-05-24;SJR;Järfälla;1
+2026-05-24;Clockwork;Stockholm;6
+2026-05-24;Clockwork;Gävle;5
+2026-05-24;Clockwork;Avesta;4
+2026-05-24;Clockwork;Ludvika;4
+2026-05-24;Clockwork;Umeå;3
+2026-05-24;Logent;Stockholm;6
+2026-05-24;Logent;Malmö;6
+2026-05-24;Logent;Halmstad;4
+2026-05-24;Logent;Göteborg;4
+2026-05-24;Logent;Helsingborg;3
+2026-05-24;Bemannia;Stockholm;5
+2026-05-24;Bemannia;Norrtälje;4
+2026-05-24;Bemannia;Sundbyberg;3
+2026-05-24;Bemannia;Göteborg;3
+2026-05-24;Bemannia;Örebro;1
+2026-05-24;Framtiden i Sverige;Linköping;32
+2026-05-24;Framtiden i Sverige;Stockholm;21
+2026-05-24;Framtiden i Sverige;Göteborg;13
+2026-05-24;Framtiden i Sverige;Jönköping;11
+2026-05-24;Framtiden i Sverige;Västerås;8
+2026-05-24;Professionals Nord;Luleå;31
+2026-05-24;Professionals Nord;Stockholm;14
+2026-05-24;Professionals Nord;Piteå;13
+2026-05-24;Professionals Nord;Umeå;10
+2026-05-24;Professionals Nord;Kiruna;9
+2026-05-24;Bravura;Stockholm;57
+2026-05-24;Bravura;Göteborg;17
+2026-05-24;Bravura;Malmö;8
+2026-05-24;Bravura;Jönköping;8
+2026-05-24;Bravura;Linköping;7
+2026-05-24;Jurek;Stockholm;16
+2026-05-24;Jurek;Göteborg;8
+2026-05-24;Jurek;Uppsala;2
+2026-05-24;Jurek;Solna;2
+2026-05-24;Jurek;Gävle;1
+2026-05-24;TNG Group;Stockholm;25
+2026-05-24;TNG Group;Göteborg;5
+2026-05-24;TNG Group;Borås;3
+2026-05-24;TNG Group;Malmö;3
+2026-05-24;TNG Group;Helsingborg;2
+2026-05-24;Eterni Sweden;Växjö;11
+2026-05-24;Eterni Sweden;Vetlanda;10
+2026-05-24;Eterni Sweden;Jönköping;6
+2026-05-24;Eterni Sweden;Ljungby;5
+2026-05-24;Eterni Sweden;Malmö;3
+2026-05-24;Friday;Göteborg;34
+2026-05-24;Friday;Stockholm;24
+2026-05-24;Friday;Linköping;23
+2026-05-24;Friday;Malmö;10
+2026-05-24;Friday;Skövde;6
+2026-05-24;Gazella;Stockholm;2
+2026-05-24;Gazella;Solna;1
+2026-05-24;Insitepart;Stockholm;9
+2026-05-24;Insitepart;Jönköping;7
+2026-05-24;Insitepart;Örebro;3
+2026-05-24;Insitepart;Göteborg;2
+2026-05-24;Insitepart;Ängelholm;1
+2026-05-24;Wikan Personal;Skellefteå;8
+2026-05-24;Wikan Personal;Ängelholm;7
+2026-05-24;Wikan Personal;Kristianstad;4
+2026-05-24;Wikan Personal;Växjö;4
+2026-05-24;Wikan Personal;Vetlanda;4
+2026-05-24;Konsultia;Piteå;6
+2026-05-24;Konsultia;Skellefteå;5
+2026-05-24;Konsultia;Luleå;4
+2026-05-24;Konsultia;Skövde;3
+2026-05-24;Konsultia;Örnsköldsvik;3
+2026-05-25;Manpower;Göteborg;8
+2026-05-25;Manpower;Stockholm;6
+2026-05-25;Manpower;Örnsköldsvik;3
+2026-05-25;Manpower;Jönköping;2
+2026-05-25;Manpower;Uppsala;2
+2026-05-25;Lernia;Göteborg;17
+2026-05-25;Lernia;Falkenberg;13
+2026-05-25;Lernia;Halmstad;10
+2026-05-25;Lernia;Varberg;9
+2026-05-25;Lernia;Vimmerby;6
+2026-05-25;Adecco;Stockholm;19
+2026-05-25;Adecco;Göteborg;10
+2026-05-25;Adecco;Växjö;10
+2026-05-25;Adecco;Malmö;10
+2026-05-25;Adecco;Jönköping;6
+2026-05-25;Perido;Stockholm;13
+2026-05-25;Perido;Göteborg;7
+2026-05-25;Perido;Norrköping;3
+2026-05-25;Perido;Södertälje;1
+2026-05-25;Perido;Skövde;1
+2026-05-25;Randstad;Göteborg;24
+2026-05-25;Randstad;Stockholm;18
+2026-05-25;Randstad;Norrköping;10
+2026-05-25;Randstad;Uppsala;9
+2026-05-25;Randstad;Jönköping;8
+2026-05-25;Academic Work;Stockholm;115
+2026-05-25;Academic Work;Göteborg;32
+2026-05-25;Academic Work;Linköping;27
+2026-05-25;Academic Work;Malmö;25
+2026-05-25;Academic Work;Örebro;16
+2026-05-25;Studentconsulting;Malmö;20
+2026-05-25;Studentconsulting;Luleå;13
+2026-05-25;Studentconsulting;Stockholm;13
+2026-05-25;Studentconsulting;Västerås;12
+2026-05-25;Studentconsulting;Göteborg;11
+2026-05-25;Poolia;Stockholm;16
+2026-05-25;Poolia;Linköping;7
+2026-05-25;Poolia;Finspång;7
+2026-05-25;Poolia;Göteborg;5
+2026-05-25;Poolia;Helsingborg;5
+2026-05-25;Uniflex;Stockholm;22
+2026-05-25;Uniflex;Helsingborg;13
+2026-05-25;Uniflex;Göteborg;11
+2026-05-25;Uniflex;Norrköping;9
+2026-05-25;Uniflex;Vetlanda;8
+2026-05-25;OnePartnerGroup;Östersund;11
+2026-05-25;OnePartnerGroup;Jönköping;11
+2026-05-25;OnePartnerGroup;Örnsköldsvik;9
+2026-05-25;OnePartnerGroup;Göteborg;9
+2026-05-25;OnePartnerGroup;Stockholm;7
+2026-05-25;Skill;Finspång;23
+2026-05-25;Skill;Linköping;21
+2026-05-25;Skill;Trollhättan;5
+2026-05-25;Skill;Norrköping;3
+2026-05-25;Skill;Töreboda;3
+2026-05-25;Arena Personal;Stockholm;18
+2026-05-25;Arena Personal;Eskilstuna;16
+2026-05-25;Arena Personal;Strängnäs;13
+2026-05-25;Arena Personal;Helsingborg;5
+2026-05-25;Arena Personal;Göteborg;5
+2026-05-25;Tranpenad;Göteborg;6
+2026-05-25;Tranpenad;Borås;4
+2026-05-25;Tranpenad;Sigtuna;4
+2026-05-25;Tranpenad;Håbo;3
+2026-05-25;Tranpenad;Skara;3
+2026-05-25;Jobandtalent;Norrköping;23
+2026-05-25;Jobandtalent;Jönköping;9
+2026-05-25;Jobandtalent;Halmstad;8
+2026-05-25;Jobandtalent;Malmö;7
+2026-05-25;Jobandtalent;Göteborg;7
+2026-05-25;NearYou;Alingsås;10
+2026-05-25;NearYou;Jönköping;7
+2026-05-25;NearYou;Trollhättan;6
+2026-05-25;NearYou;Vårgårda;5
+2026-05-25;NearYou;Kalmar;5
+2026-05-25;SJR;Stockholm;14
+2026-05-25;SJR;Göteborg;5
+2026-05-25;SJR;Uppsala;4
+2026-05-25;SJR;Helsingborg;1
+2026-05-25;SJR;Järfälla;1
+2026-05-25;Clockwork;Stockholm;6
+2026-05-25;Clockwork;Gävle;5
+2026-05-25;Clockwork;Avesta;4
+2026-05-25;Clockwork;Ludvika;4
+2026-05-25;Clockwork;Umeå;3
+2026-05-25;Logent;Stockholm;6
+2026-05-25;Logent;Malmö;6
+2026-05-25;Logent;Halmstad;4
+2026-05-25;Logent;Göteborg;4
+2026-05-25;Logent;Helsingborg;3
+2026-05-25;Bemannia;Stockholm;5
+2026-05-25;Bemannia;Norrtälje;4
+2026-05-25;Bemannia;Sundbyberg;3
+2026-05-25;Bemannia;Göteborg;3
+2026-05-25;Bemannia;Örebro;1
+2026-05-25;Framtiden i Sverige;Linköping;30
+2026-05-25;Framtiden i Sverige;Stockholm;21
+2026-05-25;Framtiden i Sverige;Göteborg;13
+2026-05-25;Framtiden i Sverige;Jönköping;9
+2026-05-25;Framtiden i Sverige;Västerås;8
+2026-05-25;Professionals Nord;Luleå;30
+2026-05-25;Professionals Nord;Stockholm;14
+2026-05-25;Professionals Nord;Piteå;12
+2026-05-25;Professionals Nord;Kiruna;8
+2026-05-25;Professionals Nord;Umeå;8
+2026-05-25;Bravura;Stockholm;57
+2026-05-25;Bravura;Göteborg;17
+2026-05-25;Bravura;Malmö;8
+2026-05-25;Bravura;Jönköping;8
+2026-05-25;Bravura;Linköping;7
+2026-05-25;Jurek;Stockholm;16
+2026-05-25;Jurek;Göteborg;8
+2026-05-25;Jurek;Uppsala;2
+2026-05-25;Jurek;Solna;2
+2026-05-25;Jurek;Gävle;1
+2026-05-25;TNG Group;Stockholm;24
+2026-05-25;TNG Group;Göteborg;5
+2026-05-25;TNG Group;Borås;3
+2026-05-25;TNG Group;Malmö;3
+2026-05-25;TNG Group;Helsingborg;2
+2026-05-25;Eterni Sweden;Vetlanda;10
+2026-05-25;Eterni Sweden;Växjö;9
+2026-05-25;Eterni Sweden;Jönköping;5
+2026-05-25;Eterni Sweden;Ljungby;5
+2026-05-25;Eterni Sweden;Malmö;3
+2026-05-25;Friday;Göteborg;32
+2026-05-25;Friday;Stockholm;24
+2026-05-25;Friday;Linköping;22
+2026-05-25;Friday;Malmö;10
+2026-05-25;Friday;Skövde;6
+2026-05-25;Gazella;Stockholm;2
+2026-05-25;Gazella;Solna;1
+2026-05-25;Insitepart;Stockholm;9
+2026-05-25;Insitepart;Jönköping;7
+2026-05-25;Insitepart;Örebro;3
+2026-05-25;Insitepart;Göteborg;2
+2026-05-25;Insitepart;Ängelholm;1
+2026-05-25;Wikan Personal;Skellefteå;8
+2026-05-25;Wikan Personal;Ängelholm;7
+2026-05-25;Wikan Personal;Kristianstad;4
+2026-05-25;Wikan Personal;Växjö;4
+2026-05-25;Wikan Personal;Vetlanda;4
+2026-05-25;Konsultia;Piteå;6
+2026-05-25;Konsultia;Luleå;5
+2026-05-25;Konsultia;Skellefteå;5
+2026-05-25;Konsultia;Gällivare;4
+2026-05-25;Konsultia;Örnsköldsvik;3
+2026-05-26;Manpower;Göteborg;8
+2026-05-26;Manpower;Stockholm;6
+2026-05-26;Manpower;Jönköping;3
+2026-05-26;Manpower;Uppsala;2
+2026-05-26;Manpower;Ludvika;2
+2026-05-26;Lernia;Göteborg;16
+2026-05-26;Lernia;Falkenberg;13
+2026-05-26;Lernia;Halmstad;11
+2026-05-26;Lernia;Varberg;9
+2026-05-26;Lernia;Vimmerby;6
+2026-05-26;Adecco;Stockholm;19
+2026-05-26;Adecco;Göteborg;13
+2026-05-26;Adecco;Malmö;11
+2026-05-26;Adecco;Växjö;10
+2026-05-26;Adecco;Jönköping;7
+2026-05-26;Perido;Stockholm;14
+2026-05-26;Perido;Göteborg;7
+2026-05-26;Perido;Norrköping;3
+2026-05-26;Perido;Södertälje;2
+2026-05-26;Perido;Skövde;1
+2026-05-26;Randstad;Göteborg;25
+2026-05-26;Randstad;Stockholm;18
+2026-05-26;Randstad;Norrköping;11
+2026-05-26;Randstad;Uppsala;10
+2026-05-26;Randstad;Jönköping;8
+2026-05-26;Academic Work;Stockholm;111
+2026-05-26;Academic Work;Göteborg;29
+2026-05-26;Academic Work;Linköping;27
+2026-05-26;Academic Work;Malmö;23
+2026-05-26;Academic Work;Örebro;15
+2026-05-26;Studentconsulting;Malmö;22
+2026-05-26;Studentconsulting;Stockholm;15
+2026-05-26;Studentconsulting;Luleå;13
+2026-05-26;Studentconsulting;Göteborg;12
+2026-05-26;Studentconsulting;Västerås;12
+2026-05-26;Poolia;Stockholm;17
+2026-05-26;Poolia;Finspång;7
+2026-05-26;Poolia;Linköping;6
+2026-05-26;Poolia;Göteborg;6
+2026-05-26;Poolia;Malmö;5
+2026-05-26;Uniflex;Stockholm;22
+2026-05-26;Uniflex;Helsingborg;13
+2026-05-26;Uniflex;Göteborg;11
+2026-05-26;Uniflex;Norrköping;9
+2026-05-26;Uniflex;Vetlanda;8
+2026-05-26;OnePartnerGroup;Östersund;11
+2026-05-26;OnePartnerGroup;Jönköping;11
+2026-05-26;OnePartnerGroup;Örnsköldsvik;9
+2026-05-26;OnePartnerGroup;Göteborg;9
+2026-05-26;OnePartnerGroup;Stockholm;7
+2026-05-26;Skill;Finspång;22
+2026-05-26;Skill;Linköping;21
+2026-05-26;Skill;Trollhättan;5
+2026-05-26;Skill;Töreboda;3
+2026-05-26;Skill;Norrköping;2
+2026-05-26;Arena Personal;Stockholm;19
+2026-05-26;Arena Personal;Eskilstuna;18
+2026-05-26;Arena Personal;Strängnäs;12
+2026-05-26;Arena Personal;Helsingborg;5
+2026-05-26;Arena Personal;Göteborg;5
+2026-05-26;Tranpenad;Göteborg;6
+2026-05-26;Tranpenad;Borås;4
+2026-05-26;Tranpenad;Sigtuna;4
+2026-05-26;Tranpenad;Eskilstuna;3
+2026-05-26;Tranpenad;Jönköping;3
+2026-05-26;Jobandtalent;Norrköping;21
+2026-05-26;Jobandtalent;Halmstad;9
+2026-05-26;Jobandtalent;Jönköping;8
+2026-05-26;Jobandtalent;Malmö;7
+2026-05-26;Jobandtalent;Stockholm;7
+2026-05-26;NearYou;Alingsås;10
+2026-05-26;NearYou;Jönköping;7
+2026-05-26;NearYou;Vårgårda;5
+2026-05-26;NearYou;Göteborg;5
+2026-05-26;NearYou;Mariestad;4
+2026-05-26;SJR;Stockholm;14
+2026-05-26;SJR;Göteborg;5
+2026-05-26;SJR;Uppsala;4
+2026-05-26;SJR;Helsingborg;1
+2026-05-26;SJR;Järfälla;1
+2026-05-26;Clockwork;Stockholm;5
+2026-05-26;Clockwork;Gävle;4
+2026-05-26;Clockwork;Ludvika;4
+2026-05-26;Clockwork;Avesta;3
+2026-05-26;Clockwork;Västerås;2
+2026-05-26;Logent;Stockholm;6
+2026-05-26;Logent;Malmö;6
+2026-05-26;Logent;Göteborg;4
+2026-05-26;Logent;Halmstad;3
+2026-05-26;Logent;Strömstad;2
+2026-05-26;Bemannia;Stockholm;8
+2026-05-26;Bemannia;Göteborg;4
+2026-05-26;Bemannia;Norrtälje;4
+2026-05-26;Bemannia;Sundbyberg;3
+2026-05-26;Bemannia;Laholm;2
+2026-05-26;Framtiden i Sverige;Linköping;29
+2026-05-26;Framtiden i Sverige;Stockholm;19
+2026-05-26;Framtiden i Sverige;Göteborg;14
+2026-05-26;Framtiden i Sverige;Jönköping;10
+2026-05-26;Framtiden i Sverige;Karlstad;7
+2026-05-26;Professionals Nord;Luleå;29
+2026-05-26;Professionals Nord;Stockholm;14
+2026-05-26;Professionals Nord;Piteå;13
+2026-05-26;Professionals Nord;Kiruna;10
+2026-05-26;Professionals Nord;Boden;9
+2026-05-26;Bravura;Stockholm;56
+2026-05-26;Bravura;Göteborg;16
+2026-05-26;Bravura;Malmö;8
+2026-05-26;Bravura;Jönköping;8
+2026-05-26;Bravura;Linköping;7
+2026-05-26;Jurek;Stockholm;15
+2026-05-26;Jurek;Göteborg;8
+2026-05-26;Jurek;Uppsala;2
+2026-05-26;Jurek;Solna;2
+2026-05-26;Jurek;Gävle;1
+2026-05-26;TNG Group;Stockholm;26
+2026-05-26;TNG Group;Göteborg;5
+2026-05-26;TNG Group;Borås;3
+2026-05-26;TNG Group;Malmö;3
+2026-05-26;TNG Group;Helsingborg;2
+2026-05-26;Eterni Sweden;Växjö;10
+2026-05-26;Eterni Sweden;Vetlanda;10
+2026-05-26;Eterni Sweden;Jönköping;6
+2026-05-26;Eterni Sweden;Ljungby;5
+2026-05-26;Eterni Sweden;Uddevalla;4
+2026-05-26;Friday;Göteborg;32
+2026-05-26;Friday;Stockholm;24
+2026-05-26;Friday;Linköping;22
+2026-05-26;Friday;Malmö;10
+2026-05-26;Friday;Skövde;6
+2026-05-26;Gazella;Stockholm;2
+2026-05-26;Gazella;Solna;1
+2026-05-26;Insitepart;Stockholm;13
+2026-05-26;Insitepart;Jönköping;7
+2026-05-26;Insitepart;Örebro;3
+2026-05-26;Insitepart;Göteborg;2
+2026-05-26;Insitepart;Ängelholm;1
+2026-05-26;Wikan Personal;Ängelholm;7
+2026-05-26;Wikan Personal;Skellefteå;5
+2026-05-26;Wikan Personal;Kristianstad;4
+2026-05-26;Wikan Personal;Vetlanda;4
+2026-05-26;Wikan Personal;Eksjö;3
+2026-05-26;Konsultia;Piteå;6
+2026-05-26;Konsultia;Luleå;5
+2026-05-26;Konsultia;Skellefteå;5
+2026-05-26;Konsultia;Gällivare;4
+2026-05-26;Konsultia;Örnsköldsvik;3
+2026-05-27;Manpower;Göteborg;8
+2026-05-27;Manpower;Stockholm;6
+2026-05-27;Manpower;Jönköping;3
+2026-05-27;Manpower;Ludvika;2
+2026-05-27;Manpower;Alingsås;2
+2026-05-27;Lernia;Göteborg;16
+2026-05-27;Lernia;Falkenberg;13
+2026-05-27;Lernia;Halmstad;11
+2026-05-27;Lernia;Varberg;9
+2026-05-27;Lernia;Vimmerby;6
+2026-05-27;Adecco;Stockholm;18
+2026-05-27;Adecco;Göteborg;15
+2026-05-27;Adecco;Malmö;12
+2026-05-27;Adecco;Växjö;9
+2026-05-27;Adecco;Jönköping;8
+2026-05-27;Perido;Stockholm;14
+2026-05-27;Perido;Göteborg;8
+2026-05-27;Perido;Norrköping;3
+2026-05-27;Perido;Södertälje;2
+2026-05-27;Perido;Skövde;1
+2026-05-27;Randstad;Göteborg;27
+2026-05-27;Randstad;Stockholm;17
+2026-05-27;Randstad;Norrköping;11
+2026-05-27;Randstad;Uppsala;10
+2026-05-27;Randstad;Jönköping;8
+2026-05-27;Academic Work;Stockholm;107
+2026-05-27;Academic Work;Göteborg;32
+2026-05-27;Academic Work;Linköping;26
+2026-05-27;Academic Work;Malmö;23
+2026-05-27;Academic Work;Örebro;17
+2026-05-27;Studentconsulting;Malmö;25
+2026-05-27;Studentconsulting;Stockholm;16
+2026-05-27;Studentconsulting;Luleå;13
+2026-05-27;Studentconsulting;Göteborg;13
+2026-05-27;Studentconsulting;Västerås;12
+2026-05-27;Poolia;Stockholm;18
+2026-05-27;Poolia;Göteborg;7
+2026-05-27;Poolia;Finspång;7
+2026-05-27;Poolia;Malmö;6
+2026-05-27;Poolia;Linköping;6
+2026-05-27;Uniflex;Stockholm;20
+2026-05-27;Uniflex;Helsingborg;13
+2026-05-27;Uniflex;Göteborg;11
+2026-05-27;Uniflex;Norrköping;9
+2026-05-27;Uniflex;Vetlanda;8
+2026-05-27;OnePartnerGroup;Jönköping;13
+2026-05-27;OnePartnerGroup;Örnsköldsvik;11
+2026-05-27;OnePartnerGroup;Östersund;11
+2026-05-27;OnePartnerGroup;Göteborg;10
+2026-05-27;OnePartnerGroup;Gislaved;8
+2026-05-27;Skill;Linköping;22
+2026-05-27;Skill;Finspång;22
+2026-05-27;Skill;Trollhättan;5
+2026-05-27;Skill;Töreboda;3
+2026-05-27;Skill;Norrköping;2
+2026-05-27;Arena Personal;Stockholm;19
+2026-05-27;Arena Personal;Eskilstuna;19
+2026-05-27;Arena Personal;Strängnäs;12
+2026-05-27;Arena Personal;Göteborg;6
+2026-05-27;Arena Personal;Helsingborg;5
+2026-05-27;Tranpenad;Göteborg;6
+2026-05-27;Tranpenad;Borås;4
+2026-05-27;Tranpenad;Sigtuna;4
+2026-05-27;Tranpenad;Eskilstuna;3
+2026-05-27;Tranpenad;Jönköping;3
+2026-05-27;Jobandtalent;Norrköping;18
+2026-05-27;Jobandtalent;Halmstad;9
+2026-05-27;Jobandtalent;Jönköping;8
+2026-05-27;Jobandtalent;Malmö;7
+2026-05-27;Jobandtalent;Stockholm;7
+2026-05-27;NearYou;Alingsås;11
+2026-05-27;NearYou;Jönköping;7
+2026-05-27;NearYou;Göteborg;6
+2026-05-27;NearYou;Vårgårda;5
+2026-05-27;NearYou;Kalmar;5
+2026-05-27;SJR;Stockholm;13
+2026-05-27;SJR;Göteborg;4
+2026-05-27;SJR;Uppsala;4
+2026-05-27;SJR;Helsingborg;1
+2026-05-27;SJR;Järfälla;1
+2026-05-27;Clockwork;Stockholm;4
+2026-05-27;Clockwork;Gävle;4
+2026-05-27;Clockwork;Ludvika;4
+2026-05-27;Clockwork;Västerås;3
+2026-05-27;Clockwork;Avesta;3
+2026-05-27;Logent;Malmö;6
+2026-05-27;Logent;Stockholm;5
+2026-05-27;Logent;Halmstad;4
+2026-05-27;Logent;Göteborg;4
+2026-05-27;Logent;Strömstad;2
+2026-05-27;Bemannia;Stockholm;8
+2026-05-27;Bemannia;Göteborg;4
+2026-05-27;Bemannia;Norrtälje;4
+2026-05-27;Bemannia;Laholm;2
+2026-05-27;Bemannia;Sundbyberg;2
+2026-05-27;Framtiden i Sverige;Linköping;29
+2026-05-27;Framtiden i Sverige;Stockholm;21
+2026-05-27;Framtiden i Sverige;Göteborg;15
+2026-05-27;Framtiden i Sverige;Jönköping;10
+2026-05-27;Framtiden i Sverige;Karlstad;7
+2026-05-27;Professionals Nord;Luleå;31
+2026-05-27;Professionals Nord;Stockholm;14
+2026-05-27;Professionals Nord;Piteå;13
+2026-05-27;Professionals Nord;Kiruna;11
+2026-05-27;Professionals Nord;Boden;9
+2026-05-27;Bravura;Stockholm;57
+2026-05-27;Bravura;Göteborg;16
+2026-05-27;Bravura;Jönköping;8
+2026-05-27;Bravura;Malmö;7
+2026-05-27;Bravura;Linköping;7
+2026-05-27;Jurek;Stockholm;13
+2026-05-27;Jurek;Göteborg;8
+2026-05-27;Jurek;Uppsala;2
+2026-05-27;Jurek;Solna;2
+2026-05-27;Jurek;Gävle;1
+2026-05-27;TNG Group;Stockholm;26
+2026-05-27;TNG Group;Göteborg;5
+2026-05-27;TNG Group;Malmö;4
+2026-05-27;TNG Group;Borås;3
+2026-05-27;TNG Group;Örebro;2
+2026-05-27;Friday;Göteborg;34
+2026-05-27;Friday;Linköping;24
+2026-05-27;Friday;Stockholm;23
+2026-05-27;Friday;Malmö;10
+2026-05-27;Friday;Skövde;7
+2026-05-27;Gazella;Stockholm;2
+2026-05-27;Gazella;Solna;1
+2026-05-27;Insitepart;Stockholm;13
+2026-05-27;Insitepart;Jönköping;7
+2026-05-27;Insitepart;Göteborg;2
+2026-05-27;Insitepart;Örebro;2
+2026-05-27;Insitepart;Ängelholm;1
+2026-05-27;Wikan Personal;Ängelholm;7
+2026-05-27;Wikan Personal;Malmö;5
+2026-05-27;Wikan Personal;Skellefteå;5
+2026-05-27;Wikan Personal;Kristianstad;4
+2026-05-27;Wikan Personal;Vetlanda;4
+2026-05-27;Konsultia;Piteå;6
+2026-05-27;Konsultia;Luleå;5
+2026-05-27;Konsultia;Skellefteå;5
+2026-05-27;Konsultia;Gällivare;4
+2026-05-27;Konsultia;Gävle;3
+2026-05-28;Manpower;Göteborg;7
+2026-05-28;Manpower;Stockholm;5
+2026-05-28;Manpower;Jönköping;3
+2026-05-28;Manpower;Östersund;2
+2026-05-28;Manpower;Ludvika;2
+2026-05-28;Lernia;Göteborg;16
+2026-05-28;Lernia;Falkenberg;13
+2026-05-28;Lernia;Halmstad;11
+2026-05-28;Lernia;Varberg;8
+2026-05-28;Lernia;Vetlanda;7
+2026-05-28;Adecco;Stockholm;19
+2026-05-28;Adecco;Göteborg;15
+2026-05-28;Adecco;Malmö;11
+2026-05-28;Adecco;Växjö;9
+2026-05-28;Adecco;Jönköping;8
+2026-05-28;Perido;Stockholm;11
+2026-05-28;Perido;Göteborg;9
+2026-05-28;Perido;Norrköping;3
+2026-05-28;Perido;Södertälje;2
+2026-05-28;Perido;Skövde;1
+2026-05-28;Randstad;Göteborg;28
+2026-05-28;Randstad;Stockholm;20
+2026-05-28;Randstad;Norrköping;11
+2026-05-28;Randstad;Uppsala;9
+2026-05-28;Randstad;Jönköping;8
+2026-05-28;Academic Work;Stockholm;110
+2026-05-28;Academic Work;Göteborg;32
+2026-05-28;Academic Work;Linköping;26
+2026-05-28;Academic Work;Malmö;22
+2026-05-28;Academic Work;Örebro;18
+2026-05-28;Studentconsulting;Malmö;24
+2026-05-28;Studentconsulting;Stockholm;18
+2026-05-28;Studentconsulting;Luleå;13
+2026-05-28;Studentconsulting;Göteborg;13
+2026-05-28;Studentconsulting;Västerås;12
+2026-05-28;Poolia;Stockholm;16
+2026-05-28;Poolia;Göteborg;8
+2026-05-28;Poolia;Malmö;7
+2026-05-28;Poolia;Finspång;7
+2026-05-28;Poolia;Linköping;6
+2026-05-28;Uniflex;Stockholm;19
+2026-05-28;Uniflex;Helsingborg;13
+2026-05-28;Uniflex;Göteborg;11
+2026-05-28;Uniflex;Norrköping;10
+2026-05-28;Uniflex;Vetlanda;8
+2026-05-28;OnePartnerGroup;Jönköping;15
+2026-05-28;OnePartnerGroup;Göteborg;12
+2026-05-28;OnePartnerGroup;Örnsköldsvik;11
+2026-05-28;OnePartnerGroup;Östersund;11
+2026-05-28;OnePartnerGroup;Gislaved;9
+2026-05-28;Skill;Finspång;23
+2026-05-28;Skill;Linköping;22
+2026-05-28;Skill;Trollhättan;5
+2026-05-28;Skill;Töreboda;3
+2026-05-28;Skill;Norrköping;2
+2026-05-28;Arena Personal;Stockholm;20
+2026-05-28;Arena Personal;Eskilstuna;19
+2026-05-28;Arena Personal;Strängnäs;12
+2026-05-28;Arena Personal;Göteborg;6
+2026-05-28;Arena Personal;Helsingborg;4
+2026-05-28;Tranpenad;Göteborg;6
+2026-05-28;Tranpenad;Borås;4
+2026-05-28;Tranpenad;Sigtuna;4
+2026-05-28;Tranpenad;Eskilstuna;3
+2026-05-28;Tranpenad;Jönköping;3
+2026-05-28;Jobandtalent;Norrköping;18
+2026-05-28;Jobandtalent;Jönköping;9
+2026-05-28;Jobandtalent;Stockholm;9
+2026-05-28;Jobandtalent;Halmstad;9
+2026-05-28;Jobandtalent;Malmö;7
+2026-05-28;NearYou;Alingsås;13
+2026-05-28;NearYou;Kalmar;8
+2026-05-28;NearYou;Vårgårda;6
+2026-05-28;NearYou;Göteborg;6
+2026-05-28;NearYou;Jönköping;6
+2026-05-28;SJR;Stockholm;12
+2026-05-28;SJR;Göteborg;4
+2026-05-28;SJR;Uppsala;4
+2026-05-28;SJR;Helsingborg;1
+2026-05-28;SJR;Järfälla;1
+2026-05-28;Clockwork;Stockholm;5
+2026-05-28;Clockwork;Ludvika;4
+2026-05-28;Clockwork;Västerås;3
+2026-05-28;Clockwork;Gävle;3
+2026-05-28;Clockwork;Umeå;3
+2026-05-28;Logent;Malmö;6
+2026-05-28;Logent;Stockholm;5
+2026-05-28;Logent;Halmstad;4
+2026-05-28;Logent;Göteborg;4
+2026-05-28;Logent;Strömstad;2
+2026-05-28;Bemannia;Stockholm;7
+2026-05-28;Bemannia;Norrtälje;4
+2026-05-28;Bemannia;Göteborg;3
+2026-05-28;Bemannia;Sundbyberg;2
+2026-05-28;Bemannia;Huddinge;1
+2026-05-28;Framtiden i Sverige;Linköping;29
+2026-05-28;Framtiden i Sverige;Stockholm;20
+2026-05-28;Framtiden i Sverige;Göteborg;15
+2026-05-28;Framtiden i Sverige;Jönköping;12
+2026-05-28;Framtiden i Sverige;Karlstad;7
+2026-05-28;Professionals Nord;Luleå;30
+2026-05-28;Professionals Nord;Stockholm;14
+2026-05-28;Professionals Nord;Piteå;13
+2026-05-28;Professionals Nord;Kiruna;11
+2026-05-28;Professionals Nord;Boden;9
+2026-05-28;Bravura;Stockholm;56
+2026-05-28;Bravura;Göteborg;17
+2026-05-28;Bravura;Jönköping;8
+2026-05-28;Bravura;Malmö;7
+2026-05-28;Bravura;Linköping;7
+2026-05-28;Jurek;Stockholm;12
+2026-05-28;Jurek;Göteborg;7
+2026-05-28;Jurek;Uppsala;3
+2026-05-28;Jurek;Nacka;1
+2026-05-28;Jurek;Gävle;1
+2026-05-28;TNG Group;Stockholm;23
+2026-05-28;TNG Group;Göteborg;5
+2026-05-28;TNG Group;Malmö;4
+2026-05-28;TNG Group;Borås;3
+2026-05-28;TNG Group;Örebro;2
+2026-05-28;Eterni Sweden;Växjö;11
+2026-05-28;Eterni Sweden;Vetlanda;10
+2026-05-28;Eterni Sweden;Jönköping;6
+2026-05-28;Eterni Sweden;Ljungby;5
+2026-05-28;Eterni Sweden;Malmö;5
+2026-05-28;Friday;Göteborg;35
+2026-05-28;Friday;Linköping;25
+2026-05-28;Friday;Stockholm;24
+2026-05-28;Friday;Malmö;10
+2026-05-28;Friday;Skövde;7
+2026-05-28;Gazella;Stockholm;2
+2026-05-28;Gazella;Solna;1
+2026-05-28;Insitepart;Stockholm;14
+2026-05-28;Insitepart;Jönköping;7
+2026-05-28;Insitepart;Göteborg;2
+2026-05-28;Insitepart;Eskilstuna;2
+2026-05-28;Insitepart;Örebro;2
+2026-05-28;Wikan Personal;Ängelholm;7
+2026-05-28;Wikan Personal;Skellefteå;6
+2026-05-28;Wikan Personal;Vetlanda;6
+2026-05-28;Wikan Personal;Malmö;5
+2026-05-28;Wikan Personal;Eksjö;3
+2026-05-28;Konsultia;Piteå;6
+2026-05-28;Konsultia;Luleå;5
+2026-05-28;Konsultia;Skellefteå;5
+2026-05-28;Konsultia;Gällivare;4
+2026-05-28;Konsultia;Gävle;3
+2026-05-29;Manpower;Göteborg;7
+2026-05-29;Manpower;Stockholm;4
+2026-05-29;Manpower;Jönköping;3
+2026-05-29;Manpower;Östersund;2
+2026-05-29;Manpower;Ludvika;2
+2026-05-29;Lernia;Göteborg;16
+2026-05-29;Lernia;Falkenberg;13
+2026-05-29;Lernia;Halmstad;11
+2026-05-29;Lernia;Varberg;8
+2026-05-29;Lernia;Vetlanda;7
+2026-05-29;Adecco;Stockholm;20
+2026-05-29;Adecco;Göteborg;13
+2026-05-29;Adecco;Malmö;10
+2026-05-29;Adecco;Växjö;9
+2026-05-29;Adecco;Uppsala;8
+2026-05-29;Perido;Stockholm;11
+2026-05-29;Perido;Göteborg;8
+2026-05-29;Perido;Norrköping;3
+2026-05-29;Perido;Södertälje;2
+2026-05-29;Perido;Järfälla;1
+2026-05-29;Randstad;Göteborg;28
+2026-05-29;Randstad;Stockholm;19
+2026-05-29;Randstad;Norrköping;11
+2026-05-29;Randstad;Uppsala;9
+2026-05-29;Randstad;Jönköping;8
+2026-05-29;Academic Work;Stockholm;118
+2026-05-29;Academic Work;Göteborg;34
+2026-05-29;Academic Work;Linköping;27
+2026-05-29;Academic Work;Malmö;23
+2026-05-29;Academic Work;Örebro;21
+2026-05-29;Studentconsulting;Malmö;24
+2026-05-29;Studentconsulting;Stockholm;16
+2026-05-29;Studentconsulting;Luleå;15
+2026-05-29;Studentconsulting;Göteborg;14
+2026-05-29;Studentconsulting;Västerås;12
+2026-05-29;Poolia;Stockholm;12
+2026-05-29;Poolia;Linköping;7
+2026-05-29;Poolia;Malmö;7
+2026-05-29;Poolia;Göteborg;7
+2026-05-29;Poolia;Finspång;7
+2026-05-29;Uniflex;Stockholm;21
+2026-05-29;Uniflex;Helsingborg;12
+2026-05-29;Uniflex;Göteborg;11
+2026-05-29;Uniflex;Vetlanda;10
+2026-05-29;Uniflex;Norrköping;9
+2026-05-29;OnePartnerGroup;Jönköping;13
+2026-05-29;OnePartnerGroup;Göteborg;12
+2026-05-29;OnePartnerGroup;Örnsköldsvik;12
+2026-05-29;OnePartnerGroup;Östersund;11
+2026-05-29;OnePartnerGroup;Gislaved;9
+2026-05-29;Skill;Linköping;24
+2026-05-29;Skill;Finspång;23
+2026-05-29;Skill;Trollhättan;4
+2026-05-29;Skill;Åtvidaberg;3
+2026-05-29;Skill;Töreboda;3
+2026-05-29;Arena Personal;Eskilstuna;20
+2026-05-29;Arena Personal;Stockholm;19
+2026-05-29;Arena Personal;Strängnäs;12
+2026-05-29;Arena Personal;Göteborg;7
+2026-05-29;Arena Personal;Helsingborg;4
+2026-05-29;Tranpenad;Göteborg;6
+2026-05-29;Tranpenad;Borås;4
+2026-05-29;Tranpenad;Sigtuna;4
+2026-05-29;Tranpenad;Eskilstuna;3
+2026-05-29;Tranpenad;Jönköping;3
+2026-05-29;Jobandtalent;Norrköping;18
+2026-05-29;Jobandtalent;Stockholm;10
+2026-05-29;Jobandtalent;Halmstad;9
+2026-05-29;Jobandtalent;Malmö;7
+2026-05-29;Jobandtalent;Jönköping;6
+2026-05-29;NearYou;Alingsås;12
+2026-05-29;NearYou;Göteborg;8
+2026-05-29;NearYou;Kalmar;8
+2026-05-29;NearYou;Vårgårda;6
+2026-05-29;NearYou;Jönköping;6
+2026-05-29;SJR;Stockholm;13
+2026-05-29;SJR;Uppsala;4
+2026-05-29;SJR;Göteborg;3
+2026-05-29;SJR;Helsingborg;1
+2026-05-29;SJR;Leksand;1
+2026-05-29;Clockwork;Stockholm;5
+2026-05-29;Clockwork;Ludvika;4
+2026-05-29;Clockwork;Avesta;3
+2026-05-29;Clockwork;Borlänge;3
+2026-05-29;Clockwork;Smedjebacken;3
+2026-05-29;Logent;Malmö;6
+2026-05-29;Logent;Stockholm;5
+2026-05-29;Logent;Halmstad;4
+2026-05-29;Logent;Göteborg;4
+2026-05-29;Logent;Strömstad;2
+2026-05-29;Bemannia;Stockholm;6
+2026-05-29;Bemannia;Norrtälje;4
+2026-05-29;Bemannia;Malmö;2
+2026-05-29;Bemannia;Göteborg;2
+2026-05-29;Bemannia;Sundbyberg;2
+2026-05-29;Framtiden i Sverige;Linköping;33
+2026-05-29;Framtiden i Sverige;Stockholm;23
+2026-05-29;Framtiden i Sverige;Göteborg;15
+2026-05-29;Framtiden i Sverige;Jönköping;11
+2026-05-29;Framtiden i Sverige;Karlstad;7
+2026-05-29;Professionals Nord;Luleå;30
+2026-05-29;Professionals Nord;Stockholm;14
+2026-05-29;Professionals Nord;Piteå;13
+2026-05-29;Professionals Nord;Kiruna;11
+2026-05-29;Professionals Nord;Boden;9
+2026-05-29;Bravura;Stockholm;59
+2026-05-29;Bravura;Göteborg;16
+2026-05-29;Bravura;Jönköping;8
+2026-05-29;Bravura;Malmö;7
+2026-05-29;Bravura;Linköping;7
+2026-05-29;Jurek;Stockholm;13
+2026-05-29;Jurek;Göteborg;6
+2026-05-29;Jurek;Uppsala;3
+2026-05-29;Jurek;Malmö;2
+2026-05-29;Jurek;Nacka;1
+2026-05-29;TNG Group;Stockholm;23
+2026-05-29;TNG Group;Göteborg;5
+2026-05-29;TNG Group;Malmö;5
+2026-05-29;TNG Group;Borås;3
+2026-05-29;TNG Group;Örebro;2
+2026-05-29;Eterni Sweden;Växjö;11
+2026-05-29;Eterni Sweden;Vetlanda;10
+2026-05-29;Eterni Sweden;Jönköping;6
+2026-05-29;Eterni Sweden;Ljungby;5
+2026-05-29;Eterni Sweden;Malmö;5
+2026-05-29;Friday;Göteborg;38
+2026-05-29;Friday;Linköping;25
+2026-05-29;Friday;Stockholm;23
+2026-05-29;Friday;Malmö;11
+2026-05-29;Friday;Skövde;7
+2026-05-29;Gazella;Stockholm;2
+2026-05-29;Gazella;Solna;1
+2026-05-29;Insitepart;Stockholm;14
+2026-05-29;Insitepart;Jönköping;7
+2026-05-29;Insitepart;Göteborg;2
+2026-05-29;Insitepart;Nybro;2
+2026-05-29;Insitepart;Eskilstuna;2
+2026-05-29;Wikan Personal;Ängelholm;7
+2026-05-29;Wikan Personal;Skellefteå;6
+2026-05-29;Wikan Personal;Vetlanda;6
+2026-05-29;Wikan Personal;Malmö;5
+2026-05-29;Wikan Personal;Kalmar;4
+2026-05-29;Konsultia;Piteå;6
+2026-05-29;Konsultia;Luleå;5
+2026-05-29;Konsultia;Skellefteå;5
+2026-05-29;Konsultia;Gällivare;4
+2026-05-29;Konsultia;Gävle;3
+2026-05-30;Manpower;Göteborg;7
+2026-05-30;Manpower;Stockholm;4
+2026-05-30;Manpower;Örnsköldsvik;3
+2026-05-30;Manpower;Jönköping;3
+2026-05-30;Manpower;Östersund;2
+2026-05-30;Lernia;Göteborg;15
+2026-05-30;Lernia;Falkenberg;13
+2026-05-30;Lernia;Halmstad;10
+2026-05-30;Lernia;Varberg;8
+2026-05-30;Lernia;Vetlanda;7
+2026-05-30;Adecco;Stockholm;19
+2026-05-30;Adecco;Göteborg;14
+2026-05-30;Adecco;Uppsala;11
+2026-05-30;Adecco;Malmö;11
+2026-05-30;Adecco;Växjö;8
+2026-05-30;Perido;Göteborg;8
+2026-05-30;Perido;Stockholm;8
+2026-05-30;Perido;Norrköping;3
+2026-05-30;Perido;Södertälje;2
+2026-05-30;Perido;Järfälla;1
+2026-05-30;Randstad;Göteborg;29
+2026-05-30;Randstad;Stockholm;20
+2026-05-30;Randstad;Uppsala;10
+2026-05-30;Randstad;Norrköping;10
+2026-05-30;Randstad;Jönköping;8
+2026-05-30;Academic Work;Stockholm;126
+2026-05-30;Academic Work;Göteborg;36
+2026-05-30;Academic Work;Linköping;29
+2026-05-30;Academic Work;Malmö;23
+2026-05-30;Academic Work;Örebro;20
+2026-05-30;Studentconsulting;Malmö;21
+2026-05-30;Studentconsulting;Luleå;15
+2026-05-30;Studentconsulting;Göteborg;13
+2026-05-30;Studentconsulting;Stockholm;13
+2026-05-30;Studentconsulting;Västerås;12
+2026-05-30;Poolia;Stockholm;11
+2026-05-30;Poolia;Malmö;8
+2026-05-30;Poolia;Linköping;7
+2026-05-30;Poolia;Göteborg;6
+2026-05-30;Poolia;Finspång;6
+2026-05-30;Uniflex;Stockholm;18
+2026-05-30;Uniflex;Helsingborg;12
+2026-05-30;Uniflex;Göteborg;11
+2026-05-30;Uniflex;Vetlanda;10
+2026-05-30;Uniflex;Norrköping;9
+2026-05-30;OnePartnerGroup;Göteborg;12
+2026-05-30;OnePartnerGroup;Örnsköldsvik;12
+2026-05-30;OnePartnerGroup;Jönköping;12
+2026-05-30;OnePartnerGroup;Östersund;11
+2026-05-30;OnePartnerGroup;Gislaved;10
+2026-05-30;Skill;Linköping;26
+2026-05-30;Skill;Finspång;23
+2026-05-30;Skill;Trollhättan;4
+2026-05-30;Skill;Tranås;3
+2026-05-30;Skill;Åtvidaberg;3
+2026-05-30;Arena Personal;Eskilstuna;20
+2026-05-30;Arena Personal;Stockholm;14
+2026-05-30;Arena Personal;Strängnäs;12
+2026-05-30;Arena Personal;Göteborg;7
+2026-05-30;Arena Personal;Örebro;4
+2026-05-30;Tranpenad;Göteborg;6
+2026-05-30;Tranpenad;Borås;4
+2026-05-30;Tranpenad;Sigtuna;4
+2026-05-30;Tranpenad;Eskilstuna;3
+2026-05-30;Tranpenad;Jönköping;3
+2026-05-30;Jobandtalent;Norrköping;18
+2026-05-30;Jobandtalent;Stockholm;10
+2026-05-30;Jobandtalent;Halmstad;9
+2026-05-30;Jobandtalent;Göteborg;8
+2026-05-30;Jobandtalent;Malmö;7
+2026-05-30;NearYou;Alingsås;10
+2026-05-30;NearYou;Göteborg;8
+2026-05-30;NearYou;Kalmar;8
+2026-05-30;NearYou;Vårgårda;6
+2026-05-30;NearYou;Jönköping;6
+2026-05-30;SJR;Stockholm;13
+2026-05-30;SJR;Göteborg;4
+2026-05-30;SJR;Uppsala;4
+2026-05-30;SJR;Helsingborg;1
+2026-05-30;SJR;Leksand;1
+2026-05-30;Clockwork;Stockholm;5
+2026-05-30;Clockwork;Ludvika;4
+2026-05-30;Clockwork;Avesta;3
+2026-05-30;Clockwork;Borlänge;3
+2026-05-30;Clockwork;Smedjebacken;3
+2026-05-30;Logent;Malmö;6
+2026-05-30;Logent;Stockholm;5
+2026-05-30;Logent;Halmstad;4
+2026-05-30;Logent;Göteborg;4
+2026-05-30;Logent;Strömstad;2
+2026-05-30;Bemannia;Stockholm;7
+2026-05-30;Bemannia;Norrtälje;4
+2026-05-30;Bemannia;Göteborg;3
+2026-05-30;Bemannia;Huddinge;2
+2026-05-30;Bemannia;Malmö;2
+2026-05-30;Framtiden i Sverige;Linköping;32
+2026-05-30;Framtiden i Sverige;Stockholm;26
+2026-05-30;Framtiden i Sverige;Göteborg;15
+2026-05-30;Framtiden i Sverige;Jönköping;12
+2026-05-30;Framtiden i Sverige;Ludvika;6
+2026-05-30;Professionals Nord;Luleå;30
+2026-05-30;Professionals Nord;Stockholm;14
+2026-05-30;Professionals Nord;Piteå;13
+2026-05-30;Professionals Nord;Kiruna;11
+2026-05-30;Professionals Nord;Boden;9
+2026-05-30;Bravura;Stockholm;58
+2026-05-30;Bravura;Göteborg;18
+2026-05-30;Bravura;Jönköping;9
+2026-05-30;Bravura;Malmö;7
+2026-05-30;Bravura;Linköping;7
+2026-05-30;Jurek;Stockholm;12
+2026-05-30;Jurek;Göteborg;6
+2026-05-30;Jurek;Malmö;3
+2026-05-30;Jurek;Uppsala;3
+2026-05-30;Jurek;Nacka;1
+2026-05-30;TNG Group;Stockholm;22
+2026-05-30;TNG Group;Malmö;5
+2026-05-30;TNG Group;Göteborg;4
+2026-05-30;TNG Group;Borås;3
+2026-05-30;TNG Group;Örebro;2
+2026-05-30;Eterni Sweden;Växjö;11
+2026-05-30;Eterni Sweden;Vetlanda;10
+2026-05-30;Eterni Sweden;Jönköping;6
+2026-05-30;Eterni Sweden;Ljungby;5
+2026-05-30;Eterni Sweden;Malmö;5
+2026-05-30;Friday;Linköping;61
+2026-05-30;Friday;Göteborg;42
+2026-05-30;Friday;Stockholm;26
+2026-05-30;Friday;Malmö;12
+2026-05-30;Friday;Skövde;7
+2026-05-30;Gazella;Stockholm;2
+2026-05-30;Gazella;Solna;1
+2026-05-30;Insitepart;Stockholm;14
+2026-05-30;Insitepart;Jönköping;7
+2026-05-30;Insitepart;Örebro;5
+2026-05-30;Insitepart;Göteborg;2
+2026-05-30;Insitepart;Nybro;2
+2026-05-30;Wikan Personal;Ängelholm;7
+2026-05-30;Wikan Personal;Vetlanda;7
+2026-05-30;Wikan Personal;Skellefteå;6
+2026-05-30;Wikan Personal;Bollnäs;5
+2026-05-30;Wikan Personal;Malmö;5
+2026-05-30;Konsultia;Göteborg;9
+2026-05-30;Konsultia;Piteå;6
+2026-05-30;Konsultia;Luleå;5
+2026-05-30;Konsultia;Skellefteå;5
+2026-05-30;Konsultia;Örnsköldsvik;4
+2026-05-31;Manpower;Göteborg;7
+2026-05-31;Manpower;Stockholm;4
+2026-05-31;Manpower;Örnsköldsvik;3
+2026-05-31;Manpower;Jönköping;3
+2026-05-31;Manpower;Östersund;2
+2026-05-31;Lernia;Göteborg;14
+2026-05-31;Lernia;Falkenberg;13
+2026-05-31;Lernia;Halmstad;10
+2026-05-31;Lernia;Varberg;8
+2026-05-31;Lernia;Vetlanda;7
+2026-05-31;Adecco;Stockholm;19
+2026-05-31;Adecco;Göteborg;14
+2026-05-31;Adecco;Uppsala;11
+2026-05-31;Adecco;Malmö;11
+2026-05-31;Adecco;Växjö;8
+2026-05-31;Perido;Göteborg;8
+2026-05-31;Perido;Stockholm;8
+2026-05-31;Perido;Södertälje;2
+2026-05-31;Perido;Järfälla;1
+2026-05-31;Perido;Skövde;1
+2026-05-31;Randstad;Göteborg;29
+2026-05-31;Randstad;Stockholm;20
+2026-05-31;Randstad;Norrköping;10
+2026-05-31;Randstad;Uppsala;9
+2026-05-31;Randstad;Jönköping;8
+2026-05-31;Academic Work;Stockholm;126
+2026-05-31;Academic Work;Göteborg;36
+2026-05-31;Academic Work;Linköping;28
+2026-05-31;Academic Work;Malmö;23
+2026-05-31;Academic Work;Örebro;20
+2026-05-31;Studentconsulting;Malmö;21
+2026-05-31;Studentconsulting;Luleå;15
+2026-05-31;Studentconsulting;Göteborg;13
+2026-05-31;Studentconsulting;Stockholm;13
+2026-05-31;Studentconsulting;Västerås;12
+2026-05-31;Poolia;Stockholm;11
+2026-05-31;Poolia;Malmö;8
+2026-05-31;Poolia;Linköping;7
+2026-05-31;Poolia;Finspång;6
+2026-05-31;Poolia;Göteborg;5
+2026-05-31;Uniflex;Stockholm;18
+2026-05-31;Uniflex;Helsingborg;12
+2026-05-31;Uniflex;Göteborg;11
+2026-05-31;Uniflex;Vetlanda;10
+2026-05-31;Uniflex;Norrköping;8
+2026-05-31;OnePartnerGroup;Örnsköldsvik;12
+2026-05-31;OnePartnerGroup;Göteborg;11
+2026-05-31;OnePartnerGroup;Östersund;11
+2026-05-31;OnePartnerGroup;Gislaved;10
+2026-05-31;OnePartnerGroup;Jönköping;10
+2026-05-31;Skill;Linköping;26
+2026-05-31;Skill;Finspång;23
+2026-05-31;Skill;Trollhättan;4
+2026-05-31;Skill;Tranås;3
+2026-05-31;Skill;Åtvidaberg;3
+2026-05-31;Arena Personal;Eskilstuna;20
+2026-05-31;Arena Personal;Stockholm;14
+2026-05-31;Arena Personal;Strängnäs;12
+2026-05-31;Arena Personal;Göteborg;7
+2026-05-31;Arena Personal;Örebro;4
+2026-05-31;Tranpenad;Göteborg;6
+2026-05-31;Tranpenad;Borås;4
+2026-05-31;Tranpenad;Sigtuna;4
+2026-05-31;Tranpenad;Eskilstuna;3
+2026-05-31;Tranpenad;Jönköping;3
+2026-05-31;Jobandtalent;Norrköping;18
+2026-05-31;Jobandtalent;Stockholm;10
+2026-05-31;Jobandtalent;Halmstad;9
+2026-05-31;Jobandtalent;Göteborg;8
+2026-05-31;Jobandtalent;Malmö;7
+2026-05-31;NearYou;Alingsås;10
+2026-05-31;NearYou;Göteborg;8
+2026-05-31;NearYou;Kalmar;8
+2026-05-31;NearYou;Jönköping;6
+2026-05-31;NearYou;Vårgårda;5
+2026-05-31;SJR;Stockholm;13
+2026-05-31;SJR;Göteborg;4
+2026-05-31;SJR;Uppsala;4
+2026-05-31;SJR;Helsingborg;1
+2026-05-31;SJR;Leksand;1
+2026-05-31;Clockwork;Stockholm;5
+2026-05-31;Clockwork;Ludvika;4
+2026-05-31;Clockwork;Borlänge;3
+2026-05-31;Clockwork;Smedjebacken;3
+2026-05-31;Clockwork;Västerås;2
+2026-05-31;Logent;Malmö;6
+2026-05-31;Logent;Stockholm;5
+2026-05-31;Logent;Halmstad;4
+2026-05-31;Logent;Göteborg;4
+2026-05-31;Logent;Strömstad;2
+2026-05-31;Bemannia;Stockholm;7
+2026-05-31;Bemannia;Norrtälje;4
+2026-05-31;Bemannia;Göteborg;3
+2026-05-31;Bemannia;Huddinge;2
+2026-05-31;Bemannia;Malmö;2
+2026-05-31;Framtiden i Sverige;Linköping;31
+2026-05-31;Framtiden i Sverige;Stockholm;25
+2026-05-31;Framtiden i Sverige;Göteborg;15
+2026-05-31;Framtiden i Sverige;Jönköping;12
+2026-05-31;Framtiden i Sverige;Ludvika;6
+2026-05-31;Professionals Nord;Luleå;30
+2026-05-31;Professionals Nord;Stockholm;14
+2026-05-31;Professionals Nord;Piteå;13
+2026-05-31;Professionals Nord;Kiruna;11
+2026-05-31;Professionals Nord;Boden;9
+2026-05-31;Bravura;Stockholm;58
+2026-05-31;Bravura;Göteborg;18
+2026-05-31;Bravura;Jönköping;9
+2026-05-31;Bravura;Malmö;7
+2026-05-31;Bravura;Linköping;7
+2026-05-31;Jurek;Stockholm;12
+2026-05-31;Jurek;Göteborg;6
+2026-05-31;Jurek;Malmö;3
+2026-05-31;Jurek;Uppsala;3
+2026-05-31;Jurek;Nacka;1
+2026-05-31;TNG Group;Stockholm;22
+2026-05-31;TNG Group;Malmö;5
+2026-05-31;TNG Group;Göteborg;4
+2026-05-31;TNG Group;Borås;3
+2026-05-31;TNG Group;Örebro;2
+2026-05-31;Eterni Sweden;Växjö;10
+2026-05-31;Eterni Sweden;Vetlanda;10
+2026-05-31;Eterni Sweden;Jönköping;6
+2026-05-31;Eterni Sweden;Ljungby;5
+2026-05-31;Eterni Sweden;Malmö;5
+2026-05-31;Friday;Linköping;61
+2026-05-31;Friday;Göteborg;41
+2026-05-31;Friday;Stockholm;26
+2026-05-31;Friday;Malmö;12
+2026-05-31;Friday;Skövde;7
+2026-05-31;Gazella;Stockholm;2
+2026-05-31;Gazella;Solna;1
+2026-05-31;Insitepart;Stockholm;14
+2026-05-31;Insitepart;Jönköping;7
+2026-05-31;Insitepart;Örebro;5
+2026-05-31;Insitepart;Göteborg;2
+2026-05-31;Insitepart;Nybro;2
+2026-05-31;Wikan Personal;Ängelholm;7
+2026-05-31;Wikan Personal;Skellefteå;6
+2026-05-31;Wikan Personal;Bollnäs;5
+2026-05-31;Wikan Personal;Malmö;5
+2026-05-31;Wikan Personal;Vetlanda;5
+2026-05-31;Konsultia;Göteborg;7
+2026-05-31;Konsultia;Piteå;6
+2026-05-31;Konsultia;Luleå;5
+2026-05-31;Konsultia;Skellefteå;5
+2026-05-31;Konsultia;Örnsköldsvik;4
+2026-06-01;Manpower;Göteborg;7
+2026-06-01;Manpower;Stockholm;4
+2026-06-01;Manpower;Örnsköldsvik;3
+2026-06-01;Manpower;Jönköping;3
+2026-06-01;Manpower;Östersund;2
+2026-06-01;Lernia;Falkenberg;13
+2026-06-01;Lernia;Göteborg;11
+2026-06-01;Lernia;Halmstad;8
+2026-06-01;Lernia;Varberg;7
+2026-06-01;Lernia;Vimmerby;6
+2026-06-01;Adecco;Stockholm;19
+2026-06-01;Adecco;Göteborg;12
+2026-06-01;Adecco;Malmö;11
+2026-06-01;Adecco;Uppsala;10
+2026-06-01;Adecco;Växjö;7
+2026-06-01;Perido;Göteborg;8
+2026-06-01;Perido;Stockholm;8
+2026-06-01;Perido;Södertälje;2
+2026-06-01;Perido;Järfälla;1
+2026-06-01;Perido;Skövde;1
+2026-06-01;Randstad;Göteborg;27
+2026-06-01;Randstad;Stockholm;16
+2026-06-01;Randstad;Norrköping;10
+2026-06-01;Randstad;Uppsala;8
+2026-06-01;Randstad;Jönköping;7
+2026-06-01;Academic Work;Stockholm;125
+2026-06-01;Academic Work;Göteborg;36
+2026-06-01;Academic Work;Linköping;28
+2026-06-01;Academic Work;Malmö;22
+2026-06-01;Academic Work;Örebro;20
+2026-06-01;Studentconsulting;Malmö;20
+2026-06-01;Studentconsulting;Göteborg;13
+2026-06-01;Studentconsulting;Stockholm;13
+2026-06-01;Studentconsulting;Luleå;10
+2026-06-01;Studentconsulting;Växjö;9
+2026-06-01;Poolia;Stockholm;8
+2026-06-01;Poolia;Linköping;7
+2026-06-01;Poolia;Malmö;6
+2026-06-01;Poolia;Finspång;6
+2026-06-01;Poolia;Göteborg;5
+2026-06-01;Uniflex;Stockholm;18
+2026-06-01;Uniflex;Helsingborg;12
+2026-06-01;Uniflex;Göteborg;11
+2026-06-01;Uniflex;Vetlanda;9
+2026-06-01;Uniflex;Norrköping;8
+2026-06-01;OnePartnerGroup;Örnsköldsvik;11
+2026-06-01;OnePartnerGroup;Göteborg;10
+2026-06-01;OnePartnerGroup;Jönköping;10
+2026-06-01;OnePartnerGroup;Gislaved;9
+2026-06-01;OnePartnerGroup;Östersund;8
+2026-06-01;Skill;Linköping;23
+2026-06-01;Skill;Finspång;15
+2026-06-01;Skill;Tranås;3
+2026-06-01;Skill;Trollhättan;3
+2026-06-01;Skill;Åtvidaberg;3
+2026-06-01;Arena Personal;Eskilstuna;18
+2026-06-01;Arena Personal;Stockholm;14
+2026-06-01;Arena Personal;Göteborg;7
+2026-06-01;Arena Personal;Strängnäs;5
+2026-06-01;Arena Personal;Örebro;5
+2026-06-01;Tranpenad;Göteborg;6
+2026-06-01;Tranpenad;Borås;4
+2026-06-01;Tranpenad;Sigtuna;4
+2026-06-01;Tranpenad;Eskilstuna;3
+2026-06-01;Tranpenad;Jönköping;3
+2026-06-01;Jobandtalent;Norrköping;18
+2026-06-01;Jobandtalent;Stockholm;10
+2026-06-01;Jobandtalent;Göteborg;8
+2026-06-01;Jobandtalent;Malmö;7
+2026-06-01;Jobandtalent;Halmstad;7
+2026-06-01;NearYou;Alingsås;10
+2026-06-01;NearYou;Göteborg;8
+2026-06-01;NearYou;Kalmar;8
+2026-06-01;NearYou;Jönköping;6
+2026-06-01;NearYou;Vårgårda;5
+2026-06-01;SJR;Stockholm;13
+2026-06-01;SJR;Göteborg;4
+2026-06-01;SJR;Uppsala;4
+2026-06-01;SJR;Helsingborg;1
+2026-06-01;SJR;Leksand;1
+2026-06-01;Clockwork;Stockholm;5
+2026-06-01;Clockwork;Ludvika;4
+2026-06-01;Clockwork;Borlänge;3
+2026-06-01;Clockwork;Smedjebacken;3
+2026-06-01;Clockwork;Mora;2
+2026-06-01;Logent;Malmö;6
+2026-06-01;Logent;Stockholm;4
+2026-06-01;Logent;Halmstad;4
+2026-06-01;Logent;Göteborg;4
+2026-06-01;Logent;Strömstad;2
+2026-06-01;Bemannia;Stockholm;6
+2026-06-01;Bemannia;Norrtälje;4
+2026-06-01;Bemannia;Göteborg;3
+2026-06-01;Bemannia;Huddinge;2
+2026-06-01;Bemannia;Malmö;2
+2026-06-01;Framtiden i Sverige;Linköping;27
+2026-06-01;Framtiden i Sverige;Stockholm;21
+2026-06-01;Framtiden i Sverige;Jönköping;12
+2026-06-01;Framtiden i Sverige;Göteborg;9
+2026-06-01;Framtiden i Sverige;Ludvika;6
+2026-06-01;Professionals Nord;Luleå;23
+2026-06-01;Professionals Nord;Stockholm;13
+2026-06-01;Professionals Nord;Kiruna;11
+2026-06-01;Professionals Nord;Umeå;8
+2026-06-01;Professionals Nord;Piteå;7
+2026-06-01;Bravura;Stockholm;57
+2026-06-01;Bravura;Göteborg;18
+2026-06-01;Bravura;Jönköping;9
+2026-06-01;Bravura;Malmö;7
+2026-06-01;Bravura;Linköping;7
+2026-06-01;Jurek;Stockholm;12
+2026-06-01;Jurek;Göteborg;4
+2026-06-01;Jurek;Malmö;3
+2026-06-01;Jurek;Uppsala;2
+2026-06-01;Jurek;Nacka;1
+2026-06-01;TNG Group;Stockholm;24
+2026-06-01;TNG Group;Malmö;5
+2026-06-01;TNG Group;Göteborg;4
+2026-06-01;TNG Group;Borås;3
+2026-06-01;TNG Group;Örebro;2
+2026-06-01;Friday;Linköping;60
+2026-06-01;Friday;Göteborg;37
+2026-06-01;Friday;Stockholm;18
+2026-06-01;Friday;Malmö;11
+2026-06-01;Friday;Skövde;6
+2026-06-01;Gazella;Stockholm;1
+2026-06-01;Gazella;Solna;1
+2026-06-01;Insitepart;Stockholm;12
+2026-06-01;Insitepart;Jönköping;7
+2026-06-01;Insitepart;Örebro;5
+2026-06-01;Insitepart;Göteborg;2
+2026-06-01;Insitepart;Nybro;2
+2026-06-01;Wikan Personal;Ängelholm;7
+2026-06-01;Wikan Personal;Skellefteå;6
+2026-06-01;Wikan Personal;Bollnäs;5
+2026-06-01;Wikan Personal;Vetlanda;5
+2026-06-01;Wikan Personal;Kalmar;4
+2026-06-01;Konsultia;Göteborg;7
+2026-06-01;Konsultia;Piteå;6
+2026-06-01;Konsultia;Luleå;5
+2026-06-01;Konsultia;Skellefteå;5
+2026-06-01;Konsultia;Örnsköldsvik;4
+2026-06-02;Manpower;Göteborg;7
+2026-06-02;Manpower;Örnsköldsvik;3
+2026-06-02;Manpower;Stockholm;3
+2026-06-02;Manpower;Östersund;2
+2026-06-02;Manpower;Ludvika;2
+2026-06-02;Lernia;Göteborg;14
+2026-06-02;Lernia;Falkenberg;13
+2026-06-02;Lernia;Stockholm;8
+2026-06-02;Lernia;Halmstad;8
+2026-06-02;Lernia;Varberg;7
+2026-06-02;Adecco;Stockholm;15
+2026-06-02;Adecco;Göteborg;14
+2026-06-02;Adecco;Malmö;11
+2026-06-02;Adecco;Uppsala;10
+2026-06-02;Adecco;Växjö;7
+2026-06-02;Perido;Göteborg;9
+2026-06-02;Perido;Stockholm;8
+2026-06-02;Perido;Södertälje;2
+2026-06-02;Perido;Järfälla;1
+2026-06-02;Perido;Skövde;1
+2026-06-02;Randstad;Göteborg;28
+2026-06-02;Randstad;Stockholm;17
+2026-06-02;Randstad;Norrköping;10
+2026-06-02;Randstad;Jönköping;9
+2026-06-02;Randstad;Uppsala;7
+2026-06-02;Academic Work;Stockholm;118
+2026-06-02;Academic Work;Göteborg;35
+2026-06-02;Academic Work;Linköping;26
+2026-06-02;Academic Work;Malmö;24
+2026-06-02;Academic Work;Örebro;20
+2026-06-02;Studentconsulting;Malmö;22
+2026-06-02;Studentconsulting;Stockholm;16
+2026-06-02;Studentconsulting;Luleå;13
+2026-06-02;Studentconsulting;Göteborg;12
+2026-06-02;Studentconsulting;Växjö;9
+2026-06-02;Poolia;Göteborg;8
+2026-06-02;Poolia;Stockholm;8
+2026-06-02;Poolia;Linköping;7
+2026-06-02;Poolia;Malmö;6
+2026-06-02;Poolia;Helsingborg;5
+2026-06-02;Uniflex;Stockholm;20
+2026-06-02;Uniflex;Helsingborg;11
+2026-06-02;Uniflex;Vetlanda;9
+2026-06-02;Uniflex;Göteborg;9
+2026-06-02;Uniflex;Nässjö;7
+2026-06-02;OnePartnerGroup;Örnsköldsvik;13
+2026-06-02;OnePartnerGroup;Göteborg;11
+2026-06-02;OnePartnerGroup;Jönköping;10
+2026-06-02;OnePartnerGroup;Gislaved;9
+2026-06-02;OnePartnerGroup;Östersund;8
+2026-06-02;Skill;Linköping;22
+2026-06-02;Skill;Finspång;15
+2026-06-02;Skill;Tranås;3
+2026-06-02;Skill;Trollhättan;3
+2026-06-02;Skill;Motala;2
+2026-06-02;Arena Personal;Eskilstuna;19
+2026-06-02;Arena Personal;Stockholm;14
+2026-06-02;Arena Personal;Strängnäs;10
+2026-06-02;Arena Personal;Göteborg;7
+2026-06-02;Arena Personal;Sundsvall;5
+2026-06-02;Tranpenad;Göteborg;7
+2026-06-02;Tranpenad;Borås;4
+2026-06-02;Tranpenad;Sigtuna;4
+2026-06-02;Tranpenad;Eskilstuna;3
+2026-06-02;Tranpenad;Jönköping;3
+2026-06-02;Jobandtalent;Norrköping;18
+2026-06-02;Jobandtalent;Stockholm;11
+2026-06-02;Jobandtalent;Malmö;8
+2026-06-02;Jobandtalent;Halmstad;7
+2026-06-02;Jobandtalent;Göteborg;6
+2026-06-02;NearYou;Alingsås;10
+2026-06-02;NearYou;Göteborg;10
+2026-06-02;NearYou;Jönköping;9
+2026-06-02;NearYou;Kalmar;8
+2026-06-02;NearYou;Vårgårda;5
+2026-06-02;SJR;Stockholm;15
+2026-06-02;SJR;Göteborg;4
+2026-06-02;SJR;Uppsala;4
+2026-06-02;SJR;Helsingborg;1
+2026-06-02;SJR;Leksand;1
+2026-06-02;Clockwork;Stockholm;6
+2026-06-02;Clockwork;Borlänge;3
+2026-06-02;Clockwork;Mora;2
+2026-06-02;Clockwork;Leksand;2
+2026-06-02;Clockwork;Hedemora;2
+2026-06-02;Logent;Malmö;7
+2026-06-02;Logent;Stockholm;4
+2026-06-02;Logent;Halmstad;4
+2026-06-02;Logent;Göteborg;4
+2026-06-02;Logent;Linköping;2
+2026-06-02;Bemannia;Stockholm;5
+2026-06-02;Bemannia;Göteborg;3
+2026-06-02;Bemannia;Huddinge;2
+2026-06-02;Bemannia;Malmö;2
+2026-06-02;Bemannia;Varberg;1
+2026-06-02;Framtiden i Sverige;Linköping;30
+2026-06-02;Framtiden i Sverige;Stockholm;20
+2026-06-02;Framtiden i Sverige;Jönköping;12
+2026-06-02;Framtiden i Sverige;Göteborg;9
+2026-06-02;Framtiden i Sverige;Ludvika;6
+2026-06-02;Professionals Nord;Luleå;22
+2026-06-02;Professionals Nord;Stockholm;13
+2026-06-02;Professionals Nord;Kiruna;11
+2026-06-02;Professionals Nord;Umeå;8
+2026-06-02;Professionals Nord;Piteå;8
+2026-06-02;Bravura;Stockholm;62
+2026-06-02;Bravura;Göteborg;19
+2026-06-02;Bravura;Jönköping;8
+2026-06-02;Bravura;Malmö;7
+2026-06-02;Bravura;Linköping;7
+2026-06-02;Jurek;Stockholm;11
+2026-06-02;Jurek;Göteborg;4
+2026-06-02;Jurek;Malmö;3
+2026-06-02;Jurek;Uppsala;2
+2026-06-02;Jurek;Nacka;1
+2026-06-02;TNG Group;Stockholm;23
+2026-06-02;TNG Group;Göteborg;4
+2026-06-02;TNG Group;Malmö;4
+2026-06-02;TNG Group;Borås;3
+2026-06-02;TNG Group;Örebro;2
+2026-06-02;Friday;Linköping;61
+2026-06-02;Friday;Göteborg;39
+2026-06-02;Friday;Stockholm;22
+2026-06-02;Friday;Malmö;11
+2026-06-02;Friday;Skövde;6
+2026-06-02;Gazella;Stockholm;2
+2026-06-02;Gazella;Solna;1
+2026-06-02;Insitepart;Stockholm;10
+2026-06-02;Insitepart;Jönköping;7
+2026-06-02;Insitepart;Örebro;5
+2026-06-02;Insitepart;Göteborg;2
+2026-06-02;Insitepart;Nybro;2
+2026-06-02;Wikan Personal;Ängelholm;7
+2026-06-02;Wikan Personal;Skellefteå;7
+2026-06-02;Wikan Personal;Bollnäs;5
+2026-06-02;Wikan Personal;Vetlanda;5
+2026-06-02;Wikan Personal;Kalmar;4
+2026-06-02;Konsultia;Piteå;7
+2026-06-02;Konsultia;Göteborg;7
+2026-06-02;Konsultia;Örnsköldsvik;4
+2026-06-02;Konsultia;Skellefteå;4
+2026-06-02;Konsultia;Gävle;3
+2026-06-03;Manpower;Göteborg;7
+2026-06-03;Manpower;Örnsköldsvik;3
+2026-06-03;Manpower;Västerås;3
+2026-06-03;Manpower;Östersund;2
+2026-06-03;Manpower;Ludvika;2
+2026-06-03;Lernia;Göteborg;16
+2026-06-03;Lernia;Halmstad;14
+2026-06-03;Lernia;Falkenberg;13
+2026-06-03;Lernia;Stockholm;8
+2026-06-03;Lernia;Skellefteå;7
+2026-06-03;Adecco;Göteborg;15
+2026-06-03;Adecco;Stockholm;14
+2026-06-03;Adecco;Malmö;10
+2026-06-03;Adecco;Uppsala;9
+2026-06-03;Adecco;Växjö;8
+2026-06-03;Perido;Göteborg;10
+2026-06-03;Perido;Stockholm;8
+2026-06-03;Perido;Södertälje;2
+2026-06-03;Perido;Järfälla;1
+2026-06-03;Perido;Falun;1
+2026-06-03;Randstad;Göteborg;29
+2026-06-03;Randstad;Stockholm;16
+2026-06-03;Randstad;Norrköping;10
+2026-06-03;Randstad;Jönköping;9
+2026-06-03;Randstad;Solna;6
+2026-06-03;Academic Work;Stockholm;119
+2026-06-03;Academic Work;Göteborg;35
+2026-06-03;Academic Work;Linköping;26
+2026-06-03;Academic Work;Malmö;23
+2026-06-03;Academic Work;Örebro;19
+2026-06-03;Studentconsulting;Malmö;23
+2026-06-03;Studentconsulting;Stockholm;17
+2026-06-03;Studentconsulting;Luleå;13
+2026-06-03;Studentconsulting;Göteborg;12
+2026-06-03;Studentconsulting;Linköping;9
+2026-06-03;Poolia;Göteborg;9
+2026-06-03;Poolia;Stockholm;8
+2026-06-03;Poolia;Linköping;7
+2026-06-03;Poolia;Malmö;6
+2026-06-03;Poolia;Helsingborg;5
+2026-06-03;Uniflex;Stockholm;17
+2026-06-03;Uniflex;Vetlanda;9
+2026-06-03;Uniflex;Göteborg;9
+2026-06-03;Uniflex;Helsingborg;9
+2026-06-03;Uniflex;Västerås;7
+2026-06-03;OnePartnerGroup;Jönköping;18
+2026-06-03;OnePartnerGroup;Örnsköldsvik;13
+2026-06-03;OnePartnerGroup;Göteborg;10
+2026-06-03;OnePartnerGroup;Gislaved;9
+2026-06-03;OnePartnerGroup;Östersund;8
+2026-06-03;Skill;Linköping;25
+2026-06-03;Skill;Finspång;15
+2026-06-03;Skill;Trollhättan;5
+2026-06-03;Skill;Motala;3
+2026-06-03;Skill;Töreboda;3
+2026-06-03;Arena Personal;Eskilstuna;22
+2026-06-03;Arena Personal;Stockholm;15
+2026-06-03;Arena Personal;Strängnäs;10
+2026-06-03;Arena Personal;Göteborg;7
+2026-06-03;Arena Personal;Sundsvall;5
+2026-06-03;Tranpenad;Göteborg;9
+2026-06-03;Tranpenad;Borås;4
+2026-06-03;Tranpenad;Sigtuna;4
+2026-06-03;Tranpenad;Eskilstuna;3
+2026-06-03;Tranpenad;Jönköping;3
+2026-06-03;Jobandtalent;Norrköping;19
+2026-06-03;Jobandtalent;Stockholm;11
+2026-06-03;Jobandtalent;Malmö;8
+2026-06-03;Jobandtalent;Halmstad;7
+2026-06-03;Jobandtalent;Göteborg;6
+2026-06-03;NearYou;Jönköping;21
+2026-06-03;NearYou;Alingsås;10
+2026-06-03;NearYou;Göteborg;10
+2026-06-03;NearYou;Vetlanda;9
+2026-06-03;NearYou;Kalmar;8
+2026-06-03;SJR;Stockholm;13
+2026-06-03;SJR;Göteborg;6
+2026-06-03;SJR;Uppsala;4
+2026-06-03;SJR;Helsingborg;1
+2026-06-03;SJR;Leksand;1
+2026-06-03;Clockwork;Stockholm;5
+2026-06-03;Clockwork;Borlänge;3
+2026-06-03;Clockwork;Mora;2
+2026-06-03;Clockwork;Leksand;2
+2026-06-03;Clockwork;Hedemora;2
+2026-06-03;Logent;Malmö;6
+2026-06-03;Logent;Stockholm;4
+2026-06-03;Logent;Halmstad;4
+2026-06-03;Logent;Göteborg;4
+2026-06-03;Logent;Linköping;2
+2026-06-03;Bemannia;Stockholm;5
+2026-06-03;Bemannia;Göteborg;3
+2026-06-03;Bemannia;Malmö;2
+2026-06-03;Bemannia;Sandviken;1
+2026-06-03;Bemannia;Varberg;1
+2026-06-03;Framtiden i Sverige;Linköping;31
+2026-06-03;Framtiden i Sverige;Stockholm;24
+2026-06-03;Framtiden i Sverige;Jönköping;15
+2026-06-03;Framtiden i Sverige;Göteborg;11
+2026-06-03;Framtiden i Sverige;Finspång;7
+2026-06-03;Professionals Nord;Luleå;31
+2026-06-03;Professionals Nord;Stockholm;13
+2026-06-03;Professionals Nord;Kiruna;11
+2026-06-03;Professionals Nord;Piteå;9
+2026-06-03;Professionals Nord;Umeå;8
+2026-06-03;Bravura;Stockholm;65
+2026-06-03;Bravura;Göteborg;18
+2026-06-03;Bravura;Jönköping;8
+2026-06-03;Bravura;Malmö;7
+2026-06-03;Bravura;Linköping;7
+2026-06-03;Jurek;Stockholm;11
+2026-06-03;Jurek;Solna;3
+2026-06-03;Jurek;Malmö;3
+2026-06-03;Jurek;Göteborg;3
+2026-06-03;Jurek;Uppsala;2
+2026-06-03;TNG Group;Stockholm;23
+2026-06-03;TNG Group;Göteborg;4
+2026-06-03;TNG Group;Malmö;4
+2026-06-03;TNG Group;Borås;3
+2026-06-03;TNG Group;Karlskoga;3
+2026-06-03;Friday;Linköping;63
+2026-06-03;Friday;Göteborg;45
+2026-06-03;Friday;Stockholm;24
+2026-06-03;Friday;Malmö;15
+2026-06-03;Friday;Lund;13
+2026-06-03;Gazella;Stockholm;2
+2026-06-03;Gazella;Solna;1
+2026-06-03;Insitepart;Stockholm;8
+2026-06-03;Insitepart;Jönköping;7
+2026-06-03;Insitepart;Örebro;5
+2026-06-03;Insitepart;Göteborg;2
+2026-06-03;Insitepart;Nybro;2
+2026-06-03;Wikan Personal;Bollnäs;7
+2026-06-03;Wikan Personal;Ängelholm;7
+2026-06-03;Wikan Personal;Skellefteå;7
+2026-06-03;Wikan Personal;Vetlanda;5
+2026-06-03;Wikan Personal;Kalmar;4
+2026-06-03;Konsultia;Göteborg;8
+2026-06-03;Konsultia;Piteå;7
+2026-06-03;Konsultia;Örnsköldsvik;4
+2026-06-03;Konsultia;Skellefteå;4
+2026-06-03;Konsultia;Gävle;3
+2026-06-04;Manpower;Göteborg;7
+2026-06-04;Manpower;Örnsköldsvik;3
+2026-06-04;Manpower;Västerås;3
+2026-06-04;Manpower;Östersund;2
+2026-06-04;Manpower;Ludvika;2
+2026-06-04;Lernia;Göteborg;22
+2026-06-04;Lernia;Halmstad;14
+2026-06-04;Lernia;Falkenberg;13
+2026-06-04;Lernia;Borås;8
+2026-06-04;Lernia;Stockholm;8
+2026-06-04;Adecco;Stockholm;25
+2026-06-04;Adecco;Göteborg;16
+2026-06-04;Adecco;Gällivare;11
+2026-06-04;Adecco;Malmö;10
+2026-06-04;Adecco;Uppsala;9
+2026-06-04;Perido;Göteborg;12
+2026-06-04;Perido;Stockholm;5
+2026-06-04;Perido;Norrköping;2
+2026-06-04;Perido;Södertälje;2
+2026-06-04;Perido;Växjö;1
+2026-06-04;Randstad;Göteborg;29
+2026-06-04;Randstad;Stockholm;21
+2026-06-04;Randstad;Norrköping;12
+2026-06-04;Randstad;Jönköping;9
+2026-06-04;Randstad;Solna;6
+2026-06-04;Academic Work;Stockholm;123
+2026-06-04;Academic Work;Göteborg;33
+2026-06-04;Academic Work;Linköping;26
+2026-06-04;Academic Work;Malmö;22
+2026-06-04;Academic Work;Örebro;18
+2026-06-04;Studentconsulting;Malmö;24
+2026-06-04;Studentconsulting;Stockholm;17
+2026-06-04;Studentconsulting;Göteborg;14
+2026-06-04;Studentconsulting;Luleå;13
+2026-06-04;Studentconsulting;Borås;9
+2026-06-04;Poolia;Malmö;10
+2026-06-04;Poolia;Göteborg;10
+2026-06-04;Poolia;Linköping;7
+2026-06-04;Poolia;Stockholm;7
+2026-06-04;Poolia;Helsingborg;6
+2026-06-04;Uniflex;Stockholm;19
+2026-06-04;Uniflex;Tyresö;16
+2026-06-04;Uniflex;Helsingborg;12
+2026-06-04;Uniflex;Vetlanda;9
+2026-06-04;Uniflex;Örebro;9
+2026-06-04;OnePartnerGroup;Jönköping;18
+2026-06-04;OnePartnerGroup;Växjö;16
+2026-06-04;OnePartnerGroup;Örnsköldsvik;13
+2026-06-04;OnePartnerGroup;Göteborg;11
+2026-06-04;OnePartnerGroup;Gislaved;9
+2026-06-04;Skill;Linköping;27
+2026-06-04;Skill;Finspång;15
+2026-06-04;Skill;Trollhättan;5
+2026-06-04;Skill;Motala;3
+2026-06-04;Skill;Töreboda;3
+2026-06-04;Arena Personal;Eskilstuna;22
+2026-06-04;Arena Personal;Stockholm;15
+2026-06-04;Arena Personal;Strängnäs;10
+2026-06-04;Arena Personal;Göteborg;7
+2026-06-04;Arena Personal;Sundsvall;5
+2026-06-04;Tranpenad;Göteborg;9
+2026-06-04;Tranpenad;Borås;4
+2026-06-04;Tranpenad;Sigtuna;4
+2026-06-04;Tranpenad;Eskilstuna;3
+2026-06-04;Tranpenad;Jönköping;3
+2026-06-04;Jobandtalent;Norrköping;19
+2026-06-04;Jobandtalent;Halmstad;12
+2026-06-04;Jobandtalent;Stockholm;11
+2026-06-04;Jobandtalent;Malmö;8
+2026-06-04;Jobandtalent;Finspång;6
+2026-06-04;NearYou;Jönköping;20
+2026-06-04;NearYou;Kalmar;12
+2026-06-04;NearYou;Göteborg;10
+2026-06-04;NearYou;Alingsås;9
+2026-06-04;NearYou;Vetlanda;9
+2026-06-04;SJR;Stockholm;13
+2026-06-04;SJR;Göteborg;6
+2026-06-04;SJR;Uppsala;4
+2026-06-04;SJR;Lund;1
+2026-06-04;SJR;Helsingborg;1
+2026-06-04;Clockwork;Stockholm;5
+2026-06-04;Clockwork;Borlänge;3
+2026-06-04;Clockwork;Mora;2
+2026-06-04;Clockwork;Leksand;2
+2026-06-04;Clockwork;Hedemora;2
+2026-06-04;Logent;Malmö;6
+2026-06-04;Logent;Borås;4
+2026-06-04;Logent;Stockholm;4
+2026-06-04;Logent;Halmstad;4
+2026-06-04;Logent;Göteborg;4
+2026-06-04;Bemannia;Huddinge;8
+2026-06-04;Bemannia;Stockholm;7
+2026-06-04;Bemannia;Göteborg;2
+2026-06-04;Bemannia;Täby;1
+2026-06-04;Bemannia;Sollentuna;1
+2026-06-04;Framtiden i Sverige;Linköping;32
+2026-06-04;Framtiden i Sverige;Stockholm;26
+2026-06-04;Framtiden i Sverige;Jönköping;15
+2026-06-04;Framtiden i Sverige;Göteborg;14
+2026-06-04;Framtiden i Sverige;Finspång;7
+2026-06-04;Professionals Nord;Luleå;31
+2026-06-04;Professionals Nord;Stockholm;13
+2026-06-04;Professionals Nord;Piteå;9
+2026-06-04;Professionals Nord;Umeå;8
+2026-06-04;Professionals Nord;Kiruna;8
+2026-06-04;Bravura;Stockholm;64
+2026-06-04;Bravura;Göteborg;18
+2026-06-04;Bravura;Jönköping;8
+2026-06-04;Bravura;Malmö;7
+2026-06-04;Bravura;Linköping;7
+2026-06-04;Jurek;Stockholm;8
+2026-06-04;Jurek;Solna;3
+2026-06-04;Jurek;Malmö;3
+2026-06-04;Jurek;Göteborg;3
+2026-06-04;Jurek;Uppsala;2
+2026-06-04;TNG Group;Stockholm;23
+2026-06-04;TNG Group;Malmö;3
+2026-06-04;TNG Group;Karlskoga;3
+2026-06-04;TNG Group;Örebro;2
+2026-06-04;TNG Group;Lekeberg;2
+2026-06-04;Friday;Linköping;93
+2026-06-04;Friday;Stockholm;54
+2026-06-04;Friday;Göteborg;49
+2026-06-04;Friday;Malmö;15
+2026-06-04;Friday;Lund;13
+2026-06-04;Gazella;Stockholm;2
+2026-06-04;Gazella;Solna;1
+2026-06-04;Insitepart;Stockholm;8
+2026-06-04;Insitepart;Jönköping;7
+2026-06-04;Insitepart;Örebro;5
+2026-06-04;Insitepart;Eskilstuna;2
+2026-06-04;Insitepart;Göteborg;1
+2026-06-04;Wikan Personal;Bollnäs;8
+2026-06-04;Wikan Personal;Ängelholm;7
+2026-06-04;Wikan Personal;Skellefteå;7
+2026-06-04;Wikan Personal;Kalmar;5
+2026-06-04;Wikan Personal;Växjö;5
+2026-06-04;Konsultia;Göteborg;8
+2026-06-04;Konsultia;Piteå;7
+2026-06-04;Konsultia;Örnsköldsvik;4
+2026-06-04;Konsultia;Skellefteå;4
+2026-06-04;Konsultia;Gävle;3
+2026-06-05;Manpower;Göteborg;7
+2026-06-05;Manpower;Örnsköldsvik;3
+2026-06-05;Manpower;Västerås;3
+2026-06-05;Manpower;Östersund;2
+2026-06-05;Manpower;Ludvika;2
+2026-06-05;Lernia;Göteborg;16
+2026-06-05;Lernia;Halmstad;12
+2026-06-05;Lernia;Falkenberg;12
+2026-06-05;Lernia;Borås;8
+2026-06-05;Lernia;Stockholm;8
+2026-06-05;Adecco;Stockholm;20
+2026-06-05;Adecco;Göteborg;17
+2026-06-05;Adecco;Malmö;10
+2026-06-05;Adecco;Växjö;6
+2026-06-05;Adecco;Jönköping;6
+2026-06-05;Perido;Göteborg;10
+2026-06-05;Perido;Stockholm;7
+2026-06-05;Perido;Norrköping;2
+2026-06-05;Perido;Linköping;1
+2026-06-05;Perido;Växjö;1
+2026-06-05;Randstad;Göteborg;29
+2026-06-05;Randstad;Stockholm;25
+2026-06-05;Randstad;Norrköping;14
+2026-06-05;Randstad;Jönköping;10
+2026-06-05;Randstad;Borås;10
+2026-06-05;Academic Work;Stockholm;126
+2026-06-05;Academic Work;Göteborg;34
+2026-06-05;Academic Work;Linköping;26
+2026-06-05;Academic Work;Malmö;21
+2026-06-05;Academic Work;Örebro;17
+2026-06-05;Studentconsulting;Malmö;24
+2026-06-05;Studentconsulting;Stockholm;17
+2026-06-05;Studentconsulting;Luleå;13
+2026-06-05;Studentconsulting;Göteborg;13
+2026-06-05;Studentconsulting;Växjö;10
+2026-06-05;Poolia;Malmö;10
+2026-06-05;Poolia;Göteborg;9
+2026-06-05;Poolia;Linköping;7
+2026-06-05;Poolia;Stockholm;7
+2026-06-05;Poolia;Helsingborg;6
+2026-06-05;Uniflex;Stockholm;18
+2026-06-05;Uniflex;Helsingborg;11
+2026-06-05;Uniflex;Vetlanda;9
+2026-06-05;Uniflex;Göteborg;9
+2026-06-05;Uniflex;Västerås;7
+2026-06-05;OnePartnerGroup;Örnsköldsvik;13
+2026-06-05;OnePartnerGroup;Göteborg;11
+2026-06-05;OnePartnerGroup;Jönköping;11
+2026-06-05;OnePartnerGroup;Gislaved;10
+2026-06-05;OnePartnerGroup;Borås;9
+2026-06-05;Skill;Linköping;27
+2026-06-05;Skill;Finspång;15
+2026-06-05;Skill;Halmstad;5
+2026-06-05;Skill;Trollhättan;4
+2026-06-05;Skill;Motala;3
+2026-06-05;Arena Personal;Eskilstuna;22
+2026-06-05;Arena Personal;Stockholm;13
+2026-06-05;Arena Personal;Strängnäs;10
+2026-06-05;Arena Personal;Göteborg;7
+2026-06-05;Arena Personal;Sundsvall;5
+2026-06-05;Tranpenad;Göteborg;11
+2026-06-05;Tranpenad;Borås;4
+2026-06-05;Tranpenad;Sigtuna;4
+2026-06-05;Tranpenad;Eskilstuna;3
+2026-06-05;Tranpenad;Jönköping;3
+2026-06-05;Jobandtalent;Norrköping;18
+2026-06-05;Jobandtalent;Halmstad;12
+2026-06-05;Jobandtalent;Stockholm;11
+2026-06-05;Jobandtalent;Malmö;8
+2026-06-05;Jobandtalent;Finspång;6
+2026-06-05;NearYou;Jönköping;20
+2026-06-05;NearYou;Kalmar;12
+2026-06-05;NearYou;Alingsås;9
+2026-06-05;NearYou;Vetlanda;9
+2026-06-05;NearYou;Göteborg;8
+2026-06-05;SJR;Stockholm;14
+2026-06-05;SJR;Göteborg;6
+2026-06-05;SJR;Uppsala;4
+2026-06-05;SJR;Lund;1
+2026-06-05;SJR;Helsingborg;1
+2026-06-05;Clockwork;Stockholm;5
+2026-06-05;Clockwork;Borlänge;3
+2026-06-05;Clockwork;Leksand;2
+2026-06-05;Clockwork;Umeå;2
+2026-06-05;Clockwork;Hedemora;2
+2026-06-05;Logent;Malmö;6
+2026-06-05;Logent;Borås;4
+2026-06-05;Logent;Stockholm;4
+2026-06-05;Logent;Halmstad;4
+2026-06-05;Logent;Göteborg;4
+2026-06-05;Bemannia;Stockholm;7
+2026-06-05;Bemannia;Uppsala;4
+2026-06-05;Bemannia;Huddinge;3
+2026-06-05;Bemannia;Laholm;2
+2026-06-05;Bemannia;Göteborg;2
+2026-06-05;Framtiden i Sverige;Linköping;30
+2026-06-05;Framtiden i Sverige;Stockholm;25
+2026-06-05;Framtiden i Sverige;Jönköping;14
+2026-06-05;Framtiden i Sverige;Göteborg;12
+2026-06-05;Framtiden i Sverige;Ludvika;6
+2026-06-05;Professionals Nord;Luleå;28
+2026-06-05;Professionals Nord;Stockholm;12
+2026-06-05;Professionals Nord;Kiruna;11
+2026-06-05;Professionals Nord;Piteå;10
+2026-06-05;Professionals Nord;Boden;8
+2026-06-05;Bravura;Stockholm;63
+2026-06-05;Bravura;Göteborg;22
+2026-06-05;Bravura;Malmö;8
+2026-06-05;Bravura;Jönköping;7
+2026-06-05;Bravura;Linköping;7
+2026-06-05;Jurek;Stockholm;7
+2026-06-05;Jurek;Solna;3
+2026-06-05;Jurek;Malmö;3
+2026-06-05;Jurek;Göteborg;3
+2026-06-05;Jurek;Uppsala;1
+2026-06-05;TNG Group;Stockholm;23
+2026-06-05;TNG Group;Malmö;3
+2026-06-05;TNG Group;Karlskoga;3
+2026-06-05;TNG Group;Örebro;2
+2026-06-05;TNG Group;Lekeberg;2
+2026-06-05;Friday;Göteborg;47
+2026-06-05;Friday;Linköping;27
+2026-06-05;Friday;Stockholm;27
+2026-06-05;Friday;Malmö;15
+2026-06-05;Friday;Skövde;6
+2026-06-05;Gazella;Stockholm;3
+2026-06-05;Gazella;Solna;1
+2026-06-05;Insitepart;Stockholm;8
+2026-06-05;Insitepart;Jönköping;7
+2026-06-05;Insitepart;Örebro;5
+2026-06-05;Insitepart;Eskilstuna;2
+2026-06-05;Insitepart;Göteborg;1
+2026-06-05;Wikan Personal;Bollnäs;8
+2026-06-05;Wikan Personal;Skellefteå;8
+2026-06-05;Wikan Personal;Växjö;7
+2026-06-05;Wikan Personal;Ängelholm;7
+2026-06-05;Wikan Personal;Vetlanda;6
+2026-06-05;Konsultia;Örnsköldsvik;7
+2026-06-05;Konsultia;Göteborg;7
+2026-06-05;Konsultia;Piteå;7
+2026-06-05;Konsultia;Luleå;5
+2026-06-05;Konsultia;Skellefteå;4
+2026-06-05;Manpower;Göteborg;7
+2026-06-05;Manpower;Örnsköldsvik;3
+2026-06-05;Manpower;Västerås;3
+2026-06-05;Manpower;Landskrona;2
+2026-06-05;Manpower;Östersund;2
+2026-06-05;Lernia;Göteborg;16
+2026-06-05;Lernia;Halmstad;12
+2026-06-05;Lernia;Falkenberg;12
+2026-06-05;Lernia;Borås;8
+2026-06-05;Lernia;Stockholm;8
+2026-06-05;Adecco;Stockholm;20
+2026-06-05;Adecco;Göteborg;17
+2026-06-05;Adecco;Malmö;10
+2026-06-05;Adecco;Växjö;6
+2026-06-05;Adecco;Jönköping;6
+2026-06-05;Perido;Göteborg;10
+2026-06-05;Perido;Stockholm;7
+2026-06-05;Perido;Norrköping;2
+2026-06-05;Perido;Linköping;1
+2026-06-05;Perido;Växjö;1
+2026-06-05;Randstad;Göteborg;29
+2026-06-05;Randstad;Stockholm;25
+2026-06-05;Randstad;Norrköping;14
+2026-06-05;Randstad;Jönköping;10
+2026-06-05;Randstad;Borås;10
+2026-06-05;Academic Work;Stockholm;126
+2026-06-05;Academic Work;Göteborg;34
+2026-06-05;Academic Work;Linköping;26
+2026-06-05;Academic Work;Malmö;21
+2026-06-05;Academic Work;Örebro;17
+2026-06-05;Studentconsulting;Malmö;24
+2026-06-05;Studentconsulting;Stockholm;17
+2026-06-05;Studentconsulting;Luleå;13
+2026-06-05;Studentconsulting;Göteborg;13
+2026-06-05;Studentconsulting;Växjö;10
+2026-06-05;Poolia;Malmö;10
+2026-06-05;Poolia;Göteborg;9
+2026-06-05;Poolia;Linköping;7
+2026-06-05;Poolia;Stockholm;7
+2026-06-05;Poolia;Helsingborg;6
+2026-06-05;Uniflex;Stockholm;18
+2026-06-05;Uniflex;Helsingborg;11
+2026-06-05;Uniflex;Vetlanda;9
+2026-06-05;Uniflex;Göteborg;9
+2026-06-05;Uniflex;Västerås;7
+2026-06-05;OnePartnerGroup;Örnsköldsvik;13
+2026-06-05;OnePartnerGroup;Göteborg;11
+2026-06-05;OnePartnerGroup;Jönköping;11
+2026-06-05;OnePartnerGroup;Gislaved;10
+2026-06-05;OnePartnerGroup;Borås;9
+2026-06-05;Skill;Linköping;27
+2026-06-05;Skill;Finspång;15
+2026-06-05;Skill;Halmstad;5
+2026-06-05;Skill;Trollhättan;4
+2026-06-05;Skill;Motala;3
+2026-06-05;Arena Personal;Eskilstuna;22
+2026-06-05;Arena Personal;Stockholm;13
+2026-06-05;Arena Personal;Strängnäs;10
+2026-06-05;Arena Personal;Göteborg;7
+2026-06-05;Arena Personal;Sundsvall;5
+2026-06-05;Tranpenad;Göteborg;11
+2026-06-05;Tranpenad;Borås;4
+2026-06-05;Tranpenad;Sigtuna;4
+2026-06-05;Tranpenad;Eskilstuna;3
+2026-06-05;Tranpenad;Jönköping;3
+2026-06-05;Jobandtalent;Norrköping;18
+2026-06-05;Jobandtalent;Halmstad;12
+2026-06-05;Jobandtalent;Stockholm;11
+2026-06-05;Jobandtalent;Malmö;8
+2026-06-05;Jobandtalent;Finspång;6
+2026-06-05;NearYou;Jönköping;20
+2026-06-05;NearYou;Kalmar;12
+2026-06-05;NearYou;Alingsås;9
+2026-06-05;NearYou;Vetlanda;9
+2026-06-05;NearYou;Göteborg;8
+2026-06-05;SJR;Stockholm;14
+2026-06-05;SJR;Göteborg;6
+2026-06-05;SJR;Uppsala;4
+2026-06-05;SJR;Lund;1
+2026-06-05;SJR;Helsingborg;1
+2026-06-05;Clockwork;Stockholm;5
+2026-06-05;Clockwork;Borlänge;3
+2026-06-05;Clockwork;Leksand;2
+2026-06-05;Clockwork;Umeå;2
+2026-06-05;Clockwork;Hedemora;2
+2026-06-05;Logent;Malmö;6
+2026-06-05;Logent;Borås;4
+2026-06-05;Logent;Stockholm;4
+2026-06-05;Logent;Halmstad;4
+2026-06-05;Logent;Göteborg;4
+2026-06-05;Bemannia;Stockholm;7
+2026-06-05;Bemannia;Uppsala;4
+2026-06-05;Bemannia;Huddinge;3
+2026-06-05;Bemannia;Laholm;2
+2026-06-05;Bemannia;Göteborg;2
+2026-06-05;Framtiden i Sverige;Linköping;30
+2026-06-05;Framtiden i Sverige;Stockholm;25
+2026-06-05;Framtiden i Sverige;Jönköping;14
+2026-06-05;Framtiden i Sverige;Göteborg;12
+2026-06-05;Framtiden i Sverige;Ludvika;6
+2026-06-05;Professionals Nord;Luleå;28
+2026-06-05;Professionals Nord;Stockholm;12
+2026-06-05;Professionals Nord;Kiruna;11
+2026-06-05;Professionals Nord;Piteå;10
+2026-06-05;Professionals Nord;Boden;8
+2026-06-05;Bravura;Stockholm;63
+2026-06-05;Bravura;Göteborg;22
+2026-06-05;Bravura;Malmö;8
+2026-06-05;Bravura;Jönköping;7
+2026-06-05;Bravura;Linköping;7
+2026-06-05;Jurek;Stockholm;7
+2026-06-05;Jurek;Solna;3
+2026-06-05;Jurek;Malmö;3
+2026-06-05;Jurek;Göteborg;3
+2026-06-05;Jurek;Uppsala;1
+2026-06-05;TNG Group;Stockholm;23
+2026-06-05;TNG Group;Malmö;3
+2026-06-05;TNG Group;Karlskoga;3
+2026-06-05;TNG Group;Örebro;2
+2026-06-05;TNG Group;Lekeberg;2
+2026-06-05;Eterni Sweden;Vetlanda;9
+2026-06-05;Eterni Sweden;Växjö;8
+2026-06-05;Eterni Sweden;Jönköping;6
+2026-06-05;Eterni Sweden;Uddevalla;5
+2026-06-05;Eterni Sweden;Karlstad;5
+2026-06-05;Friday;Göteborg;47
+2026-06-05;Friday;Linköping;27
+2026-06-05;Friday;Stockholm;27
+2026-06-05;Friday;Malmö;15
+2026-06-05;Friday;Skövde;6
+2026-06-05;Gazella;Stockholm;3
+2026-06-05;Gazella;Solna;1
+2026-06-05;Insitepart;Stockholm;8
+2026-06-05;Insitepart;Jönköping;7
+2026-06-05;Insitepart;Örebro;5
+2026-06-05;Insitepart;Eskilstuna;2
+2026-06-05;Insitepart;Göteborg;1
+2026-06-05;Wikan Personal;Bollnäs;8
+2026-06-05;Wikan Personal;Skellefteå;8
+2026-06-05;Wikan Personal;Växjö;7
+2026-06-05;Wikan Personal;Ängelholm;7
+2026-06-05;Wikan Personal;Vetlanda;6
+2026-06-05;Konsultia;Örnsköldsvik;7
+2026-06-05;Konsultia;Göteborg;7
+2026-06-05;Konsultia;Piteå;7
+2026-06-05;Konsultia;Luleå;5
+2026-06-05;Konsultia;Skellefteå;4
