@@ -5470,3 +5470,549 @@
 2026-06-09;Undersköterska;Strukturell brist;Västra Götalands län;102;26;63
 2026-06-09;Undersköterska;Strukturell brist;Örebro län;15;7;7
 2026-06-09;Undersköterska;Strukturell brist;Östergötlands län;45;11;20
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Blekinge län;1;0;1
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Dalarnas län;2;0;0
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Gotlands län;1;0;1
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Gävleborgs län;8;1;3
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Hallands län;2;1;1
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Jämtlands län;1;0;0
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Jönköpings län;7;2;6
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Kalmar län;6;1;4
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Kronobergs län;8;1;3
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Norrbottens län;3;2;2
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Skåne län;40;12;17
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Stockholms län;106;26;56
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Södermanlands län;8;1;4
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Uppsala län;2;1;1
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Värmlands län;5;3;5
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Västerbottens län;2;1;1
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Västernorrlands län;3;2;2
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Västmanlands län;1;1;1
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Västra Götalands län;44;9;22
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Örebro län;2;0;2
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Östergötlands län;13;5;7
+2026-06-09;Ekonomiassistent;Volym / cykel;Dalarnas län;1;1;1
+2026-06-09;Ekonomiassistent;Volym / cykel;Gävleborgs län;1;0;1
+2026-06-09;Ekonomiassistent;Volym / cykel;Hallands län;5;1;3
+2026-06-09;Ekonomiassistent;Volym / cykel;Jämtlands län;3;1;2
+2026-06-09;Ekonomiassistent;Volym / cykel;Jönköpings län;7;3;4
+2026-06-09;Ekonomiassistent;Volym / cykel;Kalmar län;1;1;1
+2026-06-09;Ekonomiassistent;Volym / cykel;Norrbottens län;1;0;0
+2026-06-09;Ekonomiassistent;Volym / cykel;Skåne län;13;3;7
+2026-06-09;Ekonomiassistent;Volym / cykel;Stockholms län;44;10;27
+2026-06-09;Ekonomiassistent;Volym / cykel;Södermanlands län;1;0;0
+2026-06-09;Ekonomiassistent;Volym / cykel;Uppsala län;5;1;4
+2026-06-09;Ekonomiassistent;Volym / cykel;Värmlands län;1;0;0
+2026-06-09;Ekonomiassistent;Volym / cykel;Västerbottens län;2;0;2
+2026-06-09;Ekonomiassistent;Volym / cykel;Västernorrlands län;2;0;0
+2026-06-09;Ekonomiassistent;Volym / cykel;Västmanlands län;1;1;1
+2026-06-09;Ekonomiassistent;Volym / cykel;Västra Götalands län;18;3;14
+2026-06-09;Ekonomiassistent;Volym / cykel;Örebro län;2;0;0
+2026-06-09;Ekonomiassistent;Volym / cykel;Östergötlands län;8;1;4
+2026-06-09;Lagerarbetare;Volym / cykel;Blekinge län;5;3;4
+2026-06-09;Lagerarbetare;Volym / cykel;Dalarnas län;7;2;3
+2026-06-09;Lagerarbetare;Volym / cykel;Gotlands län;2;0;0
+2026-06-09;Lagerarbetare;Volym / cykel;Gävleborgs län;6;4;4
+2026-06-09;Lagerarbetare;Volym / cykel;Hallands län;22;6;15
+2026-06-09;Lagerarbetare;Volym / cykel;Jämtlands län;7;1;4
+2026-06-09;Lagerarbetare;Volym / cykel;Jönköpings län;55;12;27
+2026-06-09;Lagerarbetare;Volym / cykel;Kalmar län;5;3;3
+2026-06-09;Lagerarbetare;Volym / cykel;Kronobergs län;11;2;4
+2026-06-09;Lagerarbetare;Volym / cykel;Norrbottens län;12;1;8
+2026-06-09;Lagerarbetare;Volym / cykel;Skåne län;97;31;54
+2026-06-09;Lagerarbetare;Volym / cykel;Stockholms län;166;51;82
+2026-06-09;Lagerarbetare;Volym / cykel;Södermanlands län;27;8;13
+2026-06-09;Lagerarbetare;Volym / cykel;Uppsala län;21;4;9
+2026-06-09;Lagerarbetare;Volym / cykel;Värmlands län;6;1;5
+2026-06-09;Lagerarbetare;Volym / cykel;Västerbottens län;7;2;4
+2026-06-09;Lagerarbetare;Volym / cykel;Västernorrlands län;11;3;3
+2026-06-09;Lagerarbetare;Volym / cykel;Västmanlands län;11;3;6
+2026-06-09;Lagerarbetare;Volym / cykel;Västra Götalands län;147;42;71
+2026-06-09;Lagerarbetare;Volym / cykel;Örebro län;31;13;21
+2026-06-09;Lagerarbetare;Volym / cykel;Östergötlands län;35;7;12
+2026-06-09;Business Controller;Framåtblickande signal;Dalarnas län;9;1;1
+2026-06-09;Business Controller;Framåtblickande signal;Gävleborgs län;6;1;1
+2026-06-09;Business Controller;Framåtblickande signal;Jämtlands län;3;2;2
+2026-06-09;Business Controller;Framåtblickande signal;Jönköpings län;5;3;5
+2026-06-09;Business Controller;Framåtblickande signal;Kalmar län;1;0;0
+2026-06-09;Business Controller;Framåtblickande signal;Kronobergs län;3;1;1
+2026-06-09;Business Controller;Framåtblickande signal;Norrbottens län;4;4;4
+2026-06-09;Business Controller;Framåtblickande signal;Skåne län;21;7;16
+2026-06-09;Business Controller;Framåtblickande signal;Stockholms län;64;23;40
+2026-06-09;Business Controller;Framåtblickande signal;Södermanlands län;5;0;1
+2026-06-09;Business Controller;Framåtblickande signal;Uppsala län;5;0;4
+2026-06-09;Business Controller;Framåtblickande signal;Värmlands län;3;0;1
+2026-06-09;Business Controller;Framåtblickande signal;Västerbottens län;3;0;1
+2026-06-09;Business Controller;Framåtblickande signal;Västernorrlands län;3;2;3
+2026-06-09;Business Controller;Framåtblickande signal;Västmanlands län;13;3;5
+2026-06-09;Business Controller;Framåtblickande signal;Västra Götalands län;48;20;24
+2026-06-09;Business Controller;Framåtblickande signal;Örebro län;4;1;3
+2026-06-09;Business Controller;Framåtblickande signal;Östergötlands län;12;3;6
+2026-06-09;Systemutvecklare;Framåtblickande signal;Blekinge län;7;0;0
+2026-06-09;Systemutvecklare;Framåtblickande signal;Dalarnas län;6;2;2
+2026-06-09;Systemutvecklare;Framåtblickande signal;Gotlands län;2;0;1
+2026-06-09;Systemutvecklare;Framåtblickande signal;Gävleborgs län;9;4;5
+2026-06-09;Systemutvecklare;Framåtblickande signal;Hallands län;6;3;4
+2026-06-09;Systemutvecklare;Framåtblickande signal;Jämtlands län;3;2;2
+2026-06-09;Systemutvecklare;Framåtblickande signal;Jönköpings län;34;3;8
+2026-06-09;Systemutvecklare;Framåtblickande signal;Kalmar län;3;3;3
+2026-06-09;Systemutvecklare;Framåtblickande signal;Kronobergs län;15;7;8
+2026-06-09;Systemutvecklare;Framåtblickande signal;Norrbottens län;23;10;15
+2026-06-09;Systemutvecklare;Framåtblickande signal;Skåne län;119;24;48
+2026-06-09;Systemutvecklare;Framåtblickande signal;Stockholms län;496;110;184
+2026-06-09;Systemutvecklare;Framåtblickande signal;Södermanlands län;4;1;1
+2026-06-09;Systemutvecklare;Framåtblickande signal;Uppsala län;14;2;7
+2026-06-09;Systemutvecklare;Framåtblickande signal;Värmlands län;4;2;3
+2026-06-09;Systemutvecklare;Framåtblickande signal;Västerbottens län;10;3;3
+2026-06-09;Systemutvecklare;Framåtblickande signal;Västernorrlands län;19;5;11
+2026-06-09;Systemutvecklare;Framåtblickande signal;Västmanlands län;33;12;17
+2026-06-09;Systemutvecklare;Framåtblickande signal;Västra Götalands län;239;51;91
+2026-06-09;Systemutvecklare;Framåtblickande signal;Örebro län;11;3;4
+2026-06-09;Systemutvecklare;Framåtblickande signal;Östergötlands län;99;42;58
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Blekinge län;16;11;13
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Dalarnas län;31;8;14
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Gotlands län;1;0;1
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Gävleborgs län;10;1;7
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Hallands län;20;9;14
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Jämtlands län;4;1;3
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Jönköpings län;45;13;20
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Kalmar län;22;9;9
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Kronobergs län;17;6;8
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Norrbottens län;23;6;11
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Skåne län;87;30;48
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Stockholms län;136;34;51
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Södermanlands län;14;8;9
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Uppsala län;7;1;5
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Värmlands län;18;5;10
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Västerbottens län;17;10;10
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Västernorrlands län;32;6;14
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Västmanlands län;35;15;18
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Västra Götalands län;140;41;62
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Örebro län;63;33;48
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Östergötlands län;133;40;62
+2026-06-09;Elingenjör;Struktur / transformation;Blekinge län;8;2;5
+2026-06-09;Elingenjör;Struktur / transformation;Dalarnas län;71;6;14
+2026-06-09;Elingenjör;Struktur / transformation;Gävleborgs län;10;1;4
+2026-06-09;Elingenjör;Struktur / transformation;Hallands län;10;4;8
+2026-06-09;Elingenjör;Struktur / transformation;Jämtlands län;6;0;3
+2026-06-09;Elingenjör;Struktur / transformation;Jönköpings län;26;5;12
+2026-06-09;Elingenjör;Struktur / transformation;Kalmar län;9;3;4
+2026-06-09;Elingenjör;Struktur / transformation;Kronobergs län;7;1;2
+2026-06-09;Elingenjör;Struktur / transformation;Norrbottens län;14;4;6
+2026-06-09;Elingenjör;Struktur / transformation;Skåne län;64;20;35
+2026-06-09;Elingenjör;Struktur / transformation;Stockholms län;203;52;96
+2026-06-09;Elingenjör;Struktur / transformation;Södermanlands län;5;1;2
+2026-06-09;Elingenjör;Struktur / transformation;Uppsala län;19;3;9
+2026-06-09;Elingenjör;Struktur / transformation;Värmlands län;16;2;11
+2026-06-09;Elingenjör;Struktur / transformation;Västerbottens län;7;2;5
+2026-06-09;Elingenjör;Struktur / transformation;Västernorrlands län;9;4;7
+2026-06-09;Elingenjör;Struktur / transformation;Västmanlands län;81;24;29
+2026-06-09;Elingenjör;Struktur / transformation;Västra Götalands län;131;27;53
+2026-06-09;Elingenjör;Struktur / transformation;Örebro län;21;8;14
+2026-06-09;Elingenjör;Struktur / transformation;Östergötlands län;46;15;24
+2026-06-09;Sjuksköterska;Strukturell brist;Blekinge län;19;8;13
+2026-06-09;Sjuksköterska;Strukturell brist;Dalarnas län;37;8;20
+2026-06-09;Sjuksköterska;Strukturell brist;Gotlands län;19;9;12
+2026-06-09;Sjuksköterska;Strukturell brist;Gävleborgs län;74;24;44
+2026-06-09;Sjuksköterska;Strukturell brist;Hallands län;48;11;30
+2026-06-09;Sjuksköterska;Strukturell brist;Jämtlands län;43;12;28
+2026-06-09;Sjuksköterska;Strukturell brist;Jönköpings län;53;16;33
+2026-06-09;Sjuksköterska;Strukturell brist;Kalmar län;33;6;14
+2026-06-09;Sjuksköterska;Strukturell brist;Kronobergs län;33;11;21
+2026-06-09;Sjuksköterska;Strukturell brist;Norrbottens län;112;34;59
+2026-06-09;Sjuksköterska;Strukturell brist;Skåne län;188;67;106
+2026-06-09;Sjuksköterska;Strukturell brist;Stockholms län;230;36;107
+2026-06-09;Sjuksköterska;Strukturell brist;Södermanlands län;53;16;24
+2026-06-09;Sjuksköterska;Strukturell brist;Uppsala län;111;29;72
+2026-06-09;Sjuksköterska;Strukturell brist;Värmlands län;22;8;13
+2026-06-09;Sjuksköterska;Strukturell brist;Västerbottens län;82;25;53
+2026-06-09;Sjuksköterska;Strukturell brist;Västernorrlands län;67;24;46
+2026-06-09;Sjuksköterska;Strukturell brist;Västmanlands län;50;13;32
+2026-06-09;Sjuksköterska;Strukturell brist;Västra Götalands län;150;55;99
+2026-06-09;Sjuksköterska;Strukturell brist;Örebro län;45;14;26
+2026-06-09;Sjuksköterska;Strukturell brist;Östergötlands län;91;28;60
+2026-06-09;Undersköterska;Strukturell brist;Blekinge län;8;1;4
+2026-06-09;Undersköterska;Strukturell brist;Dalarnas län;22;6;12
+2026-06-09;Undersköterska;Strukturell brist;Gotlands län;9;2;2
+2026-06-09;Undersköterska;Strukturell brist;Gävleborgs län;14;6;10
+2026-06-09;Undersköterska;Strukturell brist;Hallands län;38;11;24
+2026-06-09;Undersköterska;Strukturell brist;Jämtlands län;32;8;16
+2026-06-09;Undersköterska;Strukturell brist;Jönköpings län;33;7;21
+2026-06-09;Undersköterska;Strukturell brist;Kalmar län;24;7;9
+2026-06-09;Undersköterska;Strukturell brist;Kronobergs län;17;1;12
+2026-06-09;Undersköterska;Strukturell brist;Norrbottens län;31;6;20
+2026-06-09;Undersköterska;Strukturell brist;Skåne län;66;19;31
+2026-06-09;Undersköterska;Strukturell brist;Stockholms län;187;42;76
+2026-06-09;Undersköterska;Strukturell brist;Södermanlands län;21;4;14
+2026-06-09;Undersköterska;Strukturell brist;Uppsala län;27;10;16
+2026-06-09;Undersköterska;Strukturell brist;Värmlands län;31;8;17
+2026-06-09;Undersköterska;Strukturell brist;Västerbottens län;32;5;13
+2026-06-09;Undersköterska;Strukturell brist;Västernorrlands län;17;4;8
+2026-06-09;Undersköterska;Strukturell brist;Västmanlands län;20;2;6
+2026-06-09;Undersköterska;Strukturell brist;Västra Götalands län;102;26;63
+2026-06-09;Undersköterska;Strukturell brist;Örebro län;15;7;7
+2026-06-09;Undersköterska;Strukturell brist;Östergötlands län;46;12;21
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Blekinge län;1;0;1
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Dalarnas län;2;0;0
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Gotlands län;1;0;1
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Gävleborgs län;8;1;3
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Hallands län;2;1;1
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Jämtlands län;1;0;0
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Jönköpings län;7;2;6
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Kalmar län;6;1;4
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Kronobergs län;8;1;3
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Norrbottens län;3;2;2
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Skåne län;40;12;17
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Stockholms län;106;26;56
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Södermanlands län;8;1;4
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Uppsala län;2;1;1
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Värmlands län;5;3;5
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Västerbottens län;2;1;1
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Västernorrlands län;3;2;2
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Västmanlands län;1;1;1
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Västra Götalands län;44;9;22
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Örebro län;2;0;2
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Östergötlands län;13;5;7
+2026-06-09;Ekonomiassistent;Volym / cykel;Dalarnas län;1;1;1
+2026-06-09;Ekonomiassistent;Volym / cykel;Gävleborgs län;1;0;1
+2026-06-09;Ekonomiassistent;Volym / cykel;Hallands län;5;1;3
+2026-06-09;Ekonomiassistent;Volym / cykel;Jämtlands län;3;1;2
+2026-06-09;Ekonomiassistent;Volym / cykel;Jönköpings län;7;3;4
+2026-06-09;Ekonomiassistent;Volym / cykel;Kalmar län;1;1;1
+2026-06-09;Ekonomiassistent;Volym / cykel;Norrbottens län;1;0;0
+2026-06-09;Ekonomiassistent;Volym / cykel;Skåne län;13;3;7
+2026-06-09;Ekonomiassistent;Volym / cykel;Stockholms län;44;10;27
+2026-06-09;Ekonomiassistent;Volym / cykel;Södermanlands län;1;0;0
+2026-06-09;Ekonomiassistent;Volym / cykel;Uppsala län;5;1;4
+2026-06-09;Ekonomiassistent;Volym / cykel;Värmlands län;1;0;0
+2026-06-09;Ekonomiassistent;Volym / cykel;Västerbottens län;2;0;2
+2026-06-09;Ekonomiassistent;Volym / cykel;Västernorrlands län;2;0;0
+2026-06-09;Ekonomiassistent;Volym / cykel;Västmanlands län;1;1;1
+2026-06-09;Ekonomiassistent;Volym / cykel;Västra Götalands län;18;3;14
+2026-06-09;Ekonomiassistent;Volym / cykel;Örebro län;2;0;0
+2026-06-09;Ekonomiassistent;Volym / cykel;Östergötlands län;8;1;4
+2026-06-09;Lagerarbetare;Volym / cykel;Blekinge län;5;3;4
+2026-06-09;Lagerarbetare;Volym / cykel;Dalarnas län;7;2;3
+2026-06-09;Lagerarbetare;Volym / cykel;Gotlands län;2;0;0
+2026-06-09;Lagerarbetare;Volym / cykel;Gävleborgs län;6;4;4
+2026-06-09;Lagerarbetare;Volym / cykel;Hallands län;22;6;15
+2026-06-09;Lagerarbetare;Volym / cykel;Jämtlands län;7;1;4
+2026-06-09;Lagerarbetare;Volym / cykel;Jönköpings län;55;12;27
+2026-06-09;Lagerarbetare;Volym / cykel;Kalmar län;5;3;3
+2026-06-09;Lagerarbetare;Volym / cykel;Kronobergs län;11;2;4
+2026-06-09;Lagerarbetare;Volym / cykel;Norrbottens län;12;1;8
+2026-06-09;Lagerarbetare;Volym / cykel;Skåne län;97;31;54
+2026-06-09;Lagerarbetare;Volym / cykel;Stockholms län;166;51;82
+2026-06-09;Lagerarbetare;Volym / cykel;Södermanlands län;27;8;13
+2026-06-09;Lagerarbetare;Volym / cykel;Uppsala län;21;4;9
+2026-06-09;Lagerarbetare;Volym / cykel;Värmlands län;6;1;5
+2026-06-09;Lagerarbetare;Volym / cykel;Västerbottens län;7;2;4
+2026-06-09;Lagerarbetare;Volym / cykel;Västernorrlands län;11;3;3
+2026-06-09;Lagerarbetare;Volym / cykel;Västmanlands län;11;3;6
+2026-06-09;Lagerarbetare;Volym / cykel;Västra Götalands län;147;42;71
+2026-06-09;Lagerarbetare;Volym / cykel;Örebro län;31;13;21
+2026-06-09;Lagerarbetare;Volym / cykel;Östergötlands län;35;7;12
+2026-06-09;Business Controller;Framåtblickande signal;Dalarnas län;9;1;1
+2026-06-09;Business Controller;Framåtblickande signal;Gävleborgs län;6;1;1
+2026-06-09;Business Controller;Framåtblickande signal;Jämtlands län;3;2;2
+2026-06-09;Business Controller;Framåtblickande signal;Jönköpings län;5;3;5
+2026-06-09;Business Controller;Framåtblickande signal;Kalmar län;1;0;0
+2026-06-09;Business Controller;Framåtblickande signal;Kronobergs län;3;1;1
+2026-06-09;Business Controller;Framåtblickande signal;Norrbottens län;4;4;4
+2026-06-09;Business Controller;Framåtblickande signal;Skåne län;21;7;16
+2026-06-09;Business Controller;Framåtblickande signal;Stockholms län;64;23;40
+2026-06-09;Business Controller;Framåtblickande signal;Södermanlands län;5;0;1
+2026-06-09;Business Controller;Framåtblickande signal;Uppsala län;5;0;4
+2026-06-09;Business Controller;Framåtblickande signal;Värmlands län;3;0;1
+2026-06-09;Business Controller;Framåtblickande signal;Västerbottens län;3;0;1
+2026-06-09;Business Controller;Framåtblickande signal;Västernorrlands län;3;2;3
+2026-06-09;Business Controller;Framåtblickande signal;Västmanlands län;13;3;5
+2026-06-09;Business Controller;Framåtblickande signal;Västra Götalands län;48;20;24
+2026-06-09;Business Controller;Framåtblickande signal;Örebro län;4;1;3
+2026-06-09;Business Controller;Framåtblickande signal;Östergötlands län;12;3;6
+2026-06-09;Systemutvecklare;Framåtblickande signal;Blekinge län;7;0;0
+2026-06-09;Systemutvecklare;Framåtblickande signal;Dalarnas län;6;2;2
+2026-06-09;Systemutvecklare;Framåtblickande signal;Gotlands län;2;0;1
+2026-06-09;Systemutvecklare;Framåtblickande signal;Gävleborgs län;9;4;5
+2026-06-09;Systemutvecklare;Framåtblickande signal;Hallands län;6;3;4
+2026-06-09;Systemutvecklare;Framåtblickande signal;Jämtlands län;3;2;2
+2026-06-09;Systemutvecklare;Framåtblickande signal;Jönköpings län;34;3;8
+2026-06-09;Systemutvecklare;Framåtblickande signal;Kalmar län;3;3;3
+2026-06-09;Systemutvecklare;Framåtblickande signal;Kronobergs län;15;7;8
+2026-06-09;Systemutvecklare;Framåtblickande signal;Norrbottens län;23;10;15
+2026-06-09;Systemutvecklare;Framåtblickande signal;Skåne län;119;24;48
+2026-06-09;Systemutvecklare;Framåtblickande signal;Stockholms län;496;110;184
+2026-06-09;Systemutvecklare;Framåtblickande signal;Södermanlands län;4;1;1
+2026-06-09;Systemutvecklare;Framåtblickande signal;Uppsala län;14;2;7
+2026-06-09;Systemutvecklare;Framåtblickande signal;Värmlands län;4;2;3
+2026-06-09;Systemutvecklare;Framåtblickande signal;Västerbottens län;9;2;2
+2026-06-09;Systemutvecklare;Framåtblickande signal;Västernorrlands län;19;5;11
+2026-06-09;Systemutvecklare;Framåtblickande signal;Västmanlands län;33;12;17
+2026-06-09;Systemutvecklare;Framåtblickande signal;Västra Götalands län;239;51;91
+2026-06-09;Systemutvecklare;Framåtblickande signal;Örebro län;11;3;4
+2026-06-09;Systemutvecklare;Framåtblickande signal;Östergötlands län;99;42;58
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Blekinge län;16;11;13
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Dalarnas län;31;8;14
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Gotlands län;1;0;1
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Gävleborgs län;10;1;7
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Hallands län;20;9;14
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Jämtlands län;4;1;3
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Jönköpings län;45;13;20
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Kalmar län;22;9;9
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Kronobergs län;17;6;8
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Norrbottens län;23;6;11
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Skåne län;87;30;48
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Stockholms län;136;34;51
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Södermanlands län;14;8;9
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Uppsala län;7;1;5
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Värmlands län;18;5;10
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Västerbottens län;17;10;10
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Västernorrlands län;32;6;14
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Västmanlands län;35;15;18
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Västra Götalands län;140;41;62
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Örebro län;63;33;48
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Östergötlands län;133;40;62
+2026-06-09;Elingenjör;Struktur / transformation;Blekinge län;8;2;5
+2026-06-09;Elingenjör;Struktur / transformation;Dalarnas län;71;6;14
+2026-06-09;Elingenjör;Struktur / transformation;Gävleborgs län;10;1;4
+2026-06-09;Elingenjör;Struktur / transformation;Hallands län;10;4;8
+2026-06-09;Elingenjör;Struktur / transformation;Jämtlands län;6;0;3
+2026-06-09;Elingenjör;Struktur / transformation;Jönköpings län;26;5;12
+2026-06-09;Elingenjör;Struktur / transformation;Kalmar län;9;3;4
+2026-06-09;Elingenjör;Struktur / transformation;Kronobergs län;7;1;2
+2026-06-09;Elingenjör;Struktur / transformation;Norrbottens län;14;4;6
+2026-06-09;Elingenjör;Struktur / transformation;Skåne län;64;20;35
+2026-06-09;Elingenjör;Struktur / transformation;Stockholms län;203;52;96
+2026-06-09;Elingenjör;Struktur / transformation;Södermanlands län;5;1;2
+2026-06-09;Elingenjör;Struktur / transformation;Uppsala län;19;3;9
+2026-06-09;Elingenjör;Struktur / transformation;Värmlands län;16;2;11
+2026-06-09;Elingenjör;Struktur / transformation;Västerbottens län;7;2;5
+2026-06-09;Elingenjör;Struktur / transformation;Västernorrlands län;9;4;7
+2026-06-09;Elingenjör;Struktur / transformation;Västmanlands län;81;24;29
+2026-06-09;Elingenjör;Struktur / transformation;Västra Götalands län;131;27;53
+2026-06-09;Elingenjör;Struktur / transformation;Örebro län;21;8;14
+2026-06-09;Elingenjör;Struktur / transformation;Östergötlands län;46;15;24
+2026-06-09;Sjuksköterska;Strukturell brist;Blekinge län;19;8;13
+2026-06-09;Sjuksköterska;Strukturell brist;Dalarnas län;37;8;20
+2026-06-09;Sjuksköterska;Strukturell brist;Gotlands län;19;9;12
+2026-06-09;Sjuksköterska;Strukturell brist;Gävleborgs län;74;24;44
+2026-06-09;Sjuksköterska;Strukturell brist;Hallands län;48;11;30
+2026-06-09;Sjuksköterska;Strukturell brist;Jämtlands län;43;12;28
+2026-06-09;Sjuksköterska;Strukturell brist;Jönköpings län;53;16;33
+2026-06-09;Sjuksköterska;Strukturell brist;Kalmar län;33;6;14
+2026-06-09;Sjuksköterska;Strukturell brist;Kronobergs län;33;11;21
+2026-06-09;Sjuksköterska;Strukturell brist;Norrbottens län;112;34;59
+2026-06-09;Sjuksköterska;Strukturell brist;Skåne län;188;67;106
+2026-06-09;Sjuksköterska;Strukturell brist;Stockholms län;230;36;107
+2026-06-09;Sjuksköterska;Strukturell brist;Södermanlands län;53;16;24
+2026-06-09;Sjuksköterska;Strukturell brist;Uppsala län;111;29;72
+2026-06-09;Sjuksköterska;Strukturell brist;Värmlands län;22;8;13
+2026-06-09;Sjuksköterska;Strukturell brist;Västerbottens län;82;25;53
+2026-06-09;Sjuksköterska;Strukturell brist;Västernorrlands län;67;24;46
+2026-06-09;Sjuksköterska;Strukturell brist;Västmanlands län;50;13;32
+2026-06-09;Sjuksköterska;Strukturell brist;Västra Götalands län;150;55;99
+2026-06-09;Sjuksköterska;Strukturell brist;Örebro län;45;14;26
+2026-06-09;Sjuksköterska;Strukturell brist;Östergötlands län;91;28;60
+2026-06-09;Undersköterska;Strukturell brist;Blekinge län;8;1;4
+2026-06-09;Undersköterska;Strukturell brist;Dalarnas län;22;6;12
+2026-06-09;Undersköterska;Strukturell brist;Gotlands län;9;2;2
+2026-06-09;Undersköterska;Strukturell brist;Gävleborgs län;14;6;10
+2026-06-09;Undersköterska;Strukturell brist;Hallands län;40;13;26
+2026-06-09;Undersköterska;Strukturell brist;Jämtlands län;32;8;16
+2026-06-09;Undersköterska;Strukturell brist;Jönköpings län;33;7;21
+2026-06-09;Undersköterska;Strukturell brist;Kalmar län;24;7;9
+2026-06-09;Undersköterska;Strukturell brist;Kronobergs län;17;1;12
+2026-06-09;Undersköterska;Strukturell brist;Norrbottens län;31;6;20
+2026-06-09;Undersköterska;Strukturell brist;Skåne län;66;19;31
+2026-06-09;Undersköterska;Strukturell brist;Stockholms län;187;42;76
+2026-06-09;Undersköterska;Strukturell brist;Södermanlands län;21;4;14
+2026-06-09;Undersköterska;Strukturell brist;Uppsala län;27;10;16
+2026-06-09;Undersköterska;Strukturell brist;Värmlands län;31;8;17
+2026-06-09;Undersköterska;Strukturell brist;Västerbottens län;32;5;13
+2026-06-09;Undersköterska;Strukturell brist;Västernorrlands län;17;4;8
+2026-06-09;Undersköterska;Strukturell brist;Västmanlands län;20;2;6
+2026-06-09;Undersköterska;Strukturell brist;Västra Götalands län;102;26;63
+2026-06-09;Undersköterska;Strukturell brist;Örebro län;15;7;7
+2026-06-09;Undersköterska;Strukturell brist;Östergötlands län;46;12;21
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Blekinge län;1;0;1
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Dalarnas län;2;0;0
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Gotlands län;1;0;1
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Gävleborgs län;8;1;3
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Hallands län;2;1;1
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Jämtlands län;1;0;0
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Jönköpings län;7;2;6
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Kalmar län;6;1;4
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Kronobergs län;8;1;3
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Norrbottens län;3;2;2
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Skåne län;40;12;17
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Stockholms län;106;26;56
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Södermanlands län;8;1;4
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Uppsala län;2;1;1
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Värmlands län;5;3;5
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Västerbottens län;2;1;1
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Västernorrlands län;3;2;2
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Västmanlands län;1;1;1
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Västra Götalands län;44;9;22
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Örebro län;2;0;2
+2026-06-09;Kundtjänstmedarbetare;Volym / cykel;Östergötlands län;13;5;7
+2026-06-09;Ekonomiassistent;Volym / cykel;Dalarnas län;1;1;1
+2026-06-09;Ekonomiassistent;Volym / cykel;Gävleborgs län;1;0;1
+2026-06-09;Ekonomiassistent;Volym / cykel;Hallands län;5;1;3
+2026-06-09;Ekonomiassistent;Volym / cykel;Jämtlands län;3;1;2
+2026-06-09;Ekonomiassistent;Volym / cykel;Jönköpings län;7;3;4
+2026-06-09;Ekonomiassistent;Volym / cykel;Kalmar län;1;1;1
+2026-06-09;Ekonomiassistent;Volym / cykel;Norrbottens län;1;0;0
+2026-06-09;Ekonomiassistent;Volym / cykel;Skåne län;13;3;7
+2026-06-09;Ekonomiassistent;Volym / cykel;Stockholms län;44;10;27
+2026-06-09;Ekonomiassistent;Volym / cykel;Södermanlands län;1;0;0
+2026-06-09;Ekonomiassistent;Volym / cykel;Uppsala län;5;1;4
+2026-06-09;Ekonomiassistent;Volym / cykel;Värmlands län;1;0;0
+2026-06-09;Ekonomiassistent;Volym / cykel;Västerbottens län;2;0;2
+2026-06-09;Ekonomiassistent;Volym / cykel;Västernorrlands län;2;0;0
+2026-06-09;Ekonomiassistent;Volym / cykel;Västmanlands län;1;1;1
+2026-06-09;Ekonomiassistent;Volym / cykel;Västra Götalands län;18;3;14
+2026-06-09;Ekonomiassistent;Volym / cykel;Örebro län;2;0;0
+2026-06-09;Ekonomiassistent;Volym / cykel;Östergötlands län;8;1;4
+2026-06-09;Lagerarbetare;Volym / cykel;Blekinge län;5;3;4
+2026-06-09;Lagerarbetare;Volym / cykel;Dalarnas län;7;2;3
+2026-06-09;Lagerarbetare;Volym / cykel;Gotlands län;2;0;0
+2026-06-09;Lagerarbetare;Volym / cykel;Gävleborgs län;6;4;4
+2026-06-09;Lagerarbetare;Volym / cykel;Hallands län;22;6;15
+2026-06-09;Lagerarbetare;Volym / cykel;Jämtlands län;7;1;4
+2026-06-09;Lagerarbetare;Volym / cykel;Jönköpings län;55;12;27
+2026-06-09;Lagerarbetare;Volym / cykel;Kalmar län;5;3;3
+2026-06-09;Lagerarbetare;Volym / cykel;Kronobergs län;11;2;4
+2026-06-09;Lagerarbetare;Volym / cykel;Norrbottens län;12;1;8
+2026-06-09;Lagerarbetare;Volym / cykel;Skåne län;97;31;54
+2026-06-09;Lagerarbetare;Volym / cykel;Stockholms län;166;51;82
+2026-06-09;Lagerarbetare;Volym / cykel;Södermanlands län;27;8;13
+2026-06-09;Lagerarbetare;Volym / cykel;Uppsala län;21;4;9
+2026-06-09;Lagerarbetare;Volym / cykel;Värmlands län;6;1;5
+2026-06-09;Lagerarbetare;Volym / cykel;Västerbottens län;7;2;4
+2026-06-09;Lagerarbetare;Volym / cykel;Västernorrlands län;11;3;3
+2026-06-09;Lagerarbetare;Volym / cykel;Västmanlands län;11;3;6
+2026-06-09;Lagerarbetare;Volym / cykel;Västra Götalands län;147;42;71
+2026-06-09;Lagerarbetare;Volym / cykel;Örebro län;31;13;21
+2026-06-09;Lagerarbetare;Volym / cykel;Östergötlands län;35;7;12
+2026-06-09;Business Controller;Framåtblickande signal;Dalarnas län;9;1;1
+2026-06-09;Business Controller;Framåtblickande signal;Gävleborgs län;6;1;1
+2026-06-09;Business Controller;Framåtblickande signal;Jämtlands län;3;2;2
+2026-06-09;Business Controller;Framåtblickande signal;Jönköpings län;5;3;5
+2026-06-09;Business Controller;Framåtblickande signal;Kalmar län;1;0;0
+2026-06-09;Business Controller;Framåtblickande signal;Kronobergs län;3;1;1
+2026-06-09;Business Controller;Framåtblickande signal;Norrbottens län;4;4;4
+2026-06-09;Business Controller;Framåtblickande signal;Skåne län;21;7;16
+2026-06-09;Business Controller;Framåtblickande signal;Stockholms län;64;23;40
+2026-06-09;Business Controller;Framåtblickande signal;Södermanlands län;5;0;1
+2026-06-09;Business Controller;Framåtblickande signal;Uppsala län;5;0;4
+2026-06-09;Business Controller;Framåtblickande signal;Värmlands län;3;0;1
+2026-06-09;Business Controller;Framåtblickande signal;Västerbottens län;3;0;1
+2026-06-09;Business Controller;Framåtblickande signal;Västernorrlands län;3;2;3
+2026-06-09;Business Controller;Framåtblickande signal;Västmanlands län;13;3;5
+2026-06-09;Business Controller;Framåtblickande signal;Västra Götalands län;48;20;24
+2026-06-09;Business Controller;Framåtblickande signal;Örebro län;4;1;3
+2026-06-09;Business Controller;Framåtblickande signal;Östergötlands län;12;3;6
+2026-06-09;Systemutvecklare;Framåtblickande signal;Blekinge län;7;0;0
+2026-06-09;Systemutvecklare;Framåtblickande signal;Dalarnas län;6;2;2
+2026-06-09;Systemutvecklare;Framåtblickande signal;Gotlands län;2;0;1
+2026-06-09;Systemutvecklare;Framåtblickande signal;Gävleborgs län;9;4;5
+2026-06-09;Systemutvecklare;Framåtblickande signal;Hallands län;6;3;4
+2026-06-09;Systemutvecklare;Framåtblickande signal;Jämtlands län;3;2;2
+2026-06-09;Systemutvecklare;Framåtblickande signal;Jönköpings län;34;3;8
+2026-06-09;Systemutvecklare;Framåtblickande signal;Kalmar län;3;3;3
+2026-06-09;Systemutvecklare;Framåtblickande signal;Kronobergs län;15;7;8
+2026-06-09;Systemutvecklare;Framåtblickande signal;Norrbottens län;23;10;15
+2026-06-09;Systemutvecklare;Framåtblickande signal;Skåne län;120;25;49
+2026-06-09;Systemutvecklare;Framåtblickande signal;Stockholms län;496;110;184
+2026-06-09;Systemutvecklare;Framåtblickande signal;Södermanlands län;4;1;1
+2026-06-09;Systemutvecklare;Framåtblickande signal;Uppsala län;14;2;7
+2026-06-09;Systemutvecklare;Framåtblickande signal;Värmlands län;4;2;3
+2026-06-09;Systemutvecklare;Framåtblickande signal;Västerbottens län;9;2;2
+2026-06-09;Systemutvecklare;Framåtblickande signal;Västernorrlands län;19;5;11
+2026-06-09;Systemutvecklare;Framåtblickande signal;Västmanlands län;33;12;17
+2026-06-09;Systemutvecklare;Framåtblickande signal;Västra Götalands län;239;51;91
+2026-06-09;Systemutvecklare;Framåtblickande signal;Örebro län;11;3;4
+2026-06-09;Systemutvecklare;Framåtblickande signal;Östergötlands län;99;42;58
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Blekinge län;16;11;13
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Dalarnas län;31;8;14
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Gotlands län;1;0;1
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Gävleborgs län;10;1;7
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Hallands län;20;9;14
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Jämtlands län;4;1;3
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Jönköpings län;45;13;20
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Kalmar län;22;9;9
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Kronobergs län;17;6;8
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Norrbottens län;23;6;11
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Skåne län;87;30;48
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Stockholms län;136;34;51
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Södermanlands län;14;8;9
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Uppsala län;7;1;5
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Värmlands län;18;5;10
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Västerbottens län;17;10;10
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Västernorrlands län;32;6;14
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Västmanlands län;35;15;18
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Västra Götalands län;140;41;62
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Örebro län;63;33;48
+2026-06-09;Mekanikkonstruktör;Struktur / transformation;Östergötlands län;133;40;62
+2026-06-09;Elingenjör;Struktur / transformation;Blekinge län;8;2;5
+2026-06-09;Elingenjör;Struktur / transformation;Dalarnas län;71;6;14
+2026-06-09;Elingenjör;Struktur / transformation;Gävleborgs län;10;1;4
+2026-06-09;Elingenjör;Struktur / transformation;Hallands län;10;4;8
+2026-06-09;Elingenjör;Struktur / transformation;Jämtlands län;6;0;3
+2026-06-09;Elingenjör;Struktur / transformation;Jönköpings län;26;5;12
+2026-06-09;Elingenjör;Struktur / transformation;Kalmar län;9;3;4
+2026-06-09;Elingenjör;Struktur / transformation;Kronobergs län;7;1;2
+2026-06-09;Elingenjör;Struktur / transformation;Norrbottens län;14;4;6
+2026-06-09;Elingenjör;Struktur / transformation;Skåne län;64;20;35
+2026-06-09;Elingenjör;Struktur / transformation;Stockholms län;203;52;96
+2026-06-09;Elingenjör;Struktur / transformation;Södermanlands län;5;1;2
+2026-06-09;Elingenjör;Struktur / transformation;Uppsala län;19;3;9
+2026-06-09;Elingenjör;Struktur / transformation;Värmlands län;16;2;11
+2026-06-09;Elingenjör;Struktur / transformation;Västerbottens län;7;2;5
+2026-06-09;Elingenjör;Struktur / transformation;Västernorrlands län;9;4;7
+2026-06-09;Elingenjör;Struktur / transformation;Västmanlands län;81;24;29
+2026-06-09;Elingenjör;Struktur / transformation;Västra Götalands län;131;27;53
+2026-06-09;Elingenjör;Struktur / transformation;Örebro län;21;8;14
+2026-06-09;Elingenjör;Struktur / transformation;Östergötlands län;46;15;24
+2026-06-09;Sjuksköterska;Strukturell brist;Blekinge län;19;8;13
+2026-06-09;Sjuksköterska;Strukturell brist;Dalarnas län;37;8;20
+2026-06-09;Sjuksköterska;Strukturell brist;Gotlands län;19;9;12
+2026-06-09;Sjuksköterska;Strukturell brist;Gävleborgs län;74;24;44
+2026-06-09;Sjuksköterska;Strukturell brist;Hallands län;48;11;30
+2026-06-09;Sjuksköterska;Strukturell brist;Jämtlands län;43;12;28
+2026-06-09;Sjuksköterska;Strukturell brist;Jönköpings län;53;16;33
+2026-06-09;Sjuksköterska;Strukturell brist;Kalmar län;33;6;14
+2026-06-09;Sjuksköterska;Strukturell brist;Kronobergs län;33;11;21
+2026-06-09;Sjuksköterska;Strukturell brist;Norrbottens län;112;34;59
+2026-06-09;Sjuksköterska;Strukturell brist;Skåne län;188;67;106
+2026-06-09;Sjuksköterska;Strukturell brist;Stockholms län;230;36;107
+2026-06-09;Sjuksköterska;Strukturell brist;Södermanlands län;53;16;24
+2026-06-09;Sjuksköterska;Strukturell brist;Uppsala län;111;29;72
+2026-06-09;Sjuksköterska;Strukturell brist;Värmlands län;22;8;13
+2026-06-09;Sjuksköterska;Strukturell brist;Västerbottens län;82;25;53
+2026-06-09;Sjuksköterska;Strukturell brist;Västernorrlands län;67;24;46
+2026-06-09;Sjuksköterska;Strukturell brist;Västmanlands län;50;13;32
+2026-06-09;Sjuksköterska;Strukturell brist;Västra Götalands län;150;55;99
+2026-06-09;Sjuksköterska;Strukturell brist;Örebro län;45;14;26
+2026-06-09;Sjuksköterska;Strukturell brist;Östergötlands län;91;28;60
+2026-06-09;Undersköterska;Strukturell brist;Blekinge län;8;1;4
+2026-06-09;Undersköterska;Strukturell brist;Dalarnas län;22;6;12
+2026-06-09;Undersköterska;Strukturell brist;Gotlands län;9;2;2
+2026-06-09;Undersköterska;Strukturell brist;Gävleborgs län;14;6;10
+2026-06-09;Undersköterska;Strukturell brist;Hallands län;40;13;26
+2026-06-09;Undersköterska;Strukturell brist;Jämtlands län;32;8;16
+2026-06-09;Undersköterska;Strukturell brist;Jönköpings län;33;7;21
+2026-06-09;Undersköterska;Strukturell brist;Kalmar län;24;7;9
+2026-06-09;Undersköterska;Strukturell brist;Kronobergs län;17;1;12
+2026-06-09;Undersköterska;Strukturell brist;Norrbottens län;31;6;20
+2026-06-09;Undersköterska;Strukturell brist;Skåne län;66;19;31
+2026-06-09;Undersköterska;Strukturell brist;Stockholms län;187;42;76
+2026-06-09;Undersköterska;Strukturell brist;Södermanlands län;21;4;14
+2026-06-09;Undersköterska;Strukturell brist;Uppsala län;27;10;16
+2026-06-09;Undersköterska;Strukturell brist;Värmlands län;31;8;17
+2026-06-09;Undersköterska;Strukturell brist;Västerbottens län;32;5;13
+2026-06-09;Undersköterska;Strukturell brist;Västernorrlands län;17;4;8
+2026-06-09;Undersköterska;Strukturell brist;Västmanlands län;20;2;6
+2026-06-09;Undersköterska;Strukturell brist;Västra Götalands län;104;28;65
+2026-06-09;Undersköterska;Strukturell brist;Örebro län;15;7;7
+2026-06-09;Undersköterska;Strukturell brist;Östergötlands län;46;12;21
