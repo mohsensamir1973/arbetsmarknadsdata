@@ -10,6 +10,11 @@ Nyheter i v7 vs v6:
   - Manuell lista är fortfarande override – ändras aldrig automatiskt
   - Exkluderingslista för aggregatorer och irrelevanta aktörer
   - CSV-data är identisk med v6 – ingen påverkan på trendhistorik
+
+Fix v7.1:
+  - okanda_arbetsgivare_ny.txt skrivs om varje körning med dagens datum
+  - Org-nummer visas i filen för snabbare manuell klassificering
+  - Sorterat efter volym – viktigaste bolagen överst
 """
 
 import urllib.request
@@ -79,9 +84,9 @@ TIMEOUT     = 30
 HUVUDFIL  = "arbetsmarknadsindex_trend.csv"
 REGIOFIL  = "arbetsmarknadsindex_regioner_trend.csv"
 KOMMUNFIL = "arbetsmarknadsindex_kommuner_trend.csv"
+OKANDA_FIL = "okanda_arbetsgivare_ny.txt"
 
 # ── SNI-mappning ─────────────────────────────────────────────────────
-# SNI 2007 – de 4 första siffrorna avgör kategori
 SNI_MAPPNING = {
     "7810": "Bemanning/Rekrytering",
     "7820": "Bemanning/Rekrytering",
@@ -99,15 +104,14 @@ SNI_MAPPNING = {
 }
 
 # ── Exkluderade bolag ────────────────────────────────────────────────
-# Aggregatorer och irrelevanta aktörer – visas aldrig i rapporten
 EXKLUDERA = {
     "DUVI GROUP AB",
     "Jobs By Nordics AB",
     "Degerfors IF",
+    "Willem Kralik, Jana",
 }
 
 # ── Manuell lista – override, alltid rätt ───────────────────────────
-# Lägg till nya bolag här. Denna lista har alltid högst prioritet.
 ARBETSGIVARE_TYP = {
     # BEMANNINGS/REKRYTERINGSBOLAG
     "ACADEMIC WORK SWEDEN AB":                          "Bemanning/Rekrytering",
@@ -216,6 +220,24 @@ ARBETSGIVARE_TYP = {
     "Workz Sweden AB":                                  "Bemanning/Rekrytering",
     "Wrknest AB":                                       "Bemanning/Rekrytering",
     "Xamera AB":                                        "Bemanning/Rekrytering",
+    "CO-WORKER TECHNOLOGY SWEDEN AB":                   "Bemanning/Rekrytering",
+    "LERNIA BEMANNING AB":                              "Bemanning/Rekrytering",
+    "TNG Group AB":                                     "Bemanning/Rekrytering",
+    "DFDS Professionals AB":                            "Bemanning/Rekrytering",
+    "The Place AB":                                     "Bemanning/Rekrytering",
+    "AdwiseHR i Väst AB":                               "Bemanning/Rekrytering",
+    "NearYou Sverige AB":                               "Bemanning/Rekrytering",
+    "The Finance Family AB":                            "Bemanning/Rekrytering",
+    "Intensogruppen AB":                                "Bemanning/Rekrytering",
+    "Integro Consulting AB":                            "Bemanning/Rekrytering",
+    "LN Personal AB":                                   "Bemanning/Rekrytering",
+    "NDP IT AB":                                        "Bemanning/Rekrytering",
+    "Quattro Bemanning & Rekrytering AB":               "Bemanning/Rekrytering",
+    "2Complete AB":                                     "Bemanning/Rekrytering",
+    "Snabb Jobb Sverige AB":                            "Bemanning/Rekrytering",
+    "MiJob Bemanning & Rekrytering i Sverige AB":       "Bemanning/Rekrytering",
+    "Emploid AB":                                       "Bemanning/Rekrytering",
+    "Newr AB":                                          "Bemanning/Rekrytering",
 
     # KONSULTBOLAG
     "AFRY AB":                                          "Konsultbolag",
@@ -238,6 +260,7 @@ ARBETSGIVARE_TYP = {
     "Iver Sverige AB":                                  "Konsultbolag",
     "Knightec Group Hardware and Design AB":            "Konsultbolag",
     "Knightec Group Software and Cloud AB":             "Konsultbolag",
+    "Knightec Group Compliance and Management AB":      "Konsultbolag",
     "Knowit AB":                                        "Konsultbolag",
     "Knowit AB (Publ)":                                 "Konsultbolag",
     "Lynqa AB":                                         "Konsultbolag",
@@ -247,6 +270,9 @@ ARBETSGIVARE_TYP = {
     "Semicon Service Nordic AB":                        "Konsultbolag",
     "Sopra Steria Sweden AB":                           "Konsultbolag",
     "Syntronic AB":                                     "Konsultbolag",
+    "SYNTRONIC AKTIEBOLAG":                             "Konsultbolag",
+    "Knowit Aktiebolag (publ)":                         "Konsultbolag",
+    "One Nordic AB":                                    "Direktarbetsgivare",
     "Veritaz AB":                                       "Konsultbolag",
 
     # DIREKTARBETSGIVARE
@@ -347,6 +373,101 @@ ARBETSGIVARE_TYP = {
     "VÄSTRA GÖTALANDSREGIONEN":                         "Direktarbetsgivare",
     "YRKESKLÄDER FÖR PROFFS SVERIGE AB":                "Direktarbetsgivare",
     "ÖRNSKÖLDSVIKS KOMMUN":                             "Direktarbetsgivare",
+    "FALKENBERGS KOMMUN":                               "Direktarbetsgivare",
+    "UMEÅ KOMMUN":                                      "Direktarbetsgivare",
+    "KUNGÄLVS KOMMUN":                                  "Direktarbetsgivare",
+    "YSTAD KOMMUN":                                     "Direktarbetsgivare",
+    "NACKA KOMMUN":                                     "Direktarbetsgivare",
+    "LUNDS KOMMUN":                                     "Direktarbetsgivare",
+    "ÄLVDALENS KOMMUN":                                 "Direktarbetsgivare",
+    "MITTUNIVERSITETET":                                "Direktarbetsgivare",
+    "Swedbank AB":                                      "Direktarbetsgivare",
+    "S.Bil Stockholm AB":                               "Direktarbetsgivare",
+    "VOLVO BUSINESS SERVICES AKTIEBOLAG":               "Direktarbetsgivare",
+    "AVL MTC MOTORTESTCENTER AB":                       "Direktarbetsgivare",
+    "AKTIEBOLAGET BLÅKLÄDER":                           "Direktarbetsgivare",
+    "INDUSTRI SUPPORT VÄRMLAND AB":                     "Direktarbetsgivare",
+    "STANDARD AUDIO SYSTEMS AB":                        "Direktarbetsgivare",
+    "Nordpolen energi AB":                              "Direktarbetsgivare",
+    "FÖRENINGEN TIDIGT FÖRÄLDRASTÖD":                   "Direktarbetsgivare",
+    "Doktorse Nordic AB":                               "Direktarbetsgivare",
+    "BOKNINGSSERVICE I SVERIGE AB":                     "Direktarbetsgivare",
+    "STIFTELSEN BRÄCKE DIAKONI":                        "Direktarbetsgivare",
+    "OSKARSHAMNS KOMMUN":                               "Direktarbetsgivare",
+    "LIDKÖPINGS KOMMUN":                                "Direktarbetsgivare",
+    "FALKÖPINGS KOMMUN":                                "Direktarbetsgivare",
+    "SALEMS KOMMUN":                                    "Direktarbetsgivare",
+    "ÖDESHÖGS KOMMUN":                                  "Direktarbetsgivare",
+    "JÄRFÄLLA KOMMUN":                                  "Direktarbetsgivare",
+    "GÄLLIVARE KOMMUN":                                 "Direktarbetsgivare",
+    "LÄNSSTYRELSEN I VÄSTRA GÖTALANDS LÄN":             "Direktarbetsgivare",
+    "Micasa Fastigheter i Stockholm AB":                "Direktarbetsgivare",
+
+    # TILLAGDA 14 JUNI 2026 – veckans granskning av okanda_arbetsgivare_ny.txt
+    "REGION DALARNA":                                   "Direktarbetsgivare",
+    "VÄRNAMO KOMMUN":                                   "Direktarbetsgivare",
+    "STATENS MUSIKVERK":                                "Direktarbetsgivare",
+    "LUNDS UNIVERSITET":                                "Direktarbetsgivare",
+    "NKT HV Cables AB":                                 "Direktarbetsgivare",
+    "Stegra AB":                                        "Direktarbetsgivare",
+    "P94 Group AB":                                     "Direktarbetsgivare",
+    "Aleja AB":                                         "Bemanning/Rekrytering",
+    "A-Talent Tech Management Sweden AB":               "Bemanning/Rekrytering",
+    "Nordisk kompetens AB":                             "Bemanning/Rekrytering",
+    "Manpower Aktiebolag":                              "Bemanning/Rekrytering",
+    "Gazella AB":                                       "Bemanning/Rekrytering",
+    "BEMANNIA AB (PUBL.)":                              "Bemanning/Rekrytering",
+
+    # TILLAGDA 19 JUNI 2026 – veckans granskning av okanda_arbetsgivare_ny.txt
+    "Eccera Professionals AB":                          "Bemanning/Rekrytering",
+    "JobBusters Aktiebolag":                            "Bemanning/Rekrytering",
+    "Incluso AB":                                       "Bemanning/Rekrytering",
+    "Sententia Rekrytering & Konsult AB":               "Bemanning/Rekrytering",
+    "Perido AB":                                        "Bemanning/Rekrytering",
+    "RIKSBYGGEN EKONOMISK FÖRENING":                    "Direktarbetsgivare",
+    "SIGTUNA KOMMUN":                                   "Direktarbetsgivare",
+    "Bredablick Förvaltning i Sverige AB":              "Direktarbetsgivare",
+    "Jicon Works AB":                                   "Direktarbetsgivare",
+    "HARALD PIHL AKTIEBOLAG":                           "Direktarbetsgivare",
+
+    # TILLAGDA 15 JUNI 2026
+    "ULRICEHAMNS KOMMUN":                               "Direktarbetsgivare",
+    "Tiohundra AB":                                     "Direktarbetsgivare",
+    "BokFix AB":                                        "Direktarbetsgivare",
+
+    # TILLAGDA 16 JUNI 2026
+    "Valora bemanning AB":                              "Bemanning/Rekrytering",
+    "REGION VÄSTERNORRLAND":                            "Direktarbetsgivare",
+    "JOKKMOKKS KOMMUN":                                 "Direktarbetsgivare",
+    "BERGS KOMMUN":                                     "Direktarbetsgivare",
+    "Needo Recruitment Sthlm AB":                       "Bemanning/Rekrytering",
+    "Nordic Exsense AB":                                "Bemanning/Rekrytering",
+
+    # TILLAGDA 17 JUNI 2026
+    "Health Connect 365 AB":                            "Bemanning/Rekrytering",
+    "Alten Sverige Aktiebolag":                         "Konsultbolag",
+    "Senzum AB":                                        "Direktarbetsgivare",
+    "Assistansbolaget Försäkring Sverige AB":            "Direktarbetsgivare",
+    "HR Resursen på västkusten AB":                     "Bemanning/Rekrytering",
+    "Sandvik Aktiebolag":                               "Direktarbetsgivare",
+    "VägJobb i Sverige AB":                             "Direktarbetsgivare",
+    "Lundin & Boström HR AB":                           "Bemanning/Rekrytering",
+    "TULLVERKET":                                       "Direktarbetsgivare",
+    # 2026-06-27
+    "OFELIA VÅRD AB":                                   "Bemanning/Rekrytering",
+    "Promediqa Group Sweden AB":                        "Bemanning/Rekrytering",
+    "Bertrandt Sverige AB":                             "Konsultbolag",
+    "Tata Technologies Nordics AB":                     "Konsultbolag",
+    "The We Select Company AB":                         "Bemanning/Rekrytering",
+    "FVB SVERIGE AB":                                   "Konsultbolag",
+    "Indivd AB":                                        "Direktarbetsgivare",
+    "BORÅS KOMMUN":                                     "Direktarbetsgivare",
+    "GINA TRICOT AB":                                   "Direktarbetsgivare",
+    "DALOC TRÄDÖRRAR AKTIEBOLAG":                       "Direktarbetsgivare",
+    "KARLSTADS KOMMUN":                                 "Direktarbetsgivare",
+    "MÖLNDALS KOMMUN":                                  "Direktarbetsgivare",
+    "MJÖLBY KOMMUN":                                    "Direktarbetsgivare",
+    "AF Bygg Syd AB":                                   "Direktarbetsgivare",
 }
 
 # ── Cache – laddas en gång vid start ────────────────────────────────
@@ -396,22 +517,34 @@ def _slå_upp_sni(org_nr: str) -> str:
 _ag_cache = _ladda_cache()
 _cache_ändrad = False
 
+# Case-insensitive lookup-tabell – byggs en gång vid start
+_ARBETSGIVARE_TYP_LOWER = {k.lower(): v for k, v in ARBETSGIVARE_TYP.items()}
+_EXKLUDERA_LOWER = {e.lower() for e in EXKLUDERA}
+
 def klassificera_ag(namn: str, org_nr: str = "") -> str:
     """
     Klassificerar arbetsgivare. Prioritetsordning:
-      1. Exkluderingslista
-      2. Manuell lista (ARBETSGIVARE_TYP)
-      3. Cache (tidigare API-uppslag)
+      1. Exkluderingslista (exakt + case-insensitive)
+      2. Manuell lista (exakt + case-insensitive)
+      3. Cache (tidigare API-uppslag, nyckel = org_nr eller namn)
       4. Bolagsverkets API (nytt uppslag om org_nr finns)
       5. Okänd – granska
     """
     global _ag_cache, _cache_ändrad
 
+    # Exkludera – exakt
     if namn in EXKLUDERA:
         return "Exkludera"
+    # Exkludera – case-insensitive
+    if namn.lower() in _EXKLUDERA_LOWER:
+        return "Exkludera"
 
+    # Manuell lista – exakt
     if namn in ARBETSGIVARE_TYP:
         return ARBETSGIVARE_TYP[namn]
+    # Manuell lista – case-insensitive fallback
+    if namn.lower() in _ARBETSGIVARE_TYP_LOWER:
+        return _ARBETSGIVARE_TYP_LOWER[namn.lower()]
 
     cache_nyckel = org_nr if org_nr else namn
     if cache_nyckel in _ag_cache:
@@ -460,6 +593,7 @@ def hamta_alla(ids: list, extra_params: dict = None) -> dict:
     kommun_counter    = Counter()
     ag_counter        = Counter()
     ag_orgnr          = {}
+    orgnr_to_name     = {}
     duration_counter  = Counter()
     arbetstid_counter = Counter()
 
@@ -496,9 +630,15 @@ def hamta_alla(ids: list, extra_params: dict = None) -> dict:
             if kom: kommun_counter[kom] += 1
 
             emp = h.get("employer", {})
-            ag = emp.get("name", "")
+            ag_raw = emp.get("name", "").strip()
             org_nr = emp.get("organization_number", "")
-            if ag:
+            if ag_raw:
+                if org_nr and org_nr in orgnr_to_name:
+                    ag = orgnr_to_name[org_nr]
+                else:
+                    ag = ag_raw
+                    if org_nr:
+                        orgnr_to_name[org_nr] = ag
                 ag_counter[ag] += 1
                 if org_nr and ag not in ag_orgnr:
                     ag_orgnr[ag] = org_nr
@@ -548,6 +688,11 @@ def hamta_alla(ids: list, extra_params: dict = None) -> dict:
 def hamta_detaljer(ids: list) -> dict:
     alla = hamta_alla(ids)
 
+    trettio = (datetime.now(timezone.utc) - timedelta(days=30)).strftime(
+        "%Y-%m-%dT%H:%M:%S"
+    )
+    nya_30d = hamta_alla(ids, extra_params={"published-after": trettio})
+
     fjorton = (datetime.now(timezone.utc) - timedelta(days=14)).strftime(
         "%Y-%m-%dT%H:%M:%S"
     )
@@ -561,6 +706,8 @@ def hamta_detaljer(ids: list) -> dict:
     return {
         "total":            alla["total"],
         "tot_tjanster":     alla["tot_tjanster"],
+        "nya_30d":          nya_30d["total"],
+        "nya_30d_tjanster": nya_30d["tot_tjanster"],
         "nya_14d":          nya_14d["total"],
         "nya_14d_tjanster": nya_14d["tot_tjanster"],
         "nya_7d":           nya_7d["total"],
@@ -583,6 +730,14 @@ def kör_analys():
     datum     = datetime.now().strftime("%Y-%m-%d")
     klockslag = datetime.now().strftime("%H:%M")
     is_baseline = not os.path.exists(HUVUDFIL)
+
+    # ── Dublett-kontroll – kör aldrig två gånger samma dag ───────────
+    if os.path.exists(HUVUDFIL):
+        with open(HUVUDFIL, "r", encoding="utf-8-sig") as f:
+            for rad in f:
+                if rad.startswith(datum):
+                    print(f"Already ran today ({datum}) – avslutar utan att skriva.")
+                    return
 
     print("=" * 65)
     print("ARBETSMARKNADSINDEX v7")
@@ -649,6 +804,7 @@ def kör_analys():
                 "Antal tjänster",
                 "Nya 7 dagar", "Nya 7 dagar tjänster",
                 "Nya 14 dagar", "Nya 14 dagar tjänster",
+                "Nya 30 dagar", "Nya 30 dagar tjänster",
                 "% heltid", "% tills vidare", "% lång", "% kort",
                 "% erfarenhet", "% nystartsjobb",
                 "Top 3 regioner (totalt)", "Top 3 regioner (7 dagar)",
@@ -659,10 +815,14 @@ def kör_analys():
             if d is None:
                 w.writerow([datum, roll, grupp, is_baseline] + ["Fel"] * 16)
                 continue
-            ag_klassad = " | ".join(
-                f"{ag} ({n}) [{klassificera_ag(ag, d['ag_orgnr'].get(ag, ''))}]"
+            ag_items = [
+                (ag, n, klassificera_ag(ag, d['ag_orgnr'].get(ag, '')))
                 for ag, n in d["ag_counter"].most_common(20)
-                if klassificera_ag(ag, d['ag_orgnr'].get(ag, '')) != "Exkludera"
+            ]
+            ag_klassad = " | ".join(
+                f"{ag} ({n}) [{kat}]"
+                for ag, n, kat in ag_items
+                if kat != "Exkludera"
             )
             index_str = beräkna_index(roll, d["total"])
             w.writerow([
@@ -671,6 +831,7 @@ def kör_analys():
                 d["tot_tjanster"],
                 d["nya_7d"], d["nya_7d_tjanster"],
                 d["nya_14d"], d["nya_14d_tjanster"],
+                d["nya_30d"], d["nya_30d_tjanster"],
                 d["pct_heltid"], d["pct_tills_vidare"],
                 d["pct_lang"], d["pct_kort"],
                 d["pct_erfarenhet"], d["pct_nystartsjobb"],
@@ -679,19 +840,36 @@ def kör_analys():
                 ag_klassad,
             ])
 
-    # ── Rapportera okända arbetsgivare ───────────────────────────────
-    okanda = set()
+    # ── Rapportera okända arbetsgivare – skrivs om varje körning ─────
+    okanda_detaljer = {}  # ag -> {"roller": [...], "org_nr": "", "totalt": 0}
     for roll, d in resultat.items():
         if d is None: continue
-        for ag, _ in d["ag_counter"].most_common(20):
+        for ag, antal in d["ag_counter"].most_common(20):
             org_nr = d["ag_orgnr"].get(ag, "")
             if klassificera_ag(ag, org_nr) == "Okänd – granska":
-                okanda.add(ag)
-    if okanda:
-        print()
-        print("⚠️  OKÄNDA ARBETSGIVARE i topp 20 – lägg till i ARBETSGIVARE_TYP:")
-        for ag in sorted(okanda):
-            print(f"   {ag}")
+                if ag not in okanda_detaljer:
+                    okanda_detaljer[ag] = {"roller": [], "org_nr": org_nr, "totalt": 0}
+                okanda_detaljer[ag]["roller"].append(f"{roll} ({antal})")
+                okanda_detaljer[ag]["totalt"] += antal
+
+    with open(OKANDA_FIL, "w", encoding="utf-8") as f:
+        f.write(f"OKÄNDA ARBETSGIVARE – {datum}\n")
+        f.write("=" * 60 + "\n")
+        f.write(f"Antal okända: {len(okanda_detaljer)}\n")
+        f.write("Kontrollera en gång i veckan och lägg till i ARBETSGIVARE_TYP\n\n")
+        if okanda_detaljer:
+            for ag in sorted(okanda_detaljer, key=lambda x: -okanda_detaljer[x]["totalt"]):
+                info = okanda_detaljer[ag]
+                org_str = f"  org.nr: {info['org_nr']}" if info["org_nr"] else ""
+                roller_str = ", ".join(info["roller"])
+                f.write(f"  {ag:<50} totalt={info['totalt']}  [{roller_str}]{org_str}\n")
+        else:
+            f.write("  Inga okända arbetsgivare – alla klassificerade.\n")
+
+    if okanda_detaljer:
+        print(f"\n⚠️  {len(okanda_detaljer)} okända arbetsgivare – se {OKANDA_FIL}")
+    else:
+        print(f"\n✓ Alla arbetsgivare klassificerade.")
 
     # ── Regionfil ────────────────────────────────────────────────────
     reg_ny = not os.path.exists(REGIOFIL)
