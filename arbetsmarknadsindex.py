@@ -467,6 +467,16 @@ ARBETSGIVARE_TYP = {
     "KARLSTADS KOMMUN":                                 "Direktarbetsgivare",
     "MÖLNDALS KOMMUN":                                  "Direktarbetsgivare",
     "MJÖLBY KOMMUN":                                    "Direktarbetsgivare",
+    # 2026-06-30
+    "HALMSTADS KOMMUN":                                 "Direktarbetsgivare",
+    "AB Effektiv Väst":                                 "Bemanning/Rekrytering",
+    "Assistansporten AB":                               "Direktarbetsgivare",
+    "MÄLARDALENS UNIVERSITET":                          "Direktarbetsgivare",
+    "STATENS INSTITUTIONSSTYRELSE":                     "Direktarbetsgivare",
+    "Din Rekryteringspartner i Umeå AB":                "Bemanning/Rekrytering",
+    "SKELLEFTEÅ LASTBILSSTATION AKTIEBOLAG":            "Direktarbetsgivare",
+    "SIMRISHAMNS KOMMUN":                               "Direktarbetsgivare",
+    "ICA SVERIGE AB":                                   "Direktarbetsgivare",
     "AF Bygg Syd AB":                                   "Direktarbetsgivare",
 }
 
