@@ -467,6 +467,13 @@ ARBETSGIVARE_TYP = {
     "KARLSTADS KOMMUN":                                 "Direktarbetsgivare",
     "MÖLNDALS KOMMUN":                                  "Direktarbetsgivare",
     "MJÖLBY KOMMUN":                                    "Direktarbetsgivare",
+    # 2026-07-01
+    "Combitech Aktiebolag":                             "Konsultbolag",
+    "BAE Systems Hägglunds Aktiebolag":                 "Direktarbetsgivare",
+    "Prowork Bemanning AB":                             "Bemanning/Rekrytering",
+    "Medkomp Vårdbemanning Aktiebolag":                 "Bemanning/Rekrytering",
+    "TaxiCaller Nordic AB":                             "Direktarbetsgivare",
+    "ICOMERA AB":                                       "Direktarbetsgivare",
     # 2026-06-30
     "HALMSTADS KOMMUN":                                 "Direktarbetsgivare",
     "AB Effektiv Väst":                                 "Bemanning/Rekrytering",
