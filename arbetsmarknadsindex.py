@@ -467,6 +467,18 @@ ARBETSGIVARE_TYP = {
     "KARLSTADS KOMMUN":                                 "Direktarbetsgivare",
     "MÖLNDALS KOMMUN":                                  "Direktarbetsgivare",
     "MJÖLBY KOMMUN":                                    "Direktarbetsgivare",
+    # 2026-07-10
+    "Hemstyrkan i Stockholm AB":                        "Direktarbetsgivare",
+    "UPPSALA KOMMUN":                                   "Direktarbetsgivare",
+    "SAAND Service & Omsorg AB":                        "Direktarbetsgivare",
+    "KINDA KOMMUN":                                     "Direktarbetsgivare",
+    "Hirely AB":                                        "Bemanning/Rekrytering",
+    "AKTIEBOLAGET TETRA PAK":                           "Direktarbetsgivare",
+    "VÄXJÖ KOMMUN":                                     "Direktarbetsgivare",
+    "Collen Aktiebolag":                                "Direktarbetsgivare",
+    "KRAMFORS KOMMUN":                                  "Direktarbetsgivare",
+    "EISS Rekrytering & Search AB":                     "Bemanning/Rekrytering",
+    "Soltech Energy Sweden AB (publ)":                  "Direktarbetsgivare",
     # 2026-07-04
     "Etteplan Sweden AB":                               "Konsultbolag",
     "Norconsult Sverige AB":                            "Konsultbolag",
