@@ -467,6 +467,14 @@ ARBETSGIVARE_TYP = {
     "KARLSTADS KOMMUN":                                 "Direktarbetsgivare",
     "MÖLNDALS KOMMUN":                                  "Direktarbetsgivare",
     "MJÖLBY KOMMUN":                                    "Direktarbetsgivare",
+    # 2026-07-13
+    "Professional Galaxy AB":                           "Konsultbolag",
+    "SÖDERTÄLJE KOMMUN":                                "Direktarbetsgivare",
+    "VETLANDA KOMMUN":                                  "Direktarbetsgivare",
+    "Abello Hemtjänst AB":                              "Direktarbetsgivare",
+    "Sassine, Joumana":                                 "Direktarbetsgivare",
+    "BOXHOLMS KOMMUN":                                  "Direktarbetsgivare",
+    "TINGSRYDS KOMMUN":                                 "Direktarbetsgivare",
     # 2026-07-10
     "Hemstyrkan i Stockholm AB":                        "Direktarbetsgivare",
     "UPPSALA KOMMUN":                                   "Direktarbetsgivare",
