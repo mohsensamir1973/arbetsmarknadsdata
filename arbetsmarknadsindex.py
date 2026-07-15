@@ -467,6 +467,13 @@ ARBETSGIVARE_TYP = {
     "KARLSTADS KOMMUN":                                 "Direktarbetsgivare",
     "MÖLNDALS KOMMUN":                                  "Direktarbetsgivare",
     "MJÖLBY KOMMUN":                                    "Direktarbetsgivare",
+    # 2026-07-15
+    "Aleva Sverige AB":                                 "Direktarbetsgivare",
+    "LANDSKRONA KOMMUN":                                "Direktarbetsgivare",
+    "KÄLLERED ENTREPRENAD AKTIEBOLAG":                  "Direktarbetsgivare",
+    "DANDERYDS KOMMUN":                                 "Direktarbetsgivare",
+    "LÄKEMEDELSVERKET":                                 "Direktarbetsgivare",
+    "Nacka Konsulterna AB":                             "Direktarbetsgivare",
     # 2026-07-13
     "Professional Galaxy AB":                           "Konsultbolag",
     "SÖDERTÄLJE KOMMUN":                                "Direktarbetsgivare",
