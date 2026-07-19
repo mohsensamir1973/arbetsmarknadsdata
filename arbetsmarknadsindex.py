@@ -467,6 +467,13 @@ ARBETSGIVARE_TYP = {
     "KARLSTADS KOMMUN":                                 "Direktarbetsgivare",
     "MÖLNDALS KOMMUN":                                  "Direktarbetsgivare",
     "MJÖLBY KOMMUN":                                    "Direktarbetsgivare",
+    # 2026-07-19
+    "Myndigheten för civilt försvar":                   "Direktarbetsgivare",
+    "Söder transport & schakt AB":                      "Direktarbetsgivare",
+    "Human Talent North AB":                            "Bemanning/Rekrytering",
+    "MALUNG-SÄLENS KOMMUN":                             "Direktarbetsgivare",
+    "Sylvamo Sweden AB":                                "Direktarbetsgivare",
+    "SORSELE KOMMUN":                                   "Direktarbetsgivare",
     # 2026-07-15
     "Aleva Sverige AB":                                 "Direktarbetsgivare",
     "LANDSKRONA KOMMUN":                                "Direktarbetsgivare",
