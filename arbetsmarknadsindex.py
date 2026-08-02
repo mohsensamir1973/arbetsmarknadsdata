@@ -467,6 +467,16 @@ ARBETSGIVARE_TYP = {
     "KARLSTADS KOMMUN":                                 "Direktarbetsgivare",
     "MÖLNDALS KOMMUN":                                  "Direktarbetsgivare",
     "MJÖLBY KOMMUN":                                    "Direktarbetsgivare",
+    # 2026-08-03
+    "KRISTIANSTADS KOMMUN":                             "Direktarbetsgivare",
+    "NN Bemanning & Rekrytering AB":                    "Bemanning/Rekrytering",
+    "VÄSTERÅS KOMMUN":                                  "Direktarbetsgivare",
+    "STATENS JORDBRUKSVERK":                            "Direktarbetsgivare",
+    "ISS FACILITY SERVICES AB":                         "Direktarbetsgivare",
+    "Hägersten Ekonomi AB":                             "Direktarbetsgivare",
+    "Scandinavian Astor Group AB":                      "Direktarbetsgivare",
+    "VALLENTUNA KOMMUN":                                "Direktarbetsgivare",
+    "Perceptric AI AB":                                 "Direktarbetsgivare",
     # 2026-07-29
     "REGION ÖREBRO LÄN":                               "Direktarbetsgivare",
     "Marketpeople AB":                                  "Bemanning/Rekrytering",
