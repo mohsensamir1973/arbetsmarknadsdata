@@ -467,6 +467,18 @@ ARBETSGIVARE_TYP = {
     "KARLSTADS KOMMUN":                                 "Direktarbetsgivare",
     "MÖLNDALS KOMMUN":                                  "Direktarbetsgivare",
     "MJÖLBY KOMMUN":                                    "Direktarbetsgivare",
+    # 2026-08-09
+    "Volvo Personvagnar Aktiebolag":                    "Direktarbetsgivare",
+    "Trafikverket":                                     "Direktarbetsgivare",
+    "ÄNGELHOLMS KOMMUN":                                "Direktarbetsgivare",
+    "PostNord Group AB":                                "Direktarbetsgivare",
+    "ARVIDSJAURS KOMMUN":                               "Direktarbetsgivare",
+    "ORUST KOMMUN":                                     "Direktarbetsgivare",
+    "Jerrie AB":                                        "Bemanning/Rekrytering",
+    "SUNDSVALLS KOMMUN":                                "Direktarbetsgivare",
+    "FÖRENINGEN SUNDSGÅRDENS FOLKHÖGSKOLA":             "Direktarbetsgivare",
+    "KABE AB":                                          "Direktarbetsgivare",
+    "Statens servicecenter":                            "Direktarbetsgivare",
     # 2026-08-03
     "KRISTIANSTADS KOMMUN":                             "Direktarbetsgivare",
     "NN Bemanning & Rekrytering AB":                    "Bemanning/Rekrytering",
