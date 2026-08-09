@@ -135,6 +135,7 @@ def detektera_extremvarde(df, dagens_datum):
         historik = g[g["Datum"] < dagens_datum]["Antal annonser"]
         if len(historik) < MIN_HISTORIK_DAGAR:
             continue
+        snitt = round(historik.mean())
 
         if varde_idag > historik.max():
             signaler.append({
@@ -144,7 +145,7 @@ def detektera_extremvarde(df, dagens_datum):
                 "Varde": int(varde_idag),
                 "Beskrivning": (
                     f"{bolag} har idag {int(varde_idag)} aktiva annonser – "
-                    f"högsta nivån sedan mätstart 20 maj 2026."
+                    f"högsta nivån sedan mätstart 20 maj 2026 (snitt över perioden: {snitt})."
                 ),
                 "Styrka": 1.0,
                 "Kalla": KALLA,
@@ -157,7 +158,7 @@ def detektera_extremvarde(df, dagens_datum):
                 "Varde": int(varde_idag),
                 "Beskrivning": (
                     f"{bolag} har idag {int(varde_idag)} aktiva annonser – "
-                    f"lägsta nivån sedan mätstart 20 maj 2026."
+                    f"lägsta nivån sedan mätstart 20 maj 2026 (snitt över perioden: {snitt})."
                 ),
                 "Styrka": 1.0,
                 "Kalla": KALLA,
@@ -203,14 +204,14 @@ def detektera_stock_paradox(df, dagens_datum):
         if nya_7d_idag <= troskel:
             signaler.append({
                 "Datum": dagens_datum.strftime("%Y-%m-%d"),
-                "Typ": "Stock-paradox",
+                "Typ": "Sinande nyinflöde",
                 "Bolag": bolag,
                 "Varde": int(nya_7d_idag),
                 "Beskrivning": (
                     f"{bolag} har stabil annonsvolym (±{abs(pct_aktiva):.0f}% "
-                    f"senaste 7 dagarna) men nyannonsering ({int(nya_7d_idag)} "
-                    f"nya senaste 7 dagarna) bland bolagets lägsta sedan "
-                    f"mätstart – kan indikera att stocken töms gradvis."
+                    f"senaste 7 dagarna), men bara {int(nya_7d_idag)} nya annonser senaste "
+                    f"7 dagarna – bland bolagets lägsta nyinflöde sedan mätstart. Om trenden "
+                    f"håller minskar den totala volymen inom kommande veckor."
                 ),
                 "Styrka": round(1 - (nya_7d_idag / (troskel + 1)), 2),
                 "Kalla": KALLA,
@@ -327,10 +328,16 @@ def kor_signalmotor():
 
     resultat = resultat.sort_values("Styrka", ascending=False).reset_index(drop=True)
 
-    # Skriv/append till loggen (utf-8-sig för att matcha övriga CSV-filer i repot,
-    # t.ex. bemanningsindex_trend.csv - annars visas å/ä/ö fel i vissa läsare)
+    # Skydd mot dubbletter: om scriptet körs flera gånger samma dag (t.ex. vid
+    # test eller omkörning), ta bort ev. tidigare rader för DAGENS datum innan
+    # vi skriver de nya - annars dubbleras signalerna i loggen. Samma princip
+    # som dedup.py använder för trend-CSV:erna (senaste körningen vinner).
+    dagens_datum_str = dagens_datum.strftime("%Y-%m-%d")
     if os.path.exists(SIGNAL_LOG_CSV):
-        resultat.to_csv(SIGNAL_LOG_CSV, mode="a", header=False, index=False, sep=";", encoding="utf-8-sig")
+        befintlig = pd.read_csv(SIGNAL_LOG_CSV, sep=";", encoding="utf-8-sig")
+        befintlig = befintlig[befintlig["Datum"] != dagens_datum_str]
+        combined = pd.concat([befintlig, resultat], ignore_index=True)
+        combined.to_csv(SIGNAL_LOG_CSV, mode="w", header=True, index=False, sep=";", encoding="utf-8-sig")
     else:
         resultat.to_csv(SIGNAL_LOG_CSV, mode="w", header=True, index=False, sep=";", encoding="utf-8-sig")
 
