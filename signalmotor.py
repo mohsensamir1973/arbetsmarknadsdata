@@ -66,6 +66,7 @@ REGIONAL_MIN_NYA_ANNONSER = 5    # 0 -> minst 5 annonser = nyetablering
 ANDELSSKIFTE_MIN_PP = 1.0        # ±1 procentenhet marknadsandel över 30 dagar
 MIN_AKTIVA_FOR_SIGNAL = 10       # entitet under denna nivå ger för brusiga %-tal
 MARKNADSNIVA_STYRKA_FAKTOR = 2.0  # marknadsnivå-signaler väger tyngre än enskilda entiteter
+REGIONAL_NIVA_STYRKA_FAKTOR = 1.3  # regionsignaler väger något tyngre än enskilda bolag/roller
 
 KALLA = "Arbetsförmedlingens öppna API"
 BASELINE_TEXT = "20 maj 2026"
@@ -354,6 +355,30 @@ def detektera_marknadsniva(df, dagens_datum):
 
 
 # ============================================================
+# SIGNAL 7: REGIONAL NIVÅ (summan av alla 30 bolag PER REGION - stark
+# rörelse + extremvärde på regionens totala aktivitet, oavsett vilket
+# bolag som annonserar. Skiljer sig från "Regional nyetablering" (signal
+# 4) som bara fångar 0->N för EN entitet i EN region - den här fångar
+# hela regionens temperatur, t.ex. "Östergötlands län har fallit till
+# lägsta nivån sedan mätstart", oavsett vilket bolag som driver det.
+# ============================================================
+
+def detektera_regional_niva(df_regioner, dagens_datum):
+    totalt = df_regioner.groupby(["Datum", "Region"])["Antal annonser"].sum().reset_index()
+    totalt = totalt.rename(columns={"Region": "Entitet"})
+
+    signaler = detektera_stark_rorelse(totalt, dagens_datum, entity_col="Entitet")
+    signaler += detektera_extremvarde(totalt, dagens_datum, entity_col="Entitet")
+
+    for s in signaler:
+        s["Beskrivning"] = s["Beskrivning"].replace(
+            "aktiva annonser", "aktiva annonser totalt över alla bevakade bolag i regionen"
+        )
+        s["Styrka"] = round(s["Styrka"] * REGIONAL_NIVA_STYRKA_FAKTOR, 2)
+    return signaler
+
+
+# ============================================================
 # HUVUDFLÖDE
 # ============================================================
 
@@ -382,6 +407,9 @@ def kor_signalmotor():
 
     # Nivå 3: Hela marknaden
     alla_signaler += detektera_marknadsniva(df_bolag, dagens_datum)
+
+    # Nivå 4: Regional nivå (bolagens totala aktivitet per region)
+    alla_signaler += detektera_regional_niva(df_bolag_regioner, dagens_datum)
 
     resultat = pd.DataFrame(alla_signaler)
 
