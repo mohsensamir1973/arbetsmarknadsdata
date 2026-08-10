@@ -65,6 +65,7 @@ STOCK_STABIL_GRANS_PCT = 5.0     # aktiva annonser ±5% räknas som "stabilt"
 REGIONAL_MIN_NYA_ANNONSER = 5    # 0 -> minst 5 annonser = nyetablering
 ANDELSSKIFTE_MIN_PP = 1.0        # ±1 procentenhet marknadsandel över 30 dagar
 MIN_AKTIVA_FOR_SIGNAL = 10       # entitet under denna nivå ger för brusiga %-tal
+MARKNADSNIVA_STYRKA_FAKTOR = 2.0  # marknadsnivå-signaler väger tyngre än enskilda entiteter
 
 KALLA = "Arbetsförmedlingens öppna API"
 BASELINE_TEXT = "20 maj 2026"
@@ -343,6 +344,12 @@ def detektera_marknadsniva(df, dagens_datum):
         s["Beskrivning"] = s["Beskrivning"].replace(
             "aktiva annonser", "aktiva annonser totalt över de 30 bevakade bolagen"
         )
+        # Marknadsnivå-signaler väger tyngre än en enskild entitets signal
+        # med samma råstyrka - de påverkar alla läsare, inte bara ett bolag
+        # eller en roll. Utan boost hamnar t.ex. "Hela marknaden på lägsta
+        # nivån sedan mätstart" (styrka 1.0, som alla extremvärden) långt
+        # ner bland enskilda bolagssignaler - fel prioritering för läsaren.
+        s["Styrka"] = round(s["Styrka"] * MARKNADSNIVA_STYRKA_FAKTOR, 2)
     return signaler
 
 
