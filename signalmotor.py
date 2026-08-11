@@ -70,6 +70,7 @@ REGIONAL_NIVA_STYRKA_FAKTOR = 1.3  # regionsignaler väger något tyngre än ens
 
 KALLA = "Arbetsförmedlingens öppna API"
 BASELINE_TEXT = "20 maj 2026"
+BASELINE_DATUM = pd.Timestamp("2026-05-20")
 
 
 def ladda_csv(path, sort_cols):
@@ -151,6 +152,7 @@ def detektera_extremvarde(df, dagens_datum, entity_col="Bolag"):
         if len(historik) < MIN_HISTORIK_DAGAR:
             continue
         snitt = round(historik.mean())
+        veckor = max(1, round((dagens_datum - BASELINE_DATUM).days / 7))
 
         if varde_idag > historik.max():
             signaler.append({
@@ -160,7 +162,8 @@ def detektera_extremvarde(df, dagens_datum, entity_col="Bolag"):
                 "Varde": int(varde_idag),
                 "Beskrivning": (
                     f"{namn} har idag {int(varde_idag)} aktiva annonser – "
-                    f"högsta nivån sedan mätstart {BASELINE_TEXT} (snitt över perioden: {snitt})."
+                    f"högsta nivån på de {veckor} veckor vi mätt hittills (sedan {BASELINE_TEXT}), "
+                    f"snitt över perioden: {snitt}."
                 ),
                 "Styrka": 1.0,
                 "Kalla": KALLA,
@@ -173,7 +176,8 @@ def detektera_extremvarde(df, dagens_datum, entity_col="Bolag"):
                 "Varde": int(varde_idag),
                 "Beskrivning": (
                     f"{namn} har idag {int(varde_idag)} aktiva annonser – "
-                    f"lägsta nivån sedan mätstart {BASELINE_TEXT} (snitt över perioden: {snitt})."
+                    f"lägsta nivån på de {veckor} veckor vi mätt hittills (sedan {BASELINE_TEXT}), "
+                    f"snitt över perioden: {snitt}."
                 ),
                 "Styrka": 1.0,
                 "Kalla": KALLA,
