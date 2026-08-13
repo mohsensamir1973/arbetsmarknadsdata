@@ -62,7 +62,7 @@ MIN_HISTORIK_DAGAR = 42          # ~6 veckor innan percentil-signaler aktiveras
 PERCENTIL_STARK_RORELSE = 0.90   # topp 10% av entitetens egna veckorörelser
 PERCENTIL_LAG_NYANNONSERING = 0.10  # botten 10% av entitetens egen nyannonsering
 STOCK_STABIL_GRANS_PCT = 5.0     # aktiva annonser ±5% räknas som "stabilt"
-REGIONAL_MIN_NYA_ANNONSER = 5    # 0 -> minst 5 annonser = nyetablering
+KOMMUN_MIN_NY_AKTIVITET = 15  # kalibrerat 2026-08-13 mot faktisk fördelning: median=8, 75:e percentilen=18
 ANDELSSKIFTE_MIN_PP = 1.0        # ±1 procentenhet marknadsandel över 30 dagar
 MIN_AKTIVA_FOR_SIGNAL = 10       # entitet under denna nivå ger för brusiga %-tal
 MARKNADSNIVA_STYRKA_FAKTOR = 2.0  # marknadsnivå-signaler väger tyngre än enskilda entiteter
@@ -71,6 +71,12 @@ REGIONAL_NIVA_STYRKA_FAKTOR = 1.3  # regionsignaler väger något tyngre än ens
 KALLA = "Arbetsförmedlingens öppna API"
 BASELINE_TEXT = "20 maj 2026"
 BASELINE_DATUM = pd.Timestamp("2026-05-20")
+# Region- och kommundata spårade bara EN geografi per bolag (ingen riktig
+# uppdelning) fram till 2026-06-05 - upptäckt 2026-08-13 (rader/dag gick
+# från ~30 till 350+ den 6 juni). All jämförelse mot "historik" för
+# regioner/kommuner ska starta härifrån, annars jämförs mot en konstgjort
+# låg period som bara fångade ett enda bolags data.
+REGION_STABIL_DATUM = pd.Timestamp("2026-06-06")
 
 
 def ladda_csv(path, sort_cols):
@@ -139,6 +145,22 @@ def detektera_stark_rorelse(df, dagens_datum, entity_col="Bolag"):
 # ============================================================
 
 def detektera_extremvarde(df, dagens_datum, entity_col="Bolag"):
+    """
+    Upptäcker nya högsta/lägsta nivåer sedan mätstart.
+
+    VECKODAGSJUSTERAT (tillagt 2026-08-13): måndagar ligger systematiskt
+    ~5% lägre än andra veckodagar (bekräftat 2026-08-10 - se analys av
+    bemanningsindex_trend.csv). En rak jämförelse av råvärden mot hela
+    historiken riskerar att flagga en helt normal måndag som "nytt lägsta"
+    bara för att den råkar vara lägre än söndagar/fredagar i jämförelsen,
+    inte för att något faktiskt förändrats.
+
+    Fix: varje värde normaliseras mot sin egen veckodags typiska nivå
+    innan jämförelsen (inte genom att bara jämföra mot samma veckodag,
+    vilket skulle kräva ~7x mer historik än vi har och i praktiken stänga
+    av signalen i månader). Den RAPPORTERADE siffran är fortfarande
+    råvärdet - bara BESLUTET om det är ett extremvärde är justerat.
+    """
     signaler = []
     for namn, g in df.groupby(entity_col):
         g = g.sort_values("Datum").reset_index(drop=True)
@@ -148,13 +170,28 @@ def detektera_extremvarde(df, dagens_datum, entity_col="Bolag"):
         if rad_idag.empty:
             continue
         varde_idag = rad_idag["Antal annonser"].values[0]
-        historik = g[g["Datum"] < dagens_datum]["Antal annonser"]
-        if len(historik) < MIN_HISTORIK_DAGAR:
+
+        historik_df = g[g["Datum"] < dagens_datum].copy()
+        if len(historik_df) < MIN_HISTORIK_DAGAR:
             continue
-        snitt = round(historik.mean())
+        snitt = round(historik_df["Antal annonser"].mean())
         veckor = max(1, round((dagens_datum - BASELINE_DATUM).days / 7))
 
-        if varde_idag > historik.max():
+        # Veckodagsjustering
+        historik_df["veckodag"] = historik_df["Datum"].dt.dayofweek
+        veckodag_snitt = historik_df.groupby("veckodag")["Antal annonser"].mean()
+        overall_snitt = historik_df["Antal annonser"].mean()
+
+        def justera(varde, veckodag):
+            vs = veckodag_snitt.get(veckodag, overall_snitt)
+            if vs <= 0:
+                return varde
+            return varde * (overall_snitt / vs)
+
+        historik_justerat = historik_df.apply(lambda r: justera(r["Antal annonser"], r["veckodag"]), axis=1)
+        varde_idag_justerat = justera(varde_idag, dagens_datum.dayofweek)
+
+        if varde_idag_justerat > historik_justerat.max():
             signaler.append({
                 "Datum": dagens_datum.strftime("%Y-%m-%d"),
                 "Typ": "Nytt extremvärde",
@@ -168,7 +205,7 @@ def detektera_extremvarde(df, dagens_datum, entity_col="Bolag"):
                 "Styrka": 1.0,
                 "Kalla": KALLA,
             })
-        elif varde_idag < historik.min():
+        elif varde_idag_justerat < historik_justerat.min():
             signaler.append({
                 "Datum": dagens_datum.strftime("%Y-%m-%d"),
                 "Typ": "Nytt extremvärde",
@@ -245,34 +282,95 @@ def detektera_sinande_nyinflode(df, dagens_datum, entity_col="Bolag", nya_7d_col
 # Fungerar på bolag+region OCH roll+region.
 # ============================================================
 
-def detektera_regional_nyetablering(df_regioner, dagens_datum, entity_col="Bolag"):
+def detektera_kommun_aktivitet(df_kommuner, dagens_datum, alla_datum):
+    """
+    Ersätter den gamla "Regional nyetablering" (länsnivå, per bolag) - den
+    visade sig ALDRIG ha triggat i hela historiken (verifierat 2026-08-13,
+    backtest mot all data), eftersom ett enskilt läns geografi är för
+    grovkornig för att en enskild etablering ska synas som 0->N.
+
+    Kommunnivå, TOTALT över alla 30 bolag (inte per bolag) - kalibrerat
+    mot faktisk fördelning av kommunaktivitet. Medvetet neutralt namngiven
+    ("ny/avslutad aktivitet", inte "nyetablering") eftersom vi inte kan
+    avgöra om en ökning beror på ett enskilt kontrakt eller en permanent
+    etablering - bara att aktiviteten börjat eller upphört.
+
+    VIKTIGT (fix 2 av 2, 2026-08-13): en ren "jämför mot igår"-lösning
+    missade gradvisa förändringar (som Trollhättans uppgång 4->20 över två
+    veckor - aldrig ett enda stort dagshopp). Rätt lösning behåller
+    30-dagarsjämförelsen (den fångar gradvisa trender) men triggar bara
+    signalen den FÖRSTA dagen villkoret blir sant - genom att även
+    kontrollera att villkoret INTE redan var sant igår. Självbegränsande
+    utan att tappa förmågan att se gradvisa förändringar.
+    Kräver även samma MIN_HISTORIK_DAGAR-mognad som resten av signalmotorn
+    (42 dagar sedan mätstart) innan den börjar trigga - annars räknas
+    pipelinens egen uppstartsperiod (då stora städer som Stockholm och
+    Göteborg också såg ut att "dyka upp" bara för att kommundata-
+    insamlingen fortfarande stabiliserades) som falska signaler.
+    """
+    if (dagens_datum - BASELINE_DATUM).days < MIN_HISTORIK_DAGAR:
+        return []
+
+    totalt = df_kommuner.groupby(["Datum", "Kommun"])["Antal annonser"].sum().reset_index()
+    alla_kommuner = totalt["Kommun"].unique()
+    grid = pd.MultiIndex.from_product([alla_datum, alla_kommuner], names=["Datum", "Kommun"]).to_frame(index=False)
+    komplett = grid.merge(totalt, on=["Datum", "Kommun"], how="left")
+    komplett["Antal annonser"] = komplett["Antal annonser"].fillna(0)
+
+    def varde_pa_datum(g, datum):
+        rad = g[g["Datum"] == datum]
+        return rad["Antal annonser"].values[0] if not rad.empty else None
+
     signaler = []
-    for (namn, region), g in df_regioner.groupby([entity_col, "Region"]):
+    for kommun, g in komplett.groupby("Kommun"):
         g = g.sort_values("Datum").reset_index(drop=True)
-        rad_idag = g[g["Datum"] == dagens_datum]
-        if rad_idag.empty:
+
+        varde_idag = varde_pa_datum(g, dagens_datum)
+        if varde_idag is None:
             continue
-        varde_idag = rad_idag["Antal annonser"].values[0]
-        if varde_idag < REGIONAL_MIN_NYA_ANNONSER:
+        igar = dagens_datum - pd.Timedelta(days=1)
+        varde_igar = varde_pa_datum(g, igar)
+        if varde_igar is None:
             continue
 
-        datum_30d_sedan = dagens_datum - pd.Timedelta(days=30)
-        historik_fore = g[g["Datum"] <= datum_30d_sedan]["Antal annonser"]
-        if historik_fore.empty:
+        def varde_30d_fore(datum):
+            hist = g[g["Datum"] <= datum - pd.Timedelta(days=30)]["Antal annonser"]
+            return hist.iloc[-1] if not hist.empty else None
+
+        fore_idag = varde_30d_fore(dagens_datum)
+        fore_igar = varde_30d_fore(igar)
+        if fore_idag is None or fore_igar is None:
             continue
 
-        if historik_fore.iloc[-1] == 0:
-            verb = "annonserar nu" if entity_col == "Bolag" else "efterfrågas nu med"
+        villkor_ny_idag = fore_idag == 0 and varde_idag >= KOMMUN_MIN_NY_AKTIVITET
+        villkor_ny_igar = fore_igar == 0 and varde_igar >= KOMMUN_MIN_NY_AKTIVITET
+        villkor_avslutad_idag = fore_idag >= KOMMUN_MIN_NY_AKTIVITET and varde_idag == 0
+        villkor_avslutad_igar = fore_igar >= KOMMUN_MIN_NY_AKTIVITET and varde_igar == 0
+
+        if villkor_ny_idag and not villkor_ny_igar:
             signaler.append({
                 "Datum": dagens_datum.strftime("%Y-%m-%d"),
-                "Typ": "Regional nyetablering",
-                "Bolag": namn,
-                "Varde": f"{region}: {int(varde_idag)}",
+                "Typ": "Ny aktivitet i kommunen",
+                "Bolag": kommun,
+                "Varde": int(varde_idag),
                 "Beskrivning": (
-                    f"{namn} {verb} {int(varde_idag)} tjänster i "
-                    f"{region} – ingen aktivitet där för 30 dagar sedan."
+                    f"{kommun} har idag {int(varde_idag)} aktiva annonser totalt över alla "
+                    f"bevakade bolag – ingen aktivitet där för 30 dagar sedan."
                 ),
-                "Styrka": min(varde_idag / REGIONAL_MIN_NYA_ANNONSER, 3.0),
+                "Styrka": min(varde_idag / KOMMUN_MIN_NY_AKTIVITET, 3.0),
+                "Kalla": KALLA,
+            })
+        elif villkor_avslutad_idag and not villkor_avslutad_igar:
+            signaler.append({
+                "Datum": dagens_datum.strftime("%Y-%m-%d"),
+                "Typ": "Avslutad aktivitet i kommunen",
+                "Bolag": kommun,
+                "Varde": int(fore_idag),
+                "Beskrivning": (
+                    f"{kommun} har idag inga aktiva annonser – hade {int(fore_idag)} för "
+                    f"30 dagar sedan. Aktiviteten har klingat av."
+                ),
+                "Styrka": min(fore_idag / KOMMUN_MIN_NY_AKTIVITET, 3.0),
                 "Kalla": KALLA,
             })
     return signaler
@@ -386,34 +484,44 @@ def detektera_regional_niva(df_regioner, dagens_datum):
 # HUVUDFLÖDE
 # ============================================================
 
+BEMANNING_KOMMUNER_CSV = "bemanningsindex_kommuner_trend.csv"
+
 def kor_signalmotor():
     df_bolag = ladda_csv(BEMANNING_CSV, ["Bolag", "Datum"])
     df_bolag_regioner = ladda_csv(BEMANNING_REGIONER_CSV, ["Bolag", "Region", "Datum"])
     df_roll = ladda_csv(ARBETSMARKNAD_CSV, ["Roll", "Datum"])
-    df_roll_regioner = ladda_csv(ARBETSMARKNAD_REGIONER_CSV, ["Roll", "Region", "Datum"])
+    df_bolag_kommuner = ladda_csv(BEMANNING_KOMMUNER_CSV, ["Bolag", "Kommun", "Datum"])
+
+    # Filtrera bort den instabila uppstartsperioden (se REGION_STABIL_DATUM
+    # ovan) - annars jämförs regionala/kommunala signaler mot en konstgjort
+    # låg period som bara fångade ett enda bolags data per geografi.
+    df_bolag_regioner = df_bolag_regioner[df_bolag_regioner["Datum"] >= REGION_STABIL_DATUM]
+    df_bolag_kommuner = df_bolag_kommuner[df_bolag_kommuner["Datum"] >= REGION_STABIL_DATUM]
 
     dagens_datum = df_bolag["Datum"].max()
 
     alla_signaler = []
 
-    # Nivå 1: Bolag - alla fem signaltyper
+    # Nivå 1: Bolag - fyra signaltyper (regional nyetablering ersatt av kommunaktivitet nedan)
     alla_signaler += detektera_stark_rorelse(df_bolag, dagens_datum, entity_col="Bolag")
     alla_signaler += detektera_extremvarde(df_bolag, dagens_datum, entity_col="Bolag")
     alla_signaler += detektera_sinande_nyinflode(df_bolag, dagens_datum, entity_col="Bolag", nya_7d_col="Nya annonser 7d")
-    alla_signaler += detektera_regional_nyetablering(df_bolag_regioner, dagens_datum, entity_col="Bolag")
     alla_signaler += detektera_andelsskifte(df_bolag, dagens_datum)
 
-    # Nivå 2: Signalroller - tre kärnsignaler + regional
+    # Nivå 2: Signalroller - tre kärnsignaler
     alla_signaler += detektera_stark_rorelse(df_roll, dagens_datum, entity_col="Roll")
     alla_signaler += detektera_extremvarde(df_roll, dagens_datum, entity_col="Roll")
     alla_signaler += detektera_sinande_nyinflode(df_roll, dagens_datum, entity_col="Roll", nya_7d_col="Nya 7 dagar")
-    alla_signaler += detektera_regional_nyetablering(df_roll_regioner, dagens_datum, entity_col="Roll")
 
     # Nivå 3: Hela marknaden
     alla_signaler += detektera_marknadsniva(df_bolag, dagens_datum)
 
-    # Nivå 4: Regional nivå (bolagens totala aktivitet per region)
+    # Nivå 4: Regional nivå (bolagens totala aktivitet per LÄN)
     alla_signaler += detektera_regional_niva(df_bolag_regioner, dagens_datum)
+
+    # Nivå 5: Kommunnivå (ny/avslutad aktivitet per KOMMUN, ersätter gamla
+    # länsbaserade "Regional nyetablering" som aldrig triggade i historiken)
+    alla_signaler += detektera_kommun_aktivitet(df_bolag_kommuner, dagens_datum, sorted(df_bolag["Datum"].unique()))
 
     resultat = pd.DataFrame(alla_signaler)
 
