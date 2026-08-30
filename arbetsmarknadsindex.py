@@ -467,6 +467,23 @@ ARBETSGIVARE_TYP = {
     "KARLSTADS KOMMUN":                                 "Direktarbetsgivare",
     "MÖLNDALS KOMMUN":                                  "Direktarbetsgivare",
     "MJÖLBY KOMMUN":                                    "Direktarbetsgivare",
+    # 2026-08-13
+    "Adavo AB":                                         "Konsultbolag",
+    "Flexio Work AB":                                   "Bemanning/Rekrytering",
+    "AQ Engineering AB":                                "Direktarbetsgivare",
+    "LUOSSAVAARA-KIIRUNAVAARA AKTIEBOLAG":               "Direktarbetsgivare",
+    "SÖDERHAMNS KOMMUN":                                 "Direktarbetsgivare",
+    "KARLSKRONA KOMMUN":                                 "Direktarbetsgivare",
+    "Recruitas AB":                                     "Bemanning/Rekrytering",
+    "ECAB EkonomiCentra AB":                             "Direktarbetsgivare",
+    "POLISMYNDIGHETEN":                                 "Direktarbetsgivare",
+    "Geenio AB":                                        "Konsultbolag",
+    "Förvaltningsaktiebolaget Tegelbacken":              "Direktarbetsgivare",
+    "Fastighets AB Balder":                             "Direktarbetsgivare",
+    "MIO AB":                                           "Direktarbetsgivare",
+    "VÄRMDÖ KOMMUN":                                     "Direktarbetsgivare",
+    "Rehobot Hydraulics AB":                             "Direktarbetsgivare",
+    "Serudia AB":                                       "Direktarbetsgivare",
     # 2026-08-09
     "Volvo Personvagnar Aktiebolag":                    "Direktarbetsgivare",
     "Trafikverket":                                     "Direktarbetsgivare",
@@ -574,6 +591,18 @@ ARBETSGIVARE_TYP = {
     "SIMRISHAMNS KOMMUN":                               "Direktarbetsgivare",
     "ICA SVERIGE AB":                                   "Direktarbetsgivare",
     "AF Bygg Syd AB":                                   "Direktarbetsgivare",
+    # 2026-08-30
+    "Morano BemanningsExperten AB":                     "Bemanning/Rekrytering",
+    "REGION KALMAR LÄN":                                "Direktarbetsgivare",
+    "Multiply Teknik & IT AB":                          "Konsultbolag",
+    "Kristinehamns kommun":                             "Direktarbetsgivare",
+    "Meetly AB":                                        "Direktarbetsgivare",
+    "Specialpedagogiska Skolmyndigheten":                "Direktarbetsgivare",
+    "Head Energy Sweden AB":                            "Konsultbolag",
+    "Tele-Byrån i Kalmar AB":                            "Direktarbetsgivare",
+    "Thread AB":                                        "Konsultbolag",
+    "Alleima AB":                                        "Direktarbetsgivare",
+    "Aspia AB":                                          "Konsultbolag",
 }
 
 # ── Cache – laddas en gång vid start ────────────────────────────────
