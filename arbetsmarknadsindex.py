@@ -618,6 +618,23 @@ ARBETSGIVARE_TYP = {
     "Thread AB":                                        "Konsultbolag",
     "Alleima AB":                                        "Direktarbetsgivare",
     "Aspia AB":                                          "Konsultbolag",
+
+    # 2026-09-14 – veckans granskning av okanda_arbetsgivare_ny.txt
+    # OBS: "Nordic Investin Group Aktiebolag" (org.nr 5593322125) är medvetet
+    # INTE tillagd här. Bolaget har 0 anställda och 0 kr omsättning (2024),
+    # är ett rent holdingbolag (SNI 64212) - stämmer inte med 17 annonser för
+    # Systemutvecklare. Samma mönster som Avaron AB. Kolla annonserna manuellt
+    # innan den klassificeras.
+    "TK Tech AB":                                        "Konsultbolag",
+    "Härryda kommun":                                    "Direktarbetsgivare",
+    "Soros Consulting AB":                               "Bemanning/Rekrytering",
+    "Verket För Innovationssystem":                      "Direktarbetsgivare",
+    "Skill Scandinavia AB":                              "Bemanning/Rekrytering",
+    "Securitas Sverige Aktiebolag":                      "Direktarbetsgivare",
+    "Lindesbergs kommun":                                "Direktarbetsgivare",
+    "OnePartnerGroup Örnsköldsvik AB":                   "Bemanning/Rekrytering",
+    "Varbergs kommun":                                   "Direktarbetsgivare",
+    "Nybro kommun":                                      "Direktarbetsgivare",
 }
 
 # ── Cache – laddas en gång vid start ────────────────────────────────
