@@ -1,8 +1,8 @@
 """
-Bemanningsindex v7 - spar annoneringsaktivitet for ledande bemanning-
+Bemanningsindex v8 - spar annoneringsaktivitet for ledande bemanning-
 och rekryteringsbolag via AF:s oppna API
 =======================================================================
-Ersatter: bemanningsindex.py (v6)
+Ersatter: bemanningsindex.py (v7)
 Placeras i: Documents\Arbetsmarknadsindex\
 
 Nyheter i v7 vs v6:
@@ -11,11 +11,21 @@ Nyheter i v7 vs v6:
   - Stodjer flera org-nummer per bolag (koncerner/regionbolag)
   - Bred API-sokning pa bolagsnamn, sedan filtrering pa org-nummer
 
+Nyheter i v8 vs v7:
+  - Automatisk upptackt av saknade enheter: nar API-svaren redan hamtas
+    noteras arbetsgivare med bolagsliknande namn vars org-nummer INTE finns
+    i listan nedan (t.ex. ett nytt regionbolag, "Friday Syd AB").
+  - De skrivs till bemanningsindex_nya_enheter.csv (pushas automatiskt av
+    git_push.bat) - inget manuellt granskande, ingen txt-fil att komma ihag.
+  - Paverkar INTE de ordinarie siffrorna. Inga extra API-anrop for vanliga
+    bolag (bara en extra sokning for bolag med extra_sokord, t.ex. Friday/OIO).
+
 Bolagslista: 30 utvalda bolag som speglar branschens bredd
 Sparar:
   bemanningsindex_trend.csv
   bemanningsindex_regioner_trend.csv
   bemanningsindex_kommuner_trend.csv
+  bemanningsindex_nya_enheter.csv
 """
 
 import urllib.request
@@ -25,6 +35,7 @@ import csv
 import ssl
 import time
 import os
+import re
 import sys
 import traceback
 from datetime import datetime, timedelta, timezone
@@ -74,7 +85,7 @@ BOLAG = {
     "Bravura":             {"sokord": "Bravura Sverige",     "org_nr": ["5567520803"]},
     "Jurek":               {"sokord": "Jurek Recruitment",   "org_nr": ["5566945324"]},
     "TNG Group":           {"sokord": "TNG Group",           "org_nr": ["5566482781"]},
-    "Eterni Sweden":       {"sokord": "Eterni Sweden",       "org_nr": ["5568637283"]},
+    "Eterni Sweden":       {"sokord": "Eterni",       "org_nr": ["5568637283"]},
     "Friday":              {"sokord": "Friday",              "org_nr": [
                                 "5591411326", "5592225253", "5594520750", "5594675117",
                             ]},
@@ -83,6 +94,33 @@ BOLAG = {
     "Wikan Personal":      {"sokord": "Wikan Personal",      "org_nr": ["5568427818"]},
     "Konsultia":           {"sokord": "Konsultia",           "org_nr": ["5569380883"]},
 }
+
+# ── Upptackt av saknade enheter ──────────────────────────────────────
+# Standard: ett bolags arbetsgivarnamn "ser ut som bolaget" om namnet innehaller
+# sokordet (som borjan av ett ord). Har kan monstret overstyras, och extra
+# sokord laggas till for bolag vars koncern har andra varumarken
+# (Friday ingar i U Group tillsammans med OIO).
+UPPTACK_EXTRA = {
+    "Friday":          {"monster": ["friday", "oio", "u group"],
+                        "extra_sokord": ["OIO", "U Group"]},
+    "OnePartnerGroup": {"monster": ["onepartner"]},
+    "Bravura":         {"monster": ["bravura"]},
+    "Jurek":           {"monster": ["jurek"]},
+    "Eterni Sweden":   {"monster": ["eterni"]},
+}
+
+ALLA_ORG_NR = {o for _info in BOLAG.values() for o in _info["org_nr"]}
+
+
+def monster_for(bolag: str, info: dict) -> list:
+    extra = UPPTACK_EXTRA.get(bolag, {})
+    return [m.lower() for m in extra.get("monster", [info["sokord"]])]
+
+
+def namn_matchar(namn: str, monster: list) -> bool:
+    n = (namn or "").lower()
+    return any(re.search(r"\b" + re.escape(m), n) for m in monster)
+
 
 API_NYCKEL  = ""
 PAGE_SIZE   = 100
@@ -93,6 +131,7 @@ TIMEOUT     = 30
 HUVUDFIL  = "bemanningsindex_trend.csv"
 REGIOFIL  = "bemanningsindex_regioner_trend.csv"
 KOMMUNFIL = "bemanningsindex_kommuner_trend.csv"
+UPPTACKFIL = "bemanningsindex_nya_enheter.csv"
 LOGGFIL   = "bemanningsindex_logg.txt"
 
 
@@ -123,10 +162,15 @@ def api_request(url: str) -> dict:
         return json.loads(r.read())
 
 
-def hamta_alla(sokord: str, org_nummers: list, extra_params: dict = None) -> dict:
+def hamta_alla(sokord: str, org_nummers: list, extra_params: dict = None,
+               upptack: Counter = None, monster: list = None) -> dict:
     """
     Soker brett pa sokord, filtrerar sedan pa org-nummer i svaret.
     100% precision - matcher exakt ratt bolag/koncern.
+
+    upptack/monster (valfria): om angivna noteras traffar vars arbetsgivarnamn
+    matchar monstret men vars org-nummer inte finns i listan. Ingen extra
+    API-anrop - samma svar som annars bara kastas bort.
     """
     org_set = set(org_nummers)
 
@@ -164,11 +208,14 @@ def hamta_alla(sokord: str, org_nummers: list, extra_params: dict = None) -> dic
             break
 
         for h in hits:
-            emp = h.get("employer", {})
+            emp = h.get("employer") or {}
             org_nr = emp.get("organization_number", "")
 
             # Filtrera pa org-nummer - 100% precision
             if org_nr not in org_set:
+                if (upptack is not None and org_nr and org_nr not in ALLA_ORG_NR
+                        and namn_matchar(emp.get("name", ""), monster or [])):
+                    upptack[(org_nr, emp.get("name", ""))] += 1
                 continue
 
             antal_hits += 1
@@ -222,8 +269,40 @@ def hamta_alla(sokord: str, org_nummers: list, extra_params: dict = None) -> dic
     }
 
 
-def hamta_detaljer(sokord: str, org_nummers: list) -> dict:
-    alla = hamta_alla(sokord, org_nummers)
+def sok_upptack(sokord: str, monster: list, upptack: Counter):
+    """
+    Lattviktig sokning enbart for upptackt (anvands for extra_sokord, t.ex. OIO
+    for Friday-koncernen). Raknar inget i ordinarie index.
+    """
+    offset = 0
+    while True:
+        params = {"q": sokord, "limit": PAGE_SIZE, "offset": offset}
+        try:
+            data = api_request(
+                f"https://jobsearch.api.jobtechdev.se/search?{urllib.parse.urlencode(params)}"
+            )
+        except Exception as e:
+            logg(f"  API-fel (upptackt) vid offset {offset}: {e}")
+            break
+        total = data.get("total", {}).get("value", 0)
+        hits = data.get("hits", [])
+        if not hits:
+            break
+        for h in hits:
+            emp = h.get("employer") or {}
+            org_nr = emp.get("organization_number", "")
+            if (org_nr and org_nr not in ALLA_ORG_NR
+                    and namn_matchar(emp.get("name", ""), monster)):
+                upptack[(org_nr, emp.get("name", ""))] += 1
+        offset += PAGE_SIZE
+        if offset >= total or offset >= MAX_SIDOR * PAGE_SIZE:
+            break
+        time.sleep(FORDROJNING)
+
+
+def hamta_detaljer(sokord: str, org_nummers: list,
+                   upptack: Counter = None, monster: list = None) -> dict:
+    alla = hamta_alla(sokord, org_nummers, upptack=upptack, monster=monster)
 
     trettio = (datetime.now(timezone.utc) - timedelta(days=30)).strftime(
         "%Y-%m-%dT%H:%M:%S"
@@ -263,18 +342,55 @@ def hamta_detaljer(sokord: str, org_nummers: list) -> dict:
     }
 
 
+def skriv_upptackt(datum: str, upptackt: dict):
+    """
+    Skriver arbetsgivare som liknar ett bevakat bolag men vars org-nummer
+    saknas i BOLAG. En rad per enhet och dag. Filen pushas automatiskt som CSV.
+    """
+    rader = []
+    for bolag, counter in upptackt.items():
+        for (org_nr, namn), antal in counter.most_common():
+            rader.append((bolag, org_nr, namn, antal))
+            logg(f"  MISSTANKT SAKNAD ENHET  {bolag}: {namn} ({org_nr}) - {antal} annonser")
+    if not rader:
+        logg("  Upptackt: inga saknade enheter hittades idag.")
+        return
+    ny = not os.path.exists(UPPTACKFIL)
+    with open(UPPTACKFIL, "a", newline="", encoding="utf-8-sig") as f:
+        w = csv.writer(f, delimiter=";")
+        if ny:
+            w.writerow(["Datum", "Bolag", "Org-nr", "Arbetsgivarnamn", "Antal annonser"])
+        for bolag, org_nr, namn, antal in rader:
+            w.writerow([datum, bolag, org_nr, namn, antal])
+    logg(f"Sparat: {UPPTACKFIL} ({len(rader)} misstankta saknade enheter)")
+
+
 def kor_analys():
     logg("=" * 65)
-    logg("BEMANNINGSINDEX v7")
+    logg("BEMANNINGSINDEX v8")
     logg(f"Arbetsmapp: {os.getcwd()}")
     logg("=" * 65)
 
     resultat = {}
+    upptackt = {}
     for bolag, info in BOLAG.items():
         logg(f"  Hamtar: {bolag}...")
         try:
-            d = hamta_detaljer(info["sokord"], info["org_nr"])
+            monster = monster_for(bolag, info)
+            upptack = Counter()
+            d = hamta_detaljer(info["sokord"], info["org_nr"],
+                               upptack=upptack, monster=monster)
             resultat[bolag] = d
+
+            # Extra sokord enbart for upptackt (t.ex. OIO for Friday). Far aldrig
+            # stoppa ordinarie korning.
+            for extra in UPPTACK_EXTRA.get(bolag, {}).get("extra_sokord", []):
+                try:
+                    sok_upptack(extra, monster, upptack)
+                except Exception as e:
+                    logg(f"  Varning: upptackt '{extra}' misslyckades: {e}")
+            if upptack:
+                upptackt[bolag] = upptack
 
             top3r  = d["reg_alla"].most_common(3)
             top3yf = d["yrkesfalt"].most_common(3)
@@ -359,6 +475,12 @@ def kor_analys():
             if d is None: continue
             for kommun, antal in d["kom_alla"].most_common(5):
                 w.writerow([datum, bolag, kommun, antal])
+
+    # Upptackt av saknade enheter - far aldrig forhindra att ovrigt sparas
+    try:
+        skriv_upptackt(datum, upptackt)
+    except Exception as e:
+        logg(f"  Varning: kunde inte spara {UPPTACKFIL}: {e}")
 
     logg(f"Sparat: {HUVUDFIL}")
     logg(f"Sparat: {REGIOFIL}")
