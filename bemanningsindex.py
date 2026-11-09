@@ -67,6 +67,10 @@ BOLAG = {
                                 "5568773476", "5590928619", "5568432230", "5568615545",
                                 "5566766589", "5591571459", "5590937537", "5569584476",
                                 "5569278475",
+                                # Tillagda 9 nov 2026 - hittade av upptacktsfunktionen
+                                # (bemanningsindex_nya_enheter.csv) sedan 11 okt:
+                                "5568946072",  # OnePartnerGroup Mitt AB
+                                "5590939178",  # OnePartnerGroup Orebro AB
                             ]},
     "Skill":               {"sokord": "Skill",               "org_nr": ["5566858618"]},
     "Arena Personal":      {"sokord": "Arena Personal",      "org_nr": ["5566061916"]},
