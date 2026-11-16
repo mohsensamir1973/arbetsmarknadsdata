@@ -20,12 +20,21 @@ Nyheter i v8 vs v7:
   - Paverkar INTE de ordinarie siffrorna. Inga extra API-anrop for vanliga
     bolag (bara en extra sokning for bolag med extra_sokord, t.ex. Friday/OIO).
 
+Nyheter i v9 vs v8 (16 nov 2026):
+  - Sparar ocksa antal annonser per organisationsnummer i
+    bemanningsindex_enheter_trend.csv. Alla org-nr i listan skrivs varje dag,
+    aven med 0 annonser, sa att det syns vilka enheter som ingick vilken dag.
+    Gor det mojligt att rakna forandringar pa jamforbara enheter nar en ny
+    enhet laggs till (t.ex. OnePartnerGroup Orebro 10 nov).
+  - Paverkar INTE de ordinarie filerna. Ett fel har stoppar aldrig korningen.
+
 Bolagslista: 30 utvalda bolag som speglar branschens bredd
 Sparar:
   bemanningsindex_trend.csv
   bemanningsindex_regioner_trend.csv
   bemanningsindex_kommuner_trend.csv
   bemanningsindex_nya_enheter.csv
+  bemanningsindex_enheter_trend.csv
 """
 
 import urllib.request
@@ -136,6 +145,7 @@ HUVUDFIL  = "bemanningsindex_trend.csv"
 REGIOFIL  = "bemanningsindex_regioner_trend.csv"
 KOMMUNFIL = "bemanningsindex_kommuner_trend.csv"
 UPPTACKFIL = "bemanningsindex_nya_enheter.csv"
+ENHETSFIL  = "bemanningsindex_enheter_trend.csv"
 LOGGFIL   = "bemanningsindex_logg.txt"
 
 
@@ -184,6 +194,7 @@ def hamta_alla(sokord: str, org_nummers: list, extra_params: dict = None,
     yrkesgrupp_counter = Counter()
     duration_counter   = Counter()
     arbetstid_counter  = Counter()
+    org_counter        = Counter()
 
     tot_tjanster    = 0
     krav_erfarenhet = 0
@@ -223,6 +234,7 @@ def hamta_alla(sokord: str, org_nummers: list, extra_params: dict = None,
                 continue
 
             antal_hits += 1
+            org_counter[org_nr] += 1
 
             adr = h.get("workplace_address", {})
             reg = adr.get("region", "")
@@ -265,6 +277,7 @@ def hamta_alla(sokord: str, org_nummers: list, extra_params: dict = None,
         "yrkesgrupp_counter":yrkesgrupp_counter,
         "duration_counter":  duration_counter,
         "arbetstid_counter": arbetstid_counter,
+        "org_counter":       org_counter,
         "pct_heltid":        round(min(arbetstid_counter.get("Heltid", 0) / n * 100, 100), 1),
         "pct_tills_vidare":  round(min(duration_counter.get("tills_vidare", 0) / n * 100, 100), 1),
         "pct_lang":          round(min(duration_counter.get("lang", 0) / n * 100, 100), 1),
@@ -343,6 +356,8 @@ def hamta_detaljer(sokord: str, org_nummers: list,
         "pct_lang":            alla["pct_lang"],
         "pct_kort":            alla["pct_kort"],
         "pct_erfarenhet":      alla["pct_erfarenhet"],
+        "org_alla":            alla["org_counter"],
+        "org_nya_7d":          nya_7d["org_counter"],
     }
 
 
@@ -369,9 +384,26 @@ def skriv_upptackt(datum: str, upptackt: dict):
     logg(f"Sparat: {UPPTACKFIL} ({len(rader)} misstankta saknade enheter)")
 
 
+def skriv_enheter(datum: str, resultat: dict):
+    """En rad per org-nr i BOLAG, aven 0 annonser. Bolag med fel hoppas over."""
+    ny = not os.path.exists(ENHETSFIL) or os.path.getsize(ENHETSFIL) == 0
+    with open(ENHETSFIL, "a", newline="", encoding="utf-8-sig") as f:
+        w = csv.writer(f, delimiter=";")
+        if ny:
+            w.writerow(["Datum", "Bolag", "Org-nr", "Antal annonser", "Nya annonser 7d"])
+        for bolag, info in BOLAG.items():
+            d = resultat.get(bolag)
+            if d is None:
+                continue
+            for org_nr in info["org_nr"]:
+                w.writerow([datum, bolag, org_nr,
+                            d["org_alla"].get(org_nr, 0),
+                            d["org_nya_7d"].get(org_nr, 0)])
+
+
 def kor_analys():
     logg("=" * 65)
-    logg("BEMANNINGSINDEX v8")
+    logg("BEMANNINGSINDEX v9")
     logg(f"Arbetsmapp: {os.getcwd()}")
     logg("=" * 65)
 
@@ -480,6 +512,12 @@ def kor_analys():
             for kommun, antal in d["kom_alla"].most_common(5):
                 w.writerow([datum, bolag, kommun, antal])
 
+    # Antal per org-nr - far aldrig forhindra att ovrigt sparas
+    try:
+        skriv_enheter(datum, resultat)
+    except Exception as e:
+        logg(f"  Varning: kunde inte spara {ENHETSFIL}: {e}")
+
     # Upptackt av saknade enheter - far aldrig forhindra att ovrigt sparas
     try:
         skriv_upptackt(datum, upptackt)
@@ -489,6 +527,7 @@ def kor_analys():
     logg(f"Sparat: {HUVUDFIL}")
     logg(f"Sparat: {REGIOFIL}")
     logg(f"Sparat: {KOMMUNFIL}")
+    logg(f"Sparat: {ENHETSFIL}")
     logg("Kor dagligen kl 08:00 for att bygga konkurrensanalys over tid.")
 
 
