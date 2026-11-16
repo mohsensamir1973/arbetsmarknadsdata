@@ -64,7 +64,6 @@ def _hamta(extra: list) -> dict:
     # 2. Uppdelning per typ, flera varianter tills någon fungerar.
     for typ in ("occupation-field", "region"):
         varianter = [_STATS_VARIANT[typ]] if typ in _STATS_VARIANT else [
-            [("stats", typ), ("stats.limit", 50)],
             [("stats", typ), ("stats.limit", 30)],
             [("stats", typ)],
             [("limit", 1), ("stats", typ), ("stats.limit", 30)],
