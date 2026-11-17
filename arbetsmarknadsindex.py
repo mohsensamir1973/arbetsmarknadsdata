@@ -693,9 +693,10 @@ def klassificera_ag(namn: str, org_nr: str = "") -> str:
     Klassificerar arbetsgivare. Prioritetsordning:
       1. Exkluderingslista (exakt + case-insensitive)
       2. Manuell lista (exakt + case-insensitive)
-      3. Cache (tidigare API-uppslag, nyckel = org_nr eller namn)
-      4. Bolagsverkets API (nytt uppslag om org_nr finns)
-      5. Okänd – granska
+      3. Mönstermatchning för offentlig sektor (kommuner, regioner)
+      4. Cache (tidigare API-uppslag, nyckel = org_nr eller namn)
+      5. Bolagsverkets API (nytt uppslag om org_nr finns)
+      6. Okänd – granska
     """
     global _ag_cache, _cache_ändrad
 
@@ -713,6 +714,16 @@ def klassificera_ag(namn: str, org_nr: str = "") -> str:
     if namn.lower() in _ARBETSGIVARE_TYP_LOWER:
         return _ARBETSGIVARE_TYP_LOWER[namn.lower()]
 
+    # Mönstermatchning – kommuner och regioner finns inte i Bolagsverkets
+    # aktiebolagsregister, så ett API-uppslag skulle alltid misslyckas och
+    # ge "Okänd – granska". De är alltid direktarbetsgivare. Sparar både
+    # ett onödigt API-anrop och en återkommande manuell granskningspost.
+    namn_lower = namn.strip().lower()
+    if namn_lower.endswith(" kommun"):
+        return "Direktarbetsgivare"
+    if namn_lower.startswith("region "):
+        return "Direktarbetsgivare"
+
     cache_nyckel = org_nr if org_nr else namn
     if cache_nyckel in _ag_cache:
         return _ag_cache[cache_nyckel]
@@ -725,6 +736,27 @@ def klassificera_ag(namn: str, org_nr: str = "") -> str:
         return kategori
 
     return "Okänd – granska"
+
+def topp_tackning(counter, malniva: float = 0.85, hard_cap: int = 100):
+    """
+    Returnerar arbetsgivare sorterade fallande efter antal annonser, tills de
+    tillsammans täcker minst `malniva` av rollens totala annonsvolym - eller
+    `hard_cap` bolag, beroende på vad som nås först (skydd mot extremt långa
+    svansar av engångsannonsörer). Ersätter en godtycklig fast gräns (t.ex.
+    "topp 20") med en gräns som ger jämn, förutsägbar täckningsgrad oavsett
+    hur populär rollen är.
+    """
+    total = sum(counter.values())
+    if total == 0:
+        return []
+    resultat = []
+    ackumulerat = 0
+    for ag, n in counter.most_common():
+        resultat.append((ag, n))
+        ackumulerat += n
+        if ackumulerat / total >= malniva or len(resultat) >= hard_cap:
+            break
+    return resultat
 
 def klassificera_duration(label: str) -> str:
     if not label:
@@ -975,7 +1007,11 @@ def kör_analys():
                 "% heltid", "% tills vidare", "% lång", "% kort",
                 "% erfarenhet", "% nystartsjobb",
                 "Top 3 regioner (totalt)", "Top 3 regioner (7 dagar)",
-                "Top 20 arbetsgivare",
+                "Top 20 arbetsgivare",  # Namnet är historiskt/kompatibilitet - innehållet
+                                        # är sedan 2026-09-16 täckningsbaserat (85%), inte
+                                        # ett fast antal på 20. Byt inte rubriktext utan att
+                                        # samtidigt uppdatera Signalroller.tsx och/eller
+                                        # nollställa CSV-filen, se separat notering.
             ])
         for roll, d in resultat.items():
             grupp = ROLLER[roll]["grupp"]
@@ -984,7 +1020,7 @@ def kör_analys():
                 continue
             ag_items = [
                 (ag, n, klassificera_ag(ag, d['ag_orgnr'].get(ag, '')))
-                for ag, n in d["ag_counter"].most_common(20)
+                for ag, n in topp_tackning(d["ag_counter"])
             ]
             ag_klassad = " | ".join(
                 f"{ag} ({n}) [{kat}]"
@@ -1011,7 +1047,7 @@ def kör_analys():
     okanda_detaljer = {}  # ag -> {"roller": [...], "org_nr": "", "totalt": 0}
     for roll, d in resultat.items():
         if d is None: continue
-        for ag, antal in d["ag_counter"].most_common(20):
+        for ag, antal in topp_tackning(d["ag_counter"]):
             org_nr = d["ag_orgnr"].get(ag, "")
             if klassificera_ag(ag, org_nr) == "Okänd – granska":
                 if ag not in okanda_detaljer:
