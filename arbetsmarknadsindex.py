@@ -85,6 +85,7 @@ HUVUDFIL  = "arbetsmarknadsindex_trend.csv"
 REGIOFIL  = "arbetsmarknadsindex_regioner_trend.csv"
 KOMMUNFIL = "arbetsmarknadsindex_kommuner_trend.csv"
 OKANDA_FIL = "okanda_arbetsgivare_ny.txt"
+EXTERNFIL  = "arbetsmarknadsindex_extern_trend.csv"
 
 # ── SNI-mappning ─────────────────────────────────────────────────────
 SNI_MAPPNING = {
@@ -688,7 +689,7 @@ _cache_ändrad = False
 _ARBETSGIVARE_TYP_LOWER = {k.lower(): v for k, v in ARBETSGIVARE_TYP.items()}
 _EXKLUDERA_LOWER = {e.lower() for e in EXKLUDERA}
 
-def klassificera_ag(namn: str, org_nr: str = "") -> str:
+def klassificera_ag(namn: str, org_nr: str = "", api: bool = True) -> str:
     """
     Klassificerar arbetsgivare. Prioritetsordning:
       1. Exkluderingslista (exakt + case-insensitive)
@@ -728,7 +729,7 @@ def klassificera_ag(namn: str, org_nr: str = "") -> str:
     if cache_nyckel in _ag_cache:
         return _ag_cache[cache_nyckel]
 
-    if org_nr:
+    if org_nr and api:
         time.sleep(0.2)
         kategori = _slå_upp_sni(org_nr)
         _ag_cache[cache_nyckel] = kategori
@@ -1074,6 +1075,36 @@ def kör_analys():
     else:
         print(f"\n✓ Alla arbetsgivare klassificerade.")
 
+    # ── Extern andel på ALLA annonser (ny 17 nov 2026) ───────────────
+    # Klassar varje arbetsgivare för rollen, inte bara listan som täcker
+    # 85 %. Arbetsgivare utanför listan slås inte upp i API:t (för många
+    # anrop) - bara manuell lista, mönster och cache. Annonser som inte kan
+    # klassas räknas som Okänd, så att underlaget alltid syns.
+    # Får aldrig stoppa resten av körningen.
+    try:
+        ext_ny = not os.path.exists(EXTERNFIL) or os.path.getsize(EXTERNFIL) == 0
+        with open(EXTERNFIL, "a", newline="", encoding="utf-8-sig") as f:
+            w = csv.writer(f, delimiter=";")
+            if ext_ny:
+                w.writerow(["Datum", "Roll", "Antal annonser",
+                            "Bemanning/Rekrytering", "Konsultbolag",
+                            "Direktarbetsgivare", "Exkluderade", "Okand"])
+            for roll, d in resultat.items():
+                if d is None: continue
+                i_listan = {ag for ag, _ in topp_tackning(d["ag_counter"])}
+                summa = Counter()
+                for ag, n in d["ag_counter"].items():
+                    kat = klassificera_ag(ag, d["ag_orgnr"].get(ag, ""), api=(ag in i_listan))
+                    summa[kat] += n
+                klassade = (summa["Bemanning/Rekrytering"] + summa["Konsultbolag"]
+                            + summa["Direktarbetsgivare"] + summa["Exkludera"])
+                okand = max(d["total"] - klassade, 0)
+                w.writerow([datum, roll, d["total"],
+                            summa["Bemanning/Rekrytering"], summa["Konsultbolag"],
+                            summa["Direktarbetsgivare"], summa["Exkludera"], okand])
+    except Exception as e:
+        print(f"  Varning: kunde inte spara {EXTERNFIL}: {e}")
+
     # ── Regionfil ────────────────────────────────────────────────────
     reg_ny = not os.path.exists(REGIOFIL)
     with open(REGIOFIL, "a", newline="", encoding="utf-8-sig") as f:
@@ -1110,6 +1141,7 @@ def kör_analys():
     print(f"Sparat: {HUVUDFIL}")
     print(f"Sparat: {REGIOFIL}")
     print(f"Sparat: {KOMMUNFIL}")
+    print(f"Sparat: {EXTERNFIL}")
     if is_baseline:
         print()
         print("*** Baseline satt. Nästa körning visar förändring mot denna. ***")
