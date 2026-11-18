@@ -673,6 +673,238 @@ ARBETSGIVARE_TYP = {
     "Degerfors IF":                                     "Direktarbetsgivare",
     "Willem Kralik, Jana":                              "Direktarbetsgivare",
     # Nordic Investin Group Aktiebolag: exkluderad 2026-11-18, se EXKLUDERA.
+    # TILLAGDA 18 NOV 2026, andra omgången: alla okända med minst 3 annonser någon dag sedan oktober
+    "Annsam AB":                                            "Bemanning/Rekrytering",
+    "Medica Nord consult AB":                               "Bemanning/Rekrytering",
+    "BNICE Bemanning AB":                                   "Bemanning/Rekrytering",
+    "Workwide AB":                                          "Bemanning/Rekrytering",
+    "Konsultia AB":                                         "Bemanning/Rekrytering",
+    "Selectus Bemanning AB":                                "Bemanning/Rekrytering",
+    "MD International AB (publ)":                           "Bemanning/Rekrytering",
+    "Jobwise AB":                                           "Bemanning/Rekrytering",
+    "Wikan Personal AB":                                    "Bemanning/Rekrytering",
+    "PersonalUthyrning, Logistik & Service Anderstorp  AB": "Bemanning/Rekrytering",
+    "Agil arbetskraft Sverige GF AB":                       "Bemanning/Rekrytering",
+    "Best Bemanning & Rekrytering i Sverige AB":            "Bemanning/Rekrytering",
+    "People Bemanning AB":                                  "Bemanning/Rekrytering",
+    "OnePartnerGroup Stockholm Bemanning AB":               "Bemanning/Rekrytering",
+    "Edge of Talent AB":                                    "Bemanning/Rekrytering",
+    "Employant AB":                                         "Bemanning/Rekrytering",
+    "Find By Anna AB":                                      "Bemanning/Rekrytering",
+    "Operationskonsulterna Stockholm AB":                   "Bemanning/Rekrytering",
+    "Ikett Personalpartner AB":                             "Bemanning/Rekrytering",
+    "WRKFRC Bemanning & Rekrytering AB":                    "Bemanning/Rekrytering",
+    "OnePartnerGroup Väst AB":                              "Bemanning/Rekrytering",
+    "Nordisk Vårdinsats AB":                                "Bemanning/Rekrytering",
+    "Professionals Nord Göteborg AB":                       "Bemanning/Rekrytering",
+    "NXT Interim Göteborg AB":                              "Bemanning/Rekrytering",
+    "NXT Interim Malmö AB":                                 "Bemanning/Rekrytering",
+    "Scania Bemanning AB":                                  "Bemanning/Rekrytering",
+    "Bemannix AB":                                          "Bemanning/Rekrytering",
+    "Miljonbemanning AB":                                   "Bemanning/Rekrytering",
+    "Rekryteringsgruppen i Stockholm AB":                   "Bemanning/Rekrytering",
+    "KilaPeople AB":                                        "Bemanning/Rekrytering",
+    "Futuria People AB":                                    "Bemanning/Rekrytering",
+    "Stella Rekrytering och Ledarskap AB":                  "Bemanning/Rekrytering",
+    "Smartare Rekrytering @ Sverige AB":                    "Bemanning/Rekrytering",
+    "BraPersonal Sverige AB":                               "Bemanning/Rekrytering",
+    "GV Stars Bemanning AB":                                "Bemanning/Rekrytering",
+    "Professionals Nord Skaraborg AB":                      "Bemanning/Rekrytering",
+    "Nexer Tech Talent AB":                                 "Bemanning/Rekrytering",
+    "Klara T AB":                                           "Bemanning/Rekrytering",
+    "Veterankraft AB":                                      "Bemanning/Rekrytering",
+    "Cleverex Bemanning AB":                                "Bemanning/Rekrytering",
+    "Jobnet AB":                                            "Bemanning/Rekrytering",
+    "Click to Hire AB":                                     "Bemanning/Rekrytering",
+    "Nordiska Bemanningsgruppen AB":                        "Bemanning/Rekrytering",
+    "Clevry Sweden AB":                                     "Bemanning/Rekrytering",
+    "Pima Bemanning & Rekrytering AB":                      "Bemanning/Rekrytering",
+    "OnePartnerGroup Örebro AB":                            "Bemanning/Rekrytering",
+    "Ekonza searcHR AB":                                    "Bemanning/Rekrytering",
+    "Talangbron Sverige AB":                                "Bemanning/Rekrytering",
+    "OnePartnerGroup Sydost AB":                            "Bemanning/Rekrytering",
+    "OnePartnerGroup Syd AB":                               "Bemanning/Rekrytering",
+    "Maxkompetens Sverige AB":                              "Bemanning/Rekrytering",
+    "Yourstaff 365 AB":                                     "Bemanning/Rekrytering",
+    "Shark Bemanning AB":                                   "Bemanning/Rekrytering",
+    "Gigstep AB":                                           "Bemanning/Rekrytering",
+    "Selecta Recruitment AB":                               "Bemanning/Rekrytering",
+    "Nordic Talent Rekrytering & Bemanning AB":             "Bemanning/Rekrytering",
+    "Professionals Nord Stockholm AB":                      "Bemanning/Rekrytering",
+    "Framtiden Business AB":                                "Bemanning/Rekrytering",
+    "Black Sheep Recruitment AB":                           "Bemanning/Rekrytering",
+    "Qlose Recruitment & Consulting AB":                    "Bemanning/Rekrytering",
+    "Nurrse Bemanning AB":                                  "Bemanning/Rekrytering",
+    "Future People AB":                                     "Bemanning/Rekrytering",
+    "Rekryteringshuset i Sverige AB":                       "Bemanning/Rekrytering",
+    "Processbemanning Svenska AB":                          "Bemanning/Rekrytering",
+    "I-Ray IT Solutions AB":                                "Konsultbolag",
+    "Nexer Telescope AB":                                   "Konsultbolag",
+    "Rasulson Consulting AB":                               "Konsultbolag",
+    "Iver Accelerate AB":                                   "Konsultbolag",
+    "Gears of Leo AB":                                      "Konsultbolag",
+    "Softhouse Nordic AB":                                  "Konsultbolag",
+    "Technogarden AB":                                      "Konsultbolag",
+    "Infosys Technologies (Sweden) AB":                     "Konsultbolag",
+    "Cognizant Technology Solutions Sweden AB":             "Konsultbolag",
+    "Logikfabriken AB":                                     "Konsultbolag",
+    "Berdiz Consulting AB":                                 "Konsultbolag",
+    "Thalamus it consulting AB":                            "Konsultbolag",
+    "Oak Consultant Group AB":                              "Konsultbolag",
+    "Akkodis Sweden AB":                                    "Konsultbolag",
+    "Regma IT AB":                                          "Konsultbolag",
+    "Tech Talents Consulting i Sverige AB":                 "Konsultbolag",
+    "Sigma Industry South AB":                              "Konsultbolag",
+    "Da Vinci Management & Engineering AB":                 "Konsultbolag",
+    "Mpya Sci & Tech AB":                                   "Konsultbolag",
+    "Amaris AB":                                            "Konsultbolag",
+    "Infinity IT Consulting AB":                            "Konsultbolag",
+    "CANEA Partner Group Aktiebolag":                       "Konsultbolag",
+    "Sigma Embedded Engineering AB":                        "Konsultbolag",
+    "Krets Consulting Group AB":                            "Konsultbolag",
+    "Sigma Technology Software Solutions AB":               "Konsultbolag",
+    "SwedQ AB":                                             "Konsultbolag",
+    "QRTECH Aktiebolag":                                    "Konsultbolag",
+    "Surely Sci & Tech AB":                                 "Konsultbolag",
+    "ASTEK SWEDEN AB":                                      "Konsultbolag",
+    "Condesign Engineering Aktiebolag":                     "Konsultbolag",
+    "Briljantin Consulting AB":                             "Konsultbolag",
+    "WSP Sverige AB":                                       "Konsultbolag",
+    "Flex Applications Sverige AB":                         "Konsultbolag",
+    "Ictech Göteborg AB":                                   "Konsultbolag",
+    "EPAM Systems (Nordic) AB":                             "Konsultbolag",
+    "Odigo Consulting AB":                                  "Konsultbolag",
+    "DevPort AB":                                           "Konsultbolag",
+    "Toyota Material Handling Europe AB":                   "Direktarbetsgivare",
+    "Praktikertjänst Aktiebolag":                           "Direktarbetsgivare",
+    "Eltel Networks Infranet AB":                           "Direktarbetsgivare",
+    "Schneider Electric Sverige AB":                        "Direktarbetsgivare",
+    "Hemma och Bo Hemtjänst i Sverige AB":                  "Direktarbetsgivare",
+    "Swedish Match Sales Sweden Aktiebolag":                "Direktarbetsgivare",
+    "Svenska Kundrelationer Handelsbolag":                  "Direktarbetsgivare",
+    "Nordic Netmedia & sales AB":                           "Direktarbetsgivare",
+    "Valmet Aktiebolag":                                    "Direktarbetsgivare",
+    "BAE Systems Bofors AB":                                "Direktarbetsgivare",
+    "Kry Primärvård AB":                                    "Direktarbetsgivare",
+    "Embark Studios AB":                                    "Direktarbetsgivare",
+    "Telavox AB":                                           "Direktarbetsgivare",
+    "Husqvarna AB":                                         "Direktarbetsgivare",
+    "Familjeläkarna i Saltsjöbaden AB":                     "Direktarbetsgivare",
+    "Nordisk Hemservice AB":                                "Direktarbetsgivare",
+    "Post- och Telestyrelsen":                              "Direktarbetsgivare",
+    "Bussgods i Norr AB":                                   "Direktarbetsgivare",
+    "Scania CV Aktiebolag":                                 "Direktarbetsgivare",
+    "RebTel Networks AB":                                   "Direktarbetsgivare",
+    "Instabee Group AB":                                    "Direktarbetsgivare",
+    "FLEXTRONICS INTERNATIONAL SWEDEN AB":                  "Direktarbetsgivare",
+    "Stift Bräcke Diakoni":                                 "Direktarbetsgivare",
+    "Linné Omsorg AB":                                      "Direktarbetsgivare",
+    "Ideella Fören Ersta Diakonisällskap Med Firmaers":     "Direktarbetsgivare",
+    "DHL Freight (Sweden) AB":                              "Direktarbetsgivare",
+    "Fören Judiska Hemmet":                                 "Direktarbetsgivare",
+    "Meliva AB":                                            "Direktarbetsgivare",
+    "E-Hälsomyndigheten":                                   "Direktarbetsgivare",
+    "Regeringskansliet":                                    "Direktarbetsgivare",
+    "Hornbach Byggmarknad AB":                              "Direktarbetsgivare",
+    "Måltidsfabriken AB":                                   "Direktarbetsgivare",
+    "Svenska Däckgruppen i Stockholm AB":                   "Direktarbetsgivare",
+    "NIBE Aktiebolag":                                      "Direktarbetsgivare",
+    "Aktiebolaget Electrolux":                              "Direktarbetsgivare",
+    "Chas Visual Management AB":                            "Direktarbetsgivare",
+    "Arbetsförmedlingen":                                   "Direktarbetsgivare",
+    "Försvarets Radioanstalt":                              "Direktarbetsgivare",
+    "Qred Bank AB":                                         "Direktarbetsgivare",
+    "Outokumpu Stainless AB":                               "Direktarbetsgivare",
+    "CERN":                                                 "Direktarbetsgivare",
+    "Beyond Gravity Sweden AB":                             "Direktarbetsgivare",
+    "Luotea FM AB":                                         "Direktarbetsgivare",
+    "Siemens Aktiebolag":                                   "Direktarbetsgivare",
+    "Kraftpowercon Sweden AB":                              "Direktarbetsgivare",
+    "Ellevio Sverige AB":                                   "Direktarbetsgivare",
+    "Omtanken Västerleden Vård AB":                         "Direktarbetsgivare",
+    "Koenigsegg Automotive AB":                             "Direktarbetsgivare",
+    "UMS Skeldar Sweden AB":                                "Direktarbetsgivare",
+    "Nordea Bank Abp, filial i Sverige":                    "Direktarbetsgivare",
+    "Bosch Thermoteknik AB":                                "Direktarbetsgivare",
+    "Vaccinova AB":                                         "Direktarbetsgivare",
+    "MECA Sweden AB":                                       "Direktarbetsgivare",
+    "Sivers Wireless AB":                                   "Direktarbetsgivare",
+    "IKEA Supply Services (Sweden) AB":                     "Direktarbetsgivare",
+    "RaySearch Laboratories AB (publ)":                     "Direktarbetsgivare",
+    "Fortifikationsverket":                                 "Direktarbetsgivare",
+    "IKEA of Sweden AB":                                    "Direktarbetsgivare",
+    "EuroMaint Rail AB":                                    "Direktarbetsgivare",
+    "Kongsberg Maritime Sweden AB":                         "Direktarbetsgivare",
+    "Mo LSS Aktiebolag":                                    "Direktarbetsgivare",
+    "Anyfin AB":                                            "Direktarbetsgivare",
+    "Gotlands Hemtjänster AB":                              "Direktarbetsgivare",
+    "Hultagården AB":                                       "Direktarbetsgivare",
+    "Zeppelin Sverige AB":                                  "Direktarbetsgivare",
+    "NOBA Bank Group AB (publ)":                            "Direktarbetsgivare",
+    "DSV Road AB":                                          "Direktarbetsgivare",
+    "Avinode Aktiebolag":                                   "Direktarbetsgivare",
+    "Univrses AB":                                          "Direktarbetsgivare",
+    "Xensam AB":                                            "Direktarbetsgivare",
+    "SSAB EMEA AB":                                         "Direktarbetsgivare",
+    "Metsä Tissue AB":                                      "Direktarbetsgivare",
+    "AIMPOINT AKTIEBOLAG":                                  "Direktarbetsgivare",
+    "Aimpoint Aktiebolag":                                  "Direktarbetsgivare",
+    "KB Components AB":                                     "Direktarbetsgivare",
+    "Orkla Foods Sverige AB":                               "Direktarbetsgivare",
+    "Stegra Rekrytering AB":                                "Direktarbetsgivare",
+    "J & B Maskinteknik Aktiebolag":                        "Direktarbetsgivare",
+    "Spendrups Bryggeriaktiebolag":                         "Direktarbetsgivare",
+    "Umeå Energi Aktiebolag":                               "Direktarbetsgivare",
+    "W5 Solutions AB (publ)":                               "Direktarbetsgivare",
+    "Holmgrens Bil AB":                                     "Direktarbetsgivare",
+    "Aktiebolaget Trav och Galopp":                         "Direktarbetsgivare",
+    "Lantmännen ek för":                                    "Direktarbetsgivare",
+    "ALSTOM Transport AB":                                  "Direktarbetsgivare",
+    "Kalmar Energi Elnät AB":                               "Direktarbetsgivare",
+    "Infranord AB":                                         "Direktarbetsgivare",
+    "Norion Bank AB":                                       "Direktarbetsgivare",
+    "SWERIM AB":                                            "Direktarbetsgivare",
+    "SCA Forest Products Aktiebolag":                       "Direktarbetsgivare",
+    "Svea Vaccin AB":                                       "Direktarbetsgivare",
+    "Inter IKEA Systems Service AB":                        "Direktarbetsgivare",
+    "Scanvaegt Systems AB":                                 "Direktarbetsgivare",
+    "Linjemontage i Grästorp Aktiebolag":                   "Direktarbetsgivare",
+    "Lyten Labs AB":                                        "Direktarbetsgivare",
+    "Fortnox AB":                                           "Direktarbetsgivare",
+    "ES Hemservice AB":                                     "Direktarbetsgivare",
+    "Totalförsvarets Forskningsinstitut, Foi":              "Direktarbetsgivare",
+    "Svea Bank AB":                                         "Direktarbetsgivare",
+    "Kustbevakningen":                                      "Direktarbetsgivare",
+    "RISE Research Institutes of Sweden AB":                "Direktarbetsgivare",
+    "Cambio Healthcare Systems AB":                         "Direktarbetsgivare",
+    "Linneas hemtjänst AB":                                 "Direktarbetsgivare",
+    "AB CLEANEO":                                           "Direktarbetsgivare",
+    "COOR Service Management Aktiebolag":                   "Direktarbetsgivare",
+    "APR Technologies AB":                                  "Direktarbetsgivare",
+    "OneCo Networks AB":                                    "Direktarbetsgivare",
+    "Bravida Sverige AB":                                   "Direktarbetsgivare",
+    "A Domicil Hemtjänst AB":                               "Direktarbetsgivare",
+    "UTBETALNINGSMYNDIGHETEN":                              "Direktarbetsgivare",
+    "Omsorgsfamiljen H.E.M Vård & Omsorg AB":               "Direktarbetsgivare",
+    "Sinch Sweden AB":                                      "Direktarbetsgivare",
+    "Transportstyrelsen":                                   "Direktarbetsgivare",
+    "Centiro Solutions Aktiebolag":                         "Direktarbetsgivare",
+    "Annelies Hemtjänstteam AB":                            "Direktarbetsgivare",
+    "Omsorg Assistans 1 AB":                                "Direktarbetsgivare",
+    "SAVR AB":                                              "Direktarbetsgivare",
+    "CBRE GWS Sweden AB":                                   "Direktarbetsgivare",
+    # Samirs genomgång 18 nov (Techla: konsult och rekrytering, klassad som konsult; New Terms driver Jappa, timuppdrag)
+    "Retail Knowledge Sweden AB":                           "Bemanning/Rekrytering",
+    "Oddwork Sweden AB":                                    "Bemanning/Rekrytering",
+    "Norrminds AB":                                         "Konsultbolag",
+    "Mission Consultancy Assistance Sweden AB":             "Konsultbolag",
+    "ATICC Sweden AB":                                      "Konsultbolag",
+    "Swedium Global Services AB":                           "Konsultbolag",
+    "Maxitech AB":                                          "Konsultbolag",
+    "Techla Group AB":                                      "Konsultbolag",
+    "SWTQ Industri Umeå AB":                                "Konsultbolag",
+    "Jobcenter in Sweden AB":                               "Bemanning/Rekrytering",
+    "New Terms AB":                                         "Bemanning/Rekrytering",
 }
 
 # ── Cache – laddas en gång vid start ────────────────────────────────
@@ -726,7 +958,7 @@ _cache_ändrad = False
 _ARBETSGIVARE_TYP_LOWER = {k.lower(): v for k, v in ARBETSGIVARE_TYP.items()}
 _EXKLUDERA_LOWER = {e.lower() for e in EXKLUDERA}
 
-def klassificera_ag(namn: str, org_nr: str = "", api: bool = True) -> str:
+def _klassificera_ag(namn: str, org_nr: str = "", api: bool = True) -> str:
     """
     Klassificerar arbetsgivare. Prioritetsordning:
       1. Exkluderingslista (exakt + case-insensitive)
@@ -762,6 +994,19 @@ def klassificera_ag(namn: str, org_nr: str = "", api: bool = True) -> str:
     if namn_lower.startswith("region "):
         return "Direktarbetsgivare"
 
+    # Namnmönster (tillagt 18 nov 2026). Gäller bara namn som inte finns i
+    # listorna ovan, så manuell klassning går alltid före.
+    if any(o in namn_lower for o in ("bemanning", "rekrytering", "recruitment", "personaluthyrning",
+                                      "onepartnergroup", "professionals nord")):
+        return "Bemanning/Rekrytering"
+    if any(o in namn_lower for o in ("hemtjänst", "universitet", "högskola")):
+        return "Direktarbetsgivare"
+    if namn_lower.endswith(("myndigheten", "verket", "styrelsen")):
+        return "Direktarbetsgivare"
+    # Enskild firma i personens namn ("Efternamn, Förnamn"): arbetsgivaren själv.
+    if ", " in namn and not any(o in namn_lower for o in (" ab", "aktiebolag", "handelsbolag", " hb", " kb")):
+        return "Direktarbetsgivare"
+
     cache_nyckel = org_nr if org_nr else namn
     if cache_nyckel in _ag_cache:
         return _ag_cache[cache_nyckel]
@@ -774,6 +1019,38 @@ def klassificera_ag(namn: str, org_nr: str = "", api: bool = True) -> str:
         return kategori
 
     return "Okänd – granska"
+
+KLASSFIL = "arbetsgivare_klassning.csv"
+_klassade: dict = {}
+
+
+def klassificera_ag(namn: str, org_nr: str = "", api: bool = True) -> str:
+    """Som _klassificera_ag, men sparar resultatet så att det kan skrivas till KLASSFIL."""
+    typ = _klassificera_ag(namn, org_nr, api)
+    if not typ.startswith("Okänd"):
+        _klassade[namn] = typ
+    return typ
+
+
+def skriv_klassning():
+    """Skriver aktuell klassning per arbetsgivarnamn (Namn;Typ). Sajten använder filen
+    för att visa dagens klassning även för äldre dagar, och för att räkna bort exkluderade."""
+    alla = {}
+    if os.path.exists(KLASSFIL):
+        with open(KLASSFIL, encoding="utf-8-sig") as f:
+            for r in csv.DictReader(f, delimiter=";"):
+                alla[r["Namn"]] = r["Typ"]
+    alla.update(_klassade)
+    alla.update(ARBETSGIVARE_TYP)
+    for n in EXKLUDERA:
+        alla[n] = "Exkludera"
+    with open(KLASSFIL, "w", newline="", encoding="utf-8-sig") as f:
+        w = csv.writer(f, delimiter=";")
+        w.writerow(["Namn", "Typ"])
+        for n in sorted(alla, key=str.lower):
+            w.writerow([n, alla[n]])
+    print(f"Sparat: {KLASSFIL} ({len(alla)} arbetsgivare)")
+
 
 def topp_tackning(counter, malniva: float = 0.85, hard_cap: int = 100):
     """
@@ -1179,6 +1456,7 @@ def kör_analys():
     print(f"Sparat: {REGIOFIL}")
     print(f"Sparat: {KOMMUNFIL}")
     print(f"Sparat: {EXTERNFIL}")
+    skriv_klassning()
     if is_baseline:
         print()
         print("*** Baseline satt. Nästa körning visar förändring mot denna. ***")
