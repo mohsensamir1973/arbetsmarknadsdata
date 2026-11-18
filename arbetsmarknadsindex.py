@@ -105,11 +105,14 @@ SNI_MAPPNING = {
 }
 
 # ── Exkluderade bolag ────────────────────────────────────────────────
+# Massannonsörer. Exkluderas ur extern andel, arbetsgivarlistor och Rörelser,
+# men ligger kvar i rollernas och Platsbankens totaler.
+# Kriterier: namnger inte arbetsgivaren, saknar egen verksamhet eller annonserar
+# jobb utanför Sverige, och publicerar mallannonser i stor volym.
 EXKLUDERA = {
-    "DUVI GROUP AB",
-    "Jobs By Nordics AB",
-    "Degerfors IF",
-    "Willem Kralik, Jana",
+    "DUVI GROUP AB",                      # aggregator
+    "Jobs By Nordics AB",                 # jobb i utlandet, mallannonser
+    "Nordic Investin Group Aktiebolag",   # 2026-11-18: holding utan anställda, onamngivna kunder, mallannonser
 }
 
 # ── Manuell lista – override, alltid rätt ───────────────────────────
@@ -666,7 +669,10 @@ ARBETSGIVARE_TYP = {
     "Selective Energy Sweden AB":                       "Direktarbetsgivare",
     "Prima Vård Sverige AB":                            "Direktarbetsgivare",
     "Adeocare AB":                                      "Direktarbetsgivare",
-    # Nordic Investin Group Aktiebolag: fortfarande oklassad (se OBS 2026-09-14). 72 annonser 18 nov.
+    # 2026-11-18: flyttade från EXKLUDERA, uppfyller inte kriterierna för massannonsör
+    "Degerfors IF":                                     "Direktarbetsgivare",
+    "Willem Kralik, Jana":                              "Direktarbetsgivare",
+    # Nordic Investin Group Aktiebolag: exkluderad 2026-11-18, se EXKLUDERA.
 }
 
 # ── Cache – laddas en gång vid start ────────────────────────────────
