@@ -666,7 +666,7 @@ ARBETSGIVARE_TYP = {
     "Selective Energy Sweden AB":                       "Direktarbetsgivare",
     "Prima Vård Sverige AB":                            "Direktarbetsgivare",
     "Adeocare AB":                                      "Direktarbetsgivare",
-    "Nordic Investin Group Aktiebolag":                 "Direktarbetsgivare",
+    # Nordic Investin Group Aktiebolag: fortfarande oklassad (se OBS 2026-09-14). 72 annonser 18 nov.
 }
 
 # ── Cache – laddas en gång vid start ────────────────────────────────
