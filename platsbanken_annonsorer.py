@@ -30,6 +30,9 @@ import urllib.request
 from datetime import datetime, timedelta
 
 FIL = "platsbanken_annonsorer_trend.csv"
+LOGG = "platsbanken_annonsorer_logg.txt"  # fel skrivs hit, så att vi ser varför en morgonkörning missades
+FORSOK = 3
+PAUS_S = 120
 SNAPSHOT = "https://jobstream.api.jobtechdev.se/v2/snapshot"
 ANTAL = 200
 KOLUMNER = ["Datum", "Org-nr", "Arbetsgivare", "Annonser", "Tjänster", "Nya 7 dagar"]
@@ -42,6 +45,13 @@ try:
     sys.stdout.reconfigure(line_buffering=True)
 except Exception:
     pass
+
+
+def _logga(text: str) -> None:
+    rad = f"{datetime.now():%Y-%m-%d %H:%M:%S}  {text}"
+    print("  " + rad)
+    with open(LOGG, "a", encoding="utf-8") as f:
+        f.write(rad + "\n")
 
 
 def _redan_kord(datum: str) -> bool:
@@ -94,7 +104,19 @@ def kor() -> None:
         print(f"  {FIL} har redan rader för {datum}, hoppar över.")
         return
 
-    annonser = [a for a in _hamta() if not a.get("removed")]
+    data = None
+    for forsok in range(1, FORSOK + 1):
+        try:
+            data = _hamta()
+            break
+        except Exception as e:  # noqa: BLE001
+            _logga(f"Försök {forsok}/{FORSOK} misslyckades: {type(e).__name__}: {e}")
+            if forsok < FORSOK:
+                time.sleep(PAUS_S)
+    if data is None:
+        _logga("Gav upp, ingen rad sparad i dag.")
+        sys.exit(1)
+    annonser = [a for a in data if not a.get("removed")]
     gräns = (datetime.now() - timedelta(days=7)).strftime("%Y-%m-%d")
 
     antal = collections.Counter()
